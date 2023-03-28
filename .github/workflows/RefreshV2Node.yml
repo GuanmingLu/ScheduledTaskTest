@@ -1,16 +1,16 @@
 name: RefreshV2Node
 
-permissions:
-  pull-requests: write
-  issues: write
-  repository-projects: write
-
 on:
   workflow_dispatch:
 
 jobs:
-  refresh:
+  refresh-v2-node:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+      repository-projects: write
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python
