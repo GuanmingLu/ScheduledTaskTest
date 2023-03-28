@@ -42,4 +42,4 @@ for url in list:
 # print(datas)
 
 with open("v2ray.txt", "w") as f:
-	f.write(datas)
+	f.write(base64.b64encode(datas.encode("utf-8")).decode("utf-8"))
