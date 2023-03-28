@@ -2,6 +2,8 @@ name: RefreshV2Node
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 20 * * *'
 
 jobs:
   refresh-v2-node:
