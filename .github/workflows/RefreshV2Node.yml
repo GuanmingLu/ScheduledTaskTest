@@ -1,5 +1,10 @@
 name: RefreshV2Node
 
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
 on:
   workflow_dispatch:
 
@@ -27,3 +32,5 @@ jobs:
           git pull --rebase
       - name: Push changes
         uses: ad-m/github-push-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
