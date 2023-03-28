@@ -7,9 +7,9 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
       - name: Install requirements
@@ -23,9 +23,9 @@ jobs:
           git config --global user.email github_action@github.com
           git config --global user.name github_action
           git add .
-          git commit -m "GitHub Action RefreshV2Node" -a
+          git commit -a -m "GitHub Action RefreshV2Node"
           git pull --rebase
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
