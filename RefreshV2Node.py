@@ -2,41 +2,35 @@ import datetime
 import requests
 import base64
 
-list = [
-    "https://clashnode.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt",
-    "https://v2rayshare.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt",
-    "https://freenode.me/wp-content/uploads/{y}/{m}/{d}{n}.txt",
+
+def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = -1) -> list[datetime.datetime]:
+	return [datetime.datetime.now() + datetime.timedelta(days=i) for i in range(start_date_delta, end_date_delta, step)]
+
+
+urls = [
+    [f"https://clashnode.com/wp-content/uploads/{date.year}/{date.month:02d}/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
+    [f"https://v2rayshare.com/wp-content/uploads/{date.year}/{date.month:02d}/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
+    [f"https://freenode.me/wp-content/uploads/{date.year}/{date.month:02d}/{date.day:02d}{num}.txt" for date in date_list() for num in range(9, -1, -1)] + [
+        f"https://freenode.me/wp-content/uploads/{date.year}/{date.month:02d}/{date.month:02d}{date.day:02d}{num}.txt" for date in date_list()
+        for num in range(9, -1, -1)
+    ],
+    ["https://jiang.netlify.com/"],
 ]
 
-
-def access_url(url: str, date: datetime.datetime) -> requests.Response:
-	year = str(date.year)
-	month = str(date.month).zfill(2)
-	day = str(date.day).zfill(2)
-	if url.find("{n}") != -1:
-		for i in range(9, -1, -1):
-			formatted_url = url.format(y=year, m=month, d=day, n=str(i))
-			result = requests.get(url=formatted_url)
-			if result.ok:
-				return result
-	else:
-		formatted_url = url.format(y=year, m=month, d=day)
-		result = requests.get(url=formatted_url)
-		if result.ok:
-			return result
-	return None
+# print(urls)
+# exit(0)
 
 datas = ""
-for url in list:
-	for delta_day in range(1, -10, -1):
-		date = datetime.datetime.now() + datetime.timedelta(days=delta_day)
-		result = access_url(url, date)
-		if result is not None:
+for url_list in urls:
+	for url in url_list:
+		result = requests.get(url)
+		if result.ok:
 			print(result.url)
 			# print(result.content)
-			datas += base64.b64decode(result.content).decode("utf-8")
-			if not datas.endswith("\n"):
-				datas += "\n"
+			server_list = base64.b64decode(result.content).decode("utf-8")
+			if not server_list.endswith("\n"):
+				server_list += "\n"
+			datas += server_list
 			break
 
 # print(datas)
