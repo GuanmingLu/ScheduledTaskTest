@@ -25,13 +25,14 @@ jobs:
           pip3 install requests
       - name: Run Python code RefreshV2Node.py
         run: python3 RefreshV2Node.py
-      - name: Commit
-        run: |
-          git config --global user.email github_action@github.com
-          git config --global user.name github_action
-          git add .
-          git commit -a -m "GitHub Action RefreshV2Node"
-          git pull --rebase
+      - name: Git Auto Commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: GitHub Action RefreshV2Node
+      - if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: echo "Changed!"
+      - if: steps.auto-commit-action.outputs.changes_detected == 'false'
+        run: echo "No Changes!"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
