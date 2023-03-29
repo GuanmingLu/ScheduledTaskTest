@@ -15,6 +15,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
+      
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -23,16 +24,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip3 install requests
+      
       - name: Run Python code RefreshV2Node.py
         run: python3 RefreshV2Node.py
-      - name: Git Auto Commit
+      
+      - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: GitHub Action RefreshV2Node
-      - if: steps.git-auto-commit-action.outputs.changes_detected == 'true'
-        run: echo "Changed!"
-      - if: steps.git-auto-commit-action.outputs.changes_detected == 'false'
-        run: echo "No Changes!"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
