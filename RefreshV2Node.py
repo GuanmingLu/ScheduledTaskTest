@@ -8,6 +8,8 @@ def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = 
 
 
 urls = [
+    [f"https://clashfree.eu.org/wp-content/uploads/rss/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
+    [f"https://oneclash.cc/wp-content/uploads/{date.year}/{date.month:02d}/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
     [f"https://clashnode.com/wp-content/uploads/{date.year}/{date.month:02d}/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
     [f"https://v2rayshare.com/wp-content/uploads/{date.year}/{date.month:02d}/{date.year}{date.month:02d}{date.day:02d}.txt" for date in date_list()],
     [f"https://freenode.me/wp-content/uploads/{date.year}/{date.month:02d}/{date.day:02d}{num}.txt" for date in date_list() for num in range(9, -1, -1)] + [
@@ -15,6 +17,7 @@ urls = [
         for num in range(9, -1, -1)
     ],
     ["https://jiang.netlify.com/"],
+    ["https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2"]
 ]
 
 # print(urls)
