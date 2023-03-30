@@ -35,6 +35,7 @@ vmess_urls_lock = threading.Lock()
 
 def save_request_content(content: bytes):
 	vmess = AES.new(password, AES.MODE_CBC, iv).decrypt(base64.b64decode(content)).decode("utf-8")
+	vmess = vmess.strip("\x00")
 	# print(vmess)
 	vmess_urls_lock.acquire()
 	if vmess_urls.count(vmess) == 0:
@@ -66,6 +67,8 @@ if __name__ == "__main__":
 	# 等待所有线程完成
 	for t in threads:
 		t.join()
+
+	# print(vmess_urls)
 
 	with open("acceleratorNodes.txt", "w") as f:
 		f.write(base64.b64encode("\n".join(vmess_urls).encode("utf-8")).decode("utf-8"))
