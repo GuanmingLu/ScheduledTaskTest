@@ -1,4 +1,4 @@
-name: RefreshV2Node
+name: RefreshNodes
 
 on:
   workflow_dispatch:
@@ -24,9 +24,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip3 install requests
+          pip3 install pycryptodome
       
       - name: Run Python code RefreshV2Node.py
         run: python3 RefreshV2Node.py
+        
+      - name: Run Python code RefreshAcceleratorNodes.py
+        run: python3 RefreshAcceleratorNodes.py
       
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
