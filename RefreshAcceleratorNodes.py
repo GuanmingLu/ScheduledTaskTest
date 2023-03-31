@@ -3,6 +3,7 @@ import requests
 import base64
 import random
 import threading
+import argparse
 
 password = b'awdtif20190619ti'
 iv = password
@@ -56,10 +57,22 @@ def access_url():
 
 
 if __name__ == "__main__":
+	parser = argparse.ArgumentParser(description="获取加密V2Ray节点（加速器）")
+	parser.add_argument("-i", "--input", help="输入文件名", default="")
+	parser.add_argument("-o", "--output", help="输出文件名", default="v2ray.txt")
+	parser.add_argument("-t", "--threads", help="线程数", default=60)
+	args = parser.parse_args()
+	if len(args.input) > 0:
+		try:
+			with open(args.input, "r", encoding="utf-8") as f:
+				vmess_urls = base64.b64decode(f.read()).decode("utf-8").splitlines()
+		except Exception:
+			vmess_urls = []
+
 	threads: list[threading.Thread] = []
 
 	# 创建线程
-	for i in range(40):
+	for i in range(args.threads):
 		t = threading.Thread(target=access_url)
 		threads.append(t)
 		t.start()
@@ -70,5 +83,5 @@ if __name__ == "__main__":
 
 	# print(vmess_urls)
 
-	with open("acceleratorNodes.txt", "w") as f:
+	with open(args.output, "w", encoding="utf-8") as f:
 		f.write(base64.b64encode("\n".join(vmess_urls).encode("utf-8")).decode("utf-8"))
