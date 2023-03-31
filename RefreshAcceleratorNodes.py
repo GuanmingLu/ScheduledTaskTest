@@ -60,7 +60,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="获取加密V2Ray节点（加速器）")
 	parser.add_argument("-i", "--input", help="输入文件名", default="")
 	parser.add_argument("-o", "--output", help="输出文件名", default="v2ray.txt")
-	parser.add_argument("-t", "--threads", help="线程数", default=60)
+	parser.add_argument("-t", "--threads", help="线程数", default=60, type=int)
 	args = parser.parse_args()
 	if len(args.input) > 0:
 		try:
