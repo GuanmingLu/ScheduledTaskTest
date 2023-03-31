@@ -31,6 +31,9 @@ jobs:
         
       - name: Run Python code RefreshAcceleratorNodes.py
         run: python3 RefreshAcceleratorNodes.py
+        
+      - name: Convert V2 nodes to Clash
+        run: python3 V2Nodes2Clash.py
       
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
