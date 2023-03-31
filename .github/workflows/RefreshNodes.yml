@@ -26,15 +26,27 @@ jobs:
           pip3 install requests
           pip3 install pycryptodome
       
-      - name: Run Python code RefreshV2Nodes.py
-        run: python3 RefreshV2Nodes.py
+      - name: Run RefreshV2Nodes.py => Refresh normal v2ray nodes.
+        run: python3 RefreshV2Nodes.py -o v2ray.txt
         
-      - name: Run Python code RefreshAcceleratorNodes.py
-        run: python3 RefreshAcceleratorNodes.py
+      - name: Run RefreshAcceleratorNodes.py => Refresh crypted accelerator nodes.
+        run: python3 RefreshAcceleratorNodes.py -i v2ray.txt -o v2ray.txt -t 60
         
-      - name: Convert V2 nodes to Clash
-        run: python3 V2Nodes2Clash.py
+      - name: Run GetClashConfig.py => Download config from url and do some modification.
+        run: python3 GetClashConfig.py -u "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini" -o clashConfig.ini
       
+      - name: Git auto commit
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: GitHub Action RefreshV2Node
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Run V2Nodes2Clash.py => Convert v2ray url to Clash yaml.
+        run: python3 V2Nodes2Clash.py -o clash.yaml
+        
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
