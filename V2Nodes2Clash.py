@@ -10,7 +10,7 @@ data = {
     "target": "clash",
     "url": "|".join(urls),
     "exclude": "(CN_FreeNode|中国($|[^-])|移动|联通|电信)",
-    "config": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini",
+    "config": "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/clashConfig.ini",
 }
 
 access_url = "https://sub.xeton.dev/sub?" + urlencode(data)
