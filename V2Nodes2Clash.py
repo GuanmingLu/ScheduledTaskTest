@@ -9,7 +9,7 @@ urls = [
 data = {
     "target": "clash",
     "url": "|".join(urls),
-    "exclude": "(中国($|[^-])|移动|联通|电信)",
+    "exclude": "(CN_FreeNode|中国($|[^-])|移动|联通|电信)",
     "config": "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini",
 }
 
