@@ -3,6 +3,7 @@ import datetime
 import requests
 import base64
 import threading
+import argparse
 
 
 def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = -1) -> list[(str, str, str)]:
@@ -30,13 +31,13 @@ all_urls = [
 # print(urls)
 # exit(0)
 
-datas: list[str] = []
+vmess_urls: list[str] = []
 threadLock = threading.Lock()
 
 
 def get_from_urls(url_list):
 	"""
-	从给定的一组 url 中获取首个有效的 url，并将订阅内容添加到 datas 中
+	从给定的一组 url 中获取首个有效的 url，并将订阅内容添加到 vmess_urls 中
 	"""
 	for url in url_list:
 		try:
@@ -46,9 +47,9 @@ def get_from_urls(url_list):
 				# print(result.content)
 				server_list = base64.b64decode(result.content).decode("utf-8")
 				threadLock.acquire()
-				for server in server_list.split("\n"):
-					if datas.count(server) == 0:
-						datas.append(server)
+				for server in server_list.splitlines():
+					if vmess_urls.count(server) == 0:
+						vmess_urls.append(server)
 				threadLock.release()
 				return
 		except Exception as e:
@@ -56,7 +57,19 @@ def get_from_urls(url_list):
 
 
 if __name__ == "__main__":
+	parser = argparse.ArgumentParser(description="获取V2Ray节点")
+	parser.add_argument("-i", "--input", help="输入文件名", default="")
+	parser.add_argument("-o", "--output", help="输出文件名", default="v2ray.txt")
+	args = parser.parse_args()
+	if len(args.input) > 0:
+		try:
+			with open(args.input, "r", encoding="utf-8") as f:
+				vmess_urls = base64.b64decode(f.read()).decode("utf-8").splitlines()
+		except Exception:
+			vmess_urls = []
+
 	threads: list[threading.Thread] = []
+
 	# 为每一组 url 创建一个线程
 	for url_list in all_urls:
 		t = threading.Thread(target=get_from_urls, args=(url_list,))
@@ -67,7 +80,7 @@ if __name__ == "__main__":
 	for t in threads:
 		t.join()
 
-	# print(datas)
+	# print(vmess_urls)
 
-	with open("v2ray.txt", "w") as f:
-		f.write(base64.b64encode("\n".join(datas).encode("utf-8")).decode("utf-8"))
+	with open(args.output, "w", encoding="utf-8") as f:
+		f.write(base64.b64encode("\n".join(vmess_urls).encode("utf-8")).decode("utf-8"))
