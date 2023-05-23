@@ -15,7 +15,7 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -25,32 +25,33 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install requests
           pip3 install pycryptodome
-      
-      - name: Run RefreshV2Nodes.py => Refresh normal v2ray nodes.
-        run: python3 RefreshV2Nodes.py -o v2ray.txt
-        
-      - name: Run RefreshAcceleratorNodes.py => Refresh crypted accelerator nodes.
-        run: python3 RefreshAcceleratorNodes.py -i v2ray.txt -o v2ray.txt -t 60
-        
-      - name: Run GetClashConfig.py => Download config from url and do some modification.
-        run: python3 GetClashConfig.py -u "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_MultiMode.ini" -o clashConfig.ini
-      
+
+      - name: Refresh normal v2ray and accelerator nodes.
+        run: |
+          python3 RefreshV2Nodes.py -o "v2-node.txt"
+          python3 RefreshAcceleratorNodes.py -t 60 -o "v2-acc.txt"
+
+      - name: Download config from url and do some modifications.
+        run: python3 GetClashConfig.py -o "clashConfig.ini"
+
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: GitHub Action RefreshV2Node
+          commit_message: GitHub Action Refresh V2 Nodes
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Run V2Nodes2Clash.py => Convert v2ray url to Clash yaml.
-        run: python3 V2Nodes2Clash.py -o clash.yaml
-        
+
+      - name: Convert v2-node and v2-acc to Clash yaml.
+        run: |
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-node.txt" -o v2-node-clash.yaml
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-acc.txt" -o v2-acc-clash.yaml
+
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: GitHub Action RefreshV2Node
+          commit_message: GitHub Action Convert V2 To Clash
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

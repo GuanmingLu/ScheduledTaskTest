@@ -4,7 +4,7 @@ import argparse
 
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser(description="将V2Ray节点转换为Clash配置文件")
-	parser.add_argument("-u", "--url", help="v2Ray订阅地址", default="https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2ray.txt")
+	parser.add_argument("-u", "--url", help="v2Ray订阅地址", default="https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-node.txt")
 	parser.add_argument("-c", "--config", help="Clash配置文件模板", default="https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/clashConfig.ini")
 	parser.add_argument("-o", "--output", help="输出文件名", default="clash.yaml")
 	args = parser.parse_args()
@@ -14,6 +14,7 @@ if __name__ == "__main__":
 	    "url": args.url,
 	    "exclude": "(CN_FreeNode|中国($|[^-])|移动|联通|电信)",
 	    "config": args.config,
+	    "udp": "true",
 	}
 
 	access_url = "https://sub.xeton.dev/sub?" + urlencode(data)
