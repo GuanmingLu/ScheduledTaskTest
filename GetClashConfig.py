@@ -13,7 +13,7 @@ if __name__ == "__main__":
 	try:
 		result = requests.get(args.url)
 		if result.ok:
-			config = result.content.decode("utf-8").replace("gstatic", "google").replace("`300,,", "`60,3,")
+			config = result.content.decode("utf-8").replace("gstatic", "google").replace("`300,,", "`60,3,").replace(",[]GEOIP,CN", ",[]GEOIP,CN,no-resolve")
 			with open(args.output, "w", encoding="utf-8") as f:
 				f.write(config)
 			print("获取配置文件成功")
