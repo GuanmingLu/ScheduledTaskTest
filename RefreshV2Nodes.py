@@ -31,8 +31,24 @@ all_urls = [
 # print(urls)
 # exit(0)
 
-vmess_urls: list[str] = []
+vmess_urls: set[str] = set()
+ss_servers: set[str] = set()
 threadLock = threading.Lock()
+
+
+def is_node_valid(item: str) -> bool:
+	if item in vmess_urls:
+		return False
+	if item.startswith("ss://"):
+		start = item.find("@") + 1
+		end = item.find("#")
+		if start <= 0 or end <= 0 or start >= end:
+			return False
+		server = item[start:end]
+		if server.find("127.0.0.1") >= 0 or server.find("localhost") >= 0 or server in ss_servers:
+			return False
+		ss_servers.add(server)
+	return True
 
 
 def get_from_urls(url_list):
@@ -45,11 +61,11 @@ def get_from_urls(url_list):
 			if result.ok:
 				print(result.url)
 				# print(result.content)
-				server_list = base64.b64decode(result.content).decode("utf-8")
+				node_list = base64.b64decode(result.content).decode("utf-8")
 				threadLock.acquire()
-				for server in server_list.splitlines():
-					if vmess_urls.count(server) == 0:
-						vmess_urls.append(server)
+				for node in node_list.splitlines():
+					if is_node_valid(node):
+						vmess_urls.add(node)
 				threadLock.release()
 				return
 		except Exception as e:
@@ -64,9 +80,9 @@ if __name__ == "__main__":
 	if len(args.input) > 0:
 		try:
 			with open(args.input, "r", encoding="utf-8") as f:
-				vmess_urls = base64.b64decode(f.read()).decode("utf-8").splitlines()
+				vmess_urls = set(base64.b64decode(f.read()).decode("utf-8").splitlines())
 		except Exception:
-			vmess_urls = []
+			vmess_urls = set()
 
 	threads: list[threading.Thread] = []
 
