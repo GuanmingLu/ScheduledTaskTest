@@ -39,6 +39,8 @@ threadLock = threading.Lock()
 def is_node_valid(item: str) -> bool:
 	if item in vmess_urls:
 		return False
+	if item.find("v2ray-plugin") >= 0:
+		return False
 	if item.startswith("ss://"):
 		start = item.find("@") + 1
 		end = item.find("#")
