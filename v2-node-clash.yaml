@@ -5,163 +5,188 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 _US_美国->🇯🇵_JP_日本, server: vfly3.win, port: 443, type: vmess, uuid: 9681f99e-d251-477a-d777-1d01ee550481, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /myblog, headers: {Host: vfly3.win}}, udp: true}
-  - {name: 🇰🇷 _KR_韩国, server: 125.141.26.3, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇿🇦 _ZA_南非, server: 129.232.129.156, port: 444, type: ss, cipher: chacha20-ietf-poly1305, password: DiPietyory, udp: true}
-  - {name: 🇺🇲 美国CloudFlare节点 2, server: 198.41.211.47, port: 2082, type: vmess, uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 🇺🇲 _US_美国, server: 108.162.193.175, port: 2082, type: vmess, uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: tot.vtcss.top}}, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国, server: nika3hdfy2.foriran.trade, port: 443, type: trojan, password: 79770a32-9607-4919-9483-0f1794559390, sni: nika3hdfy2.foriran.trade, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点 14, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
-  - {name: 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 🇫🇷 _VG_英属维尔京群岛->🇫🇷_FR_法国, server: mbt.ircf.space, port: 443, type: vmess, uuid: 79770a32-9607-4919-9483-0f1794559390, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /juYLyvNBpY0LBOAommy2aJE, headers: {Host: hiddis2.freelines.net}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点 8, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: fr7.tehme100.fun}}, udp: true}
-  - {name: _CY_塞浦路斯, server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 🇫🇷 _FR_法国->🇺🇸_US_美国, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_12, server: 188.166.179.155, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_23, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: us.ilovescp.com}}, udp: true}
-  - {name: 🇺🇲 _US_美国 2, server: 104.26.1.6, port: 8080, type: vmess, uuid: 44c48fbe-cfbf-40ee-b0e4-12a1cec4da69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: 🇺🇲 _US_美国 3, server: 104.25.213.122, port: 2082, type: vmess, uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: tot.vtcss.top}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_2, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_10, server: 129.150.57.153, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: _LV_拉脱维亚, server: 185.135.86.173, port: 9030, type: ss, cipher: aes-256-cfb, password: GeregetR8cvQHzYr, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 2, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_11, server: 138.2.106.77, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare公司CDN节点(shopify), server: 23.227.39.111, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 4, server: 140.99.120.174, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 3, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 _SG_新加坡, server: 54.254.129.246, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 _SG_新加坡 2, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 🇺🇲 _US_美国 5, server: 172.67.3.69, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_18, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
-  - {name: 🇺🇲 _US_美国 6, server: 172.67.119.191, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 7, server: 162.159.250.202, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 8, server: 108.166.203.183, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, udp: true}
-  - {name: 🇨🇦 _CA_加拿大, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 9, server: 216.52.183.244, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, udp: true}
-  - {name: 🇺🇲 _US_美国 10, server: 172.64.172.109, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国->🇦🇪_AE_阿联酋, server: 104.21.12.87, port: 80, type: vmess, uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dT9s3HqgZeD3eApzDAfhOHq, headers: {Host: series-v1.samanehha.co}}, udp: true}
-  - {name: 🇭🇰 _HK_香港, server: 210.56.60.70, port: 16612, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇸🇬 新加坡DigitalOcean数据中心 20, server: 178.128.216.181, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇨🇦 _CA_加拿大 2, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
-  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国, server: 104.21.79.246, port: 443, type: trojan, password: e35026da-e985-49ca-b43b-276062a535a6, sni: notdirect.howhealthyistoomajreally.homes, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_6, server: 167.172.93.42, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare节点 21, server: cf2.992688.xyz, port: 8080, type: vmess, uuid: 0ea60ebb-632d-4226-893a-cccc2053dbf5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: haxus3.vpn66.eu.org}}, udp: true}
-  - {name: 🇯🇵 _JP_日本, server: 43.207.83.221, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇭🇰 香港 v2rayfree.eu.org, server: 156.245.8.204, port: 443, type: vmess, uuid: 3fd637ad-46fe-4f85-a6e8-86b00bca1122, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.13340198.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西, server: 172.67.211.43, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_3, server: 128.199.230.17, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 2, server: 172.67.237.176, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 3, server: 172.64.106.104, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_5, server: 152.69.223.147, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 11, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: 44c48fbe-cfbf-40ee-b0e4-12a1cec4da69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: 🇨🇳 浙江省杭州市阿里云BGP数据中心 10, server: 114.55.244.11, port: 80, type: vmess, uuid: 945f0adf-5255-459b-8fbd-54c9e781f2ee, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}, udp: true}
-  - {name: 🇷🇺 俄罗斯  6, server: 176.97.210.185, port: 10101, type: vmess, uuid: cd7f6a89-e86a-47ae-87d3-0277d205286f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /freebaipiao, headers: {Host: de2.icu2rip.eu.org}}, udp: true}
-  - {name: 🇺🇲 _US_美国 12, server: 172.64.193.102, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点, server: 172.64.106.104, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇳🇱 _NL_荷兰->🇺🇸_US_美国, server: 188.114.99.105, port: 2082, type: vmess, uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: tot.vtcss.top}}, udp: true}
-  - {name: 🇩🇪 _CN_中国->🇩🇪_DE_德国, server: qzcn2-01.dajuzi.cc, port: 15598, type: vmess, uuid: aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇲 美国CloudFlare节点 13, server: cdn.narutos.top, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GdtYWlsLmNvbSJ9LCJjb3V, headers: {Host: newyork.yj2022.gq}}, udp: true}
-  - {name: 🇺🇲 美国  18, server: 168.138.180.229, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 4, server: 172.67.9.200, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 13, server: 74.217.182.119, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇲 _US_美国 14, server: 172.67.65.210, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: 🇧🇷 巴西圣保罗CloudFlare节点 9, server: 188.114.99.0, port: 8443, type: vmess, uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cloudconebbb.gorgorchicken.one}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 5, server: 172.67.193.109, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 4, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: true, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 6, server: 172.64.92.42, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_27, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: 🇩🇪 _DE_德国->🇺🇸_US_美国, server: 108.61.170.104, port: 443, type: trojan, password: mainssh-ddoejfv14, sni: frtgrpc.mainssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点 17, server: www.gov.tw, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 5, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: fr7.tehme100.fun}}, udp: true}
-  - {name: 🇺🇲 _US_美国 15, server: 172.67.5.196, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 16, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_16, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 _US_美国 17, server: 172.64.96.134, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: 🇫🇷 _FR_法国, server: fr-am1-5.eqsunshine.com, port: 8181, type: ssr, cipher: aes-256-cfb, password: RcfVcDzzB, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: "", udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_24, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl2.sharecentrepro.com}}, udp: true}
-  - {name: 🇨🇦 _CA_加拿大->🇺🇸_US_美国, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: 🇰🇷 _KR_韩国 2, server: 43.201.108.109, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇸🇬 _SG_新加坡 3, server: 13.250.35.165, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇲 美国 v2rayfree.eu.org, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: fr7.tehme100.fun}}, udp: true}
-  - {name: 🇺🇲 _US_美国 18, server: 64.32.26.186, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1691318318420, headers: {Host: www.42943451.xyz}}, udp: true}
-  - {name: 🇯🇵 _JP_日本 2, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: None, obfs-param: "", udp: true}
-  - {name: 🇺🇲 _US_美国 19, server: 104.24.242.157, port: 2082, type: vmess, uuid: 0afb8b2c-149a-49a8-e90f-d77884ac922f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: ecc.vtcss.top}}, udp: true}
-  - {name: 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7, server: 45.199.138.155, port: 54000, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇲 _US_美国 20, server: 141.101.115.104, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_19, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 _US_美国 21, server: cloudconeaaa.gorgorchicken.one, port: 8443, type: vmess, uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cloudconeaaa, headers: {Host: cloudconeaaa.gorgorchicken.one}}, udp: true}
-  - {name: 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2, server: series-v1.samanehha.co, port: 443, type: trojan, password: 0b65bb06-6b28-487a-8e3c-820dda51e977, sni: series-v1.samanehha.co, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_15, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: uk2.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国, server: 203.23.104.190, port: 8443, type: vmess, uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /cloudconeaaa, headers: {Host: cloudconeaaa.gorgorchicken.one}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 2, server: 104.18.64.251, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GdtYWlsLmNvbSJ9LCJjb3V, headers: {Host: newyork.yj2022.gq}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare节点 15, server: 162.159.255.119, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 7, server: 162.159.135.251, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房, server: 45.199.138.155, port: 54000, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, servername: d.freeh1.xyz, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 8, server: 172.64.193.102, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 9, server: 172.67.196.199, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_7, server: 157.245.159.7, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_17, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 10, server: 172.67.237.73, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇸🇬 _SG_新加坡 4, server: 13.213.44.183, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 6, server: cnamemc.ciscocdn1.live, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c3mc.ciscocdn1.live, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_21, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare节点 19, server: 172.64.96.134, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 _US_美国 22, server: 172.67.212.128, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_25, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 11, server: 172.67.51.202, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 23, server: 163.123.192.154, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 7, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, udp: true}
-  - {name: 🇦🇺 _AU_澳大利亚->🇨🇦_CA_加拿大, server: camtlebb.76898102.xyz, port: 2095, type: vmess, uuid: ba81f48b-7319-3866-b464-c276f43b9fef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: camtleb.76898102.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_13, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: _LV_拉脱维亚 2, server: 185.135.86.173, port: 9020, type: ss, cipher: aes-256-cfb, password: BNmAXXxAHYpTRdzu, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_26, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: 🇺🇲 _US_美国 24, server: 140.99.120.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1685613581032}, udp: true}
-  - {name: 🇺🇲 _US_美国 25, server: 162.159.242.18, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇸🇬 新加坡 DigitalOcean数据中心, server: 188.166.179.155, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 26, server: 172.67.119.191, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 12, server: 141.101.115.89, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇯🇵 日本东京阿里云 4, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
   - {name: 二爷翻墙 https://1808.cf Node_4, server: 143.198.223.30, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 27, server: 163.123.192.155, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 _US_美国 28, server: 163.123.192.154, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 _US_美国 29, server: 163.123.192.154, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 _US_美国 30, server: 172.67.212.44, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 31, server: 34.217.75.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇲 _US_美国 32, server: cnamemc1.cdncisco4.co, port: 443, type: trojan, password: 63779501-4c22-4a03-83d3-9f611b227e7b, sni: c1mc.cdncisco4.co, skip-cert-verify: true, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_20, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 13, server: 172.67.144.240, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_14, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl3.sharecentrepro.org}}, udp: true}
-  - {name: 🇯🇵 日本 东京阿里云, server: cdn.chigua.tk, port: 80, type: vmess, uuid: 7e7f8398-bd39-49d8-9ce6-e48ffef463dd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6.cachexy.cf}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 14, server: 172.64.194.234, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 15, server: 172.64.134.52, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_1, server: cdn.anycast.eu.org, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 _US_美国 33, server: 172.64.164.47, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3, server: series-v1.samanehha.co, port: 443, type: vmess, uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dT9s3HqgZeD3eApzDAfhOHq, headers: {Host: series-v1.samanehha.co}}, udp: true}
-  - {name: 🇻🇳 _CN_中国->🇻🇳_VN_越南, server: 15087.kuaiyin.win, port: 15087, type: vmess, uuid: df58a92a-e062-3310-99ca-01b5cbf7044e, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 🇰🇷 _KR_韩国 3, server: 125.141.26.5, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: 🇺🇲 _US_美国 34, server: 162.159.130.198, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.scproxy.top}}, udp: true}
-  - {name: 🇺🇲 _US_美国 35, server: 172.64.193.102, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 8, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 _SG_新加坡 5, server: 3.0.147.22, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇳🇱 _US_美国->🇳🇱_NL_荷兰, server: 45.199.138.155, port: 54000, type: vmess, uuid: 130c9f2e-42b1-4ebf-b345-e26456a061f9, alterId: 64, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 美国CloudFlare节点 16, server: 172.67.48.155, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西, server: 172.64.165.188, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国, server: u-s03.xingyunwu.top, port: 50032, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_25, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国, server: wi.saintink.eu.org, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vuk2.0bad.com/chat, headers: {Host: sub2.saintink.eu.org}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_15, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: uk2.scproxy.top}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 2, server: 172.67.212.128, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇰🇷 _KR_韩国, server: 221.150.109.7, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇺🇲 _US_美国, server: 52.26.147.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙, server: 4p2t01.abzoones.xyz, port: 36881, type: vmess, uuid: f549e1be-86fa-4bb0-a318-7e2c6b8282c0, alterId: 0, cipher: auto, tls: true, udp: true}
+  - {name: 🇰🇷 _KR_韩国 2, server: 43.202.42.149, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇲 _US_美国 2, server: cdn.narutos.top, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GdtYWlsLmNvbSJ9LCJjb3V, headers: {Host: newyork.yj2022.gq}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY, headers: {Host: fr7.tehme100.fun}}, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本, server: 1j8p06.abzoones.xyz, port: 36111, type: vmess, uuid: f549e1be-86fa-4bb0-a318-7e2c6b8282c0, alterId: 0, cipher: auto, tls: true, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点, server: 162.159.240.102, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 3, server: 172.64.194.98, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 4, server: 172.67.51.202, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
+  - {name: 🇯🇵 _JP_日本, server: 3.113.7.154, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国, server: 104.21.79.246, port: 443, type: trojan, password: e35026da-e985-49ca-b43b-276062a535a6, sni: notdirect.howhealthyistoomajreally.homes, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare公司CDN节点(shopify), server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, servername: d.freeh1.xyz, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 2, server: u-s01.xingyunwu.top, port: 50028, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 2, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 _US_美国 3, server: 163.123.192.155, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
   - {name: 二爷翻墙 https://1808.cf Node_8, server: 178.128.216.181, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 二爷翻墙 https://1808.cf Node_9, server: 168.138.180.229, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
-  - {name: 🇸🇬 _SG_新加坡->🇺🇸_US_美国, server: cdn.chigua.tk, port: 80, type: vmess, uuid: 7e7f8398-bd39-49d8-9ce6-e48ffef463dd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /2TokGE9A/, headers: {Host: us6.cachexy.cf}}, udp: true}
-  - {name: 🇪🇸 _ES_西班牙, server: 5.188.181.201, port: 9042, type: ss, cipher: aes-256-cfb, password: S7KwUu7yBy58S3Ga, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 3, server: 172.67.25.87, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 36, server: 172.64.200.11, port: 2082, type: vmess, uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: tot.vtcss.top}}, udp: true}
-  - {name: 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5, server: cdn.chigua.tk, port: 80, type: vmess, uuid: 7e7f8398-bd39-49d8-9ce6-e48ffef463dd, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us6.cachexy.cf}}, udp: true}
-  - {name: 🇺🇲 美国CloudFlare公司CDN节点 16, server: 104.18.91.180, port: 2082, type: vmess, uuid: 0ddf0cc4-1487-4ff1-a6a7-d9ab93040606, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /blue, headers: {Host: tot.vtcss.top}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_11, server: 138.2.106.77, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇰🇷 _KR_韩国 3, server: 43.201.7.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇲 _US_美国 4, server: 74.217.182.119, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 3, server: u-s03.xingyunwu.top, port: 50032, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 18, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: 亚太地区  5, server: 103.184.44.247, port: 443, type: vmess, uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: ecc.vtcss.top}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare节点 14, server: cf2.992688.xyz, port: 8080, type: vmess, uuid: 0ea60ebb-632d-4226-893a-cccc2053dbf5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: haxus3.vpn66.eu.org}}, udp: true}
+  - {name: 🇺🇲 美国Microsoft数据中心 1, server: spsg.1234567890spcloud.com, port: 443, type: trojan, password: 8b8c5ee6-6c6f-408c-9515-eab434c4bd75, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 5, server: 198.41.214.55, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 3, server: nika3hdfy2.foriran.trade, port: 443, type: trojan, password: 79770a32-9607-4919-9483-0f1794559390, sni: nika3hdfy2.foriran.trade, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 _US_美国 5, server: 142.4.102.185, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/282517202535, headers: {Host: www.36222793.xyz}}, udp: true}
+  - {name: 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦, server: vip.impervasec.info, port: 2095, type: vmess, uuid: 4bcd63da-c887-4766-d61f-5d4097796abc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip.impervasec.info}}, udp: true}
   - {name: 二爷翻墙 https://1808.cf Node_22, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: USOVH.sharecentrepro.org}}, udp: true}
-  - {name: 🇩🇪 _DE_德国, server: www.dongtaiwang4.com, port: 22222, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: 🇺🇲 _US_美国 37, server: 141.101.122.233, port: 80, type: vmess, uuid: 4a47e680-d860-4e63-9fa6-813857fb0f42, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: 4a47e680, headers: {Host: ddp2.1808.cf}}, udp: true}
-  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 16, server: 172.64.105.171, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: 🇺🇲 _US_美国 38, server: 34.222.10.43, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本 2, server: gonggao03.xingyunwu.top, port: 50004, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 _US_美国 6, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 4, server: cnamemc.cdncisco.org, port: 443, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, sni: c5mc.cdncisco.org, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_17, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_20, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: 🇬🇧 _GB_英国, server: uk23.ulifeai.com, port: 443, type: vmess, uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /swoole, headers: {Host: uk23.ulifeai.com}}, udp: true}
+  - {name: 🇸🇬 _SG_新加坡, server: 3.0.147.22, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇬🇧 _GB_英国 2, server: uk23.ulifeai.com, port: 443, type: vmess, uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /swoole, headers: {Host: uk23.ulifeai.com}}, udp: true}
+  - {name: 🇨🇦 _CA_加拿大, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 7, server: 163.123.192.155, port: 443, type: trojan, password: d31792a4-b843-469f-9185-4a6111ff7612, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_19, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 6, server: 172.67.204.73, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 8, server: 142.4.112.19, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 7, server: 172.67.198.131, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 8, server: 172.67.237.73, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_2, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_21, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp4.ilovescp.com}}, udp: true}
+  - {name: 🇺🇲 _US_美国 9, server: 137.175.18.81, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1690866578068, headers: {Host: www.66273264.xyz}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 5, server: cnamemc1.cdncisco3.co, port: 443, type: trojan, password: 5de2dfab-28e4-4773-b0d3-8d43da0d9ac3, sni: c1mc.cdncisco3.co, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_7, server: 157.245.159.7, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 2, server: 172.67.7.186, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 9, server: 172.67.103.86, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇨🇳 _CN_中国->🇹🇼_TW_台湾, server: t-wn02.xingyunwu.top, port: 50054, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 _JP_日本 2, server: 3.112.225.4, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2, server: vip.impervasec.info, port: 2095, type: vmess, uuid: 4bcd63da-c887-4766-d61f-5d4097796abc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vip.impervasec.info}}, udp: true}
+  - {name: 🇺🇲 _US_美国 10, server: 34.223.228.213, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本 3, server: gonggao03.xingyunwu.top, port: 50004, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_12, server: 188.166.179.155, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_18, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 10, server: 172.67.220.154, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 11, server: 172.67.197.57, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 2, server: 54.255.112.174, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_14, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl3.sharecentrepro.org}}, udp: true}
+  - {name: 🇦🇹 _CN_中国->🇦🇹_AT_奥地利, server: 07.kccic2pa.xyz, port: 50007, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17, server: Shopify.com, port: 2086, type: vmess, uuid: 250f4331-8c3e-4b87-a86b-5c5fbf9ddba8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: Fr.cloudflare.quest}}, udp: true}
+  - {name: 🇺🇲 _US_美国 11, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2, server: t-wn02.xingyunwu.top, port: 50054, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 12, server: 172.64.175.26, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare节点 7, server: cf1.992688.xyz, port: 8080, type: vmess, uuid: e6e14e13-359d-4f07-d60a-92533c5c025a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vcus1.vpn66.eu.org}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 3, server: cfcdn2.sanfencdn.net, port: 443, type: vmess, uuid: 51f86756-a4d5-44e7-b94b-fa3a9acbe9e3, alterId: 0, cipher: auto, tls: true, servername: us3.sanfencdn1.com, network: ws, ws-opts: {path: /zh-cn, headers: {Host: us3.sanfencdn1.com}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 15, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 13, server: 162.159.240.102, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare节点 12, server: cfyd.starsea.vip, port: 443, type: vmess, uuid: 3238151a-f634-4dcb-be84-7fc096e3674a, alterId: 0, cipher: auto, tls: true, servername: dallas.starsea.vip, network: ws, ws-opts: {path: /, headers: {Host: dallas.starsea.vip}}, udp: true}
+  - {name: 🇬🇧 _GB_英国 3, server: 8.208.30.41, port: 443, type: vmess, uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /swoole, headers: {Host: uk23.ulifeai.com}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 14, server: 141.101.123.243, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 美国RF Engineering 6, server: 141.193.213.21, port: 80, type: vmess, uuid: 15b0f307-6df9-4c53-9710-faa7a9dd3af5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: rodican08vm.mr-radwan-daoud.de}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 15, server: 172.67.144.240, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_9, server: 168.138.180.229, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_23, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: us.ilovescp.com}}, udp: true}
+  - {name: 🇺🇲 _US_美国 12, server: 137.175.18.81, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1690866578068, headers: {Host: www.66273264.xyz}}, udp: true}
+  - {name: 🇯🇵 _JP_日本 3, server: 18.179.118.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2, server: 45.199.138.139, port: 43832, type: vmess, uuid: fe5f69e7-e183-439b-950b-9661ef0651f2, alterId: 64, cipher: auto, tls: false, udp: true}
+  - {name: _LV_拉脱维亚, server: 185.135.86.173, port: 9037, type: ss, cipher: aes-256-cfb, password: TN2YqghxeFDKZfLU, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 16, server: 172.64.85.189, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国 2, server: 104.21.79.246, port: 443, type: trojan, password: e35026da-e985-49ca-b43b-276062a535a6, sni: notdirect.howhealthyistoomajreally.homes, skip-cert-verify: true, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 17, server: 172.67.9.200, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 18, server: 172.67.103.86, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 19, server: 172.64.106.104, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 4, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 11, server: ns1.v2-vip.fun, port: 8880, type: vmess, uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fr7.tehme100.fun}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 20, server: 172.64.172.109, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 13, server: www.gov.tw, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 8, server: bluehost.com, port: 443, type: vmess, uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cdntr2.digisport.shop}}, udp: true}
+  - {name: 🇫🇷 _FR_法国->🇺🇸_US_美国, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇯🇵 _JP_日本 4, server: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win, port: 12356, type: vmess, uuid: c7b5b614-04b8-4a8d-8d9e-88b431b9fa8b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 5, server: 31.kccic2pa.xyz, port: 50031, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 _US_美国 14, server: 74.217.179.133, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1685783030182}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 21, server: 162.159.255.119, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 22, server: 172.67.128.37, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 6, server: 16.kccic2pa.xyz, port: 50016, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 23, server: 172.64.85.189, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 15, server: cdn.anycast.eu.org, port: 443, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇯🇵 _JP_日本 5, server: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win, port: 12356, type: vmess, uuid: c7b5b614-04b8-4a8d-8d9e-88b431b9fa8b, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 7, server: 23.kccic2pa.xyz, port: 50023, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 24, server: 172.64.175.26, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 6, server: cnamemc.cdncisco.org, port: 443, type: trojan, password: 0ad5e311-7189-4124-ac8f-f828b681f10e, sni: c5mc.cdncisco.org, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_26, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 25, server: 172.64.194.98, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇺🇲 _US_美国 16, server: cf3.992688.xyz, port: 8080, type: vmess, uuid: f467f4da-2226-448d-a30d-463ef10548ac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vcus2.vpn66.eu.org}}, udp: true}
+  - {name: 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙 2, server: 4p2t01.abzoones.xyz, port: 36881, type: vmess, uuid: f549e1be-86fa-4bb0-a318-7e2c6b8282c0, alterId: 0, cipher: auto, tls: true, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 3, server: 54.254.129.246, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_3, server: 128.199.230.17, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 26, server: 172.67.237.73, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 27, server: 162.159.254.44, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 17, server: 74.217.182.119, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 28, server: 162.159.255.119, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 18, server: www.gov.tw, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
+  - {name: 🇺🇲 _US_美国 19, server: cf3.992688.xyz, port: 8080, type: vmess, uuid: f467f4da-2226-448d-a30d-463ef10548ac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vcus2.vpn66.eu.org}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 29, server: 172.64.92.42, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇰🇷 _KR_韩国 4, server: 221.150.109.6, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 30, server: 172.67.237.176, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇫🇷 _FR_法国, server: 195.154.118.40, port: 443, type: ssr, cipher: aes-256-ctr, password: NewBypasser2023, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: cdn.appsflyer.c%�, udp: true}
+  - {name: 🇺🇲 _US_美国 20, server: cdn.narutos.top, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GdtYWlsLmNvbSJ9LCJjb3V, headers: {Host: newyork.yj2022.gq}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 3, server: 172.67.51.202, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 31, server: 172.64.104.143, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_13, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare节点 13, server: 172.64.96.134, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_27, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: 🇬🇧 _GB_英国 4, server: 8.208.30.41, port: 443, type: vmess, uuid: 3e9165fe-9145-4ff2-a058-56678d85ca6b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /swoole, headers: {Host: uk23.ulifeai.com}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 8, server: u-s01.xingyunwu.top, port: 50028, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 9, server: sd.nfsq.me, port: 33351, type: ss, cipher: aes-128-gcm, password: 95869ffd-78ae-4a3f-9531-cb2b4e15ffca, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 32, server: 172.64.106.104, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇫🇷 _FR_法国->🇺🇸_US_美国 2, server: 173.245.49.236, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇫🇷 _US_美国->🇫🇷_FR_法国 7, server: nika3hdfy2.foriran.trade, port: 443, type: trojan, password: 79770a32-9607-4919-9483-0f1794559390, sni: nika3hdfy2.foriran.trade, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_5, server: 152.69.223.147, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_10, server: 129.150.57.153, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 33, server: 172.67.196.199, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国 2, server: wi.saintink.eu.org, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vuk2.0bad.com/chat, headers: {Host: sub2.saintink.eu.org}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 34, server: 172.67.237.176, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 10, server: 01.kccic2pa.xyz, port: 50001, type: vmess, uuid: 93ca7271-b80d-42dc-9dcc-000965239fb5, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_1, server: cdn.anycast.eu.org, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 🇸🇬 _SG_新加坡 4, server: 13.229.240.227, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 35, server: 172.64.104.143, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本 4, server: 1j8p06.abzoones.xyz, port: 36111, type: vmess, uuid: f549e1be-86fa-4bb0-a318-7e2c6b8282c0, alterId: 0, cipher: auto, tls: true, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 36, server: 172.67.238.152, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 21, server: 34.217.75.169, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇰🇷 _KR_韩国 5, server: 43.200.6.21, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_16, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.scproxy.top}}, udp: true}
+  - {name: 🇺🇲 _US_美国 22, server: 171.22.116.54, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1691318318420, headers: {Host: www.83993175.xyz}}, udp: true}
+  - {name: 🇺🇲 美国CloudFlare公司CDN节点 9, server: 104.18.64.251, port: 8880, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GdtYWlsLmNvbSJ9LCJjb3V, headers: {Host: newyork.yj2022.gq}}, udp: true}
+  - {name: 🇺🇲 _US_美国 23, server: cf1.992688.xyz, port: 8080, type: vmess, uuid: f467f4da-2226-448d-a30d-463ef10548ac, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vcus2.vpn66.eu.org}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 11, server: u-s01.xingyunwu.top, port: 50028, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_6, server: 167.172.93.42, port: 80, type: vmess, uuid: e3a37909-487c-4748-8ba4-945290267018, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: e3a37909, headers: {Host: dd2.1808.cf}}, udp: true}
+  - {name: 二爷翻墙 https://1808.cf Node_24, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl2.sharecentrepro.com}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 37, server: 172.67.128.37, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇺🇲 _US_美国 24, server: 171.22.116.54, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/1691318318420, headers: {Host: www.83993175.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 38, server: 141.101.122.190, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇬🇧 英国 v2rayfree.eu.org, server: zl.wingsjiasu.link, port: 443, type: trojan, password: d0889a38-6871-4a7d-8c83-c4fb6cad9809, udp: true}
+  - {name: 🇺🇲 _US_美国 25, server: bluehost.com, port: 443, type: vmess, uuid: 12eed507-9a58-4ca5-f7af-2871e9aae684, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /19544, headers: {Host: cdntr2.digisport.shop}}, udp: true}
+  - {name: _LV_拉脱维亚 2, server: 185.135.86.173, port: 9005, type: ss, cipher: aes-256-cfb, password: ZET59LF6DvCC8KVt, udp: true}
+  - {name: 🇺🇲 _US_美国 26, server: 142.4.112.19, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 二爷翻墙 https://1808.cf Node_28, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: 🇺🇲 _US_美国 27, server: 142.4.102.185, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/282517202535, headers: {Host: www.36222793.xyz}}, udp: true}
+  - {name: 🇫🇷 _FR_法国 2, server: 195.154.118.40, port: 443, type: ssr, cipher: aes-256-ctr, password: NewBypasser2023, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: cdn.appsflyer.c%�, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 39, server: 172.64.129.7, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 40, server: 141.101.122.190, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇨🇦 _CA_加拿大 2, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本 5, server: gonggao01.xingyunwu.top, port: 50000, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇲 _US_美国 28, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 41, server: 172.67.212.128, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇧🇷 _US_美国->🇧🇷_BR_巴西 42, server: 172.64.134.52, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: 🇯🇵 _CN_中国->🇯🇵_JP_日本 6, server: gonggao01.xingyunwu.top, port: 50000, type: trojan, password: fad6dff0-9437-4ff1-ab9f-f96c48efc928, sni: xingyunwu.top, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -180,489 +205,564 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇰🇷 _KR_韩国
-      - 🇿🇦 _ZA_南非
-      - 🇺🇲 美国CloudFlare节点 2
-      - 🇺🇲 _US_美国
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 14
-      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3
-      - 🇫🇷 _VG_英属维尔京群岛->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 8
-      - _CY_塞浦路斯
-      - 🇫🇷 _FR_法国->🇺🇸_US_美国
-      - 二爷翻墙 https://1808.cf Node_12
-      - 二爷翻墙 https://1808.cf Node_23
-      - 🇺🇲 _US_美国 2
-      - 🇺🇲 _US_美国 3
-      - 二爷翻墙 https://1808.cf Node_2
-      - 二爷翻墙 https://1808.cf Node_10
-      - _LV_拉脱维亚
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
-      - 二爷翻墙 https://1808.cf Node_11
-      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
-      - 🇺🇲 _US_美国 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
-      - 🇸🇬 _SG_新加坡
-      - 🇸🇬 _SG_新加坡 2
-      - 🇺🇲 _US_美国 5
-      - 二爷翻墙 https://1808.cf Node_18
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋
-      - 🇭🇰 _HK_香港
-      - 🇸🇬 新加坡DigitalOcean数据中心 20
-      - 🇨🇦 _CA_加拿大 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 二爷翻墙 https://1808.cf Node_6
-      - 🇺🇲 美国CloudFlare节点 21
-      - 🇯🇵 _JP_日本
-      - 🇭🇰 香港 v2rayfree.eu.org
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
-      - 二爷翻墙 https://1808.cf Node_3
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
-      - 二爷翻墙 https://1808.cf Node_5
-      - 🇺🇲 _US_美国 11
-      - 🇨🇳 浙江省杭州市阿里云BGP数据中心 10
-      - 🇷🇺 俄罗斯  6
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国 CloudFlare节点
-      - 🇳🇱 _NL_荷兰->🇺🇸_US_美国
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇺🇲 美国CloudFlare节点 13
-      - 🇺🇲 美国  18
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
-      - 🇺🇲 _US_美国 13
-      - 🇺🇲 _US_美国 14
-      - 🇧🇷 巴西圣保罗CloudFlare节点 9
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
-      - 二爷翻墙 https://1808.cf Node_27
-      - 🇩🇪 _DE_德国->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare公司CDN节点 17
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
-      - 🇺🇲 _US_美国 15
-      - 🇺🇲 _US_美国 16
-      - 二爷翻墙 https://1808.cf Node_16
-      - 🇺🇲 _US_美国 17
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12
-      - 🇫🇷 _FR_法国
-      - 二爷翻墙 https://1808.cf Node_24
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 2
-      - 🇸🇬 _SG_新加坡 3
-      - 🇺🇲 美国 v2rayfree.eu.org
-      - 🇺🇲 _US_美国 18
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇲 _US_美国 19
-      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7
-      - 🇺🇲 _US_美国 20
-      - 二爷翻墙 https://1808.cf Node_19
-      - 🇺🇲 _US_美国 21
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2
-      - 二爷翻墙 https://1808.cf Node_15
-      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国CloudFlare节点 15
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
-      - 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云
-      - 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
-      - 二爷翻墙 https://1808.cf Node_7
-      - 二爷翻墙 https://1808.cf Node_17
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
-      - 🇸🇬 _SG_新加坡 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
-      - 二爷翻墙 https://1808.cf Node_21
-      - 🇺🇲 美国CloudFlare节点 19
-      - 🇺🇲 _US_美国 22
-      - 二爷翻墙 https://1808.cf Node_25
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
-      - 🇺🇲 _US_美国 23
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
-      - 🇦🇺 _AU_澳大利亚->🇨🇦_CA_加拿大
-      - 二爷翻墙 https://1808.cf Node_13
-      - _LV_拉脱维亚 2
-      - 二爷翻墙 https://1808.cf Node_26
-      - 🇺🇲 _US_美国 24
-      - 🇺🇲 _US_美国 25
-      - 🇸🇬 新加坡 DigitalOcean数据中心
-      - 🇺🇲 _US_美国 26
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
-      - 🇯🇵 日本东京阿里云 4
       - 二爷翻墙 https://1808.cf Node_4
-      - 🇺🇲 _US_美国 27
-      - 🇺🇲 _US_美国 28
-      - 🇺🇲 _US_美国 29
-      - 🇺🇲 _US_美国 30
-      - 🇺🇲 _US_美国 31
-      - 🇺🇲 _US_美国 32
-      - 二爷翻墙 https://1808.cf Node_20
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
-      - 二爷翻墙 https://1808.cf Node_14
-      - 🇯🇵 日本 东京阿里云
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
-      - 二爷翻墙 https://1808.cf Node_1
-      - 🇺🇲 _US_美国 33
-      - 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3
-      - 🇻🇳 _CN_中国->🇻🇳_VN_越南
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇲 _US_美国 34
-      - 🇺🇲 _US_美国 35
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 8
-      - 🇸🇬 _SG_新加坡 5
-      - 🇳🇱 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇲 美国CloudFlare节点 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
+      - 二爷翻墙 https://1808.cf Node_25
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国
+      - 二爷翻墙 https://1808.cf Node_15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
+      - 🇰🇷 _KR_韩国
+      - 🇺🇲 _US_美国
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇲 _US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇺🇲 美国 CloudFlare节点
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇯🇵 _JP_日本
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国
+      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇺🇲 _US_美国 3
       - 二爷翻墙 https://1808.cf Node_8
-      - 二爷翻墙 https://1808.cf Node_9
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇪🇸 _ES_西班牙
-      - 🇺🇲 美国 CloudFlare节点 3
-      - 🇺🇲 _US_美国 36
-      - 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5
-      - 🇺🇲 美国CloudFlare公司CDN节点 16
+      - 二爷翻墙 https://1808.cf Node_11
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇲 _US_美国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 18
+      - 亚太地区  5
+      - 🇺🇲 美国CloudFlare节点 14
+      - 🇺🇲 美国Microsoft数据中心 1
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
+      - 🇺🇲 _US_美国 5
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
       - 二爷翻墙 https://1808.cf Node_22
-      - 🇩🇪 _DE_德国
-      - 🇺🇲 _US_美国 37
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 2
+      - 🇺🇲 _US_美国 6
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
+      - 二爷翻墙 https://1808.cf Node_17
+      - 二爷翻墙 https://1808.cf Node_20
+      - 🇬🇧 _GB_英国
+      - 🇸🇬 _SG_新加坡
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国 7
+      - 二爷翻墙 https://1808.cf Node_19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
+      - 🇺🇲 _US_美国 8
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
+      - 二爷翻墙 https://1808.cf Node_2
+      - 二爷翻墙 https://1808.cf Node_21
+      - 🇺🇲 _US_美国 9
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
+      - 二爷翻墙 https://1808.cf Node_7
+      - 🇺🇲 美国 CloudFlare节点 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - 🇯🇵 _JP_日本 2
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇲 _US_美国 10
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 3
+      - 二爷翻墙 https://1808.cf Node_12
+      - 二爷翻墙 https://1808.cf Node_18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
+      - 🇸🇬 _SG_新加坡 2
+      - 二爷翻墙 https://1808.cf Node_14
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17
+      - 🇺🇲 _US_美国 11
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
+      - 🇺🇲 美国CloudFlare节点 7
+      - 🇺🇲 美国CloudFlare公司CDN节点 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
+      - 🇺🇲 美国CloudFlare节点 12
+      - 🇬🇧 _GB_英国 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
+      - 🇺🇲 美国RF Engineering 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
+      - 二爷翻墙 https://1808.cf Node_9
+      - 二爷翻墙 https://1808.cf Node_23
+      - 🇺🇲 _US_美国 12
+      - 🇯🇵 _JP_日本 3
+      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2
+      - _LV_拉脱维亚
       - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
-      - 🇺🇲 _US_美国 38
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 19
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇲 美国CloudFlare公司CDN节点 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 20
+      - 🇺🇲 _US_美国 13
+      - 🇺🇲 美国CloudFlare公司CDN节点 8
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇲 _US_美国 14
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 21
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 22
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 23
+      - 🇺🇲 _US_美国 15
+      - 🇯🇵 _JP_日本 5
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 24
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
+      - 二爷翻墙 https://1808.cf Node_26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 25
+      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4
+      - 🇺🇲 _US_美国 16
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙 2
+      - 🇸🇬 _SG_新加坡 3
+      - 二爷翻墙 https://1808.cf Node_3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 27
+      - 🇺🇲 _US_美国 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 28
+      - 🇺🇲 _US_美国 18
+      - 🇺🇲 _US_美国 19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 29
+      - 🇰🇷 _KR_韩国 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 30
+      - 🇫🇷 _FR_法国
+      - 🇺🇲 _US_美国 20
+      - 🇺🇲 美国 CloudFlare节点 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 31
+      - 二爷翻墙 https://1808.cf Node_13
+      - 🇺🇲 美国CloudFlare节点 13
+      - 二爷翻墙 https://1808.cf Node_27
+      - 🇬🇧 _GB_英国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 9
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 32
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
+      - 二爷翻墙 https://1808.cf Node_5
+      - 二爷翻墙 https://1808.cf Node_10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 33
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 34
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 10
+      - 二爷翻墙 https://1808.cf Node_1
+      - 🇸🇬 _SG_新加坡 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 35
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 36
+      - 🇺🇲 _US_美国 21
+      - 🇰🇷 _KR_韩国 5
+      - 二爷翻墙 https://1808.cf Node_16
+      - 🇺🇲 _US_美国 22
+      - 🇺🇲 美国CloudFlare公司CDN节点 9
+      - 🇺🇲 _US_美国 23
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 11
+      - 二爷翻墙 https://1808.cf Node_6
+      - 二爷翻墙 https://1808.cf Node_24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 37
+      - 🇺🇲 _US_美国 24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 38
+      - 🇬🇧 英国 v2rayfree.eu.org
+      - 🇺🇲 _US_美国 25
+      - _LV_拉脱维亚 2
+      - 🇺🇲 _US_美国 26
       - 二爷翻墙 https://1808.cf Node_28
+      - 🇺🇲 _US_美国 27
+      - 🇫🇷 _FR_法国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 39
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 40
+      - 🇨🇦 _CA_加拿大 2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 5
+      - 🇺🇲 _US_美国 28
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 41
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 42
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇰🇷 _KR_韩国
-      - 🇿🇦 _ZA_南非
-      - 🇺🇲 美国CloudFlare节点 2
-      - 🇺🇲 _US_美国
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 14
-      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3
-      - 🇫🇷 _VG_英属维尔京群岛->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 8
-      - _CY_塞浦路斯
-      - 🇫🇷 _FR_法国->🇺🇸_US_美国
-      - 二爷翻墙 https://1808.cf Node_12
-      - 二爷翻墙 https://1808.cf Node_23
-      - 🇺🇲 _US_美国 2
-      - 🇺🇲 _US_美国 3
-      - 二爷翻墙 https://1808.cf Node_2
-      - 二爷翻墙 https://1808.cf Node_10
-      - _LV_拉脱维亚
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
-      - 二爷翻墙 https://1808.cf Node_11
-      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
-      - 🇺🇲 _US_美国 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
-      - 🇸🇬 _SG_新加坡
-      - 🇸🇬 _SG_新加坡 2
-      - 🇺🇲 _US_美国 5
-      - 二爷翻墙 https://1808.cf Node_18
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋
-      - 🇭🇰 _HK_香港
-      - 🇸🇬 新加坡DigitalOcean数据中心 20
-      - 🇨🇦 _CA_加拿大 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 二爷翻墙 https://1808.cf Node_6
-      - 🇺🇲 美国CloudFlare节点 21
-      - 🇯🇵 _JP_日本
-      - 🇭🇰 香港 v2rayfree.eu.org
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
-      - 二爷翻墙 https://1808.cf Node_3
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
-      - 二爷翻墙 https://1808.cf Node_5
-      - 🇺🇲 _US_美国 11
-      - 🇨🇳 浙江省杭州市阿里云BGP数据中心 10
-      - 🇷🇺 俄罗斯  6
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国 CloudFlare节点
-      - 🇳🇱 _NL_荷兰->🇺🇸_US_美国
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇺🇲 美国CloudFlare节点 13
-      - 🇺🇲 美国  18
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
-      - 🇺🇲 _US_美国 13
-      - 🇺🇲 _US_美国 14
-      - 🇧🇷 巴西圣保罗CloudFlare节点 9
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
-      - 二爷翻墙 https://1808.cf Node_27
-      - 🇩🇪 _DE_德国->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare公司CDN节点 17
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
-      - 🇺🇲 _US_美国 15
-      - 🇺🇲 _US_美国 16
-      - 二爷翻墙 https://1808.cf Node_16
-      - 🇺🇲 _US_美国 17
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12
-      - 🇫🇷 _FR_法国
-      - 二爷翻墙 https://1808.cf Node_24
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 2
-      - 🇸🇬 _SG_新加坡 3
-      - 🇺🇲 美国 v2rayfree.eu.org
-      - 🇺🇲 _US_美国 18
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇲 _US_美国 19
-      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7
-      - 🇺🇲 _US_美国 20
-      - 二爷翻墙 https://1808.cf Node_19
-      - 🇺🇲 _US_美国 21
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2
-      - 二爷翻墙 https://1808.cf Node_15
-      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国CloudFlare节点 15
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
-      - 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云
-      - 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
-      - 二爷翻墙 https://1808.cf Node_7
-      - 二爷翻墙 https://1808.cf Node_17
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
-      - 🇸🇬 _SG_新加坡 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
-      - 二爷翻墙 https://1808.cf Node_21
-      - 🇺🇲 美国CloudFlare节点 19
-      - 🇺🇲 _US_美国 22
-      - 二爷翻墙 https://1808.cf Node_25
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
-      - 🇺🇲 _US_美国 23
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
-      - 🇦🇺 _AU_澳大利亚->🇨🇦_CA_加拿大
-      - 二爷翻墙 https://1808.cf Node_13
-      - _LV_拉脱维亚 2
-      - 二爷翻墙 https://1808.cf Node_26
-      - 🇺🇲 _US_美国 24
-      - 🇺🇲 _US_美国 25
-      - 🇸🇬 新加坡 DigitalOcean数据中心
-      - 🇺🇲 _US_美国 26
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
-      - 🇯🇵 日本东京阿里云 4
       - 二爷翻墙 https://1808.cf Node_4
-      - 🇺🇲 _US_美国 27
-      - 🇺🇲 _US_美国 28
-      - 🇺🇲 _US_美国 29
-      - 🇺🇲 _US_美国 30
-      - 🇺🇲 _US_美国 31
-      - 🇺🇲 _US_美国 32
-      - 二爷翻墙 https://1808.cf Node_20
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
-      - 二爷翻墙 https://1808.cf Node_14
-      - 🇯🇵 日本 东京阿里云
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
-      - 二爷翻墙 https://1808.cf Node_1
-      - 🇺🇲 _US_美国 33
-      - 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3
-      - 🇻🇳 _CN_中国->🇻🇳_VN_越南
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇲 _US_美国 34
-      - 🇺🇲 _US_美国 35
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 8
-      - 🇸🇬 _SG_新加坡 5
-      - 🇳🇱 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇲 美国CloudFlare节点 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
+      - 二爷翻墙 https://1808.cf Node_25
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国
+      - 二爷翻墙 https://1808.cf Node_15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
+      - 🇰🇷 _KR_韩国
+      - 🇺🇲 _US_美国
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇲 _US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇺🇲 美国 CloudFlare节点
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇯🇵 _JP_日本
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国
+      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇺🇲 _US_美国 3
       - 二爷翻墙 https://1808.cf Node_8
-      - 二爷翻墙 https://1808.cf Node_9
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇪🇸 _ES_西班牙
-      - 🇺🇲 美国 CloudFlare节点 3
-      - 🇺🇲 _US_美国 36
-      - 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5
-      - 🇺🇲 美国CloudFlare公司CDN节点 16
+      - 二爷翻墙 https://1808.cf Node_11
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇲 _US_美国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 18
+      - 亚太地区  5
+      - 🇺🇲 美国CloudFlare节点 14
+      - 🇺🇲 美国Microsoft数据中心 1
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
+      - 🇺🇲 _US_美国 5
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
       - 二爷翻墙 https://1808.cf Node_22
-      - 🇩🇪 _DE_德国
-      - 🇺🇲 _US_美国 37
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 2
+      - 🇺🇲 _US_美国 6
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
+      - 二爷翻墙 https://1808.cf Node_17
+      - 二爷翻墙 https://1808.cf Node_20
+      - 🇬🇧 _GB_英国
+      - 🇸🇬 _SG_新加坡
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国 7
+      - 二爷翻墙 https://1808.cf Node_19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
+      - 🇺🇲 _US_美国 8
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
+      - 二爷翻墙 https://1808.cf Node_2
+      - 二爷翻墙 https://1808.cf Node_21
+      - 🇺🇲 _US_美国 9
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
+      - 二爷翻墙 https://1808.cf Node_7
+      - 🇺🇲 美国 CloudFlare节点 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - 🇯🇵 _JP_日本 2
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇲 _US_美国 10
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 3
+      - 二爷翻墙 https://1808.cf Node_12
+      - 二爷翻墙 https://1808.cf Node_18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
+      - 🇸🇬 _SG_新加坡 2
+      - 二爷翻墙 https://1808.cf Node_14
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17
+      - 🇺🇲 _US_美国 11
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
+      - 🇺🇲 美国CloudFlare节点 7
+      - 🇺🇲 美国CloudFlare公司CDN节点 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
+      - 🇺🇲 美国CloudFlare节点 12
+      - 🇬🇧 _GB_英国 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
+      - 🇺🇲 美国RF Engineering 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
+      - 二爷翻墙 https://1808.cf Node_9
+      - 二爷翻墙 https://1808.cf Node_23
+      - 🇺🇲 _US_美国 12
+      - 🇯🇵 _JP_日本 3
+      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2
+      - _LV_拉脱维亚
       - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
-      - 🇺🇲 _US_美国 38
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 19
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇲 美国CloudFlare公司CDN节点 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 20
+      - 🇺🇲 _US_美国 13
+      - 🇺🇲 美国CloudFlare公司CDN节点 8
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇲 _US_美国 14
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 21
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 22
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 23
+      - 🇺🇲 _US_美国 15
+      - 🇯🇵 _JP_日本 5
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 24
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
+      - 二爷翻墙 https://1808.cf Node_26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 25
+      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4
+      - 🇺🇲 _US_美国 16
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙 2
+      - 🇸🇬 _SG_新加坡 3
+      - 二爷翻墙 https://1808.cf Node_3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 27
+      - 🇺🇲 _US_美国 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 28
+      - 🇺🇲 _US_美国 18
+      - 🇺🇲 _US_美国 19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 29
+      - 🇰🇷 _KR_韩国 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 30
+      - 🇫🇷 _FR_法国
+      - 🇺🇲 _US_美国 20
+      - 🇺🇲 美国 CloudFlare节点 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 31
+      - 二爷翻墙 https://1808.cf Node_13
+      - 🇺🇲 美国CloudFlare节点 13
+      - 二爷翻墙 https://1808.cf Node_27
+      - 🇬🇧 _GB_英国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 9
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 32
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
+      - 二爷翻墙 https://1808.cf Node_5
+      - 二爷翻墙 https://1808.cf Node_10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 33
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 34
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 10
+      - 二爷翻墙 https://1808.cf Node_1
+      - 🇸🇬 _SG_新加坡 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 35
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 36
+      - 🇺🇲 _US_美国 21
+      - 🇰🇷 _KR_韩国 5
+      - 二爷翻墙 https://1808.cf Node_16
+      - 🇺🇲 _US_美国 22
+      - 🇺🇲 美国CloudFlare公司CDN节点 9
+      - 🇺🇲 _US_美国 23
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 11
+      - 二爷翻墙 https://1808.cf Node_6
+      - 二爷翻墙 https://1808.cf Node_24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 37
+      - 🇺🇲 _US_美国 24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 38
+      - 🇬🇧 英国 v2rayfree.eu.org
+      - 🇺🇲 _US_美国 25
+      - _LV_拉脱维亚 2
+      - 🇺🇲 _US_美国 26
       - 二爷翻墙 https://1808.cf Node_28
+      - 🇺🇲 _US_美国 27
+      - 🇫🇷 _FR_法国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 39
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 40
+      - 🇨🇦 _CA_加拿大 2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 5
+      - 🇺🇲 _US_美国 28
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 41
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 42
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 6
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇰🇷 _KR_韩国
-      - 🇿🇦 _ZA_南非
-      - 🇺🇲 美国CloudFlare节点 2
-      - 🇺🇲 _US_美国
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 14
-      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3
-      - 🇫🇷 _VG_英属维尔京群岛->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 8
-      - _CY_塞浦路斯
-      - 🇫🇷 _FR_法国->🇺🇸_US_美国
-      - 二爷翻墙 https://1808.cf Node_12
-      - 二爷翻墙 https://1808.cf Node_23
-      - 🇺🇲 _US_美国 2
-      - 🇺🇲 _US_美国 3
-      - 二爷翻墙 https://1808.cf Node_2
-      - 二爷翻墙 https://1808.cf Node_10
-      - _LV_拉脱维亚
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
-      - 二爷翻墙 https://1808.cf Node_11
-      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
-      - 🇺🇲 _US_美国 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
-      - 🇸🇬 _SG_新加坡
-      - 🇸🇬 _SG_新加坡 2
-      - 🇺🇲 _US_美国 5
-      - 二爷翻墙 https://1808.cf Node_18
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋
-      - 🇭🇰 _HK_香港
-      - 🇸🇬 新加坡DigitalOcean数据中心 20
-      - 🇨🇦 _CA_加拿大 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 二爷翻墙 https://1808.cf Node_6
-      - 🇺🇲 美国CloudFlare节点 21
-      - 🇯🇵 _JP_日本
-      - 🇭🇰 香港 v2rayfree.eu.org
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
-      - 二爷翻墙 https://1808.cf Node_3
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
-      - 二爷翻墙 https://1808.cf Node_5
-      - 🇺🇲 _US_美国 11
-      - 🇨🇳 浙江省杭州市阿里云BGP数据中心 10
-      - 🇷🇺 俄罗斯  6
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国 CloudFlare节点
-      - 🇳🇱 _NL_荷兰->🇺🇸_US_美国
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇺🇲 美国CloudFlare节点 13
-      - 🇺🇲 美国  18
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
-      - 🇺🇲 _US_美国 13
-      - 🇺🇲 _US_美国 14
-      - 🇧🇷 巴西圣保罗CloudFlare节点 9
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
-      - 二爷翻墙 https://1808.cf Node_27
-      - 🇩🇪 _DE_德国->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare公司CDN节点 17
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
-      - 🇺🇲 _US_美国 15
-      - 🇺🇲 _US_美国 16
-      - 二爷翻墙 https://1808.cf Node_16
-      - 🇺🇲 _US_美国 17
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12
-      - 🇫🇷 _FR_法国
-      - 二爷翻墙 https://1808.cf Node_24
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 2
-      - 🇸🇬 _SG_新加坡 3
-      - 🇺🇲 美国 v2rayfree.eu.org
-      - 🇺🇲 _US_美国 18
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇲 _US_美国 19
-      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7
-      - 🇺🇲 _US_美国 20
-      - 二爷翻墙 https://1808.cf Node_19
-      - 🇺🇲 _US_美国 21
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2
-      - 二爷翻墙 https://1808.cf Node_15
-      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国CloudFlare节点 15
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
-      - 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云
-      - 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
-      - 二爷翻墙 https://1808.cf Node_7
-      - 二爷翻墙 https://1808.cf Node_17
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
-      - 🇸🇬 _SG_新加坡 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
-      - 二爷翻墙 https://1808.cf Node_21
-      - 🇺🇲 美国CloudFlare节点 19
-      - 🇺🇲 _US_美国 22
-      - 二爷翻墙 https://1808.cf Node_25
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
-      - 🇺🇲 _US_美国 23
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
-      - 🇦🇺 _AU_澳大利亚->🇨🇦_CA_加拿大
-      - 二爷翻墙 https://1808.cf Node_13
-      - _LV_拉脱维亚 2
-      - 二爷翻墙 https://1808.cf Node_26
-      - 🇺🇲 _US_美国 24
-      - 🇺🇲 _US_美国 25
-      - 🇸🇬 新加坡 DigitalOcean数据中心
-      - 🇺🇲 _US_美国 26
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
-      - 🇯🇵 日本东京阿里云 4
       - 二爷翻墙 https://1808.cf Node_4
-      - 🇺🇲 _US_美国 27
-      - 🇺🇲 _US_美国 28
-      - 🇺🇲 _US_美国 29
-      - 🇺🇲 _US_美国 30
-      - 🇺🇲 _US_美国 31
-      - 🇺🇲 _US_美国 32
-      - 二爷翻墙 https://1808.cf Node_20
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
-      - 二爷翻墙 https://1808.cf Node_14
-      - 🇯🇵 日本 东京阿里云
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
-      - 二爷翻墙 https://1808.cf Node_1
-      - 🇺🇲 _US_美国 33
-      - 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3
-      - 🇻🇳 _CN_中国->🇻🇳_VN_越南
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇲 _US_美国 34
-      - 🇺🇲 _US_美国 35
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 8
-      - 🇸🇬 _SG_新加坡 5
-      - 🇳🇱 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇲 美国CloudFlare节点 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
+      - 二爷翻墙 https://1808.cf Node_25
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国
+      - 二爷翻墙 https://1808.cf Node_15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
+      - 🇰🇷 _KR_韩国
+      - 🇺🇲 _US_美国
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇲 _US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇺🇲 美国 CloudFlare节点
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇯🇵 _JP_日本
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国
+      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇺🇲 _US_美国 3
       - 二爷翻墙 https://1808.cf Node_8
-      - 二爷翻墙 https://1808.cf Node_9
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇪🇸 _ES_西班牙
-      - 🇺🇲 美国 CloudFlare节点 3
-      - 🇺🇲 _US_美国 36
-      - 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5
-      - 🇺🇲 美国CloudFlare公司CDN节点 16
+      - 二爷翻墙 https://1808.cf Node_11
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇲 _US_美国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 18
+      - 亚太地区  5
+      - 🇺🇲 美国CloudFlare节点 14
+      - 🇺🇲 美国Microsoft数据中心 1
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
+      - 🇺🇲 _US_美国 5
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
       - 二爷翻墙 https://1808.cf Node_22
-      - 🇩🇪 _DE_德国
-      - 🇺🇲 _US_美国 37
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 2
+      - 🇺🇲 _US_美国 6
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
+      - 二爷翻墙 https://1808.cf Node_17
+      - 二爷翻墙 https://1808.cf Node_20
+      - 🇬🇧 _GB_英国
+      - 🇸🇬 _SG_新加坡
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国 7
+      - 二爷翻墙 https://1808.cf Node_19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
+      - 🇺🇲 _US_美国 8
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
+      - 二爷翻墙 https://1808.cf Node_2
+      - 二爷翻墙 https://1808.cf Node_21
+      - 🇺🇲 _US_美国 9
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
+      - 二爷翻墙 https://1808.cf Node_7
+      - 🇺🇲 美国 CloudFlare节点 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - 🇯🇵 _JP_日本 2
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇲 _US_美国 10
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 3
+      - 二爷翻墙 https://1808.cf Node_12
+      - 二爷翻墙 https://1808.cf Node_18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
+      - 🇸🇬 _SG_新加坡 2
+      - 二爷翻墙 https://1808.cf Node_14
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17
+      - 🇺🇲 _US_美国 11
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
+      - 🇺🇲 美国CloudFlare节点 7
+      - 🇺🇲 美国CloudFlare公司CDN节点 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
+      - 🇺🇲 美国CloudFlare节点 12
+      - 🇬🇧 _GB_英国 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
+      - 🇺🇲 美国RF Engineering 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
+      - 二爷翻墙 https://1808.cf Node_9
+      - 二爷翻墙 https://1808.cf Node_23
+      - 🇺🇲 _US_美国 12
+      - 🇯🇵 _JP_日本 3
+      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2
+      - _LV_拉脱维亚
       - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
-      - 🇺🇲 _US_美国 38
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 19
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇲 美国CloudFlare公司CDN节点 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 20
+      - 🇺🇲 _US_美国 13
+      - 🇺🇲 美国CloudFlare公司CDN节点 8
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇲 _US_美国 14
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 21
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 22
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 23
+      - 🇺🇲 _US_美国 15
+      - 🇯🇵 _JP_日本 5
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 24
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
+      - 二爷翻墙 https://1808.cf Node_26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 25
+      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4
+      - 🇺🇲 _US_美国 16
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙 2
+      - 🇸🇬 _SG_新加坡 3
+      - 二爷翻墙 https://1808.cf Node_3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 27
+      - 🇺🇲 _US_美国 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 28
+      - 🇺🇲 _US_美国 18
+      - 🇺🇲 _US_美国 19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 29
+      - 🇰🇷 _KR_韩国 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 30
+      - 🇫🇷 _FR_法国
+      - 🇺🇲 _US_美国 20
+      - 🇺🇲 美国 CloudFlare节点 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 31
+      - 二爷翻墙 https://1808.cf Node_13
+      - 🇺🇲 美国CloudFlare节点 13
+      - 二爷翻墙 https://1808.cf Node_27
+      - 🇬🇧 _GB_英国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 9
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 32
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
+      - 二爷翻墙 https://1808.cf Node_5
+      - 二爷翻墙 https://1808.cf Node_10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 33
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 34
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 10
+      - 二爷翻墙 https://1808.cf Node_1
+      - 🇸🇬 _SG_新加坡 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 35
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 36
+      - 🇺🇲 _US_美国 21
+      - 🇰🇷 _KR_韩国 5
+      - 二爷翻墙 https://1808.cf Node_16
+      - 🇺🇲 _US_美国 22
+      - 🇺🇲 美国CloudFlare公司CDN节点 9
+      - 🇺🇲 _US_美国 23
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 11
+      - 二爷翻墙 https://1808.cf Node_6
+      - 二爷翻墙 https://1808.cf Node_24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 37
+      - 🇺🇲 _US_美国 24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 38
+      - 🇬🇧 英国 v2rayfree.eu.org
+      - 🇺🇲 _US_美国 25
+      - _LV_拉脱维亚 2
+      - 🇺🇲 _US_美国 26
       - 二爷翻墙 https://1808.cf Node_28
+      - 🇺🇲 _US_美国 27
+      - 🇫🇷 _FR_法国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 39
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 40
+      - 🇨🇦 _CA_加拿大 2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 5
+      - 🇺🇲 _US_美国 28
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 41
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 42
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 6
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -670,163 +770,188 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇰🇷 _KR_韩国
-      - 🇿🇦 _ZA_南非
-      - 🇺🇲 美国CloudFlare节点 2
-      - 🇺🇲 _US_美国
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 14
-      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3
-      - 🇫🇷 _VG_英属维尔京群岛->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 8
-      - _CY_塞浦路斯
-      - 🇫🇷 _FR_法国->🇺🇸_US_美国
-      - 二爷翻墙 https://1808.cf Node_12
-      - 二爷翻墙 https://1808.cf Node_23
-      - 🇺🇲 _US_美国 2
-      - 🇺🇲 _US_美国 3
-      - 二爷翻墙 https://1808.cf Node_2
-      - 二爷翻墙 https://1808.cf Node_10
-      - _LV_拉脱维亚
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
-      - 二爷翻墙 https://1808.cf Node_11
-      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
-      - 🇺🇲 _US_美国 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
-      - 🇸🇬 _SG_新加坡
-      - 🇸🇬 _SG_新加坡 2
-      - 🇺🇲 _US_美国 5
-      - 二爷翻墙 https://1808.cf Node_18
-      - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇨🇦 _CA_加拿大
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋
-      - 🇭🇰 _HK_香港
-      - 🇸🇬 新加坡DigitalOcean数据中心 20
-      - 🇨🇦 _CA_加拿大 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 二爷翻墙 https://1808.cf Node_6
-      - 🇺🇲 美国CloudFlare节点 21
-      - 🇯🇵 _JP_日本
-      - 🇭🇰 香港 v2rayfree.eu.org
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
-      - 二爷翻墙 https://1808.cf Node_3
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
-      - 二爷翻墙 https://1808.cf Node_5
-      - 🇺🇲 _US_美国 11
-      - 🇨🇳 浙江省杭州市阿里云BGP数据中心 10
-      - 🇷🇺 俄罗斯  6
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国 CloudFlare节点
-      - 🇳🇱 _NL_荷兰->🇺🇸_US_美国
-      - 🇩🇪 _CN_中国->🇩🇪_DE_德国
-      - 🇺🇲 美国CloudFlare节点 13
-      - 🇺🇲 美国  18
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
-      - 🇺🇲 _US_美国 13
-      - 🇺🇲 _US_美国 14
-      - 🇧🇷 巴西圣保罗CloudFlare节点 9
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
-      - 二爷翻墙 https://1808.cf Node_27
-      - 🇩🇪 _DE_德国->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare公司CDN节点 17
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
-      - 🇺🇲 _US_美国 15
-      - 🇺🇲 _US_美国 16
-      - 二爷翻墙 https://1808.cf Node_16
-      - 🇺🇲 _US_美国 17
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12
-      - 🇫🇷 _FR_法国
-      - 二爷翻墙 https://1808.cf Node_24
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇰🇷 _KR_韩国 2
-      - 🇸🇬 _SG_新加坡 3
-      - 🇺🇲 美国 v2rayfree.eu.org
-      - 🇺🇲 _US_美国 18
-      - 🇯🇵 _JP_日本 2
-      - 🇺🇲 _US_美国 19
-      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7
-      - 🇺🇲 _US_美国 20
-      - 二爷翻墙 https://1808.cf Node_19
-      - 🇺🇲 _US_美国 21
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2
-      - 二爷翻墙 https://1808.cf Node_15
-      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国CloudFlare节点 15
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
-      - 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云
-      - 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
-      - 二爷翻墙 https://1808.cf Node_7
-      - 二爷翻墙 https://1808.cf Node_17
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
-      - 🇸🇬 _SG_新加坡 4
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
-      - 二爷翻墙 https://1808.cf Node_21
-      - 🇺🇲 美国CloudFlare节点 19
-      - 🇺🇲 _US_美国 22
-      - 二爷翻墙 https://1808.cf Node_25
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
-      - 🇺🇲 _US_美国 23
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
-      - 🇦🇺 _AU_澳大利亚->🇨🇦_CA_加拿大
-      - 二爷翻墙 https://1808.cf Node_13
-      - _LV_拉脱维亚 2
-      - 二爷翻墙 https://1808.cf Node_26
-      - 🇺🇲 _US_美国 24
-      - 🇺🇲 _US_美国 25
-      - 🇸🇬 新加坡 DigitalOcean数据中心
-      - 🇺🇲 _US_美国 26
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
-      - 🇯🇵 日本东京阿里云 4
       - 二爷翻墙 https://1808.cf Node_4
-      - 🇺🇲 _US_美国 27
-      - 🇺🇲 _US_美国 28
-      - 🇺🇲 _US_美国 29
-      - 🇺🇲 _US_美国 30
-      - 🇺🇲 _US_美国 31
-      - 🇺🇲 _US_美国 32
-      - 二爷翻墙 https://1808.cf Node_20
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
-      - 二爷翻墙 https://1808.cf Node_14
-      - 🇯🇵 日本 东京阿里云
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
-      - 二爷翻墙 https://1808.cf Node_1
-      - 🇺🇲 _US_美国 33
-      - 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3
-      - 🇻🇳 _CN_中国->🇻🇳_VN_越南
-      - 🇰🇷 _KR_韩国 3
-      - 🇺🇲 _US_美国 34
-      - 🇺🇲 _US_美国 35
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 8
-      - 🇸🇬 _SG_新加坡 5
-      - 🇳🇱 _US_美国->🇳🇱_NL_荷兰
+      - 🇺🇲 美国CloudFlare节点 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
+      - 二爷翻墙 https://1808.cf Node_25
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国
+      - 二爷翻墙 https://1808.cf Node_15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
+      - 🇰🇷 _KR_韩国
+      - 🇺🇲 _US_美国
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙
+      - 🇰🇷 _KR_韩国 2
+      - 🇺🇲 _US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
+      - 🇺🇲 美国 CloudFlare节点
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇯🇵 _JP_日本
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国
+      - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇺🇲 _US_美国 3
       - 二爷翻墙 https://1808.cf Node_8
-      - 二爷翻墙 https://1808.cf Node_9
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇪🇸 _ES_西班牙
-      - 🇺🇲 美国 CloudFlare节点 3
-      - 🇺🇲 _US_美国 36
-      - 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5
-      - 🇺🇲 美国CloudFlare公司CDN节点 16
+      - 二爷翻墙 https://1808.cf Node_11
+      - 🇰🇷 _KR_韩国 3
+      - 🇺🇲 _US_美国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 18
+      - 亚太地区  5
+      - 🇺🇲 美国CloudFlare节点 14
+      - 🇺🇲 美国Microsoft数据中心 1
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
+      - 🇺🇲 _US_美国 5
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
       - 二爷翻墙 https://1808.cf Node_22
-      - 🇩🇪 _DE_德国
-      - 🇺🇲 _US_美国 37
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 2
+      - 🇺🇲 _US_美国 6
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
+      - 二爷翻墙 https://1808.cf Node_17
+      - 二爷翻墙 https://1808.cf Node_20
+      - 🇬🇧 _GB_英国
+      - 🇸🇬 _SG_新加坡
+      - 🇬🇧 _GB_英国 2
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国 7
+      - 二爷翻墙 https://1808.cf Node_19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
+      - 🇺🇲 _US_美国 8
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
+      - 二爷翻墙 https://1808.cf Node_2
+      - 二爷翻墙 https://1808.cf Node_21
+      - 🇺🇲 _US_美国 9
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
+      - 二爷翻墙 https://1808.cf Node_7
+      - 🇺🇲 美国 CloudFlare节点 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - 🇯🇵 _JP_日本 2
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇲 _US_美国 10
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 3
+      - 二爷翻墙 https://1808.cf Node_12
+      - 二爷翻墙 https://1808.cf Node_18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
+      - 🇸🇬 _SG_新加坡 2
+      - 二爷翻墙 https://1808.cf Node_14
+      - 🇦🇹 _CN_中国->🇦🇹_AT_奥地利
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17
+      - 🇺🇲 _US_美国 11
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
+      - 🇺🇲 美国CloudFlare节点 7
+      - 🇺🇲 美国CloudFlare公司CDN节点 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
+      - 🇺🇲 美国CloudFlare节点 12
+      - 🇬🇧 _GB_英国 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
+      - 🇺🇲 美国RF Engineering 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
+      - 二爷翻墙 https://1808.cf Node_9
+      - 二爷翻墙 https://1808.cf Node_23
+      - 🇺🇲 _US_美国 12
+      - 🇯🇵 _JP_日本 3
+      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2
+      - _LV_拉脱维亚
       - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
-      - 🇺🇲 _US_美国 38
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 19
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇲 美国CloudFlare公司CDN节点 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 20
+      - 🇺🇲 _US_美国 13
+      - 🇺🇲 美国CloudFlare公司CDN节点 8
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国
+      - 🇯🇵 _JP_日本 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇲 _US_美国 14
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 21
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 22
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 23
+      - 🇺🇲 _US_美国 15
+      - 🇯🇵 _JP_日本 5
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 24
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
+      - 二爷翻墙 https://1808.cf Node_26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 25
+      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4
+      - 🇺🇲 _US_美国 16
+      - 🇨🇳 _CN_中国->🇵🇹_PT_葡萄牙 2
+      - 🇸🇬 _SG_新加坡 3
+      - 二爷翻墙 https://1808.cf Node_3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 27
+      - 🇺🇲 _US_美国 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 28
+      - 🇺🇲 _US_美国 18
+      - 🇺🇲 _US_美国 19
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 29
+      - 🇰🇷 _KR_韩国 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 30
+      - 🇫🇷 _FR_法国
+      - 🇺🇲 _US_美国 20
+      - 🇺🇲 美国 CloudFlare节点 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 31
+      - 二爷翻墙 https://1808.cf Node_13
+      - 🇺🇲 美国CloudFlare节点 13
+      - 二爷翻墙 https://1808.cf Node_27
+      - 🇬🇧 _GB_英国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 9
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 32
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
+      - 二爷翻墙 https://1808.cf Node_5
+      - 二爷翻墙 https://1808.cf Node_10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 33
+      - 🇬🇧 _CY_塞浦路斯->🇬🇧_GB_英国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 34
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 10
+      - 二爷翻墙 https://1808.cf Node_1
+      - 🇸🇬 _SG_新加坡 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 35
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 4
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 36
+      - 🇺🇲 _US_美国 21
+      - 🇰🇷 _KR_韩国 5
+      - 二爷翻墙 https://1808.cf Node_16
+      - 🇺🇲 _US_美国 22
+      - 🇺🇲 美国CloudFlare公司CDN节点 9
+      - 🇺🇲 _US_美国 23
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 11
+      - 二爷翻墙 https://1808.cf Node_6
+      - 二爷翻墙 https://1808.cf Node_24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 37
+      - 🇺🇲 _US_美国 24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 38
+      - 🇬🇧 英国 v2rayfree.eu.org
+      - 🇺🇲 _US_美国 25
+      - _LV_拉脱维亚 2
+      - 🇺🇲 _US_美国 26
       - 二爷翻墙 https://1808.cf Node_28
+      - 🇺🇲 _US_美国 27
+      - 🇫🇷 _FR_法国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 39
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 40
+      - 🇨🇦 _CA_加拿大 2
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 5
+      - 🇺🇲 _US_美国 28
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 41
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 42
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 6
   - name: 📲 电报消息
     type: select
     proxies:
@@ -1016,129 +1141,153 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇭🇰 _HK_香港
-      - 🇭🇰 香港 v2rayfree.eu.org
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本
       - 🇯🇵 _JP_日本
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 2
       - 🇯🇵 _JP_日本 2
-      - 🇯🇵 日本东京阿里云 4
-      - 🇯🇵 日本 东京阿里云
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 3
+      - 🇯🇵 _JP_日本 3
+      - 🇯🇵 _JP_日本 4
+      - 🇯🇵 _JP_日本 5
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 4
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 5
+      - 🇯🇵 _CN_中国->🇯🇵_JP_日本 6
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - 🇯🇵 _US_美国->🇯🇵_JP_日本
-      - 🇺🇲 美国CloudFlare节点 2
+      - 🇺🇲 美国CloudFlare节点 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
       - 🇺🇲 _US_美国
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国
-      - 🇺🇲 美国CloudFlare公司CDN节点 14
-      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 3
-      - 🇺🇲 美国CloudFlare公司CDN节点 8
-      - 🇫🇷 _FR_法国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
-      - 🇺🇲 _US_美国 3
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国
+      - 🇺🇲 美国 CloudFlare节点
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 10
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国
       - 🇺🇲 美国 CloudFlare公司CDN节点(shopify)
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 2
+      - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 18
+      - 🇺🇲 美国CloudFlare节点 14
+      - 🇺🇲 美国Microsoft数据中心 1
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
       - 🇫🇷 _US_美国->🇫🇷_FR_法国 3
       - 🇺🇲 _US_美国 5
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦
       - 🇺🇲 _US_美国 6
-      - 🇺🇲 _US_美国 7
-      - 🇺🇲 _US_美国 8
-      - 🇺🇲 _US_美国 9
-      - 🇺🇲 _US_美国 10
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇺🇲 美国CloudFlare节点 21
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 2
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 3
-      - 🇺🇲 _US_美国 11
-      - 🇺🇲 _US_美国 12
-      - 🇺🇲 美国 CloudFlare节点
-      - 🇳🇱 _NL_荷兰->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare节点 13
-      - 🇺🇲 美国  18
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 4
-      - 🇺🇲 _US_美国 13
-      - 🇺🇲 _US_美国 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 5
       - 🇫🇷 _US_美国->🇫🇷_FR_法国 4
+      - 🇺🇲 _US_美国 7
       - 🇧🇷 _US_美国->🇧🇷_BR_巴西 6
-      - 🇩🇪 _DE_德国->🇺🇸_US_美国
-      - 🇺🇲 美国CloudFlare公司CDN节点 17
+      - 🇺🇲 _US_美国 8
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
+      - 🇺🇲 _US_美国 9
       - 🇫🇷 _US_美国->🇫🇷_FR_法国 5
+      - 🇺🇲 美国 CloudFlare节点 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
+      - 🇷🇺 _US_美国->🇷🇺_RU_俄罗斯联邦 2
+      - 🇺🇲 _US_美国 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
+      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 17
+      - 🇺🇲 _US_美国 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
+      - 🇺🇲 美国CloudFlare节点 7
+      - 🇺🇲 美国CloudFlare公司CDN节点 3
+      - 🇺🇲 美国CloudFlare公司CDN节点 15
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
+      - 🇺🇲 美国CloudFlare节点 12
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
+      - 🇺🇲 美国RF Engineering 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
+      - 🇺🇲 _US_美国 12
+      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
+      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 17
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 18
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 19
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 4
+      - 🇺🇲 美国CloudFlare公司CDN节点 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 20
+      - 🇺🇲 _US_美国 13
+      - 🇺🇲 美国CloudFlare公司CDN节点 8
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 5
+      - 🇺🇲 _US_美国 14
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 21
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 22
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 23
       - 🇺🇲 _US_美国 15
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 24
+      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 25
+      - 🇺🇲 美国弗吉尼亚州阿什本NV NEXT数据中心 4
       - 🇺🇲 _US_美国 16
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 26
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 27
       - 🇺🇲 _US_美国 17
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 12
-      - 🇨🇦 _CA_加拿大->🇺🇸_US_美国
-      - 🇺🇲 美国 v2rayfree.eu.org
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 28
       - 🇺🇲 _US_美国 18
       - 🇺🇲 _US_美国 19
-      - 🇦🇨 美国加利福尼亚州圣何塞MULTACOM机房 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 29
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 30
       - 🇺🇲 _US_美国 20
-      - 🇺🇲 _US_美国 21
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 2
-      - 🇺🇲 _CY_塞浦路斯->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国CloudFlare节点 15
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 7
-      - 🇺🇲 美国 加利福尼亚州圣克拉拉阿里云
-      - 🇦🇨 美国 加利福尼亚州圣何塞MULTACOM机房
-      - 🇺🇲 美国CloudFlare公司CDN节点(shopify) 1
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 8
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 9
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 10
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 6
-      - 🇺🇲 美国CloudFlare节点 19
-      - 🇺🇲 _US_美国 22
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 11
-      - 🇺🇲 _US_美国 23
+      - 🇺🇲 美国 CloudFlare节点 3
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 31
+      - 🇺🇲 美国CloudFlare节点 13
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 8
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 9
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 32
+      - 🇫🇷 _FR_法国->🇺🇸_US_美国 2
       - 🇫🇷 _US_美国->🇫🇷_FR_法国 7
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 33
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 34
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 10
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 35
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 36
+      - 🇺🇲 _US_美国 21
+      - 🇺🇲 _US_美国 22
+      - 🇺🇲 美国CloudFlare公司CDN节点 9
+      - 🇺🇲 _US_美国 23
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 11
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 37
       - 🇺🇲 _US_美国 24
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 38
       - 🇺🇲 _US_美国 25
       - 🇺🇲 _US_美国 26
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 12
       - 🇺🇲 _US_美国 27
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 39
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 40
       - 🇺🇲 _US_美国 28
-      - 🇺🇲 _US_美国 29
-      - 🇺🇲 _US_美国 30
-      - 🇺🇲 _US_美国 31
-      - 🇺🇲 _US_美国 32
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 13
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 14
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 15
-      - 🇺🇲 _US_美国 33
-      - 🇺🇲 美国弗吉尼亚州阿什本 CloudFlare节点
-      - 🇺🇲 _US_美国->🇦🇪_AE_阿联酋 3
-      - 🇺🇲 _US_美国 34
-      - 🇺🇲 _US_美国 35
-      - 🇫🇷 _US_美国->🇫🇷_FR_法国 8
-      - 🇳🇱 _US_美国->🇳🇱_NL_荷兰
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
-      - 🇺🇲 美国 CloudFlare节点 3
-      - 🇺🇲 _US_美国 36
-      - 🇺🇲 美国加利福尼亚州圣克拉拉阿里云 5
-      - 🇺🇲 美国CloudFlare公司CDN节点 16
-      - 🇺🇲 _US_美国 37
-      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 16
-      - 🇺🇲 _US_美国 38
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 41
+      - 🇧🇷 _US_美国->🇧🇷_BR_巴西 42
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾
+      - 🇨🇳 _CN_中国->🇹🇼_TW_台湾 2
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -1147,12 +1296,8 @@ proxy-groups:
     proxies:
       - 🇸🇬 _SG_新加坡
       - 🇸🇬 _SG_新加坡 2
-      - 🇸🇬 新加坡DigitalOcean数据中心 20
       - 🇸🇬 _SG_新加坡 3
       - 🇸🇬 _SG_新加坡 4
-      - 🇸🇬 新加坡 DigitalOcean数据中心
-      - 🇸🇬 _SG_新加坡 5
-      - 🇸🇬 _SG_新加坡->🇺🇸_US_美国
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -1162,6 +1307,8 @@ proxy-groups:
       - 🇰🇷 _KR_韩国
       - 🇰🇷 _KR_韩国 2
       - 🇰🇷 _KR_韩国 3
+      - 🇰🇷 _KR_韩国 4
+      - 🇰🇷 _KR_韩国 5
   - name: 🎥 奈飞节点
     type: select
     proxies:
