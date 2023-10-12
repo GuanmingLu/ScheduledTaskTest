@@ -28,7 +28,7 @@ jobs:
 
       - name: Refresh normal v2ray and accelerator nodes.
         run: |
-          python3 RefreshV2Nodes.py -o "v2-node.txt"
+          python3 RefreshV2Nodes.py -o "v2-node.txt" -m 1800
           python3 RefreshAcceleratorNodes.py -t 60 -o "v2-acc.txt"
 
       - name: Download config from url and do some modifications.
