@@ -4,6 +4,7 @@ import base64
 import threading
 import argparse
 import json
+import re
 
 
 def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = -1) -> list[tuple[str, str, str]]:
@@ -18,7 +19,7 @@ def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = 
 	return [(f"{d.year}", f"{d.month:02d}", f"{d.day:02d}") for d in dates]
 
 
-all_urls = [
+ALL_URLS = [
     [f"https://clashfree.eu.org/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()],
     [f"https://oneclash.cc/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
     [f"https://clashnode.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
@@ -45,10 +46,21 @@ all_urls = [
     ["https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"],
 ]
 
-result_urls: set[str] = set()
+max_url_count = 2048
 
-exist_datas: set[str] = set()
 threadLock = threading.Lock()
+result_urls: set[str] = set()
+exist_servers: set[str] = set()
+
+
+def valid_server(server: str) -> bool:
+	if re.match(r"^(?:[-a-z0-9]+\.)+[a-z0-9]+$", server) is None:
+		return False
+	if server.find("127.0.0.1") >= 0 or server.find("localhost") >= 0 or server in exist_servers:
+		return False
+	else:
+		exist_servers.add(server)
+		return True
 
 
 def is_node_valid(item: str) -> bool:
@@ -65,30 +77,21 @@ def is_node_valid(item: str) -> bool:
 	protocol = item[:s]
 	data = item[s + 3:]
 
-	if protocol in ["ss", "ssr", "trojan", "vless"]:
-		# ss 地址，type@ip.ip.ip.ip#name
-		ss_data = data.split("#")[0]
-		if ss_data.find("127.0.0.1") >= 0 or ss_data.find("localhost") >= 0 or ss_data in exist_datas:
-			return False
-		exist_datas.add(ss_data)
-		return True
-	if protocol == "vmess":
-		# vmess 地址，Base64
-		try:
-			vmess_json = base64.urlsafe_b64decode(data).decode("utf-8")
-			json_dict: dict[str, str] = json.loads(vmess_json)
-			ss_data = json_dict["add"]
-			port = json_dict["port"]
-			id = json_dict["id"]
-			host = json_dict["host"] if "host" in json_dict else ""
-			vmess_data = f"{ss_data}:{port}~{id}^{host}"
-			if ss_data.find("127.0.0.1") >= 0 or ss_data.find("localhost") >= 0 or vmess_data in exist_datas:
+	if protocol in ["ss", "ssr", "trojan", "vless", "vmess"]:
+		if protocol == "vmess":
+			# vmess 地址，Base64
+			try:
+				vmess_json = base64.urlsafe_b64decode(data).decode("utf-8")
+				json_dict: dict[str, str] = json.loads(vmess_json)
+				server = json_dict["add"]
+			except Exception as e:
+				print(f"Cannot parse vmess url: {item} Error: {e}")
 				return False
-			exist_datas.add(vmess_data)
-			return True
-		except Exception as e:
-			print(f"Cannot parse vmess url: {item} Error: {e}")
-			return False
+		else:
+			# ss 地址，type@ip.ip.ip.ip#name
+			server = data.split(":?#")[0].split("@")[-1]
+
+		return valid_server(server)
 
 	print(f"Unknown url: {item}")
 	return False
@@ -100,6 +103,8 @@ def get_from_urls(url_list: str):
 	"""
 	for url in url_list:
 		try:
+			if len(result_urls) >= max_url_count:
+				return
 			result = requests.get(url)
 			if result.ok:
 				result_str = result.content.decode("utf-8")
@@ -109,22 +114,27 @@ def get_from_urls(url_list: str):
 					node_list = base64.urlsafe_b64decode(result.content).decode("utf-8").splitlines()
 				threadLock.acquire()
 				list_len = len(result_urls)
-				for node in node_list:
-					node_str = node.strip()
-					if is_node_valid(node_str):
-						result_urls.add(node_str)
-				print(f"{result.url} result: {len(result_urls) - list_len}")
+				if list_len < max_url_count:
+					for node in node_list:
+						node_str = node.strip()
+						if is_node_valid(node_str):
+							result_urls.add(node_str)
+					print(f"{result.url} result: {len(result_urls) - list_len}")
 				threadLock.release()
 				return
 		except Exception as e:
 			print(f"{url} Error: {e}")
 
 
-if __name__ == "__main__":
+def main():
+	global result_urls
+	global max_url_count
 	parser = argparse.ArgumentParser(description="获取V2Ray节点")
 	parser.add_argument("-i", "--input", help="输入文件名", default="")
 	parser.add_argument("-o", "--output", help="输出文件名", default="v2ray.txt")
+	parser.add_argument("-m", "--max", help="保留节点数", default="2048")
 	args = parser.parse_args()
+	max_url_count = int(args.max)
 	if len(args.input) > 0:
 		try:
 			with open(args.input, "r", encoding="utf-8") as f:
@@ -135,7 +145,7 @@ if __name__ == "__main__":
 	threads: list[threading.Thread] = []
 
 	# 为每一组 url 创建一个线程
-	for url_list in all_urls:
+	for url_list in ALL_URLS:
 		t = threading.Thread(target=get_from_urls, args=(url_list,))
 		threads.append(t)
 		t.start()
@@ -144,7 +154,11 @@ if __name__ == "__main__":
 	for t in threads:
 		t.join()
 
-	# print(vmess_urls)
+	result_list = list(result_urls)[:min(len(result_urls), max_url_count)]
 
 	with open(args.output, "w", encoding="utf-8") as f:
-		f.write(base64.b64encode("\n".join(result_urls).encode("utf-8")).decode("utf-8"))
+		f.write(base64.b64encode("\n".join(result_list).encode("utf-8")).decode("utf-8"))
+
+
+if __name__ == "__main__":
+	main()
