@@ -84,6 +84,8 @@ def is_node_valid(item: str) -> bool:
 				vmess_json = base64.urlsafe_b64decode(data).decode("utf-8")
 				json_dict: dict[str, str] = json.loads(vmess_json)
 				server = json_dict["add"]
+				if re.match(r"^[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}$", json_dict["id"]) is None:
+					return False
 			except Exception as e:
 				print(f"Cannot parse vmess url: {item} Error: {e}")
 				return False
