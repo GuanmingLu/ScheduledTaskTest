@@ -31,7 +31,6 @@ ALL_URLS = [
     ["https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"],
     ["https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"],
     ["https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"],
-    ["https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/splitted/vmess.txt"],
     ["https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/splitted/trojan.txt"],
     ["https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/All_Configs_Sub.txt"],
     ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1"],
