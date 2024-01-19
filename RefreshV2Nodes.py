@@ -83,8 +83,13 @@ def is_node_valid(item: str) -> bool:
 				print(f"Cannot parse vmess url: {item} Error: {e}")
 				return False
 		else:
-			# ss 地址，type@ip.ip.ip.ip#name
-			server = data.split(":?#")[0].split("@")[-1]
+			if protocol == "ssr":
+				try:
+					data = base64.urlsafe_b64decode(data).decode("utf-8")
+				except Exception as e:
+					pass
+			# type@ip.ip.ip.ip#name
+			server = data.split(":")[0].split("?")[0].split("#")[0].split("@")[-1]
 
 		if re.match(r"^(?:[-a-z0-9]+\.)+[a-z0-9]+$", server) is None:
 			return False
