@@ -100,7 +100,7 @@ def is_node_valid(item: str) -> bool:
 
 def get_from_urls(url_list: str):
 	"""
-	从给定的一组 url 中获取首个有效的 url，并将订阅内容添加到 vmess_urls 中
+	从给定的一组 url 中获取首个有效的 url，并将订阅内容添加到 result_urls 中
 	"""
 	for url in url_list:
 		try:
@@ -134,6 +134,7 @@ def main():
 	parser.add_argument("-i", "--input", help="输入文件名", default="")
 	parser.add_argument("-o", "--output", help="输出文件名", default="v2ray.txt")
 	parser.add_argument("-m", "--max", help="保留节点数", default="2048")
+	parser.add_argument("-u", "--urls", help="使用的订阅url列表,用|隔开,留空则使用内置所有url", default="")
 	args = parser.parse_args()
 	max_url_count = int(args.max)
 	if len(args.input) > 0:
@@ -144,6 +145,11 @@ def main():
 			result_urls = set()
 
 	threads: list[threading.Thread] = []
+
+	if len(args.urls) > 0:
+		ALL_URLS.clear()
+		for url_list in args.urls.split("|"):
+			ALL_URLS.append([url_list])
 
 	# 为每一组 url 创建一个线程
 	for url_list in ALL_URLS:
