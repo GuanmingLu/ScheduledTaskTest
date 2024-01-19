@@ -49,17 +49,7 @@ max_url_count = 2048
 
 threadLock = threading.Lock()
 result_urls: set[str] = set()
-exist_servers: set[str] = set()
-
-
-def valid_server(server: str) -> bool:
-	if re.match(r"^(?:[-a-z0-9]+\.)+[a-z0-9]+$", server) is None:
-		return False
-	if server.find("127.0.0.1") >= 0 or server.find("localhost") >= 0 or server in exist_servers:
-		return False
-	else:
-		exist_servers.add(server)
-		return True
+exist_data: set[str] = set()
 
 
 def is_node_valid(item: str) -> bool:
@@ -75,6 +65,10 @@ def is_node_valid(item: str) -> bool:
 
 	protocol = item[:s]
 	data = item[s + 3:]
+
+	if data in exist_data:
+		return False
+	exist_data.add(data)
 
 	if protocol in ["ss", "ssr", "trojan", "vless", "vmess"]:
 		if protocol == "vmess":
@@ -92,7 +86,12 @@ def is_node_valid(item: str) -> bool:
 			# ss 地址，type@ip.ip.ip.ip#name
 			server = data.split(":?#")[0].split("@")[-1]
 
-		return valid_server(server)
+		if re.match(r"^(?:[-a-z0-9]+\.)+[a-z0-9]+$", server) is None:
+			return False
+		if server.find("127.0.0.1") >= 0 or server.find("localhost") >= 0:
+			return False
+
+		return True
 
 	print(f"Unknown url: {item}")
 	return False
@@ -120,6 +119,8 @@ def get_from_urls(url_list: str):
 						node_str = node.strip()
 						if is_node_valid(node_str):
 							result_urls.add(node_str)
+						else:
+							print(f"Invalid node: {node_str}")
 					print(f"{result.url} result: {len(result_urls) - list_len}")
 				threadLock.release()
 				return
