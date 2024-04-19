@@ -50,10 +50,12 @@ jobs:
 
       - name: Convert v2-node and v2-acc to Clash yaml.
         run: |
-          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-node.txt" -o v2-node-clash.yaml
-          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-node-air.txt" -o v2-node-air-clash.yaml
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity" -o v2-node-clash.yaml
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/EternityAir" -o v2-node-air-clash.yaml
           python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-node-all.txt" -o v2-node-all-clash.yaml
           python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/v2-acc.txt" -o v2-acc-clash.yaml
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub" -o clash-free-server.yaml
+          python3 V2Nodes2Clash.py -u "https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt" -o clash-get-sub.yaml
 
       - name: Git auto commit
         uses: stefanzweifel/git-auto-commit-action@v4
