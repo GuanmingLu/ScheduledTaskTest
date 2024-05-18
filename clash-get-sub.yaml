@@ -5,16 +5,44 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 🇺🇲 _US_美国, server: russia.com, port: 8880, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}, udp: true}
-  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国, server: 104.18.19.191, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: helanv6cf.inekokkk.top}}, udp: true}
-  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国 2, server: 104.18.36.119, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: helanv6cf.inekokkk.top}}, udp: true}
-  - {name: 🇩🇪 _US_美国->🇩🇪_DE_德国 3, server: 104.19.250.15, port: 2052, type: vmess, uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: helanv6cf.inekokkk.top}}, udp: true}
+  - {name: 🇮🇳 _US_美国->🇮🇳_IN_印度, server: hk.wish.ml, port: 2052, type: vmess, uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: in4.wish.ml}}, udp: true}
+  - {name: 🇺🇲 _US_美国, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇲 _US_美国 2, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
   - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国, server: 36.151.195.48, port: 20344, type: trojan, password: TNDSJfNv, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 _US_美国 2, server: 54.212.53.164, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: 🇺🇲 _US_美国 3, server: russia.com, port: 2095, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}, udp: true}
-  - {name: 🇺🇲 _US_美国 4, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
-  - {name: 🇺🇲 _US_美国 5, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: 🇺🇲 _US_美国 3, server: russia.com, port: 8880, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}, udp: true}
+  - {name: 🇺🇲 _US_美国 4, server: 34.216.1.153, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: 🇺🇲 _US_美国 5, server: 23.154.136.2, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇨🇦 _CA_加拿大, server: 158.51.121.36, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇲 _US_美国->🇺🇦_UA_乌克兰, server: 172.67.166.192, port: 80, type: vmess, uuid: cd1db809-2de0-409c-aef5-861e95eff53e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ua1-vmess.sshmax.xyz}}, udp: true}
+  - {name: 🇷🇺 _RU_俄罗斯联邦, server: 45.136.245.240, port: 12910, type: vmess, uuid: 8259cb1c-dd6c-4739-9c88-af550d977525, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇲 _US_美国 6, server: 172.67.191.234, port: 443, type: trojan, password: 7fc8e7f0-bf17-4ace-a9c2-153c5499ddb9, sni: dE1.tROJaNvPn.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: dE1.tROJaNvPn.xYZ}}, udp: true}
+  - {name: 🇺🇲 _CN_中国->🇺🇸_US_美国 2, server: data-us-v1.shwjfkw.cn, port: 20401, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /debian, headers: {Host: data-us-v1.shwjfkw.cn}}, udp: true}
+  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: 46.17.45.13, port: 17697, type: vmess, uuid: 558ff688-d70d-4219-9e59-748289528256, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: _PL_波兰, server: 51.77.53.200, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: _PL_波兰 2, server: 51.77.53.200, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _PL_波兰 3, server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: _PL_波兰 4, server: 51.77.53.200, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: _PL_波兰 5, server: 51.77.53.200, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _PL_波兰 6, server: 51.77.53.200, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: _PL_波兰 7, server: 51.77.53.200, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: _PL_波兰 8, server: 51.77.53.200, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _PL_波兰 9, server: 51.77.53.200, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _PL_波兰 10, server: 51.77.53.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _PL_波兰 11, server: 51.77.53.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: _PL_波兰 12, server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: _PL_波兰 13, server: 51.77.53.200, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _PL_波兰 14, server: 51.77.53.200, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _PL_波兰 15, server: 51.77.53.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _PL_波兰 16, server: 51.77.53.200, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: _PL_波兰 17, server: 51.77.53.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: _PL_波兰 18, server: 51.77.53.200, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: _PL_波兰 19, server: 51.77.53.200, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _PL_波兰 20, server: 51.77.53.200, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: _PL_波兰 21, server: 51.77.53.200, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: _PL_波兰 22, server: 51.77.53.200, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: _PL_波兰 23, server: 51.77.53.200, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: _PL_波兰 24, server: 51.77.53.200, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇲 _US_美国 7, server: russia.com, port: 2095, type: vmess, uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,48 +61,132 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇮🇳 _US_美国->🇮🇳_IN_印度
       - 🇺🇲 _US_美国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
       - 🇺🇲 _US_美国 5
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇲 _US_美国 6
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - _PL_波兰
+      - _PL_波兰 2
+      - _PL_波兰 3
+      - _PL_波兰 4
+      - _PL_波兰 5
+      - _PL_波兰 6
+      - _PL_波兰 7
+      - _PL_波兰 8
+      - _PL_波兰 9
+      - _PL_波兰 10
+      - _PL_波兰 11
+      - _PL_波兰 12
+      - _PL_波兰 13
+      - _PL_波兰 14
+      - _PL_波兰 15
+      - _PL_波兰 16
+      - _PL_波兰 17
+      - _PL_波兰 18
+      - _PL_波兰 19
+      - _PL_波兰 20
+      - _PL_波兰 21
+      - _PL_波兰 22
+      - _PL_波兰 23
+      - _PL_波兰 24
+      - 🇺🇲 _US_美国 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇮🇳 _US_美国->🇮🇳_IN_印度
       - 🇺🇲 _US_美国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
       - 🇺🇲 _US_美国 5
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇲 _US_美国 6
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - _PL_波兰
+      - _PL_波兰 2
+      - _PL_波兰 3
+      - _PL_波兰 4
+      - _PL_波兰 5
+      - _PL_波兰 6
+      - _PL_波兰 7
+      - _PL_波兰 8
+      - _PL_波兰 9
+      - _PL_波兰 10
+      - _PL_波兰 11
+      - _PL_波兰 12
+      - _PL_波兰 13
+      - _PL_波兰 14
+      - _PL_波兰 15
+      - _PL_波兰 16
+      - _PL_波兰 17
+      - _PL_波兰 18
+      - _PL_波兰 19
+      - _PL_波兰 20
+      - _PL_波兰 21
+      - _PL_波兰 22
+      - _PL_波兰 23
+      - _PL_波兰 24
+      - 🇺🇲 _US_美国 7
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇮🇳 _US_美国->🇮🇳_IN_印度
       - 🇺🇲 _US_美国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
       - 🇺🇲 _US_美国 5
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇲 _US_美国 6
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - _PL_波兰
+      - _PL_波兰 2
+      - _PL_波兰 3
+      - _PL_波兰 4
+      - _PL_波兰 5
+      - _PL_波兰 6
+      - _PL_波兰 7
+      - _PL_波兰 8
+      - _PL_波兰 9
+      - _PL_波兰 10
+      - _PL_波兰 11
+      - _PL_波兰 12
+      - _PL_波兰 13
+      - _PL_波兰 14
+      - _PL_波兰 15
+      - _PL_波兰 16
+      - _PL_波兰 17
+      - _PL_波兰 18
+      - _PL_波兰 19
+      - _PL_波兰 20
+      - _PL_波兰 21
+      - _PL_波兰 22
+      - _PL_波兰 23
+      - _PL_波兰 24
+      - 🇺🇲 _US_美国 7
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -82,16 +194,44 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇮🇳 _US_美国->🇮🇳_IN_印度
       - 🇺🇲 _US_美国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
       - 🇺🇲 _US_美国 5
+      - 🇨🇦 _CA_加拿大
+      - 🇺🇲 _US_美国->🇺🇦_UA_乌克兰
+      - 🇷🇺 _RU_俄罗斯联邦
+      - 🇺🇲 _US_美国 6
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇷🇺 _RU_俄罗斯联邦 2
+      - _PL_波兰
+      - _PL_波兰 2
+      - _PL_波兰 3
+      - _PL_波兰 4
+      - _PL_波兰 5
+      - _PL_波兰 6
+      - _PL_波兰 7
+      - _PL_波兰 8
+      - _PL_波兰 9
+      - _PL_波兰 10
+      - _PL_波兰 11
+      - _PL_波兰 12
+      - _PL_波兰 13
+      - _PL_波兰 14
+      - _PL_波兰 15
+      - _PL_波兰 16
+      - _PL_波兰 17
+      - _PL_波兰 18
+      - _PL_波兰 19
+      - _PL_波兰 20
+      - _PL_波兰 21
+      - _PL_波兰 22
+      - _PL_波兰 23
+      - _PL_波兰 24
+      - 🇺🇲 _US_美国 7
   - name: 📲 电报消息
     type: select
     proxies:
@@ -307,15 +447,17 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
+      - 🇮🇳 _US_美国->🇮🇳_IN_印度
       - 🇺🇲 _US_美国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 2
-      - 🇩🇪 _US_美国->🇩🇪_DE_德国 3
-      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 2
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国
       - 🇺🇲 _US_美国 3
       - 🇺🇲 _US_美国 4
       - 🇺🇲 _US_美国 5
+      - 🇺🇲 _US_美国->🇺🇦_UA_乌克兰
+      - 🇺🇲 _US_美国 6
+      - 🇺🇲 _CN_中国->🇺🇸_US_美国 2
+      - 🇺🇲 _US_美国 7
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
