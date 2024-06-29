@@ -5,42 +5,35 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 美国 CloudFlare节点, server: 104.19.46.233, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip002-2.dtku47.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 华盛顿Cogent通信公司, server: 38.121.43.97, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: 🇺🇲 美国 得克萨斯州, server: 34.105.49.234, port: 443, type: trojan, password: NISHIKUITAN222, sni: t726.ylks.link, network: ws, ws-opts: {path: /, headers: {Host: t726.ylks.link}}, udp: true}
-  - {name: 🇸🇬 新加坡 Amazon数据中心, server: valance.protocolbuffer.com, port: 28332, type: trojan, password: D2F4KSxOpeCyZ337FDCwlRR6S78Ca93nn6TCBSXS3lqgZA83D83Fu5eaIgpRjYO39aEpa, sni: valance.protocolbuffer.com, udp: true}
-  - {name: 🇺🇲 美国 Amazon数据中心, server: 13.38.142.249, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司, server: 67.220.85.74, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 🇫🇷 法国 格拉沃利讷OVH数据中心, server: 54.36.174.181, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 2, server: 172.67.185.218, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心, server: 35.177.195.92, port: 15061, type: trojan, password: RqtuKMDgoR2Q, sni: appsvs.shop, udp: true}
-  - {name: 🇺🇲 美国 Merit网络公司, server: 35.87.84.111, port: 15058, type: trojan, password: 3SpKle97VHCB, sni: appsvs.shop, udp: true}
-  - {name: 🇷🇴 乌克兰 V2CROSS.COM, server: 95.164.114.42, port: 2083, type: vmess, uuid: 4f97bdbc-eaeb-4bf9-ad7f-faad44c6f6bb, alterId: 0, cipher: auto, tls: true, servername: kz-v2ray.ipracevpn.com, udp: true}
-  - {name: 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心, server: 13.53.236.84, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 3, server: 172.67.171.43, port: 80, type: vmess, uuid: b1cbda65-64ce-4fe3-9b61-3837060aac3c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: Ch1.vmess.site.}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 4, server: 104.19.48.29, port: 8443, type: vmess, uuid: 39135a39-e6ca-43df-a360-d859eea58d86, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk01.linkitnow.net}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 5, server: 104.20.12.10, port: 80, type: vmess, uuid: 2d14e84b-226b-412a-9a3c-ffce70b02bdf, alterId: 0, cipher: auto, tls: false, servername: ua1-vmess.ctunnel.xyz, network: ws, ws-opts: {path: /vmess, headers: {Host: 127.0.0.1.dl.эврика.mrarsha.尤里卡.醫生.специалист.wonkacapitano.buzz.}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 6, server: 104.19.42.49, port: 2086, type: vmess, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip11.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 7, server: 172.67.199.69, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇺🇲 美国 惠普公司, server: 15.236.0.55, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 8, server: 104.19.47.186, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 9, server: 104.19.47.4, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
-  - {name: 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心 2, server: 13.53.189.145, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 54.74.213.241, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇺🇲 美国 LeaseWeb数据中心, server: 23.106.35.90, port: 28331, type: trojan, password: FcYCR32n8lEy3aaXTSAYzl3DNXTSAYzl3DNqZ58SDgFBOxeC6Cw47uSZy3Aje0xeC6Cw4, sni: hovland.golfland.club, udp: true}
-  - {name: 🇺🇲 美国 Amazon EC2服务器, server: 3.36.86.196, port: 15069, type: trojan, password: gzDKwjTOL90I, sni: appsvs.shop, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 10, server: 104.16.1.10, port: 443, type: trojan, password: qj1Dz1CJmFQRhWr1SP80aA, sni: cdn-21.gsmxreality.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 11, server: 104.19.58.175, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 🇬🇧 英国 社会保险安全部, server: 51.20.166.182, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福Linode数据中心, server: 139.162.158.172, port: 443, type: trojan, password: 665c944d-047d-4659-80d5-3eaac70241a9, udp: true}
-  - {name: 🇷🇴 美国 V2CROSS.COM, server: fell.dogsvpn.top, port: 7702, type: ss, cipher: aes-256-gcm, password: ae7abacb-b8e1-4a4c-be69-22b7dc3b260a, udp: true}
-  - {name: 🇷🇴 北美地区 V2CROSS.COM, server: 23.157.40.102, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇯🇵 日本 东京Amazon数据中心, server: 13.231.229.255, port: 15037, type: trojan, password: 9tYfnjQUkUFz, sni: appsvs.shop, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 12, server: 104.19.46.103, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 13, server: 104.17.154.159, port: 2052, type: vmess, uuid: afa7ee50-d214-4a54-a558-e5c96480916d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/9TfVEyku, headers: {Host: wtywwcrzjp5.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇯🇵 日本 V2CROSS.COM, server: jp06.421421.xyz, port: 20230, type: trojan, password: ebbf7922-f9c6-4e99-b588-edd68108f269, sni: 421421.xyz, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 14, server: cfcdn3.sanfencdn9.com, port: 2052, type: vmess, uuid: afa7ee50-d214-4a54-a558-e5c96480916d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /video/9TfVEyku, headers: {Host: wtywwcrzjp5.yofnhkfc.xyz}}, udp: true}
-  - {name: 🇷🇴 美国 V2CROSS.COM 2, server: 23.162.200.133, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 🇺🇲 美国 Amazon EC2服务器, server: 3.20.139.93, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点, server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 2, server: 172.67.176.206, port: 2053, type: trojan, password: ZJU29smXwp, sni: damn-mci-again-3.danesh-bonyan.Store, network: ws, ws-opts: {path: /, headers: {Host: damn-mci-again-3.danesh-bonyan.Store}}, udp: true}
+  - {name: 🇺🇲 美国 Amazon数据中心, server: 18.169.91.168, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇰🇷 韩国 V2CROSS.COM, server: 116.47.10.236, port: 27335, type: trojan, password: moist, sni: trojan.freenods.sbs, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: trojan.freenods.sbs}}, udp: true}
+  - {name: 🇺🇲 美国 Amazon数据中心 2, server: 18.169.90.161, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇷🇴 美国 V2CROSS.COM, server: 45.144.48.63, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: d3837224ed465f00, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 3, server: tgqyjc2024.qyjc.xyz, port: 2052, type: vmess, uuid: 1e3e82b2-36c0-44aa-80ad-5c3f693824f1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: usa.tgqyjc2024.qyjc666.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 华盛顿Cogent通信公司, server: 38.86.135.117, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇲 美国 Amazon EC2服务器 2, server: 3.66.205.233, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心, server: 192.74.241.164, port: 38002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, network: ws, ws-opts: {path: /path/191019072927, headers: {Host: www.88674577.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 4, server: jp-3-t2bh2lhv.2819v2rhzb56.download, port: 80, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp-3-t2bh2lhv.2819v2rhzb56.download}}, udp: true}
+  - {name: 🇺🇲 美国 麻省理工学院, server: 18.118.139.64, port: 17046, type: trojan, password: O1doPy0tQXi7, sni: appsvs.shop, udp: true}
+  - {name: 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress, server: 198.2.234.98, port: 39771, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 5, server: sg-1-pzz03vm5.2819v2rhzb56.download, port: 80, type: vmess, uuid: 64edb453-b497-43b9-a8f7-c474c604e28b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg-1-pzz03vm5.2819v2rhzb56.download}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 6, server: 104.19.47.253, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: 🇩🇪 德国 黑森州法兰克福Amazon数据中心, server: 52.28.7.70, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 7, server: 104.17.148.128, port: 80, type: vmess, uuid: 2d14e84b-226b-412a-9a3c-ffce70b02bdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 127.0.0.1.dl.эврика.mrarsha.尤里卡.醫生.специалист.wonkacapitano.buzz.}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 8, server: 104.19.47.126, port: 8080, type: vmess, uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: oiictw.yydsii.com}}, udp: true}
+  - {name: 🇷🇴 北美地区 V2CROSS.COM, server: lu1.xv2ray.net, port: 80, type: vmess, uuid: 8b592977-6dcd-478a-bc41-cd2870f8cc55, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: lu1.xv2ray.net}}, udp: true}
+  - {name: 🇺🇲 美国 Amazon数据中心 3, server: 13.38.148.31, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇷🇴 美国 V2CROSS.COM 2, server: 192.53.113.130, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: vBE5Su1CJ3Ly3mzUtQqnI3, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 9, server: 104.19.21.240, port: 2052, type: vmess, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: cdn1.freegradely.xyz}}, udp: true}
+  - {name: 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心, server: 13.48.16.86, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 10, server: russia.com, port: 2095, type: vmess, uuid: b7c56170-edb4-4c4a-bb64-ed5ef40b8739, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: sssub.v2.001.ssrsub.com}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 11, server: 104.20.12.10, port: 80, type: vmess, uuid: 2d14e84b-226b-412a-9a3c-ffce70b02bdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: 127.0.0.1.dl.эврика.mrarsha.尤里卡.醫生.специалист.wonkacapitano.buzz.}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 12, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司, server: 52.169.37.198, port: 5351, type: ss, cipher: chacha20-ietf-poly1305, password: CXmScWyHfrz8vfwAvd7dJ7, udp: true}
+  - {name: 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心, server: 34.102.111.127, port: 443, type: trojan, password: NISHIKUITAN222, sni: tt.ylks.link, network: ws, ws-opts: {path: /, headers: {Host: tt.ylks.link}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -59,126 +52,105 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
-      - 🇺🇲 美国 得克萨斯州
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇺🇲 美国 Amazon数据中心
-      - 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司
-      - 🇫🇷 法国 格拉沃利讷OVH数据中心
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇲 美国 Merit网络公司
-      - 🇷🇴 乌克兰 V2CROSS.COM
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
+      - 🇺🇲 美国 Amazon数据中心
+      - 🇰🇷 韩国 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 2
+      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 3
+      - 🇺🇲 美国 华盛顿Cogent通信公司
+      - 🇺🇲 美国 Amazon EC2服务器 2
+      - 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇺🇲 美国 麻省理工学院
+      - 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
-      - 🇺🇲 美国 惠普公司
       - 🇺🇲 美国 CloudFlare节点 8
+      - 🇷🇴 北美地区 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 3
+      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇲 美国 LeaseWeb数据中心
-      - 🇺🇲 美国 Amazon EC2服务器
+      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇷🇴 北美地区 V2CROSS.COM
-      - 🇯🇵 日本 东京Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇺🇲 美国 CloudFlare节点 13
-      - 🇯🇵 日本 V2CROSS.COM
-      - 🇺🇲 美国 CloudFlare节点 14
-      - 🇷🇴 美国 V2CROSS.COM 2
+      - 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司
+      - 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
-      - 🇺🇲 美国 得克萨斯州
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇺🇲 美国 Amazon数据中心
-      - 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司
-      - 🇫🇷 法国 格拉沃利讷OVH数据中心
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇲 美国 Merit网络公司
-      - 🇷🇴 乌克兰 V2CROSS.COM
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
+      - 🇺🇲 美国 Amazon数据中心
+      - 🇰🇷 韩国 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 2
+      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 3
+      - 🇺🇲 美国 华盛顿Cogent通信公司
+      - 🇺🇲 美国 Amazon EC2服务器 2
+      - 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇺🇲 美国 麻省理工学院
+      - 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
-      - 🇺🇲 美国 惠普公司
       - 🇺🇲 美国 CloudFlare节点 8
+      - 🇷🇴 北美地区 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 3
+      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇲 美国 LeaseWeb数据中心
-      - 🇺🇲 美国 Amazon EC2服务器
+      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇷🇴 北美地区 V2CROSS.COM
-      - 🇯🇵 日本 东京Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇺🇲 美国 CloudFlare节点 13
-      - 🇯🇵 日本 V2CROSS.COM
-      - 🇺🇲 美国 CloudFlare节点 14
-      - 🇷🇴 美国 V2CROSS.COM 2
+      - 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司
+      - 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
-      - 🇺🇲 美国 得克萨斯州
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇺🇲 美国 Amazon数据中心
-      - 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司
-      - 🇫🇷 法国 格拉沃利讷OVH数据中心
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇲 美国 Merit网络公司
-      - 🇷🇴 乌克兰 V2CROSS.COM
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
+      - 🇺🇲 美国 Amazon数据中心
+      - 🇰🇷 韩国 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 2
+      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 3
+      - 🇺🇲 美国 华盛顿Cogent通信公司
+      - 🇺🇲 美国 Amazon EC2服务器 2
+      - 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇺🇲 美国 麻省理工学院
+      - 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
-      - 🇺🇲 美国 惠普公司
       - 🇺🇲 美国 CloudFlare节点 8
+      - 🇷🇴 北美地区 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 3
+      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇲 美国 LeaseWeb数据中心
-      - 🇺🇲 美国 Amazon EC2服务器
+      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇷🇴 北美地区 V2CROSS.COM
-      - 🇯🇵 日本 东京Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇺🇲 美国 CloudFlare节点 13
-      - 🇯🇵 日本 V2CROSS.COM
-      - 🇺🇲 美国 CloudFlare节点 14
-      - 🇷🇴 美国 V2CROSS.COM 2
+      - 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司
+      - 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -186,42 +158,35 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
-      - 🇺🇲 美国 得克萨斯州
-      - 🇸🇬 新加坡 Amazon数据中心
-      - 🇺🇲 美国 Amazon数据中心
-      - 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司
-      - 🇫🇷 法国 格拉沃利讷OVH数据中心
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇲 美国 Merit网络公司
-      - 🇷🇴 乌克兰 V2CROSS.COM
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
+      - 🇺🇲 美国 Amazon数据中心
+      - 🇰🇷 韩国 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 2
+      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 3
+      - 🇺🇲 美国 华盛顿Cogent通信公司
+      - 🇺🇲 美国 Amazon EC2服务器 2
+      - 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇺🇲 美国 麻省理工学院
+      - 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
+      - 🇩🇪 德国 黑森州法兰克福Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
-      - 🇺🇲 美国 惠普公司
       - 🇺🇲 美国 CloudFlare节点 8
+      - 🇷🇴 北美地区 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 3
+      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心 2
-      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
-      - 🇺🇲 美国 LeaseWeb数据中心
-      - 🇺🇲 美国 Amazon EC2服务器
+      - 🇩🇪 瑞典 斯德哥尔摩Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
-      - 🇬🇧 英国 社会保险安全部
-      - 🇩🇪 德国 黑森州法兰克福Linode数据中心
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇷🇴 北美地区 V2CROSS.COM
-      - 🇯🇵 日本 东京Amazon数据中心
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇺🇲 美国 CloudFlare节点 13
-      - 🇯🇵 日本 V2CROSS.COM
-      - 🇺🇲 美国 CloudFlare节点 14
-      - 🇷🇴 美国 V2CROSS.COM 2
+      - 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司
+      - 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心
   - name: 📲 电报消息
     type: select
     proxies:
@@ -430,40 +395,39 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 东京Amazon数据中心
-      - 🇯🇵 日本 V2CROSS.COM
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
+      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
-      - 🇺🇲 美国 得克萨斯州
-      - 🇺🇲 美国 Amazon数据中心
-      - 🇺🇲 美国 加利福尼亚州旧金山市Awknet通信公司
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇺🇲 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心
-      - 🇺🇲 美国 Merit网络公司
+      - 🇺🇲 美国 Amazon数据中心
+      - 🇺🇲 美国 Amazon数据中心 2
+      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 3
+      - 🇺🇲 美国 华盛顿Cogent通信公司
+      - 🇺🇲 美国 Amazon EC2服务器 2
+      - 🇺🇲 美国 加利福尼亚州圣何塞PEG TECH数据中心
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇺🇲 美国 麻省理工学院
+      - 🇺🇲 美国加利福尼亚州洛杉矶 PetaExpress
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
       - 🇺🇲 美国 CloudFlare节点 7
-      - 🇺🇲 美国 惠普公司
       - 🇺🇲 美国 CloudFlare节点 8
+      - 🇷🇴 北美地区 V2CROSS.COM
+      - 🇺🇲 美国 Amazon数据中心 3
+      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国 LeaseWeb数据中心
-      - 🇺🇲 美国 Amazon EC2服务器
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇷🇴 北美地区 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇺🇲 美国 CloudFlare节点 13
-      - 🇺🇲 美国 CloudFlare节点 14
-      - 🇷🇴 美国 V2CROSS.COM 2
+      - 🇺🇲 美国 加利福尼亚州圣克拉拉Microsoft公司
+      - 🇺🇲 美国 加利福尼亚州洛杉矶Google云计算数据中心
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -477,14 +441,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇸🇬 新加坡 Amazon数据中心
+      - DIRECT
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 🇰🇷 韩国 V2CROSS.COM
   - name: 🎥 奈飞节点
     type: select
     proxies:
