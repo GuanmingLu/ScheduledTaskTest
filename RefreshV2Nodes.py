@@ -20,29 +20,17 @@ def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = 
 
 
 ALL_URLS = [
-    [f"https://clashfree.eu.org/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    [f"https://oneclash.cc/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    [f"https://clashnode.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    [f"https://v2rayshare.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    [f"https://freenode.me/wp-content/uploads/{y}/{m}/{d}{n}.txt" for (y, m, d) in date_list() for n in range(9, -1, -1)] + [f"https://freenode.me/wp-content/uploads/{y}/{m}/{m}{d}{n}.txt" for (y, m, d) in date_list() for n in range(9, -1, -1)],
-    ["https://jiang.netlify.com/"],
+    # [f"https://clashfree.eu.org/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()],
+    [f"https://clashgithub.com/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()],
+    # [f"https://oneclash.cc/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
+    [f"https://oneclash.githubrowcontent.com/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
+    # [f"https://v2rayshare.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
+    [f"https://v2rayshare.githubrowcontent.com/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
     ["https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2"],
-    ["https://raw.githubusercontent.com/vpei/Free-Node-Merge/main/o/node.txt"],
-    ["https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"],
-    ["https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt"],
-    ["https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"],
-    ["https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/splitted/trojan.txt"],
-    ["https://raw.githubusercontent.com/Bardiafa/Free-V2ray-Config/main/All_Configs_Sub.txt"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription1"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription2"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription3"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription4"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription5"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription6"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription7"],
-    ["https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription8"],
-    ["https://raw.githubusercontent.com/freefq/free/master/v2"],
     ["https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"],
+    ["https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray"],
+    ["https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt"],
+    ["https://raw.githubusercontent.com/ermaozi/get_subscribe/main/subscribe/v2ray.txt"]
 ]
 
 max_url_count = 2048
