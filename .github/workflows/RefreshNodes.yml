@@ -26,15 +26,13 @@ jobs:
           pip3 install requests
           pip3 install pycryptodome
 
+      - name: Auto update
+        run: python3 auto_update_yaml/script.py
+
       - name: Refresh best v2ray and accelerator nodes.
         run: |
           python3 RefreshV2Nodes.py -o "v2-node.txt" -u "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/Eternity"
           python3 RefreshV2Nodes.py -o "v2-node-air.txt" -u "https://raw.githubusercontent.com/mahdibland/ShadowsocksAggregator/master/EternityAir"
-
-      - name: Refresh all v2ray and accelerator nodes.
-        run: |
-          python3 RefreshV2Nodes.py -o "v2-node-all.txt" -m 1800
-          python3 RefreshAcceleratorNodes.py -t 60 -o "v2-acc.txt"
 
       - name: Download config from url and do some modifications.
         run: python3 GetClashConfig.py -o "clashConfig.ini"
