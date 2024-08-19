@@ -1,13 +1,24 @@
 import datetime
 import os
 import requests
-import base64
 import threading
-import argparse
-import json
-import re
+
 
 SCRIPT_DIR = os.path.split(os.path.realpath(__file__))[0]
+
+
+# 更新后可用的订阅链接
+successSubscribeUrls = []
+successSubscribeUrls_lock = threading.Lock()
+def generateSubscribeUrl(fileNameWithoutExt: str):
+	"""
+	生成订阅链接
+	"""
+	successSubscribeUrls_lock.acquire()
+	try:
+		successSubscribeUrls.append(f"https://raw.githubusercontent.com/GuanmingLu/ScheduledTaskTest/main/auto_update_yaml/{fileNameWithoutExt}.yaml")
+	finally:
+		successSubscribeUrls_lock.release()
 
 
 def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = -1) -> list[tuple[str, str, str]]:
@@ -48,11 +59,12 @@ def get_from_urls(items):
 			if result.ok:
 				print(url)
 				result_yaml = result.content.decode("utf-8")
-				result_str = f"# {url}\n{result_yaml}"
 				# TODO 保存到文件
 				filePath = SCRIPT_DIR + "/" + items["name"] + ".yaml"
+				generateSubscribeUrl(items["name"])
 				with open(filePath, "w", encoding="utf-8") as f:
-					f.write(result_str)
+					f.write("# " + url + "\n")
+					f.write(result_yaml)
 				return
 		except Exception as e:
 			print(f"{url} Error: {e}")
@@ -71,6 +83,11 @@ def main():
 	# 等待所有线程完成
 	for t in threads:
 		t.join()
+
+	# 保存可用的订阅链接
+	with open(SCRIPT_DIR + "/availableList.txt", "w", encoding="utf-8") as f:
+		for url in successSubscribeUrls:
+			f.write(url + "\n")
 
 
 if __name__ == "__main__":
