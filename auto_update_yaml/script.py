@@ -1,4 +1,5 @@
 import datetime
+import os
 import requests
 import base64
 import threading
@@ -22,12 +23,18 @@ def date_list(start_date_delta: int = 1, end_date_delta: int = -10, step: int = 
 
 
 ALL_URLS = [
-    # [f"https://clashfree.eu.org/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    { "name": "clashgithub", "urls": [f"https://clashgithub.com/wp-content/uploads/rss/{y}{m}{d}.txt" for (y, m, d) in date_list()] },
-    # [f"https://oneclash.cc/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    { "name": "oneclash", "urls": [f"https://oneclash.githubrowcontent.com/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()] },
-    # [f"https://v2rayshare.com/wp-content/uploads/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()],
-    { "name": "v2rayshare", "urls": [f"https://v2rayshare.githubrowcontent.com/{y}/{m}/{y}{m}{d}.txt" for (y, m, d) in date_list()] },
+	# https://clashnodeshare.github.io/uploads/2024/08/0-20240819.yaml
+	{ "name": "clashnodeshare", "urls": [f"https://clashnodeshare.github.io/uploads/{y}/{m}/{n}-{y}{m}{d}.yaml" for (y, m, d) in date_list() for n in range(10)] },
+	# https://clashnodesfree.github.io/uploads/2024/08/0-20240819.yaml
+	{ "name": "clashnodesfree", "urls": [f"https://clashnodesfree.github.io/uploads/{y}/{m}/{n}-{y}{m}{d}.yaml" for (y, m, d) in date_list() for n in range(10)] },
+	# https://nodeclash.github.io/uploads/2024/08/0-20240819.yaml
+	{ "name": "nodeclash", "urls": [f"https://nodeclash.github.io/uploads/{y}/{m}/{n}-{y}{m}{d}.yaml" for (y, m, d) in date_list() for n in range(10)] },
+	# https://freenode.openrunner.net/uploads/20240819-clash.yaml
+	{ "name": "openrunner", "urls": [f"https://freenode.openrunner.net/uploads/{y}{m}{d}-clash.yaml" for (y, m, d) in date_list()] },
+	# https://clashgithub.com/wp-content/uploads/rss/20240819.yml
+    { "name": "clashgithub", "urls": [f"https://clashgithub.com/wp-content/uploads/rss/{y}{m}{d}.yml" for (y, m, d) in date_list()] },
+    { "name": "oneclash", "urls": [f"https://oneclash.githubrowcontent.com/{y}/{m}/{y}{m}{d}.yaml" for (y, m, d) in date_list()] },
+    { "name": "v2rayshare", "urls": [f"https://v2rayshare.githubrowcontent.com/{y}/{m}/{y}{m}{d}.yaml" for (y, m, d) in date_list()] },
 ]
 
 
@@ -43,7 +50,7 @@ def get_from_urls(items):
 				result_yaml = result.content.decode("utf-8")
 				result_str = f"# {url}\n{result_yaml}"
 				# TODO 保存到文件
-				filePath = SCRIPT_DIR + "/" + name = items["name"]
+				filePath = SCRIPT_DIR + "/" + items["name"] + ".yaml"
 				with open(filePath, "w", encoding="utf-8") as f:
 					f.write(result_str)
 				return
