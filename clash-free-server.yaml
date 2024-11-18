@@ -5,49 +5,65 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇷🇴 俄罗斯 V2CROSS.COM, server: 89.185.84.185, port: 12575, type: ss, cipher: chacha20-ietf-poly1305, password: JdkppSRNMuKUIbF229zC1e, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS, server: 217.182.198.219, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点, server: 172.64.167.10, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 2, server: 172.67.165.53, port: 2086, type: vmess, uuid: 3fd7b958-2161-46e1-b6fc-bd6bb2165312, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: shs.xiaoqi666.xyz}}, udp: true}
-  - {name: 🇷🇴 欧盟 V2CROSS.COM, server: 45.87.175.178, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: cvII85TrW6n0OGyfpHVS1u, udp: true}
-  - {name: 🇷🇴 俄罗斯 V2CROSS.COM 2, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
-  - {name: 🇬🇧 英国 Microsoft公司, server: 51.13.112.75, port: 54311, type: ss, cipher: chacha20-ietf-poly1305, password: KYsTzcXvoC32WXZBLlZiOE, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 2, server: 217.182.198.219, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点, server: 172.64.167.25, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip15.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 2, server: cfcdn.fxu.asia, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 3, server: 162.159.140.45, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 4, server: 104.18.57.111, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS, server: 217.182.198.219, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 5, server: 104.19.45.13, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 6, server: 104.26.5.113, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 7, server: 104.17.106.151, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 8, server: fbi.gov, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS 2, server: 217.182.198.219, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 9, server: 172.67.221.19, port: 80, type: vmess, uuid: 289b2603-2dd1-4a4f-b4d9-bc0ec6ea7b22, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /V2LINE-TELEGRAM-CHANNEL-VMESS-WS, headers: {Host: 68690907783461163508239105253758.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 10, server: 104.19.38.11, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip6.6929198.xyz}}, udp: true}
+  - {name: 🇷🇴 欧盟 V2CROSS.COM, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 4a2rfixophdjffa8KVA4Aa, udp: true}
+  - {name: 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心, server: 54.249.161.173, port: 443, type: trojan, password: 8zlR8O7E3S8uqex4xYnpp8O6C3lZejBCZO53eYD7XIAaaTBRC3Cj9SCFxlAwKAwD2yyN3, sni: sniffle.meijireform.com, udp: true}
+  - {name: 🇷🇴 俄罗斯 V2CROSS.COM, server: 195.58.49.192, port: 8080, type: vmess, uuid: 9d655d30-cfad-4cda-82d6-9028ab41907d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇩🇪 德国 V2CROSS.COM, server: service.ouluyun9803.com, port: 26667, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 11, server: skk.moe, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 12, server: 104.26.0.56, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 13, server: 172.64.166.12, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇷🇴 罗马尼亚 V2CROSS.COM, server: 82.117.87.127, port: 8080, type: vmess, uuid: 9d655d30-cfad-4cda-82d6-9028ab41907d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 14, server: 172.64.167.35, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
   - {name: 🇫🇷 法国 OVH SAS 3, server: 217.182.198.219, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 3, server: 104.26.13.31, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 4, server: japan.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 5, server: 104.21.238.100, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 6, server: 162.159.140.19, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 15, server: 104.16.155.10, port: 80, type: vmess, uuid: e6543319-0574-42ac-b778-1c4325d626f5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: chunchuan.kejixiaoqi666.store}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 16, server: 104.26.5.56, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 17, server: b.tampay.info, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: linkvws, headers: {Host: b.tampay.info}}, udp: true}
+  - {name: 🇺🇲 美国 Xerox, server: 13.51.138.135, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 18, server: 172.64.166.22, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 19, server: 104.19.123.11, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip19.6929198.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 国际航空电讯集团公司(SITA), server: jp008.421421.xyz, port: 20230, type: trojan, password: 4aa9ee7a-ffee-4ca4-a588-f5fa9e979c38, udp: true}
+  - {name: 🇷🇴 俄罗斯 V2CROSS.COM 2, server: 194.87.82.28, port: 12224, type: ss, cipher: chacha20-ietf-poly1305, password: 2fwufOmJ9ELfN4umzcHBfV, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 20, server: 162.159.140.33, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
   - {name: 🇫🇷 法国 OVH SAS 4, server: 217.182.198.219, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇩🇪 德国 黑森州法兰克福AMazon数据中心, server: 3.122.201.229, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 7, server: 104.19.38.10, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip6.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 8, server: 162.159.140.93, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇷🇴 瑞典 V2CROSS.COM, server: ent1.imyourdaddy.top, port: 20992, type: trojan, password: 061a01f1-704b-4712-8e12-6d3fc95a127d, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 9, server: 104.21.8.157, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 21, server: 104.21.238.101, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6016725.xyz}}, udp: true}
+  - {name: 🇦🇺 澳大利亚 V2CROSS.COM, server: std1.loadingip.com, port: 443, type: trojan, password: 94d219c9-1afc-4d42-b090-8b3794764380, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 22, server: 104.19.46.103, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS 5, server: 217.182.198.219, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 23, server: 172.64.167.22, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /github.com/Alvin9999, headers: {Host: ip15.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 24, server: russia.com, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip26.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip26.6929198.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 25, server: 172.64.166.20, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, servername: ip26.6929198.xyz, network: ws, ws-opts: {path: /, headers: {Host: ip26.6929198.xyz}}, udp: true}
+  - {name: 🇩🇪 德国 V2CROSS.COM 2, server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
+  - {name: 🇬🇧 英国 伦敦Amazon数据中心, server: series-a2.samanehha.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: mps3FwmDjLrWaOVg, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 26, server: japan.com, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 27, server: 104.19.37.43, port: 80, type: vmess, uuid: d0c550b6-8eb0-4bea-86c9-dc5f1efe1fec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /d0c550b6-8eb0-4bea-86c9-dc5f1efe1fec-vmess, headers: {Host: chose-fabulous-psychiatry-fc.trycloudflare.com}}, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS 6, server: 217.182.198.219, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 28, server: 162.159.44.176, port: 443, type: trojan, password: auto, sni: trojanmz.pages.dev, network: ws, ws-opts: {path: "/trojanmz.pages.dev/?ed=2560", headers: {Host: trojanmz.pages.dev}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 29, server: 104.19.46.103, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心, server: 52.48.220.46, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, udp: true}
   - {name: 🇺🇲 美国, server: series-a2-mec.varzesh360.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: u17T3BvpYaaiuW2c, udp: true}
-  - {name: 🇷🇴 美国 V2CROSS.COM, server: 65.75.192.110, port: 33891, type: vmess, uuid: d62e0a3c-565f-43db-efa4-d51de7e2d1cf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /d62e0a3c}, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 5, server: 217.182.198.219, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 10, server: 172.64.166.9, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 11, server: 172.64.167.8, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 12, server: 172.64.166.22, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 6, server: 217.182.198.219, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: 🇷🇴 美国 V2CROSS.COM 2, server: 45.155.249.178, port: 29746, type: ss, cipher: chacha20-ietf-poly1305, password: Fd2zvd70MYxXQIZbZBNbL3, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 7, server: 217.182.198.219, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 13, server: 172.64.167.5, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇷🇴 美国 V2CROSS.COM 3, server: 45.146.232.172, port: 27001, type: trojan, password: f181b265-5fd4-456e-ad2d-c9b0446e0d51, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 14, server: 104.18.57.111, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 15, server: 104.26.0.56, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 16, server: 104.19.21.230, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇯🇵 日本 东京Fastly节点, server: zmaoz.faculty.ucdavis.edu, port: 443, type: vmess, uuid: f62b7f1a-fe13-4802-86ba-aeb801dae873, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /RACEVPN, headers: {Host: Nlfalcunargo.net}}, udp: true}
-  - {name: 🇺🇲 美国 华盛顿Cogent通信公司, server: 38.110.1.46, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 17, server: 104.20.19.105, port: 443, type: trojan, password: auto, sni: b96ef9ae.trojanfree-76s.pages.dev, network: ws, ws-opts: {path: /b96ef9ae.trojanfree-76s.pages.dev/, headers: {Host: b96ef9ae.trojanfree-76s.pages.dev}}, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 8, server: 217.182.198.219, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 18, server: 104.26.5.145, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip3.6929198.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 华盛顿Cogent通信公司 2, server: 38.110.1.12, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: 🇫🇷 法国 OVH SAS 9, server: 217.182.198.219, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: 🇩🇰 丹麦 V2CROSS.COM, server: go.alipay.ovh, port: 80, type: vmess, uuid: a94171be-b387-4f02-a5ef-a1b4b7a26c04, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: open.alipay.ovh}}, udp: true}
-  - {name: 🇺🇲 美国 CloudFlare节点 19, server: 104.22.36.243, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
-  - {name: 🇺🇲 美国 华盛顿Cogent通信公司 3, server: 38.110.1.46, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost, server: 46.17.40.57, port: 12345, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 30, server: 104.18.14.19, port: 2082, type: vmess, uuid: 5f3f09ad-89cb-4e94-a7ad-aa8239913555, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ip18.6929198.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 巴黎Amazon数据中心, server: 35.181.79.128, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 31, server: 172.64.166.20, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 32, server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 33, server: 104.19.45.19, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS 7, server: 217.182.198.219, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 34, server: 172.64.167.8, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇺🇲 美国 CloudFlare节点 35, server: 162.159.140.91, port: 2095, type: vmess, uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: github.com/Alvin9999, headers: {Host: ip2.6016725.xyz}}, udp: true}
+  - {name: 🇮🇪 爱尔兰 都柏林Amazon数据中心 2, server: 54.195.84.98, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 🇫🇷 法国 OVH SAS 8, server: 217.182.198.219, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -66,147 +82,195 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇷🇴 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇷🇴 欧盟 V2CROSS.COM
-      - 🇷🇴 俄罗斯 V2CROSS.COM 2
-      - 🇬🇧 英国 Microsoft公司
-      - 🇫🇷 法国 OVH SAS 2
-      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 3
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
-      - 🇫🇷 法国 OVH SAS 4
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
       - 🇺🇲 美国 CloudFlare节点 8
-      - 🇷🇴 瑞典 V2CROSS.COM
+      - 🇫🇷 法国 OVH SAS 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS 5
       - 🇺🇲 美国 CloudFlare节点 10
+      - 🇷🇴 欧盟 V2CROSS.COM
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇷🇴 俄罗斯 V2CROSS.COM
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 11
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇫🇷 法国 OVH SAS 6
-      - 🇷🇴 美国 V2CROSS.COM 2
-      - 🇫🇷 法国 OVH SAS 7
       - 🇺🇲 美国 CloudFlare节点 13
-      - 🇷🇴 美国 V2CROSS.COM 3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 14
+      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 15
       - 🇺🇲 美国 CloudFlare节点 16
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
       - 🇺🇲 美国 CloudFlare节点 17
-      - 🇫🇷 法国 OVH SAS 8
+      - 🇺🇲 美国 Xerox
       - 🇺🇲 美国 CloudFlare节点 18
-      - 🇺🇲 美国 华盛顿Cogent通信公司 2
-      - 🇫🇷 法国 OVH SAS 9
-      - 🇩🇰 丹麦 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 19
-      - 🇺🇲 美国 华盛顿Cogent通信公司 3
+      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
+      - 🇷🇴 俄罗斯 V2CROSS.COM 2
+      - 🇺🇲 美国 CloudFlare节点 20
+      - 🇫🇷 法国 OVH SAS 4
+      - 🇺🇲 美国 CloudFlare节点 21
+      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇺🇲 美国 CloudFlare节点 22
+      - 🇫🇷 法国 OVH SAS 5
+      - 🇺🇲 美国 CloudFlare节点 23
+      - 🇺🇲 美国 CloudFlare节点 24
+      - 🇺🇲 美国 CloudFlare节点 25
+      - 🇩🇪 德国 V2CROSS.COM 2
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 26
+      - 🇺🇲 美国 CloudFlare节点 27
+      - 🇫🇷 法国 OVH SAS 6
+      - 🇺🇲 美国 CloudFlare节点 28
+      - 🇺🇲 美国 CloudFlare节点 29
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇲 美国
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇲 美国 CloudFlare节点 30
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 31
+      - 🇺🇲 美国 CloudFlare节点 32
+      - 🇺🇲 美国 CloudFlare节点 33
+      - 🇫🇷 法国 OVH SAS 7
+      - 🇺🇲 美国 CloudFlare节点 34
+      - 🇺🇲 美国 CloudFlare节点 35
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇫🇷 法国 OVH SAS 8
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇴 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇷🇴 欧盟 V2CROSS.COM
-      - 🇷🇴 俄罗斯 V2CROSS.COM 2
-      - 🇬🇧 英国 Microsoft公司
-      - 🇫🇷 法国 OVH SAS 2
-      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 3
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
-      - 🇫🇷 法国 OVH SAS 4
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
       - 🇺🇲 美国 CloudFlare节点 8
-      - 🇷🇴 瑞典 V2CROSS.COM
+      - 🇫🇷 法国 OVH SAS 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS 5
       - 🇺🇲 美国 CloudFlare节点 10
+      - 🇷🇴 欧盟 V2CROSS.COM
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇷🇴 俄罗斯 V2CROSS.COM
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 11
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇫🇷 法国 OVH SAS 6
-      - 🇷🇴 美国 V2CROSS.COM 2
-      - 🇫🇷 法国 OVH SAS 7
       - 🇺🇲 美国 CloudFlare节点 13
-      - 🇷🇴 美国 V2CROSS.COM 3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 14
+      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 15
       - 🇺🇲 美国 CloudFlare节点 16
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
       - 🇺🇲 美国 CloudFlare节点 17
-      - 🇫🇷 法国 OVH SAS 8
+      - 🇺🇲 美国 Xerox
       - 🇺🇲 美国 CloudFlare节点 18
-      - 🇺🇲 美国 华盛顿Cogent通信公司 2
-      - 🇫🇷 法国 OVH SAS 9
-      - 🇩🇰 丹麦 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 19
-      - 🇺🇲 美国 华盛顿Cogent通信公司 3
+      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
+      - 🇷🇴 俄罗斯 V2CROSS.COM 2
+      - 🇺🇲 美国 CloudFlare节点 20
+      - 🇫🇷 法国 OVH SAS 4
+      - 🇺🇲 美国 CloudFlare节点 21
+      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇺🇲 美国 CloudFlare节点 22
+      - 🇫🇷 法国 OVH SAS 5
+      - 🇺🇲 美国 CloudFlare节点 23
+      - 🇺🇲 美国 CloudFlare节点 24
+      - 🇺🇲 美国 CloudFlare节点 25
+      - 🇩🇪 德国 V2CROSS.COM 2
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 26
+      - 🇺🇲 美国 CloudFlare节点 27
+      - 🇫🇷 法国 OVH SAS 6
+      - 🇺🇲 美国 CloudFlare节点 28
+      - 🇺🇲 美国 CloudFlare节点 29
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇲 美国
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇲 美国 CloudFlare节点 30
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 31
+      - 🇺🇲 美国 CloudFlare节点 32
+      - 🇺🇲 美国 CloudFlare节点 33
+      - 🇫🇷 法国 OVH SAS 7
+      - 🇺🇲 美国 CloudFlare节点 34
+      - 🇺🇲 美国 CloudFlare节点 35
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇫🇷 法国 OVH SAS 8
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇴 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇷🇴 欧盟 V2CROSS.COM
-      - 🇷🇴 俄罗斯 V2CROSS.COM 2
-      - 🇬🇧 英国 Microsoft公司
-      - 🇫🇷 法国 OVH SAS 2
-      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 3
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
-      - 🇫🇷 法国 OVH SAS 4
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
       - 🇺🇲 美国 CloudFlare节点 8
-      - 🇷🇴 瑞典 V2CROSS.COM
+      - 🇫🇷 法国 OVH SAS 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS 5
       - 🇺🇲 美国 CloudFlare节点 10
+      - 🇷🇴 欧盟 V2CROSS.COM
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇷🇴 俄罗斯 V2CROSS.COM
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 11
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇫🇷 法国 OVH SAS 6
-      - 🇷🇴 美国 V2CROSS.COM 2
-      - 🇫🇷 法国 OVH SAS 7
       - 🇺🇲 美国 CloudFlare节点 13
-      - 🇷🇴 美国 V2CROSS.COM 3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 14
+      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 15
       - 🇺🇲 美国 CloudFlare节点 16
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
       - 🇺🇲 美国 CloudFlare节点 17
-      - 🇫🇷 法国 OVH SAS 8
+      - 🇺🇲 美国 Xerox
       - 🇺🇲 美国 CloudFlare节点 18
-      - 🇺🇲 美国 华盛顿Cogent通信公司 2
-      - 🇫🇷 法国 OVH SAS 9
-      - 🇩🇰 丹麦 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 19
-      - 🇺🇲 美国 华盛顿Cogent通信公司 3
+      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
+      - 🇷🇴 俄罗斯 V2CROSS.COM 2
+      - 🇺🇲 美国 CloudFlare节点 20
+      - 🇫🇷 法国 OVH SAS 4
+      - 🇺🇲 美国 CloudFlare节点 21
+      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇺🇲 美国 CloudFlare节点 22
+      - 🇫🇷 法国 OVH SAS 5
+      - 🇺🇲 美国 CloudFlare节点 23
+      - 🇺🇲 美国 CloudFlare节点 24
+      - 🇺🇲 美国 CloudFlare节点 25
+      - 🇩🇪 德国 V2CROSS.COM 2
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 26
+      - 🇺🇲 美国 CloudFlare节点 27
+      - 🇫🇷 法国 OVH SAS 6
+      - 🇺🇲 美国 CloudFlare节点 28
+      - 🇺🇲 美国 CloudFlare节点 29
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇲 美国
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇲 美国 CloudFlare节点 30
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 31
+      - 🇺🇲 美国 CloudFlare节点 32
+      - 🇺🇲 美国 CloudFlare节点 33
+      - 🇫🇷 法国 OVH SAS 7
+      - 🇺🇲 美国 CloudFlare节点 34
+      - 🇺🇲 美国 CloudFlare节点 35
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇫🇷 法国 OVH SAS 8
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -214,49 +278,65 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇷🇴 俄罗斯 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点
       - 🇺🇲 美国 CloudFlare节点 2
-      - 🇷🇴 欧盟 V2CROSS.COM
-      - 🇷🇴 俄罗斯 V2CROSS.COM 2
-      - 🇬🇧 英国 Microsoft公司
-      - 🇫🇷 法国 OVH SAS 2
-      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 3
       - 🇺🇲 美国 CloudFlare节点 4
+      - 🇫🇷 法国 OVH SAS
       - 🇺🇲 美国 CloudFlare节点 5
       - 🇺🇲 美国 CloudFlare节点 6
-      - 🇫🇷 法国 OVH SAS 4
-      - 🇩🇪 德国 黑森州法兰克福AMazon数据中心
       - 🇺🇲 美国 CloudFlare节点 7
       - 🇺🇲 美国 CloudFlare节点 8
-      - 🇷🇴 瑞典 V2CROSS.COM
+      - 🇫🇷 法国 OVH SAS 2
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国
-      - 🇷🇴 美国 V2CROSS.COM
-      - 🇫🇷 法国 OVH SAS 5
       - 🇺🇲 美国 CloudFlare节点 10
+      - 🇷🇴 欧盟 V2CROSS.COM
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
+      - 🇷🇴 俄罗斯 V2CROSS.COM
+      - 🇩🇪 德国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 11
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇫🇷 法国 OVH SAS 6
-      - 🇷🇴 美国 V2CROSS.COM 2
-      - 🇫🇷 法国 OVH SAS 7
       - 🇺🇲 美国 CloudFlare节点 13
-      - 🇷🇴 美国 V2CROSS.COM 3
+      - 🇷🇴 罗马尼亚 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 14
+      - 🇫🇷 法国 OVH SAS 3
       - 🇺🇲 美国 CloudFlare节点 15
       - 🇺🇲 美国 CloudFlare节点 16
-      - 🇯🇵 日本 东京Fastly节点
-      - 🇺🇲 美国 华盛顿Cogent通信公司
       - 🇺🇲 美国 CloudFlare节点 17
-      - 🇫🇷 法国 OVH SAS 8
+      - 🇺🇲 美国 Xerox
       - 🇺🇲 美国 CloudFlare节点 18
-      - 🇺🇲 美国 华盛顿Cogent通信公司 2
-      - 🇫🇷 法国 OVH SAS 9
-      - 🇩🇰 丹麦 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 19
-      - 🇺🇲 美国 华盛顿Cogent通信公司 3
+      - 🇫🇷 法国 国际航空电讯集团公司(SITA)
+      - 🇷🇴 俄罗斯 V2CROSS.COM 2
+      - 🇺🇲 美国 CloudFlare节点 20
+      - 🇫🇷 法国 OVH SAS 4
+      - 🇺🇲 美国 CloudFlare节点 21
+      - 🇦🇺 澳大利亚 V2CROSS.COM
+      - 🇺🇲 美国 CloudFlare节点 22
+      - 🇫🇷 法国 OVH SAS 5
+      - 🇺🇲 美国 CloudFlare节点 23
+      - 🇺🇲 美国 CloudFlare节点 24
+      - 🇺🇲 美国 CloudFlare节点 25
+      - 🇩🇪 德国 V2CROSS.COM 2
+      - 🇬🇧 英国 伦敦Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 26
+      - 🇺🇲 美国 CloudFlare节点 27
+      - 🇫🇷 法国 OVH SAS 6
+      - 🇺🇲 美国 CloudFlare节点 28
+      - 🇺🇲 美国 CloudFlare节点 29
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心
+      - 🇺🇲 美国
+      - 🇷🇺 俄罗斯 鞑靼斯坦喀山justhost
+      - 🇺🇲 美国 CloudFlare节点 30
+      - 🇫🇷 法国 巴黎Amazon数据中心
+      - 🇺🇲 美国 CloudFlare节点 31
+      - 🇺🇲 美国 CloudFlare节点 32
+      - 🇺🇲 美国 CloudFlare节点 33
+      - 🇫🇷 法国 OVH SAS 7
+      - 🇺🇲 美国 CloudFlare节点 34
+      - 🇺🇲 美国 CloudFlare节点 35
+      - 🇮🇪 爱尔兰 都柏林Amazon数据中心 2
+      - 🇫🇷 法国 OVH SAS 8
   - name: 📲 电报消息
     type: select
     proxies:
@@ -465,7 +545,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 东京Fastly节点
+      - 🇯🇵 日本 东京都亚马逊(Amazon)公司数据中心
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -481,23 +561,34 @@ proxy-groups:
       - 🇺🇲 美国 CloudFlare节点 7
       - 🇺🇲 美国 CloudFlare节点 8
       - 🇺🇲 美国 CloudFlare节点 9
-      - 🇺🇲 美国
-      - 🇷🇴 美国 V2CROSS.COM
       - 🇺🇲 美国 CloudFlare节点 10
       - 🇺🇲 美国 CloudFlare节点 11
       - 🇺🇲 美国 CloudFlare节点 12
-      - 🇷🇴 美国 V2CROSS.COM 2
       - 🇺🇲 美国 CloudFlare节点 13
-      - 🇷🇴 美国 V2CROSS.COM 3
       - 🇺🇲 美国 CloudFlare节点 14
       - 🇺🇲 美国 CloudFlare节点 15
       - 🇺🇲 美国 CloudFlare节点 16
-      - 🇺🇲 美国 华盛顿Cogent通信公司
       - 🇺🇲 美国 CloudFlare节点 17
+      - 🇺🇲 美国 Xerox
       - 🇺🇲 美国 CloudFlare节点 18
-      - 🇺🇲 美国 华盛顿Cogent通信公司 2
       - 🇺🇲 美国 CloudFlare节点 19
-      - 🇺🇲 美国 华盛顿Cogent通信公司 3
+      - 🇺🇲 美国 CloudFlare节点 20
+      - 🇺🇲 美国 CloudFlare节点 21
+      - 🇺🇲 美国 CloudFlare节点 22
+      - 🇺🇲 美国 CloudFlare节点 23
+      - 🇺🇲 美国 CloudFlare节点 24
+      - 🇺🇲 美国 CloudFlare节点 25
+      - 🇺🇲 美国 CloudFlare节点 26
+      - 🇺🇲 美国 CloudFlare节点 27
+      - 🇺🇲 美国 CloudFlare节点 28
+      - 🇺🇲 美国 CloudFlare节点 29
+      - 🇺🇲 美国
+      - 🇺🇲 美国 CloudFlare节点 30
+      - 🇺🇲 美国 CloudFlare节点 31
+      - 🇺🇲 美国 CloudFlare节点 32
+      - 🇺🇲 美国 CloudFlare节点 33
+      - 🇺🇲 美国 CloudFlare节点 34
+      - 🇺🇲 美国 CloudFlare节点 35
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
