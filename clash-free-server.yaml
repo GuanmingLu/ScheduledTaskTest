@@ -5,38 +5,25 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: uS7-07.890606.xYZ, port: 80, type: vmess, uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /bua2hMcbA8wMzbGFtV, headers: {Host: uS7-07.890606.xYZ}}, udp: true}
-  - {name: 美国 华盛顿州西雅图市wowrack数据中心, server: 6a9461b5-sunz40-tbxbrk-1t53t.se.plebai.net, port: 8083, type: vmess, uuid: 0e8a3ddc-c83e-11ef-8e74-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 6a9461b5-sunz40-tbxbrk-1t53t.se.plebai.net}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 46.254.92.191, port: 443, type: trojan, password: Aimer, sni: epcct.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560&proxyip=ts.hpc.tw", headers: {Host: epcct.ambercc.filegear-sg.me}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 3e236b99-sucv40-sudq0l-1rz5s.hk.p5pv.com, port: 80, type: vmess, uuid: 40e084d6-0316-11f0-90e2-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: usa-sanjose-one.890614.filegear-sg.me, port: 443, type: vmess, uuid: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /YfB29GXf4cThJQeJb, headers: {Host: usa-sanjose-one.890614.filegear-sg.me}}, udp: true}
-  - {name: 巴西圣保罗 CloudFlare节点, server: 188.114.97.3, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 印度 V2CROSS.COM, server: 103.106.229.207, port: 53802, type: vmess, uuid: 803c04ae-2da6-434b-a692-8fd75e5964d7, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 美国 Amazon数据中心, server: 13.41.173.85, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 美国 华盛顿州西雅图市wowrack数据中心 2, server: 95eeab25-sunz40-t5bgb3-l4nv.se.plebai.net, port: 8083, type: vmess, uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 95eeab25-sunz40-t5bgb3-l4nv.se.plebai.net}}, udp: true}
-  - {name: 美国 华盛顿州西雅图市wowrack数据中心 3, server: 4887be5d-suvds0-t2oosc-xm0q.se.plebai.net, port: 8083, type: vmess, uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 4887be5d-suvds0-t2oosc-xm0q.se.plebai.net}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: nextstepcareer.online, port: 443, type: trojan, password: 4732adfa16c6450bbef87264e41332db, udp: true}
-  - {name: 美国 华盛顿州西雅图市wowrack数据中心 4, server: 40fd5436-suvds0-tb6yrr-1tfcw.se.plebai.net, port: 8083, type: vmess, uuid: 1282cc1a-f426-11ef-9495-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 40fd5436-suvds0-tb6yrr-1tfcw.se.plebai.net}}, udp: true}
-  - {name: 香港 腾讯云, server: myvps.lol, port: 443, type: trojan, password: oIwjHDXpKePvYIg8, sni: myvps.lol, skip-cert-verify: false, udp: true}
-  - {name: 法国 V2CROSS.COM, server: 151.115.88.168, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: sVjPo5m8PUrhHuB9lDZzNS, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 92.38.171.215, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.96.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 104.16.83.176, port: 443, type: trojan, password: Ng35283528, sni: c2.validbv3528.eu.org, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: c2.validbv3528.eu.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.77.44, port: 443, type: trojan, password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01, sni: us6-02.890603.Xyz, network: ws, ws-opts: {path: /ILLcisbMYUd6MQzxVoMQ, headers: {Host: us6-02.890603.Xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 141.101.120.195, port: 2096, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 1743919978.speed.adl.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 美国 华盛顿州西雅图市wowrack数据中心 5, server: a4902353-suvds0-tcubko-1r05y.se.plebai.net, port: 8083, type: vmess, uuid: d2a03964-ec12-11ee-893c-f23c91cfbbc9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a4902353-suvds0-tcubko-1r05y.se.plebai.net}}, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 172.67.161.77, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 英国 社会保险安全部, server: 51.21.15.216, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: 172.67.196.112, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 193.122.58.158, port: 443, type: vmess, uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: irvideo.cfd}}, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 巴西圣保罗 CloudFlare节点 2, server: 188.114.99.183, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 美国 Fastly全球Anycast节点, server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
-  - {name: 巴西圣保罗 CloudFlare节点 3, server: 188.114.96.2, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 巴西圣保罗 CloudFlare节点 4, server: 188.114.99.205, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: linde06.indiavideo.sbs}}, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
-  - {name: 德国 黑森州法兰克福Amazon数据中心, server: 35.156.41.49, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 45.146.232.173, port: 33506, type: trojan, password: 73456460-0e3c-46cd-a1aa-92d4fc17584c, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 英国 社会保险安全部, server: 51.21.231.34, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, udp: true}
+  - {name: 美国 CloudFlare节点, server: US7-03.890624.xYz, port: 443, type: vmess, uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /bua2hMcbA8wMzbGFtV, headers: {Host: US7-03.890624.xYz}}, udp: true}
+  - {name: 美国 Nokia, server: 192.9.132.79, port: 443, type: trojan, password: 696cfe79, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20010, type: vmess, uuid: b3cf46a5-b346-4869-9152-92894d34933b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 俄罗斯 Rubtsovsk Branch of Altai State University, server: 212.192.12.154, port: 23010, type: vmess, uuid: 4481da8f-06d4-4e6d-879c-e3e9ad5293f4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 加利福尼亚州洛杉矶Sharktech数据中心, server: 6d1c9bd9-surog0-sy0g8x-1cc8s.lza.plebai.net, port: 7612, type: vmess, uuid: 7e64224c-4c10-11ec-bd7c-f23c913c8d2b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 教育网, server: 140.245.63.96, port: 23452, type: vmess, uuid: 60db6ccb-d3a9-4971-9e6a-02517f18ead3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: westsg2-ddns.oraclenat.cc}}, udp: true}
+  - {name: 波兰 V2CROSS.COM, server: 193.243.147.128, port: 40368, type: ss, cipher: aes-256-gcm, password: 7BcLdsO1WweoGD0X, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 92.38.171.215, port: 31348, type: ss, cipher: chacha20-ietf-poly1305, password: 0RsrcFJ1vOsWEqg3P55hvaacKfuShT0cc1h0t8AD0NA8u1uR, udp: true}
+  - {name: 巴西圣保罗 CloudFlare节点, server: 188.114.96.2, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: obdii.cfd}}, udp: true}
+  - {name: 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心, server: 156.238.18.68, port: 8443, type: vmess, uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/?maps.app.goo.gl/K3hM5xrwZV7bQVBa7?ed=2560", headers: {Host: uswuxian.pai50288.uk}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.3.219, port: 8443, type: vmess, uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: uswuxian.pai50288.uk}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.66.168.209, port: 443, type: trojan, password: aTArbZ2F0E, sni: uSa-vp-27.bLAzECLOUD.SITE, network: ws, ws-opts: {path: /linkvkws, headers: {Host: uSa-vp-27.bLAzECLOUD.SITE}}, udp: true}
+  - {name: 香港 数掘科技gfvps.cn数据中心, server: 27.50.49.251, port: 2083, type: trojan, password: Aimer, sni: epcct.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epcct.ambercc.filegear-sg.me}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: hk2.lrzdx.uk, port: 443, type: vmess, uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /register, headers: {Host: hk2.lrzdx.uk}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: uswuxian.pai50288.uk, port: 8443, type: vmess, uuid: c313606f-98c2-4d7b-ba74-48b94f61b11d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: uswuxian.pai50288.uk}}, udp: true}
+  - {name: 巴西圣保罗 CloudFlare节点 2, server: 188.114.96.3, port: 443, type: vmess, uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: obdii.cfd}}, udp: true}
+  - {name: 英国 社会保险安全部 2, server: 51.44.110.94, port: 22222, type: trojan, password: telegram-id-directvpn, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -55,114 +42,75 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 华盛顿州西雅图市wowrack数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 巴西圣保罗 CloudFlare节点
-      - 印度 V2CROSS.COM
-      - 美国 Amazon数据中心
-      - 美国 华盛顿州西雅图市wowrack数据中心 2
-      - 美国 华盛顿州西雅图市wowrack数据中心 3
-      - 美国 V2CROSS.COM
-      - 美国 华盛顿州西雅图市wowrack数据中心 4
-      - 香港 腾讯云
-      - 法国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
-      - 美国 华盛顿州西雅图市wowrack数据中心 5
-      - 美国 CloudFlare节点 7
       - 英国 社会保险安全部
-      - 美国 CloudFlare节点 8
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 9
+      - 美国 CloudFlare节点
+      - 美国 Nokia
+      - 俄罗斯 莫斯科JustHost
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 教育网
+      - 波兰 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 5
       - 巴西圣保罗 CloudFlare节点 2
-      - 美国 Fastly全球Anycast节点
-      - 巴西圣保罗 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点 4
-      - 美国 CloudFlare节点 10
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 V2CROSS.COM 2
+      - 英国 社会保险安全部 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 华盛顿州西雅图市wowrack数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 巴西圣保罗 CloudFlare节点
-      - 印度 V2CROSS.COM
-      - 美国 Amazon数据中心
-      - 美国 华盛顿州西雅图市wowrack数据中心 2
-      - 美国 华盛顿州西雅图市wowrack数据中心 3
-      - 美国 V2CROSS.COM
-      - 美国 华盛顿州西雅图市wowrack数据中心 4
-      - 香港 腾讯云
-      - 法国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
-      - 美国 华盛顿州西雅图市wowrack数据中心 5
-      - 美国 CloudFlare节点 7
       - 英国 社会保险安全部
-      - 美国 CloudFlare节点 8
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 9
+      - 美国 CloudFlare节点
+      - 美国 Nokia
+      - 俄罗斯 莫斯科JustHost
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 教育网
+      - 波兰 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 5
       - 巴西圣保罗 CloudFlare节点 2
-      - 美国 Fastly全球Anycast节点
-      - 巴西圣保罗 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点 4
-      - 美国 CloudFlare节点 10
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 V2CROSS.COM 2
+      - 英国 社会保险安全部 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 华盛顿州西雅图市wowrack数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 巴西圣保罗 CloudFlare节点
-      - 印度 V2CROSS.COM
-      - 美国 Amazon数据中心
-      - 美国 华盛顿州西雅图市wowrack数据中心 2
-      - 美国 华盛顿州西雅图市wowrack数据中心 3
-      - 美国 V2CROSS.COM
-      - 美国 华盛顿州西雅图市wowrack数据中心 4
-      - 香港 腾讯云
-      - 法国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
-      - 美国 华盛顿州西雅图市wowrack数据中心 5
-      - 美国 CloudFlare节点 7
       - 英国 社会保险安全部
-      - 美国 CloudFlare节点 8
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 9
+      - 美国 CloudFlare节点
+      - 美国 Nokia
+      - 俄罗斯 莫斯科JustHost
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 教育网
+      - 波兰 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 5
       - 巴西圣保罗 CloudFlare节点 2
-      - 美国 Fastly全球Anycast节点
-      - 巴西圣保罗 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点 4
-      - 美国 CloudFlare节点 10
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 V2CROSS.COM 2
+      - 英国 社会保险安全部 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -170,38 +118,25 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 CloudFlare节点
-      - 美国 华盛顿州西雅图市wowrack数据中心
-      - 俄罗斯 V2CROSS.COM
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 2
-      - 巴西圣保罗 CloudFlare节点
-      - 印度 V2CROSS.COM
-      - 美国 Amazon数据中心
-      - 美国 华盛顿州西雅图市wowrack数据中心 2
-      - 美国 华盛顿州西雅图市wowrack数据中心 3
-      - 美国 V2CROSS.COM
-      - 美国 华盛顿州西雅图市wowrack数据中心 4
-      - 香港 腾讯云
-      - 法国 V2CROSS.COM
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 3
-      - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
-      - 美国 华盛顿州西雅图市wowrack数据中心 5
-      - 美国 CloudFlare节点 7
       - 英国 社会保险安全部
-      - 美国 CloudFlare节点 8
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 9
+      - 美国 CloudFlare节点
+      - 美国 Nokia
+      - 俄罗斯 莫斯科JustHost
+      - 俄罗斯 Rubtsovsk Branch of Altai State University
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 教育网
+      - 波兰 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
+      - 巴西圣保罗 CloudFlare节点
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 数掘科技gfvps.cn数据中心
+      - 美国 CloudFlare节点 4
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 5
       - 巴西圣保罗 CloudFlare节点 2
-      - 美国 Fastly全球Anycast节点
-      - 巴西圣保罗 CloudFlare节点 3
-      - 巴西圣保罗 CloudFlare节点 4
-      - 美国 CloudFlare节点 10
-      - 德国 黑森州法兰克福Amazon数据中心
-      - 美国 V2CROSS.COM 2
+      - 英国 社会保险安全部 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -403,8 +338,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 香港 腾讯云
+      - 香港 数掘科技gfvps.cn数据中心
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -419,24 +353,14 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
-      - 美国 华盛顿州西雅图市wowrack数据中心
+      - 美国 Nokia
+      - 美国 加利福尼亚州洛杉矶Sharktech数据中心
+      - 美国 教育网
+      - 美国加利福尼亚州洛杉矶 Cloudinnovation数据中心
       - 美国 CloudFlare节点 2
-      - 美国 Amazon数据中心
-      - 美国 华盛顿州西雅图市wowrack数据中心 2
-      - 美国 华盛顿州西雅图市wowrack数据中心 3
-      - 美国 V2CROSS.COM
-      - 美国 华盛顿州西雅图市wowrack数据中心 4
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
-      - 美国 华盛顿州西雅图市wowrack数据中心 5
-      - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 Fastly全球Anycast节点
-      - 美国 CloudFlare节点 10
-      - 美国 V2CROSS.COM 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -3472,6 +3396,7 @@ rules:
   - DOMAIN-SUFFIX,atlaspost.com,🚀 节点选择
   - DOMAIN-SUFFIX,atnext.com,🚀 节点选择
   - DOMAIN-SUFFIX,audacy.com,🚀 节点选择
+  - DOMAIN-SUFFIX,audiomack.com,🚀 节点选择
   - DOMAIN-SUFFIX,audionow.com,🚀 节点选择
   - DOMAIN-SUFFIX,authorizeddns.net,🚀 节点选择
   - DOMAIN-SUFFIX,authorizeddns.org,🚀 节点选择
@@ -10021,6 +9946,22 @@ rules:
   - DOMAIN-SUFFIX,cctv.com,🎯 全球直连
   - DOMAIN-SUFFIX,cctvpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,livechina.com,🎯 全球直连
+  - DOMAIN,auth.wosms.cn,🎯 全球直连
+  - DOMAIN,config.cmpassport.com,🎯 全球直连
+  - DOMAIN,enrichgw.10010.com,🎯 全球直连
+  - DOMAIN,hmrz.wo.cn,🎯 全球直连
+  - DOMAIN,id.mail.wo.cn,🎯 全球直连
+  - DOMAIN,log.cmpassport.com,🎯 全球直连
+  - DOMAIN,log1.cmpassport.com,🎯 全球直连
+  - DOMAIN,mdn.open.wo.cn,🎯 全球直连
+  - DOMAIN,nishub1.10010.com,🎯 全球直连
+  - DOMAIN,opencloud.wostore.cn,🎯 全球直连
+  - DOMAIN,ye.dun.163yun.com,🎯 全球直连
+  - DOMAIN-SUFFIX,auth.wo.cn,🎯 全球直连
+  - DOMAIN-SUFFIX,cmpassport.com,🎯 全球直连
+  - DOMAIN-SUFFIX,id6.me,🎯 全球直连
+  - DOMAIN-SUFFIX,mob.com,🎯 全球直连
+  - DOMAIN-SUFFIX,open.e.189.cn,🎯 全球直连
   - DOMAIN-SUFFIX,21cn.com,🎯 全球直连
   - DOMAIN-SUFFIX,didialift.com,🎯 全球直连
   - DOMAIN-SUFFIX,didiglobal.com,🎯 全球直连
@@ -10029,6 +9970,7 @@ rules:
   - DOMAIN-SUFFIX,edgesrv.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyu.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,douyucdn.cn,🎯 全球直连
   - DOMAIN-SUFFIX,douyuscdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyutv.com,🎯 全球直连
   - DOMAIN-SUFFIX,epicgames.com,🎯 全球直连
