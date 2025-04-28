@@ -5,34 +5,36 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 45.146.232.171, port: 46926, type: trojan, password: f141008b-fc3f-45d3-9c50-d96b09b1e529, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 美国 佐治亚州亚特兰大市BellSouth公司, server: 74.176.59.185, port: 443, type: trojan, password: dQUWbcwECl, sni: automq3-proxy.automq-sg.com, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.17.221.248, port: 2086, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.17.154.223, headers: {Host: 100-48-202-143.s1.db-link01.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 45.146.232.171, port: 33506, type: trojan, password: 2b961336-1eae-431a-b766-50576ccff88c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: false, udp: true}
-  - {name: 南非 V2CROSS.COM, server: 154.205.159.100, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: s4.cn-db.top, port: 80, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.27.157, headers: {Host: 100-210-164-205.s4.cn-db.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: 45.146.232.172, port: 43591, type: trojan, password: 68a332e7-40f5-4345-ac88-86970a63d6f1, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 美国 阿里云, server: 47.236.119.64, port: 30167, type: vmess, uuid: 68e566d5-d584-4331-856c-2398ef189ced, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 141.101.121.234, port: 8443, type: vmess, uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 1744007578.speed.adl.cccp.freefly.pp.ua}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: s4.cn-db.top, port: 8880, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.21.239.139, headers: {Host: 100-74-148-152.s4.cn-db.top}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.80.1, port: 2083, type: vmess, uuid: 0245c2d4-0ad1-4f0f-eb9c-fbd5f1c47be7, alterId: 0, cipher: auto, tls: true, servername: rak2.890602.xyz, network: ws, ws-opts: {path: /, headers: {Host: rak2.890602.xyz}}, udp: true}
-  - {name: 美国 V2CROSS.COM 4, server: 45.146.232.171, port: 43591, type: trojan, password: 9469ec13-67dc-4096-9307-583653202f8b, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 9x.938.pp.ua, port: 443, type: vmess, uuid: 906ba92f-ef96-4133-8eee-f33202a5a721, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /DAxJddOdTd5pVam9w, headers: {Host: 9x.938.pp.ua}}, udp: true}
-  - {name: 美国 V2CROSS.COM 5, server: 45.146.232.172, port: 46926, type: trojan, password: aa34901b-0877-4143-8e50-67de188e178a, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 150.241.91.184, port: 8724, type: ss, cipher: chacha20-ietf-poly1305, password: hY4vxI8XY3YJghRe4Gp2g2, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: 104.21.86.44, port: 80, type: vmess, uuid: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /mRHRtQZulPWRIwOavJd, headers: {Host: 10xcbnm.he2022.filegear-sg.me}}, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: s1.cn-db.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 100-150-51-99.s1.cn-db.top}}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.102.235.36, port: 23602, type: vmess, uuid: 18b3b300-7bc4-4ee6-8806-dbde3bba84ac, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: s1.db-link02.top, port: 2082, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.20.8.162, headers: {Host: 100-6-81-226.s1.db-link02.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 6, server: 45.146.232.171, port: 34017, type: trojan, password: 07381e41-41fb-484d-9dc7-37d5a4b566bd, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: 5.34.209.50, port: 58919, type: ss, cipher: chacha20-ietf-poly1305, password: Wo7H7pfmmq0nxMRTSBYDj7, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: 104.16.155.10, port: 2095, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.20.27.115, headers: {Host: 100-209-47-141.s2.db-link02.top}}, udp: true}
-  - {name: 美国 V2CROSS.COM 7, server: 45.146.232.171, port: 43497, type: trojan, password: 78d4625c-4221-4496-ab62-729f0d05fa2c, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国 V2CROSS.COM 8, server: 45.146.232.172, port: 43499, type: trojan, password: da26f571-6dea-42ff-a90e-8d72561f92b0, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
-  - {name: 美国 CloudFlare节点 11, server: 198.41.209.70, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.21.151.202, headers: {Host: 100-213-61-102.s1.db-link02.top}}, udp: true}
-  - {name: 美国 CloudFlare节点 12, server: 172.66.168.209, port: 443, type: vmess, uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210, alterId: 0, cipher: auto, tls: true, servername: maXNEtVIP-usA-VP3.nETKH3.SiTE, network: ws, ws-opts: {path: /, headers: {Host: maXNEtVIP-usA-VP3.nETKH3.SiTE}}, udp: true}
-  - {name: 美国 CloudFlare节点 13, server: hk2.lrzdx.uk, port: 443, type: vmess, uuid: db69d5bc-d36c-4903-f471-74b98c5cefe5, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /register, headers: {Host: hk2.lrzdx.uk}}, udp: true}
-  - {name: 美国 CloudFlare节点 14, server: 172.64.79.148, port: 443, type: trojan, password: Aimer, sni: epcca.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "", headers: {Host: epcca.ambercc.filegear-sg.me}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.146.232.171, port: 27301, type: trojan, password: 9608b30f-02cf-4854-a088-be1e844ad027, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.16.1, port: 443, type: trojan, password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0, sni: 7ttt.191262.xyz, network: ws, ws-opts: {path: /wGgR8FyAGgRCKSiyxgvJgLl, headers: {Host: 7ttt.191262.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.16.155.10, port: 8080, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in104.20.16.209, headers: {Host: 100-149-191-2.s5.db-link02.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.67.133.111, port: 443, type: vmess, uuid: c2723c0e-b601-475b-9058-dc89332e9813, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /c2723c0e-b601-475b-9058-dc89332e9813, headers: {Host: whk.357567.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.80.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 45.146.232.171, port: 27408, type: trojan, password: 292f149a-33cb-4ecd-b432-5447764ea339, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 V2CROSS.COM 3, server: 45.146.232.171, port: 46925, type: trojan, password: d63b8dad-02ee-4477-8f58-693a715ddd4c, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 V2CROSS.COM 4, server: 45.146.232.172, port: 43397, type: trojan, password: d63b8dad-02ee-4477-8f58-693a715ddd4c, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 V2CROSS.COM 5, server: 45.146.232.171, port: 43393, type: trojan, password: a15fc643-0cbb-43bb-8746-b496320aefc8, sni: q08m.vgraxiw73s.hasyaf.cn, skip-cert-verify: false, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 4ac1bdaf-sv0xs0-svak69-1f9n2.hk.p5pv.com, port: 80, type: vmess, uuid: 0770871c-2e28-11ec-9ee8-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 162.159.143.89, port: 443, type: trojan, password: Aimer, sni: epcca.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "", headers: {Host: epcca.ambercc.filegear-sg.me}}, udp: true}
+  - {name: 英国 社会保险安全部, server: 51.195.119.47, port: 1080, type: ss, cipher: chacha20-ietf-poly1305, password: qXvO7zYU7KeaB0Md7DQLow, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 85.234.65.100, port: 11359, type: ss, cipher: aes-256-gcm, password: XaAIkJjp, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: 162.159.135.75, port: 443, type: trojan, password: Aimer, sni: epcca.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "", headers: {Host: epcca.ambercc.filegear-sg.me}}, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.166, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: 阿塞拜疆 V2CROSS.COM, server: 88.151.192.57, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9CJz3J1GYljQ, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 104.18.149.76, port: 443, type: vmess, uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /aa, headers: {Host: us.kkp.me.eu.org}}, udp: true}
+  - {name: 美国 V2CROSS.COM 6, server: 45.146.232.172, port: 46925, type: trojan, password: d63b8dad-02ee-4477-8f58-693a715ddd4c, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 CloudFlare节点 8, server: 104.21.80.1, port: 2053, type: vmess, uuid: 0245c2d4-0ad1-4f0f-eb9c-fbd5f1c47be7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak2.890601.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 9, server: 172.67.213.110, port: 443, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sgfqkqmltcy.site}}, udp: true}
+  - {name: 美国 CloudFlare节点 10, server: 141.101.121.121, port: 8443, type: vmess, uuid: 3bb3c730-e107-49c5-a0b2-b576d1b26a5e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 1743919978.speed.laxha.cccp.freefly.pp.ua}}, udp: true}
+  - {name: 美国 CloudFlare节点 11, server: 172.66.168.209, port: 443, type: vmess, uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: "/linkws?ed=2560", headers: {Host: maXNEtVIP-usA-VP3.nETKH3.SiTE}}, udp: true}
+  - {name: 美国 V2CROSS.COM 7, server: 45.146.232.171, port: 46927, type: trojan, password: bf4604d3-39e5-4760-aa7a-b78100cae482, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 V2CROSS.COM 8, server: 45.146.232.171, port: 43499, type: trojan, password: d1eb768f-b132-4bc4-8256-a042a87b623f, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 荷兰 V2CROSS.COM, server: 213.109.205.45, port: 443, type: trojan, password: Aimer, sni: epcca.ambercc.filegear-sg.me, network: ws, ws-opts: {path: "", headers: {Host: epcca.ambercc.filegear-sg.me}}, udp: true}
+  - {name: 美国 V2CROSS.COM 9, server: 45.146.232.171, port: 43591, type: trojan, password: 68a332e7-40f5-4345-ac88-86970a63d6f1, sni: q08m.vgraxiw73s.hasyaf.cn, udp: true}
+  - {name: 美国 CloudFlare节点 12, server: s2.db-link02.top, port: 2052, type: vmess, uuid: 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in172.64.6.224, headers: {Host: 100-34-100-44.s2.db-link02.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 13, server: 172.67.214.21, port: 443, type: trojan, password: fefba36d-5142-42f1-b14d-db5249511d93, sni: 5re.191268.xyz, network: ws, ws-opts: {path: /BFBuPh4SuxTxCwkqKrjE, headers: {Host: 5re.191268.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -52,33 +54,35 @@ proxy-groups:
     type: select
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 佐治亚州亚特兰大市BellSouth公司
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM 3
-      - 美国 阿里云
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
+      - 美国 V2CROSS.COM 2
+      - 美国 V2CROSS.COM 3
       - 美国 V2CROSS.COM 4
-      - 美国 CloudFlare节点 6
       - 美国 V2CROSS.COM 5
-      - 西班牙 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点 5
+      - 英国 社会保险安全部
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 阿塞拜疆 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 9
       - 美国 V2CROSS.COM 6
-      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 8
+      - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 美国 CloudFlare节点 11
       - 美国 V2CROSS.COM 7
       - 美国 V2CROSS.COM 8
-      - 美国 CloudFlare节点 11
+      - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM 9
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 CloudFlare节点 14
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -86,33 +90,35 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 佐治亚州亚特兰大市BellSouth公司
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM 3
-      - 美国 阿里云
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
+      - 美国 V2CROSS.COM 2
+      - 美国 V2CROSS.COM 3
       - 美国 V2CROSS.COM 4
-      - 美国 CloudFlare节点 6
       - 美国 V2CROSS.COM 5
-      - 西班牙 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点 5
+      - 英国 社会保险安全部
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 阿塞拜疆 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 9
       - 美国 V2CROSS.COM 6
-      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 8
+      - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 美国 CloudFlare节点 11
       - 美国 V2CROSS.COM 7
       - 美国 V2CROSS.COM 8
-      - 美国 CloudFlare节点 11
+      - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM 9
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 CloudFlare节点 14
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -120,33 +126,35 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 佐治亚州亚特兰大市BellSouth公司
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM 3
-      - 美国 阿里云
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
+      - 美国 V2CROSS.COM 2
+      - 美国 V2CROSS.COM 3
       - 美国 V2CROSS.COM 4
-      - 美国 CloudFlare节点 6
       - 美国 V2CROSS.COM 5
-      - 西班牙 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点 5
+      - 英国 社会保险安全部
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 阿塞拜疆 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 9
       - 美国 V2CROSS.COM 6
-      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 8
+      - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 美国 CloudFlare节点 11
       - 美国 V2CROSS.COM 7
       - 美国 V2CROSS.COM 8
-      - 美国 CloudFlare节点 11
+      - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM 9
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 CloudFlare节点 14
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -155,33 +163,35 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 佐治亚州亚特兰大市BellSouth公司
+      - 俄罗斯 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
-      - 南非 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM 3
-      - 美国 阿里云
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
+      - 美国 V2CROSS.COM 2
+      - 美国 V2CROSS.COM 3
       - 美国 V2CROSS.COM 4
-      - 美国 CloudFlare节点 6
       - 美国 V2CROSS.COM 5
-      - 西班牙 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点 5
+      - 英国 社会保险安全部
+      - 英国 V2CROSS.COM
+      - 美国 CloudFlare节点 6
+      - 欧盟 V2CROSS.COM
+      - 阿塞拜疆 V2CROSS.COM
+      - 印度 V2CROSS.COM
       - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 9
       - 美国 V2CROSS.COM 6
-      - 伊朗 V2CROSS.COM
+      - 美国 CloudFlare节点 8
+      - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 美国 CloudFlare节点 11
       - 美国 V2CROSS.COM 7
       - 美国 V2CROSS.COM 8
-      - 美国 CloudFlare节点 11
+      - 荷兰 V2CROSS.COM
+      - 美国 V2CROSS.COM 9
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 CloudFlare节点 14
   - name: 📲 电报消息
     type: select
     proxies:
@@ -383,7 +393,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 香港 电讯盈科有限公司
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -398,30 +408,27 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 佐治亚州亚特兰大市BellSouth公司
       - 美国 CloudFlare节点
-      - 美国 V2CROSS.COM 2
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM 3
-      - 美国 阿里云
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 CloudFlare节点 5
+      - 美国 V2CROSS.COM 2
+      - 美国 V2CROSS.COM 3
       - 美国 V2CROSS.COM 4
-      - 美国 CloudFlare节点 6
       - 美国 V2CROSS.COM 5
+      - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
       - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 华盛顿Cogent通信公司
-      - 美国 CloudFlare节点 9
       - 美国 V2CROSS.COM 6
+      - 美国 CloudFlare节点 8
+      - 美国 CloudFlare节点 9
       - 美国 CloudFlare节点 10
+      - 美国 CloudFlare节点 11
       - 美国 V2CROSS.COM 7
       - 美国 V2CROSS.COM 8
-      - 美国 CloudFlare节点 11
+      - 美国 V2CROSS.COM 9
       - 美国 CloudFlare节点 12
       - 美国 CloudFlare节点 13
-      - 美国 CloudFlare节点 14
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
