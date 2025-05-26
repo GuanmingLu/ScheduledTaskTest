@@ -5,15 +5,11 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: www.hdmoli.com, port: 80, type: vmess, uuid: 2f38f848-a899-4c87-9807-207a41615e3c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/rongseven?ed=2048", headers: {Host: fr.freeyyds.dpdns.org}}, udp: true}
-  - {name: 乌克兰 V2CROSS.COM, server: guy-trace-lyric.stark-industries.solutions, port: 443, type: trojan, password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66, udp: true}
-  - {name: 美国 RF Engineering, server: cdn2.bpcdn.cc, port: 2086, type: vmess, uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sgtxv82wilpfh6a8vm.lovebaipiao.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 5tghyu8.999820.xyz, port: 80, type: vmess, uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /10W6SJaK0F0oVXeNU6S2RVRP, headers: {Host: 5tghyu8.999820.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.112.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 170.114.45.53, port: 2086, type: vmess, uuid: c21b972a-bc92-4f8c-8e6a-6868001f7f88, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ustoucjjnid18sj6us.lovebaipiao.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: 172.67.181.193, port: 443, type: trojan, password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391, sni: EEeEee4.hUAngSHANG2030.dPdNS.org, network: ws, ws-opts: {path: /ptGwaGzcA4KNAXX, headers: {Host: EEeEee4.hUAngSHANG2030.dPdNS.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.96.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 172.66.168.209, port: 443, type: vmess, uuid: 5428dcc2-9950-4404-b8a5-9dac82acb210, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkws, headers: {Host: maXNEtVIP-usA-VP3.nETKH3.SiTE}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.112.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 104.21.96.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 104.21.96.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: m11sERFGH.459.pP.uA, port: 443, type: vmess, uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lhU8ShsoPZlulnnYPb86csp, headers: {Host: m11serfgh.459.pp.ua}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 172.67.219.54, port: 443, type: trojan, password: aa424865-2762-404c-b767-66c9f98e026b, sni: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG, network: ws, ws-opts: {path: /P6OrM7FLvAhFqZdFGa29fCwxS, headers: {Host: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,14 +29,10 @@ proxy-groups:
     type: select
     proxies:
       - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 美国 RF Engineering
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -48,14 +40,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 美国 RF Engineering
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -63,14 +51,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 美国 RF Engineering
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -79,14 +63,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 乌克兰 V2CROSS.COM
-      - 美国 RF Engineering
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
   - name: 📲 电报消息
     type: select
     proxies:
@@ -303,13 +283,10 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
-      - 美国 RF Engineering
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
-      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
