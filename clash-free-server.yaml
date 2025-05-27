@@ -5,11 +5,15 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 104.21.112.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 104.21.96.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 104.21.96.1, port: 8443, type: vmess, uuid: 914584ee-3515-46ac-a09d-4677a2e9dc9a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: m11sERFGH.459.pP.uA, port: 443, type: vmess, uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /lhU8ShsoPZlulnnYPb86csp, headers: {Host: m11serfgh.459.pp.ua}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 172.67.219.54, port: 443, type: trojan, password: aa424865-2762-404c-b767-66c9f98e026b, sni: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG, network: ws, ws-opts: {path: /P6OrM7FLvAhFqZdFGa29fCwxS, headers: {Host: 4RrrrRrrrRrRRRtTtTTTtTYyyYYYyYYiIIIiiiiOooOOoOoOoooO.hUaNgdI2031.DPDnS.orG}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.67.216.240, port: 443, type: trojan, password: 70776bb4-d791-4cbd-9c9b-c76e937f9e60, sni: Xxs345rf.857856.xYZ, skip-cert-verify: true, network: ws, ws-opts: {path: /71M8Ov1I5Gk9247fHC0XGZG6, headers: {Host: Xxs345rf.857856.xYZ}}, udp: true}
+  - {name: 法国 ONLINE S.A.S.数据中心, server: 195.154.54.171, port: 13355, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: xxcvfrrt6.999820.xyz, port: 80, type: vmess, uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /10W6SJaK0F0oVXeNU6S2RVRP, headers: {Host: xxcvfrrt6.999820.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: cf.fovi.tk, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 104.21.32.1, port: 443, type: trojan, password: f82fb954-06a1-4f0b-9180-17e07585b61f, sni: 6hj8.191262.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /Yu29UN3Yz8hcnI3SlZor0, headers: {Host: 6hj8.191262.xyz}}, udp: true}
+  - {name: 英国 V2CROSS.COM, server: admin.c3.webramz.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Bog0ELmMM9DSxDdQ, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.21.112.1, port: 2053, type: vmess, uuid: 8f78e709-2c5f-4c19-9f44-b5b5f80ab74c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.988988.shop}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: FfFgTYY.7282728.XyZ, port: 80, type: vmess, uuid: 3d4ad187-b554-4300-bf71-d26c71962504, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NiNQyrcaIIJ3WqRcOEICAwmfH7, headers: {Host: fffgtyy.7282728.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 7, server: 5tghyu8.999820.xyz, port: 80, type: vmess, uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /10W6SJaK0F0oVXeNU6S2RVRP, headers: {Host: 5tghyu8.999820.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,10 +33,14 @@ proxy-groups:
     type: select
     proxies:
       - 美国 CloudFlare节点
+      - 法国 ONLINE S.A.S.数据中心
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
+      - 美国 CloudFlare节点 7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -40,10 +48,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 法国 ONLINE S.A.S.数据中心
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
+      - 美国 CloudFlare节点 7
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -51,10 +63,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 法国 ONLINE S.A.S.数据中心
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
+      - 美国 CloudFlare节点 7
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -63,10 +79,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 法国 ONLINE S.A.S.数据中心
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 英国 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
+      - 美国 CloudFlare节点 7
   - name: 📲 电报消息
     type: select
     proxies:
@@ -287,6 +307,8 @@ proxy-groups:
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
+      - 美国 CloudFlare节点 6
+      - 美国 CloudFlare节点 7
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
