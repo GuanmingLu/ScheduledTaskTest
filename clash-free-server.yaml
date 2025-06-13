@@ -5,9 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 广东省广州市 腾讯云, server: gzbgp.098999.xyz, port: 15923, type: ss, cipher: aes-256-gcm, password: b3f793d1-8054-4651-aec6-b3d6837571de, udp: true}
-  - {name: 美国 CloudFlare节点, server: us01.sh-cloudflare.sbs, port: 8443, type: vmess, uuid: 2703867d-dd8f-4f7f-93f4-ac6e4f56c7e8, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: us01.sh-cloudflare.sbs}}, udp: true}
-  - {name: 广东省广州市 UCloud, server: 42.240.152.238, port: 8842, type: trojan, password: 1b4c16925f934c57b954a9f0f23dea33, sni: brwx.spvpv.com, skip-cert-verify: true, udp: true}
+  - {name: 美国 CloudFlare节点, server: 104.21.112.1, port: 2087, type: vmess, uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.777269.xyz}}, udp: true}
+  - {name: 美国 Microsoft数据中心, server: kh.mjt000.com, port: 443, type: trojan, password: 70d38694-8b6e-4328-a3a4-e6f5503e8503, sni: kh.mjt000.com, udp: true}
+  - {name: 俄罗斯 莫斯科JustHost, server: 45.147.201.231, port: 20058, type: vmess, uuid: 9545682d-2366-4e66-9ad4-2a63dcf8704f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: xscdddfr5.999820.xyz, port: 80, type: vmess, uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /10W6SJaK0F0oVXeNU6S2RVRP, headers: {Host: xscdddfr5.999820.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: c1xxdcswe.777169.xyz, port: 80, type: vmess, uuid: cad5a49f-14e5-4a05-aae9-c5df8fad394f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /TjUzWyRmR4P2fGqXENw4Z4, headers: {Host: c1xxdcswe.777169.xyz}}, udp: true}
+  - {name: 欧洲 V2CROSS.COM, server: 147.78.3.137, port: 20032, type: ss, cipher: aes-256-gcm, password: TTTCNA6WT59OMY28, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,27 +29,36 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 广东省广州市 腾讯云
       - 美国 CloudFlare节点
-      - 广东省广州市 UCloud
+      - 美国 Microsoft数据中心
+      - 俄罗斯 莫斯科JustHost
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 欧洲 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 广东省广州市 腾讯云
       - 美国 CloudFlare节点
-      - 广东省广州市 UCloud
+      - 美国 Microsoft数据中心
+      - 俄罗斯 莫斯科JustHost
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 欧洲 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 广东省广州市 腾讯云
       - 美国 CloudFlare节点
-      - 广东省广州市 UCloud
+      - 美国 Microsoft数据中心
+      - 俄罗斯 莫斯科JustHost
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 欧洲 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -54,9 +66,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 广东省广州市 腾讯云
       - 美国 CloudFlare节点
-      - 广东省广州市 UCloud
+      - 美国 Microsoft数据中心
+      - 俄罗斯 莫斯科JustHost
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 欧洲 V2CROSS.COM
   - name: 📲 电报消息
     type: select
     proxies:
@@ -273,6 +288,9 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
+      - 美国 Microsoft数据中心
+      - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
