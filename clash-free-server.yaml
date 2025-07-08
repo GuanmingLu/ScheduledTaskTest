@@ -5,12 +5,15 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 欧盟 V2CROSS.COM, server: beesyar.org, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 165.22.74.230, port: 443, type: trojan, password: 4732adfa16c6450bbef87264e41332db, sni: nextstepcareer.online, udp: true}
-  - {name: 美国 Cloudinnovation数据中心, server: 154.83.2.200, port: 443, type: trojan, password: d6b8011a-c725-435a-9fec-bf6d3530392c, sni: vle.amclubdns.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560&PROT_TYPE=trojan", headers: {Host: vle.amclubdns.dpdns.org}}, udp: true}
-  - {name: 浙江省台州市 台州世通网络, server: unify.46322416.xyz, port: 60073, type: trojan, password: 0b9c9261-7209-4dcc-b268-2fa74f6cd536, sni: cdn.alibaba.com, skip-cert-verify: false, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.67.219.196, port: 443, type: trojan, password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b, sni: CCcvfgt6.852224.dpdns.org, network: ws, ws-opts: {path: /CA5bMmr2JMum8sDKRwvFCJq, headers: {Host: CCcvfgt6.852224.dpdns.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: sSsdCVfBGNjkI.931.PP.Ua, port: 443, type: vmess, uuid: a4e8ec0a-75d0-4fc5-837a-4973ed3a9d3e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /14Fziqw1hYgCXNutkS5H, headers: {Host: sssdcvfbgnjki.931.pp.ua}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: aazxsdE.003330333.XYz, port: 443, type: vmess, uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /SXjq8YlnGNBlbnEsM, headers: {Host: aazxsde.003330333.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com, port: 80, type: vmess, uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: 172.67.209.79, port: 80, type: vmess, uuid: 512d9674-db12-44ca-a1b5-654244549b65, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm, headers: {Host: xcccvvbnmj.999834.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: OOoOOOooOp.222769.XYZ}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 07d2e2cb-sv0xs0-svv72o-1e0ty.hk3.p5pv.com, port: 80, type: vmess, uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 沙特阿拉伯 Alharbi International for Telecom, server: 62.3.54.31, port: 14103, type: trojan, password: e3087591-ca09-4edc-93c5-71148a6434a8, sni: 155.yuanul.com, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: xxcccvbnmko0.4444926.xyz, port: 80, type: vmess, uuid: f898ffcb-6417-4373-9640-0b66091e8206, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1, headers: {Host: xxcccvbnmko0.4444926.xyz}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: c53bf275-sv2sg0-svv72o-1e0ty.hk.p5pv.com, port: 80, type: vmess, uuid: ccd9704a-f980-11eb-a0fc-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 23.177.185.63, port: 49454, type: ss, cipher: chacha20-ietf-poly1305, password: WrYfzlAsqV4kKOJRPF2WHR, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,36 +32,45 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 浙江省台州市 台州世通网络
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 电讯盈科有限公司 2
+      - 沙特阿拉伯 Alharbi International for Telecom
+      - 美国 CloudFlare节点 4
+      - 香港 电讯盈科有限公司 3
+      - 北美地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 浙江省台州市 台州世通网络
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 电讯盈科有限公司 2
+      - 沙特阿拉伯 Alharbi International for Telecom
+      - 美国 CloudFlare节点 4
+      - 香港 电讯盈科有限公司 3
+      - 北美地区 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 浙江省台州市 台州世通网络
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 电讯盈科有限公司 2
+      - 沙特阿拉伯 Alharbi International for Telecom
+      - 美国 CloudFlare节点 4
+      - 香港 电讯盈科有限公司 3
+      - 北美地区 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -66,12 +78,15 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
-      - 浙江省台州市 台州世通网络
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 香港 电讯盈科有限公司 2
+      - 沙特阿拉伯 Alharbi International for Telecom
+      - 美国 CloudFlare节点 4
+      - 香港 电讯盈科有限公司 3
+      - 北美地区 V2CROSS.COM
   - name: 📲 电报消息
     type: select
     proxies:
@@ -273,7 +288,9 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 香港 电讯盈科有限公司 3
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -287,17 +304,18 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 美国 CloudFlare节点 3
+      - 美国 CloudFlare节点 4
+      - 北美地区 V2CROSS.COM
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 浙江省台州市 台州世通网络
+      - DIRECT
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.google.com/generate_204
