@@ -5,11 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 108.162.192.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: v7.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: www.meter.net, port: 2083, type: vmess, uuid: d218dfe5-fae6-408e-b615-8666df7f0924, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /wssss, headers: {Host: blaze-uk-48.pinkle7.site}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 527cb2.827a4c39.shop, port: 80, type: vmess, uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02s.827a4c39.shop}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 1af131.ff48fade.shop, port: 80, type: vmess, uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us02s.ff48fade.shop}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
+  - {name: 印度 V2CROSS.COM, server: 103.160.204.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: 103.116.7.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM 2, server: 103.169.142.241, port: 8880, type: vmess, uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dabai.in, headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com, port: 80, type: vmess, uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 580abbb4-suvds0-sv5llu-1ldl3.hk3.p5pv.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,10 +30,11 @@ proxy-groups:
     type: select
     proxies:
       - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 印度 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -40,10 +42,11 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 印度 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 香港 电讯盈科有限公司
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -51,10 +54,11 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 印度 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 香港 电讯盈科有限公司
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -63,10 +67,11 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
-      - 亚太地区 V2CROSS.COM
-      - 香港 电讯盈科有限公司
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 印度 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM
+      - 亚太地区 V2CROSS.COM 2
+      - 香港 电讯盈科有限公司
   - name: 📲 电报消息
     type: select
     proxies:
@@ -284,7 +289,6 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
