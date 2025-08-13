@@ -5,16 +5,22 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: 美国 CloudFlare节点, server: v34.emoyes.top, port: 8443, type: vmess, uuid: 08b24d8d-10ab-4c5a-990e-4e0e194870af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: v34.emoyes.top}}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
+  - {name: 美国 弗吉尼亚州, server: 67.226.221.102, port: 80, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 176.124.223.40, port: 2053, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
   - {name: 欧盟 V2CROSS.COM, server: 45.67.215.217, port: 2087, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 336501b6-51d2-11ee-a993-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 135.84.64.36, port: 2083, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 167.68.5.248, port: 2087, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: rak1ding.89060004.xyz, port: 2083, type: vmess, uuid: 75d96365-1229-4fc4-dbda-855717f876cf, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.988988.shop}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: 46.254.93.251, port: 2087, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.64.35.66, port: 443, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
   - {name: 美国 CloudFlare节点 4, server: 172.67.214.21, port: 443, type: trojan, password: 7248e825-887c-48b9-83bc-c26bc6392bf8, sni: xXcdvFgt.191268.XYz, skip-cert-verify: false, network: ws, ws-opts: {path: /ctdmgeIg3NII3ibrzzKXJGy3S1, headers: {Host: xXcdvFgt.191268.XYz}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: cc2dash.89060004.xyz, port: 2083, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d3.89060004.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 104.21.3.189, port: 2053, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.89060004.xyz}}, udp: true}
+  - {name: 美国 惠普HP, server: ss.026.node-for-bigairport.win, port: 15099, type: ss, cipher: aes-256-gcm, password: c69374da-2208-4cbd-b81e-cdf88b5e7f53, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: awes35lesl.blhao0o.dpdns.org, port: 12024, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: 104.21.3.189, port: 2053, type: vmess, uuid: 2fc37713-3017-497e-ff2d-965f826a19a3, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cc2d4.89060004.xyz}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 3, server: 92.243.74.3, port: 8443, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
+  - {name: 美国 CloudFlare节点 6, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 4, server: 92.243.74.23, port: 2096, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
+  - {name: 立陶宛 V2CROSS.COM, server: 86.38.214.186, port: 443, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 5, server: 92.243.74.239, port: 8443, type: trojan, password: Aimer, sni: epgb.aimercc.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: epgb.aimercc.dpdns.org}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,48 +39,66 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 美国 弗吉尼亚州
+      - 俄罗斯 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 美国 惠普HP
+      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 俄罗斯 V2CROSS.COM 3
       - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM 4
+      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 5
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 美国 弗吉尼亚州
+      - 俄罗斯 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 美国 惠普HP
+      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 俄罗斯 V2CROSS.COM 3
       - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM 4
+      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 5
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 美国 弗吉尼亚州
+      - 俄罗斯 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 美国 惠普HP
+      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 俄罗斯 V2CROSS.COM 3
       - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM 4
+      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 5
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -82,16 +106,22 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 香港 电讯盈科有限公司
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 美国 弗吉尼亚州
+      - 俄罗斯 V2CROSS.COM
+      - 欧盟 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 美国 惠普HP
+      - 亚太地区 V2CROSS.COM
       - 美国 CloudFlare节点 5
+      - 俄罗斯 V2CROSS.COM 3
       - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM 4
+      - 立陶宛 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM 5
   - name: 📲 电报消息
     type: select
     proxies:
@@ -293,7 +323,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -309,10 +339,10 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 美国 弗吉尼亚州
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
+      - 美国 惠普HP
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
   - name: 🇨🇳 台湾节点
