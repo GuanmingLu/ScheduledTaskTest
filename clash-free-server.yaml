@@ -5,9 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: sj4.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sj4.620720.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: c3.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: c3.620720.xyz}}, udp: true}
   - {name: 美国 CloudFlare节点 2, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: ssssssssssssfffffffgh.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: ssssssssssssfffffffgh.2032.pp.ua}}, udp: true}
+  - {name: 亚太地区 V2CROSS.COM, server: yuenan01.tmdns-sing.top, port: 13875, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -28,7 +28,7 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 亚太地区 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -37,7 +37,7 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 亚太地区 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -46,7 +46,7 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 亚太地区 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -56,7 +56,7 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 亚太地区 V2CROSS.COM
   - name: 📲 电报消息
     type: select
     proxies:
@@ -274,7 +274,6 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
