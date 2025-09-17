@@ -5,13 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 154.9.254.63, port: 20521, type: vmess, uuid: d824764a-954e-4c75-9116-f6e5eba944a9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 欧洲 V2CROSS.COM, server: 131.196.252.59, port: 20521, type: vmess, uuid: 5809911a-a16e-43d3-90b0-2c94cfc2035e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.99.248.180, port: 20521, type: vmess, uuid: 365a5b17-b906-4b34-b485-faa40b87f18f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 奥地利 V2CROSS.COM, server: 46.29.34.205, port: 59956, type: vmess, uuid: ca0c9937-58a6-44ea-9111-a6abac267d0f, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 智利 V2CROSS.COM, server: 170.239.86.176, port: 40708, type: vmess, uuid: 53005ac8-eed1-4e32-8183-7152e099877a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 英国 惠普HP, server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 日本 东京Amazon数据中心, server: xingxing.jiasu123.org, port: 3043, type: trojan, password: 253bc477d4e43c209f2d427272968280, sni: 23.45.86.28, skip-cert-verify: true, udp: true}
+  - {name: 澳大利亚 V2CROSS.COM, server: 202.79.161.192, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: path/170733132233}, udp: true}
+  - {name: 英国 社会保险安全部, server: ov-canada3.09vpn.com, port: 8443, type: vmess, uuid: 1a06fe60-0933-4b66-b927-937a5e015c50, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /vmess/, headers: {Host: ov-canada3.09vpn.com}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 23.165.200.112, port: 26902, type: ss, cipher: chacha20-ietf-poly1305, password: zaq1@WSXcde3$RFV, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 154.9.254.63, port: 20521, type: vmess, uuid: d824764a-954e-4c75-9116-f6e5eba944a9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,39 +27,30 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 澳大利亚 V2CROSS.COM
+      - 英国 社会保险安全部
       - 美国 V2CROSS.COM
-      - 欧洲 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 奥地利 V2CROSS.COM
-      - 智利 V2CROSS.COM
-      - 英国 惠普HP
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 澳大利亚 V2CROSS.COM
+      - 英国 社会保险安全部
       - 美国 V2CROSS.COM
-      - 欧洲 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 奥地利 V2CROSS.COM
-      - 智利 V2CROSS.COM
-      - 英国 惠普HP
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 澳大利亚 V2CROSS.COM
+      - 英国 社会保险安全部
       - 美国 V2CROSS.COM
-      - 欧洲 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 奥地利 V2CROSS.COM
-      - 智利 V2CROSS.COM
-      - 英国 惠普HP
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -70,13 +58,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 澳大利亚 V2CROSS.COM
+      - 英国 社会保险安全部
       - 美国 V2CROSS.COM
-      - 欧洲 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
-      - 奥地利 V2CROSS.COM
-      - 智利 V2CROSS.COM
-      - 英国 惠普HP
-      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -285,7 +270,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 日本 东京Amazon数据中心
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -293,7 +278,7 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 V2CROSS.COM
-      - 美国 华盛顿Cogent通信公司
+      - 美国 V2CROSS.COM 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
