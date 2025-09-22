@@ -5,14 +5,14 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: test2.flha.ru, port: 80, type: vmess, uuid: 15f62abf-8cc9-4598-8d57-e4df7b499a84, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /15f62abf-8cc9-4598-8d57-e4df7b499a84-vmess, headers: {Host: test2.flha.ru}}, udp: true}
+  - {name: 马来西亚 V2CROSS.COM, server: 116.206.93.165, port: 39975, type: vmess, uuid: bb892078-98ef-4321-edf4-4c408edd5ae2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
   - {name: 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: sirens.isquirrel.net, port: 28334, type: trojan, password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa, udp: true}
-  - {name: 美国 惠普HP, server: 15.204.248.103, port: 443, type: trojan, password: 2ee85121-31de-4581-a492-eb00f606e392, sni: rs3.freeguard.org, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: toaster.isquirrel.net, port: 443, type: trojan, password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3, udp: true}
-  - {name: 澳大利亚 V2CROSS.COM, server: 202.79.161.192, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: path/170733132233}, udp: true}
-  - {name: 美国 V2CROSS.COM 3, server: mintaka.appagent.net, port: 443, type: trojan, password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
+  - {name: 美国 阿里云, server: 47.239.30.251, port: 65421, type: vmess, uuid: e8ce8dbe-dd3b-41c7-9082-0a9b2ef4ed8e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云, server: 47.242.183.114, port: 3327, type: vmess, uuid: 2e0f1ced-ff88-4857-8c44-70a229012d89, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com}}, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 163.61.208.37, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 45.144.174.60, port: 23177, type: vmess, uuid: 9661e432-c1c7-472e-89fe-2233e3f1fdf5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,42 +31,42 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
       - 法国 国际航空电讯集团公司(SITA)
+      - 香港 电讯盈科有限公司
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
       - 法国 国际航空电讯集团公司(SITA)
+      - 香港 电讯盈科有限公司
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
       - 法国 国际航空电讯集团公司(SITA)
+      - 香港 电讯盈科有限公司
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -74,14 +74,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点
+      - 马来西亚 V2CROSS.COM
       - 法国 国际航空电讯集团公司(SITA)
+      - 香港 电讯盈科有限公司
+      - 美国 阿里云
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
+      - 日本 V2CROSS.COM
       - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 澳大利亚 V2CROSS.COM
-      - 美国 V2CROSS.COM 3
   - name: 📲 电报消息
     type: select
     proxies:
@@ -284,24 +284,23 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 日本 V2CROSS.COM
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 CloudFlare节点
+      - 美国 阿里云
       - 美国 V2CROSS.COM
-      - 美国 惠普HP
-      - 美国 V2CROSS.COM 2
-      - 美国 V2CROSS.COM 3
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
