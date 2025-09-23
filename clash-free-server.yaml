@@ -5,14 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 马来西亚 V2CROSS.COM, server: 116.206.93.165, port: 39975, type: vmess, uuid: bb892078-98ef-4321-edf4-4c408edd5ae2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: 法国 国际航空电讯集团公司(SITA), server: jamekk.org, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: linkvws, headers: {Host: jamekk.org}}, udp: true}
   - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 美国 阿里云, server: 47.239.30.251, port: 65421, type: vmess, uuid: e8ce8dbe-dd3b-41c7-9082-0a9b2ef4ed8e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 阿里云, server: 47.242.183.114, port: 3327, type: vmess, uuid: 2e0f1ced-ff88-4857-8c44-70a229012d89, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com, port: 80, type: vmess, uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 697dc551-t1i9s0-tm53cm-1ol97.hk3.p5pv.com}}, udp: true}
-  - {name: 日本 V2CROSS.COM, server: 163.61.208.37, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 45.144.174.60, port: 23177, type: vmess, uuid: 9661e432-c1c7-472e-89fe-2233e3f1fdf5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 法国 鲁贝OVH数据中心, server: 51.75.161.102, port: 443, type: vmess, uuid: 1805c3ae-ed84-4e7e-8ca2-fe9acd0897b0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvkwss, headers: {Host: bLAZe-UK-102.bLaZESErvErS1.Site}}, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 163.61.208.186, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 法国 鲁贝OVH数据中心 2, server: 51.75.160.237, port: 443, type: vmess, uuid: 3adba462-318f-4a6c-ad7a-2923bc74f207, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvkwss, headers: {Host: blazE-Uk-237.BLaZEsERVERs1.sItE}}, udp: true}
+  - {name: 日本 东京M247网络, server: v6.heduian.link, port: 30806, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: ocbc.com}}, udp: true}
+  - {name: 日本 V2CROSS.COM 2, server: 163.61.208.182, port: 4355, type: vmess, uuid: 37ba82a4-2a71-43c5-9b41-a568116da44e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,42 +29,36 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司 2
+      - 法国 鲁贝OVH数据中心
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
+      - 法国 鲁贝OVH数据中心 2
+      - 日本 东京M247网络
+      - 日本 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司 2
+      - 法国 鲁贝OVH数据中心
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
+      - 法国 鲁贝OVH数据中心 2
+      - 日本 东京M247网络
+      - 日本 V2CROSS.COM 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司 2
+      - 法国 鲁贝OVH数据中心
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
+      - 法国 鲁贝OVH数据中心 2
+      - 日本 东京M247网络
+      - 日本 V2CROSS.COM 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -74,14 +66,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 马来西亚 V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
       - 香港 电讯盈科有限公司
-      - 美国 阿里云
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司 2
+      - 法国 鲁贝OVH数据中心
       - 日本 V2CROSS.COM
-      - 美国 V2CROSS.COM
+      - 法国 鲁贝OVH数据中心 2
+      - 日本 东京M247网络
+      - 日本 V2CROSS.COM 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -284,8 +274,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 香港 电讯盈科有限公司 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -293,14 +281,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 日本 V2CROSS.COM
+      - 日本 东京M247网络
+      - 日本 V2CROSS.COM 2
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 阿里云
-      - 美国 V2CROSS.COM
+      - DIRECT
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
