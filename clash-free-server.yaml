@@ -6,7 +6,7 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 美国 V2CROSS.COM, server: 204.136.10.115, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: pl.vpnsparta.pro, port: 57456, type: ss, cipher: chacha20-ietf-poly1305, password: 360e21d21977dc11, udp: true}
+  - {name: 美国 V2CROSS.COM 2, server: 170.114.45.52, port: 2086, type: vmess, uuid: 9199bf78-8762-4ec5-9b7f-07396b71e9d4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ustoucjjnid18sj6us.lovebaipiao.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,7 +26,7 @@ proxy-groups:
     type: select
     proxies:
       - 美国 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -34,7 +34,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -42,7 +42,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -51,7 +51,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 V2CROSS.COM
-      - 伊朗 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -268,6 +268,7 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 V2CROSS.COM
+      - 美国 V2CROSS.COM 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
