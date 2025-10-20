@@ -5,8 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 V2CROSS.COM, server: 204.136.10.115, port: 1866, type: ss, cipher: chacha20-ietf-poly1305, password: oXGp1+ihlfKg826H, udp: true}
-  - {name: 美国 V2CROSS.COM 2, server: 170.114.45.52, port: 2086, type: vmess, uuid: 9199bf78-8762-4ec5-9b7f-07396b71e9d4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ustoucjjnid18sj6us.lovebaipiao.com}}, udp: true}
+  - {name: 香港 阿里云, server: 47.243.251.240, port: 8842, type: vmess, uuid: aed654a3-97bb-4ba6-a6c3-faea46befc72, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: a4f2978e-sva740-t48iy7-gydh.hk3.p5pv.com, port: 80, type: vmess, uuid: b68f4b4c-2d02-11ec-9ee8-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: c9dc37fe-szi1s0-t0y0nd-1mmbp.hk3.p5pv.com, port: 80, type: vmess, uuid: 607d365e-7ea1-11ee-95e9-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
+  - {name: 德国 法尔肯施泰因HETZNER, server: 176.9.178.52, port: 2052, type: vmess, uuid: 94452e78-daad-490f-f14e-5a143e752bf8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 香港 阿里云 2, server: 8.210.212.196, port: 34348, type: vmess, uuid: fb9fc043-2c70-42eb-88c0-66804ca33062, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 27123, type: vmess, uuid: fb240b16-18d7-43af-8c54-7efd0d7eb8d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -25,24 +29,36 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 德国 法尔肯施泰因HETZNER
+      - 香港 阿里云 2
+      - 俄罗斯 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 德国 法尔肯施泰因HETZNER
+      - 香港 阿里云 2
+      - 俄罗斯 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 德国 法尔肯施泰因HETZNER
+      - 香港 阿里云 2
+      - 俄罗斯 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -50,8 +66,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 德国 法尔肯施泰因HETZNER
+      - 香港 阿里云 2
+      - 俄罗斯 V2CROSS.COM
   - name: 📲 电报消息
     type: select
     proxies:
@@ -253,7 +273,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 香港 阿里云
+      - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
+      - 香港 阿里云 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -267,8 +290,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 V2CROSS.COM
-      - 美国 V2CROSS.COM 2
+      - DIRECT
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
