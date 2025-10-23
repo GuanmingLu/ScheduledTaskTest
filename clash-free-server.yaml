@@ -5,7 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 伊朗 V2CROSS.COM, server: 151.242.251.142, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: false, network: ws, ws-opts: {path: /trGPZDfetEwuO25SAs, headers: {Host: NOp-55q.pAgEs.dEv}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 212.192.15.176, port: 25169, type: vmess, uuid: 0b4d2a2c-7ac1-4cf5-bac8-c6b8fa9afd77, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 罗马尼亚 V2CROSS.COM, server: 188.214.157.58, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -24,21 +27,30 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 罗马尼亚 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 罗马尼亚 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 罗马尼亚 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -46,7 +58,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 伊朗 V2CROSS.COM
+      - 香港 电讯盈科有限公司
+      - 美国 CloudFlare节点
+      - 俄罗斯 V2CROSS.COM
+      - 罗马尼亚 V2CROSS.COM
   - name: 📲 电报消息
     type: select
     proxies:
@@ -248,7 +263,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 香港 电讯盈科有限公司
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -262,7 +277,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - DIRECT
+      - 美国 CloudFlare节点
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
