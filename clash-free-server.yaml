@@ -5,10 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: hkt.gotochinatown.net, port: 80, type: vmess, uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkt.gotochinatown.net}}, udp: true}
-  - {name: 罗马尼亚 V2CROSS.COM, server: 188.214.157.58, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.110.83, port: 443, type: trojan, password: ea39fa94f1ee00999337ea1fd3318e69, sni: www.nintendogames.net, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: v10.heduian.link, port: 30807, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: baidu.com}}, udp: true}
   - {name: 美国 CloudFlare节点, server: nop-55q.pages.dev, port: 2053, type: trojan, password: T%40_WvT8Ho%40LW%25w_%2C, sni: NOp-55q.pAgEs.dEv, skip-cert-verify: false, network: ws, ws-opts: {path: /trGPZDfetEwuO25SAs, headers: {Host: NOp-55q.pAgEs.dEv}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -29,9 +26,6 @@ proxy-groups:
     type: select
     proxies:
       - 香港 电讯盈科有限公司
-      - 罗马尼亚 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点
   - name: ♻️ 自动选择
     type: url-test
@@ -40,9 +34,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 罗马尼亚 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点
   - name: 🔯 故障转移
     type: fallback
@@ -51,9 +42,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 罗马尼亚 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点
   - name: 🔮 负载均衡
     type: load-balance
@@ -63,9 +51,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 罗马尼亚 V2CROSS.COM
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
       - 美国 CloudFlare节点
   - name: 📲 电报消息
     type: select
@@ -269,8 +254,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
