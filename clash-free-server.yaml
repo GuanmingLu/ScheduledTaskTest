@@ -5,10 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 俄罗斯 莫斯科JustHost, server: ru1.nodea6a6.skynode.me, port: 80, type: vmess, uuid: c3f95b7e-0fc7-3311-9a3d-e34e675632d4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /download, headers: {Host: node-59-175-206-86.speedtest.cn}}, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 185.146.173.117, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 美国 CloudFlare节点, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, udp: true}
+  - {name: 美国 CloudFlare节点, server: cf.090227.xyz, port: 443, type: vmess, uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: sgal.dagrate.eu.org}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 美国 惠普公司, server: 15.235.186.140, port: 8443, type: ss, cipher: aes-256-gcm, password: bd080898-b41a-48ae-b164-1baae4124627, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,30 +27,30 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 俄罗斯 莫斯科JustHost
-      - 瑞典 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 莫斯科JustHost
-      - 瑞典 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 莫斯科JustHost
-      - 瑞典 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -58,10 +58,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 莫斯科JustHost
-      - 瑞典 V2CROSS.COM
       - 美国 CloudFlare节点
       - 香港 电讯盈科有限公司
+      - 美国 惠普公司
+      - 香港 电讯盈科有限公司 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -264,6 +264,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
+      - 香港 电讯盈科有限公司 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -278,6 +279,7 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
+      - 美国 惠普公司
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
