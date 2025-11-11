@@ -5,10 +5,11 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: 141.101.121.250, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.53.186, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, skip-cert-verify: false, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: 58.152.30.26, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, udp: true}
+  - {name: 美国 CloudFlare节点, server: 141.101.120.130, port: 80, type: vmess, uuid: d967ffca-de90-4daa-bd00-d527e5bae11f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/?---@AZARBAYKAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1---@AZARBAYJAB1/?ed=2560", headers: {Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.46.98, port: 443, type: trojan, password: BxceQaOe, udp: true}
+  - {name: 香港 电讯盈科有限公司 2, server: 203.198.122.129, port: 443, type: trojan, password: BxceQaOe, sni: 203.198.122.129, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司 3, server: 116.49.237.130, port: 4569, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, udp: true}
+  - {name: 香港 电讯盈科有限公司 4, server: 203.198.122.97, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,6 +32,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -41,6 +43,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -51,6 +54,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -62,6 +66,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 📲 电报消息
     type: select
     proxies:
@@ -266,6 +271,7 @@ proxy-groups:
       - 香港 电讯盈科有限公司
       - 香港 电讯盈科有限公司 2
       - 香港 电讯盈科有限公司 3
+      - 香港 电讯盈科有限公司 4
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
