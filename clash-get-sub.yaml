@@ -5,15 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _US_美国, server: wangcai.cf.877774.xyz, port: 2096, type: trojan, password: 12345678-1234-1234-1234-123456789123, sni: joss.gpj1.web.id, network: ws, ws-opts: {path: "/Free-VPN-CF-Geo-Project/HK?Telegram🇨🇳 @WangCai2", headers: {Host: joss.gpj1.web.id}}, udp: true}
-  - {name: _US_美国 2, server: 162.159.42.58, port: 443, type: trojan, password: !<str> 0, sni: c03237cb.ba73fe85.netlib.re, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: c03237cb.ba73fe85.netlib.re}}, udp: true}
-  - {name: US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X, server: okl5i3.zeeoomboom.de, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: okl5i3.zeeoomboom.de, network: ws, ws-opts: {path: /video/pmi58yp5.m3u8, headers: {Host: okl5i3.zeeoomboom.de}}, udp: true}
-  - {name: FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X, server: n5vaz1.zeeoomboom.de, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: n5vaz1.zeeoomboom.de, network: ws, ws-opts: {path: /video/i3o7f0yh.m3u8, headers: {Host: n5vaz1.zeeoomboom.de}}, udp: true}
-  - {name: US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X, server: a3fyst.zeeoomboom.de, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: a3fyst.zeeoomboom.de, network: ws, ws-opts: {path: /video/d4kapx2v.m3u8, headers: {Host: a3fyst.zeeoomboom.de}}, udp: true}
-  - {name: HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed, server: 36.50.90.241, port: 35951, type: vmess, uuid: f282b878-8711-45a1-8c69-5564172123c1, alterId: 0, cipher: auto, tls: true, servername: vm.gpj1.web.id, network: ws, ws-opts: {path: /Geo-Project/36.50.90.241-35951, headers: {Host: vm.gpj1.web.id}}, udp: true}
-  - {name: US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X, server: xyst5w.teeoomboom.de, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, servername: xyst5w.teeoomboom.de, network: ws, ws-opts: {path: /video/g5petez.m3u8, headers: {Host: xyst5w.teeoomboom.de}}, udp: true}
-  - {name: _FR_法国, server: 35.181.172.34, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
-  - {name: _DE_德国, server: 45.87.175.166, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 1RWwXhwfAB5gAEozU4G2Pg, udp: true}
+  - {name: 【机场推荐：https://a0a.xyz/】45, server: 144.48.180.187, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 荷兰 05, server: v30.hdacd.com, port: 30830, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory, server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: _KR_韩国, server: hk3.t.sgateway.link, port: 5223, type: trojan, password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS, sni: pod-hk-z1.psusercontent.com, udp: true}
+  - {name: 德国 24, server: v33.hdacd.com, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: _US_美国, server: 3.76.39.215, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,45 +29,36 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 【机场推荐：https://a0a.xyz/】45
+      - 荷兰 05
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
+      - _KR_韩国
+      - 德国 24
       - _US_美国
-      - _US_美国 2
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - _FR_法国
-      - _DE_德国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 【机场推荐：https://a0a.xyz/】45
+      - 荷兰 05
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
+      - _KR_韩国
+      - 德国 24
       - _US_美国
-      - _US_美国 2
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - _FR_法国
-      - _DE_德国
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 【机场推荐：https://a0a.xyz/】45
+      - 荷兰 05
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
+      - _KR_韩国
+      - 德国 24
       - _US_美国
-      - _US_美国 2
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - _FR_法国
-      - _DE_德国
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -78,15 +66,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 【机场推荐：https://a0a.xyz/】45
+      - 荷兰 05
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
+      - _KR_韩国
+      - 德国 24
       - _US_美国
-      - _US_美国 2
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - _FR_法国
-      - _DE_德国
   - name: 📲 电报消息
     type: select
     proxies:
@@ -288,7 +273,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - HK¹⁺_1|0.5MB/s|2%|YT|D+|X|KeepSucceed
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -302,11 +287,8 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
       - _US_美国
-      - _US_美国 2
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -327,14 +309,11 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - _KR_韩国
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - US²_5|4.5MB/s|57%|GPT⁺|GM|YT|TK|NF|X
-      - FR²_4|4.2MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_12|5.1MB/s|100%|GPT⁺|YT|TK|NF|X
-      - US²_6|4.1MB/s|100%|GPT⁺|YT|TK|NF|X
+      - US²_3|1.1MB/s|54%|GPT⁺|TK-GB|NF|X|KeepHistory
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
