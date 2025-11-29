@@ -5,7 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 52, server: us5.998998.best, port: 443, type: vmess, uuid: 24254866-770c-41b4-9404-3f50524f425b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /androirfdsreoightrjh, headers: {Host: 24254866-770c-41b4-9404-3f50524f425b.fasleangles.fun}}, udp: true}
+  - {name: "%F0%9F%87%B9%F0%9F%87%B7%20%40Evay_vpn", server: cpanel.navar1.ir, port: 100, type: vmess, uuid: 26402bc7-7895-4dd0-ae6e-151a00c71145, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: _RU_俄罗斯, server: 45.14.245.2, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP, udp: true}
+  - {name: _US_美国, server: 51.158.218.2, port: 50066, type: hysteria2, ports: 50066, password: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -24,21 +26,27 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 美国 52
+      - "%F0%9F%87%B9%F0%9F%87%B7%20%40Evay_vpn"
+      - _RU_俄罗斯
+      - _US_美国
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 52
+      - "%F0%9F%87%B9%F0%9F%87%B7%20%40Evay_vpn"
+      - _RU_俄罗斯
+      - _US_美国
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 52
+      - "%F0%9F%87%B9%F0%9F%87%B7%20%40Evay_vpn"
+      - _RU_俄罗斯
+      - _US_美国
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -46,7 +54,9 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 52
+      - "%F0%9F%87%B9%F0%9F%87%B7%20%40Evay_vpn"
+      - _RU_俄罗斯
+      - _US_美国
   - name: 📲 电报消息
     type: select
     proxies:
@@ -262,7 +272,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 52
+      - _US_美国
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
