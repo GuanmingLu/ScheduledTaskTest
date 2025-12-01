@@ -5,11 +5,17 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 韩国 首尔Choopa数据中心, server: 141.164.45.187, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: 法国 OVH SAS, server: 91.134.8.101, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 112.118.116.66, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, udp: true}
-  - {name: 日本东京 Amazon数据中心, server: 52.199.129.13, port: 2752, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 波兰 V2CROSS.COM, server: 188.116.22.96, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 香港 阿里云, server: 47.243.12.217, port: 28405, type: vmess, uuid: cac3e30d-fa01-4993-ac1e-d6971263ea90, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 2, server: 47.242.162.235, port: 3787, type: vmess, uuid: e748fe05-2678-4c31-84c6-14ed825b92b4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 3, server: 47.243.241.93, port: 62195, type: vmess, uuid: 73f10380-0c4d-4ffc-9b0d-0a75020d3636, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 4, server: 47.242.20.123, port: 41026, type: vmess, uuid: b48a48a2-5d83-40a7-b5fc-edb71eaa54b1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 5, server: 47.242.140.52, port: 34815, type: vmess, uuid: 1a46b66c-6ba9-4e9c-aa0b-0ebac2b69e32, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 6, server: 47.242.238.231, port: 16470, type: vmess, uuid: 89240c7e-d221-4042-a726-5dcbcf79c130, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 香港 阿里云 7, server: 47.243.51.237, port: 52801, type: vmess, uuid: ef93f413-9039-4ddb-aefb-2490287df55a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 北美地区 V2CROSS.COM, server: 107.173.31.37, port: 443, type: vmess, uuid: be8771bd-10b9-4766-ad44-87971ba1fba4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /video, headers: {Host: proxy.gelindejia.asia}}, udp: true}
+  - {name: 香港 阿里云 8, server: 47.243.212.142, port: 35193, type: vmess, uuid: c76ee219-2274-4768-8953-200fa72d2a60, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
+  - {name: 香港 阿里云 9, server: 47.242.162.235, port: 13767, type: vmess, uuid: d77fcaf1-8356-47bc-8883-a80d15e1bd78, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -28,33 +34,51 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 韩国 首尔Choopa数据中心
-      - 法国 OVH SAS
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 日本东京 Amazon数据中心
-      - 波兰 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 韩国 首尔Choopa数据中心
-      - 法国 OVH SAS
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 日本东京 Amazon数据中心
-      - 波兰 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 韩国 首尔Choopa数据中心
-      - 法国 OVH SAS
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 日本东京 Amazon数据中心
-      - 波兰 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -62,11 +86,17 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 韩国 首尔Choopa数据中心
-      - 法国 OVH SAS
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
-      - 日本东京 Amazon数据中心
-      - 波兰 V2CROSS.COM
+      - 香港 阿里云 7
+      - 北美地区 V2CROSS.COM
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 📲 电报消息
     type: select
     proxies:
@@ -268,21 +298,30 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 香港 阿里云
+      - 香港 阿里云 2
+      - 香港 阿里云 3
+      - 香港 阿里云 4
+      - 香港 阿里云 5
+      - 香港 阿里云 6
       - 香港 电讯盈科有限公司
+      - 香港 阿里云 7
+      - 香港 阿里云 8
+      - 香港 阿里云 9
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 日本东京 Amazon数据中心
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - DIRECT
+      - 北美地区 V2CROSS.COM
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -303,7 +342,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 韩国 首尔Choopa数据中心
+      - DIRECT
   - name: 🎥 奈飞节点
     type: select
     proxies:
