@@ -5,14 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 香港 电讯盈科有限公司, server: 58.152.18.95, port: 443, type: trojan, password: BxceQaOe, udp: true}
-  - {name: 香港 阿里云, server: 47.242.238.231, port: 47843, type: vmess, uuid: c12ab974-7b02-42fd-a99b-576a03b0c433, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/arki?ed=2048"}, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: m.cnmjin.net, port: 16632, type: vmess, uuid: 77439561-dcef-4e45-803a-743cfa7d20c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: m.cnmjin.net, port: 16645, type: vmess, uuid: 77439561-dcef-4e45-803a-743cfa7d20c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, udp: true}
-  - {name: 美国 V2CROSS.COM, server: 74.117.196.232, port: 37934, type: vmess, uuid: 254551f6-ec28-4938-ad0e-0aa4aa1965ec, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /speedtest}, udp: true}
-  - {name: 广东省深圳市 BGP数据中心, server: planb.mojcn.com, port: 16645, type: vmess, uuid: 77439561-dcef-4e45-803a-743cfa7d20c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com}}, udp: true}
-  - {name: 英国 V2CROSS.COM 2, server: m.cnmjin.net, port: 16622, type: vmess, uuid: 77439561-dcef-4e45-803a-743cfa7d20c2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 9e97d6c9e2e0ad3444cbf96d3709366d.mobgslb.tbcache.com}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 109.71.246.210, port: 56689, type: ss, cipher: chacha20-ietf-poly1305, password: YQCSKoCF3QazW8YlvDBWA4, udp: true}
+  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 卢森堡 V2CROSS.COM, server: 5.188.108.13, port: 11790, type: trojan, password: .+QAJot50sDi6mvb, sni: runningshoes.purpletornado.click, skip-cert-verify: true, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 112.118.116.66, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -31,42 +27,30 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 亚太地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省深圳市 BGP数据中心
-      - 英国 V2CROSS.COM 2
+      - 卢森堡 V2CROSS.COM
+      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 亚太地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省深圳市 BGP数据中心
-      - 英国 V2CROSS.COM 2
+      - 卢森堡 V2CROSS.COM
+      - 香港 电讯盈科有限公司
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 亚太地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省深圳市 BGP数据中心
-      - 英国 V2CROSS.COM 2
+      - 卢森堡 V2CROSS.COM
+      - 香港 电讯盈科有限公司
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -74,14 +58,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
-      - 香港 阿里云
-      - 亚太地区 V2CROSS.COM
+      - 俄罗斯 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 加拿大多伦多 V2CROSS.COM
-      - 美国 V2CROSS.COM
-      - 广东省深圳市 BGP数据中心
-      - 英国 V2CROSS.COM 2
+      - 卢森堡 V2CROSS.COM
+      - 香港 电讯盈科有限公司
   - name: 📲 电报消息
     type: select
     proxies:
@@ -284,7 +264,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 阿里云
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -298,7 +277,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 V2CROSS.COM
+      - DIRECT
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
