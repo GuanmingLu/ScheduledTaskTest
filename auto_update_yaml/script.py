@@ -60,7 +60,7 @@ def get_from_urls(items):
 			result = requests.get(url)
 			if result.ok:
 				print(url)
-				note = f"[{re.sub(r"(clash)|(\.?ya?ml)", "", url)[-20:]}]"
+				note = "[" + re.sub(r"(clash)|(\.?ya?ml)", "", url)[-20:] + "]"
 				result_yaml = result.content.decode("utf-8")
 				yaml_obj = yaml.load(result_yaml, Loader=yaml.FullLoader)
 				yaml_obj["proxies"].insert(0, {
