@@ -2,6 +2,7 @@ import datetime
 import os
 import requests
 import threading
+import yaml
 
 
 SCRIPT_DIR = os.path.split(os.path.realpath(__file__))[0]
@@ -58,7 +59,19 @@ def get_from_urls(items):
 			result = requests.get(url)
 			if result.ok:
 				print(url)
+				note = f"[{url[-20:]}]"
 				result_yaml = result.content.decode("utf-8")
+				yaml_obj = yaml.load(result_yaml, Loader=yaml.FullLoader)
+				yaml_obj["proxies"].insert(0, {
+					"name": note,
+					"server": "127.0.0.1",
+					"port": 443,
+					"type": "ss",
+					"cipher": "aes-256-cfb",
+					"password": "password"
+				})
+				yaml_obj["proxy-groups"][0]["proxies"].insert(0, note)
+				result_yaml = yaml.dump(yaml_obj)
 				# TODO 保存到文件
 				filePath = SCRIPT_DIR + "/" + items["name"] + ".yaml"
 				generateSubscribeUrl(items["name"])
