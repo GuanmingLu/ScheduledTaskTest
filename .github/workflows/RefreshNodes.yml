@@ -25,6 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install requests
           pip3 install pycryptodome
+          pip3 install pyyaml
 
       - name: Auto update
         run: python3 auto_update_yaml/script.py
