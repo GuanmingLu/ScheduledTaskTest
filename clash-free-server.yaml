@@ -5,9 +5,9 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, udp: true}
+  - {name: 卢森堡 V2CROSS.COM, server: 5.188.108.13, port: 11790, type: trojan, password: .+QAJot50sDi6mvb, sni: runningshoes.purpletornado.click, udp: true}
+  - {name: 加拿大多伦多 V2CROSS.COM, server: 198.57.27.27, port: 12990, type: trojan, password: 6pRjKQJ0CWyFtG.9, sni: diningtable.electricbanana.click, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.25.20, port: 443, type: trojan, password: BxceQaOe, sni: t.me%25252Fripaojiedian, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -26,27 +26,27 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 美国 华盛顿Cogent通信公司
+      - 卢森堡 V2CROSS.COM
+      - 加拿大多伦多 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 华盛顿Cogent通信公司
+      - 卢森堡 V2CROSS.COM
+      - 加拿大多伦多 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 华盛顿Cogent通信公司
+      - 卢森堡 V2CROSS.COM
+      - 加拿大多伦多 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -54,9 +54,9 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 美国 华盛顿Cogent通信公司
+      - 卢森堡 V2CROSS.COM
+      - 加拿大多伦多 V2CROSS.COM
       - 英国 V2CROSS.COM
-      - 香港 电讯盈科有限公司
   - name: 📲 电报消息
     type: select
     proxies:
@@ -258,7 +258,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -272,7 +272,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 华盛顿Cogent通信公司
+      - DIRECT
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
