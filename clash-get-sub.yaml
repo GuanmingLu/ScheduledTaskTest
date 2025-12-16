@@ -5,15 +5,12 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed, server: yg1.ygkkk.dpdns.org, port: 443, type: vmess, uuid: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b, alterId: 0, cipher: auto, tls: true, servername: jporacleyg.336697.xyz, network: ws, ws-opts: {path: "/7a88d322-eb4a-4a59-8c62-8c60d76abf4b-vm?ed=2048", headers: {Host: jporacleyg.336697.xyz}}, udp: true}
-  - {name: _RO_罗马尼亚, server: 86.106.84.195, port: 13262, type: ss, cipher: aes-128-gcm, password: kfuzkwdg4oynv495aywc, udp: true}
-  - {name: _ES_西班牙, server: 109.234.211.66, port: 8443, type: trojan, password: trojan, sni: store.timimi.dpdns.org, network: ws, ws-opts: {path: /, headers: {Host: store.timimi.dpdns.org}}, udp: true}
-  - {name: 俄罗斯 03, server: yx1.xn--11x.org, port: 2052, type: vmess, uuid: 705a4b47-c2d7-4c0e-8963-e52a18a4070b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 2112136940.online.video.downloader.0123456789ru.xn--11x.org}}, udp: true}
-  - {name: 【机场推荐：https://a0a.xyz/】_5, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: _RU_俄罗斯, server: 45.14.245.2, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 17ZDORWIliQHuO6WRGHChXYMzdRtAYVP, udp: true}
-  - {name: US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: "英国 - Slough - DigitalOcean, LLC - 1", server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
   - {name: 机场推荐:dafei.de 美国 05, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: _NL_荷兰, server: 185.82.73.212, port: 8444, type: ss, cipher: chacha20-ietf-poly1305, password: _bypfvq6ra7g4n5yCCR9DoVeGya2XUUS, udp: true}
+  - {name: _US_美国, server: 161.33.185.230, port: 28253, type: hysteria2, ports: 28253, password: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: _US_美国 2, server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: 法国 09, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: US美国(mibei77.com 米贝节点分享), server: v33.hdacd.com, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -32,45 +29,36 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - _RO_罗马尼亚
-      - _ES_西班牙
-      - 俄罗斯 03
-      - 【机场推荐：https://a0a.xyz/】_5
-      - _RU_俄罗斯
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
-      - 英国 - Slough - DigitalOcean, LLC - 1
       - 机场推荐:dafei.de 美国 05
+      - _NL_荷兰
+      - _US_美国
+      - _US_美国 2
+      - 法国 09
+      - US美国(mibei77.com 米贝节点分享)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - _RO_罗马尼亚
-      - _ES_西班牙
-      - 俄罗斯 03
-      - 【机场推荐：https://a0a.xyz/】_5
-      - _RU_俄罗斯
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
-      - 英国 - Slough - DigitalOcean, LLC - 1
       - 机场推荐:dafei.de 美国 05
+      - _NL_荷兰
+      - _US_美国
+      - _US_美国 2
+      - 法国 09
+      - US美国(mibei77.com 米贝节点分享)
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - _RO_罗马尼亚
-      - _ES_西班牙
-      - 俄罗斯 03
-      - 【机场推荐：https://a0a.xyz/】_5
-      - _RU_俄罗斯
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
-      - 英国 - Slough - DigitalOcean, LLC - 1
       - 机场推荐:dafei.de 美国 05
+      - _NL_荷兰
+      - _US_美国
+      - _US_美国 2
+      - 法国 09
+      - US美国(mibei77.com 米贝节点分享)
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -78,15 +66,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - _RO_罗马尼亚
-      - _ES_西班牙
-      - 俄罗斯 03
-      - 【机场推荐：https://a0a.xyz/】_5
-      - _RU_俄罗斯
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
-      - 英国 - Slough - DigitalOcean, LLC - 1
       - 机场推荐:dafei.de 美国 05
+      - _NL_荷兰
+      - _US_美国
+      - _US_美国 2
+      - 法国 09
+      - US美国(mibei77.com 米贝节点分享)
   - name: 📲 电报消息
     type: select
     proxies:
@@ -295,15 +280,17 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
+      - DIRECT
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
       - 机场推荐:dafei.de 美国 05
+      - _US_美国
+      - _US_美国 2
+      - US美国(mibei77.com 米贝节点分享)
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -328,8 +315,7 @@ proxy-groups:
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - JP²_1|4.7MB/s|4%|GPT⁺|YT|TK|NF|X|KeepSucceed
-      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - DIRECT
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
