@@ -5,12 +5,10 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 机场推荐:dafei.de 美国 05, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: _NL_荷兰, server: 185.82.73.212, port: 8444, type: ss, cipher: chacha20-ietf-poly1305, password: _bypfvq6ra7g4n5yCCR9DoVeGya2XUUS, udp: true}
-  - {name: _US_美国, server: 161.33.185.230, port: 28253, type: hysteria2, ports: 28253, password: 7a88d322-eb4a-4a59-8c62-8c60d76abf4b, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 2, server: 38.165.233.93, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: 法国 09, server: v35.hdacd.com, port: 30835, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: US美国(mibei77.com 米贝节点分享), server: v33.hdacd.com, port: 30833, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X, server: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net}}, udp: true}
+  - {name: US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X, server: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net}}, udp: true}
+  - {name: "英国 - Slough - DigitalOcean, LLC - 1", server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -29,36 +27,30 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 机场推荐:dafei.de 美国 05
-      - _NL_荷兰
-      - _US_美国
-      - _US_美国 2
-      - 法国 09
-      - US美国(mibei77.com 米贝节点分享)
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - 英国 - Slough - DigitalOcean, LLC - 1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 机场推荐:dafei.de 美国 05
-      - _NL_荷兰
-      - _US_美国
-      - _US_美国 2
-      - 法国 09
-      - US美国(mibei77.com 米贝节点分享)
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - 英国 - Slough - DigitalOcean, LLC - 1
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 机场推荐:dafei.de 美国 05
-      - _NL_荷兰
-      - _US_美国
-      - _US_美国 2
-      - 法国 09
-      - US美国(mibei77.com 米贝节点分享)
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - 英国 - Slough - DigitalOcean, LLC - 1
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -66,12 +58,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 机场推荐:dafei.de 美国 05
-      - _NL_荷兰
-      - _US_美国
-      - _US_美国 2
-      - 法国 09
-      - US美国(mibei77.com 米贝节点分享)
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - 英国 - Slough - DigitalOcean, LLC - 1
   - name: 📲 电报消息
     type: select
     proxies:
@@ -273,7 +263,8 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -287,10 +278,7 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - 机场推荐:dafei.de 美国 05
-      - _US_美国
-      - _US_美国 2
-      - US美国(mibei77.com 米贝节点分享)
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -315,7 +303,9 @@ proxy-groups:
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - DIRECT
+      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
