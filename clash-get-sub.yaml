@@ -5,10 +5,21 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X, server: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 0fcf5a7a-e1b7-11ec-a352-f23c91cfbbc9, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: e66ecabe-t7h340-tq9o8d-1d3bw.hkt.gotochinatown.net}}, udp: true}
+  - {name: _IR_伊朗, server: 217.60.249.112, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 0eC4ZBvStOgQEzTpCYjWN5, udp: true}
+  - {name: _GB_英国, server: 82.38.31.214, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
+  - {name: _IR_伊朗 2, server: 151.242.251.152, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: k1dBOmOB4oqi7Ump37a1bQ, udp: true}
   - {name: US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory, server: v29.hdacd.com, port: 30829, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
-  - {name: HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X, server: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 89b0ea8c-806b-11ed-94ba-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 6af671a9-t70f40-t7c05o-n09f.hkt.gotochinatown.net}}, udp: true}
-  - {name: "英国 - Slough - DigitalOcean, LLC - 1", server: v36.hdacd.com, port: 30836, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: _AF_阿富汗, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: _GB_英国 2, server: 146.70.61.37, port: 8080, type: ss, cipher: rc4-md5, password: 14fFPrbezE3HDZzsMOr6, udp: true}
+  - {name: US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory, server: v8.hdacd.com, port: 30808, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, udp: true}
+  - {name: _TR_土耳其, server: 193.135.174.135, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: _PT_葡萄牙, server: 185.113.143.186, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: _MD_摩尔多瓦, server: 176.123.5.253, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: _GB_英国 3, server: 146.70.90.195, port: 57452, type: trojan, password: t1k169n5zmvvwn96r9ft, sni: api-yandex.maps.ru, skip-cert-verify: true, udp: true}
+  - {name: _FI_芬兰, server: 95.111.222.113, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: SVt6ZiWzRI1Yxeig4xBZwiJOt6ceXwGa, udp: true}
+  - {name: _IT_意大利, server: 185.213.23.63, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: _US_美国, server: 173.234.29.2, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
+  - {name: _US_美国 2, server: 38.165.231.25, port: 990, type: ss, cipher: chacha20-ietf-poly1305, password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,30 +38,63 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - _IR_伊朗
+      - _GB_英国
+      - _IR_伊朗 2
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 英国 - Slough - DigitalOcean, LLC - 1
+      - _AF_阿富汗
+      - _GB_英国 2
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - _TR_土耳其
+      - _PT_葡萄牙
+      - _MD_摩尔多瓦
+      - _GB_英国 3
+      - _FI_芬兰
+      - _IT_意大利
+      - _US_美国
+      - _US_美国 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - _IR_伊朗
+      - _GB_英国
+      - _IR_伊朗 2
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 英国 - Slough - DigitalOcean, LLC - 1
+      - _AF_阿富汗
+      - _GB_英国 2
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - _TR_土耳其
+      - _PT_葡萄牙
+      - _MD_摩尔多瓦
+      - _GB_英国 3
+      - _FI_芬兰
+      - _IT_意大利
+      - _US_美国
+      - _US_美国 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - _IR_伊朗
+      - _GB_英国
+      - _IR_伊朗 2
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 英国 - Slough - DigitalOcean, LLC - 1
+      - _AF_阿富汗
+      - _GB_英国 2
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - _TR_土耳其
+      - _PT_葡萄牙
+      - _MD_摩尔多瓦
+      - _GB_英国 3
+      - _FI_芬兰
+      - _IT_意大利
+      - _US_美国
+      - _US_美国 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -58,10 +102,21 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
+      - _IR_伊朗
+      - _GB_英国
+      - _IR_伊朗 2
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
-      - 英国 - Slough - DigitalOcean, LLC - 1
+      - _AF_阿富汗
+      - _GB_英国 2
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - _TR_土耳其
+      - _PT_葡萄牙
+      - _MD_摩尔多瓦
+      - _GB_英国 3
+      - _FI_芬兰
+      - _IT_意大利
+      - _US_美国
+      - _US_美国 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -263,8 +318,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -279,6 +333,9 @@ proxy-groups:
     tolerance: 150
     proxies:
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
+      - _US_美国
+      - _US_美国 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -303,9 +360,8 @@ proxy-groups:
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - HK²_2|11.0MB/s|2%|GPT|YT|NF|D+|X
       - US²_3|0.9MB/s|52%|GPT⁺|TK|NF|X|KeepHistory
-      - HK²_3|9.9MB/s|2%|GPT⁺|YT|NF|D+|X
+      - US²_5|6.9MB/s|51%|GPT⁺|GM|YT|TK|NF|X|KeepHistory
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
