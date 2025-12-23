@@ -6,11 +6,8 @@ log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
   - {name: 香港 电讯盈科有限公司, server: 58.152.25.71, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 58.152.26.107, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: c7.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: c7.620720.xyz}}, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
-  - {name: 英国 V2CROSS.COM 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,11 +27,8 @@ proxy-groups:
     type: select
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -42,11 +36,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -54,11 +45,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -67,11 +55,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
       - 美国 CloudFlare节点
       - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -274,7 +259,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -289,7 +273,6 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
-      - 美国 CloudFlare节点 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
