@@ -1,4 +1,4 @@
-# https://freenode.openrunner.net/uploads/20251223-clash.yaml
+# https://freenode.openrunner.net/uploads/20251224-clash.yaml
 allow-lan: true
 dns:
   enable: true
@@ -17,7 +17,7 @@ mode: Rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: '[et/uploads/20251223-]'
+  name: '[et/uploads/20251224-]'
   password: password
   port: 443
   server: 127.0.0.1
@@ -37,16 +37,24 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 216.250.97.82
-  type: ss
+  network: ws
+  port: 16632
+  server: 111.47.247.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f93123ed-84e2-4165-aaaa-db46a6eceb69
+  ws-opts:
+    headers:
+      Host: abfba8affeca9988664697aab83c3851.mobgslb.tbcache.com
+    path: /
 - name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 443
-  server: 58.152.110.104
+  server: 112.118.116.8
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -67,64 +75,73 @@ proxies:
 - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   password: BxceQaOe
   port: 2762
-  server: 3.112.233.197
+  server: 18.177.141.4
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 3169
-  server: 3.112.16.3
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 3093
-  server: 160.16.242.183
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
+  port: 30806
+  server: v6.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 2760
-  server: 153.121.39.240
-  skip-cert-verify: false
+  server: 160.16.116.227
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
   port: 2760
-  server: 160.16.63.16
+  server: 160.16.57.238
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
 - name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
   password: BxceQaOe
   port: 804
-  server: 57.180.15.254
+  server: 57.180.28.48
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2890
-  server: 160.16.63.16
+  port: 4054
+  server: 160.16.116.227
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
   password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 4054
-  server: 153.121.39.240
-  skip-cert-verify: true
+  port: 2890
+  server: 160.16.204.136
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
   password: BxceQaOe
-  port: 1221
-  server: 43.206.210.137
-  skip-cert-verify: false
+  port: 1112
+  server: 95.40.14.227
+  skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
@@ -140,12 +157,12 @@ proxies:
   name: "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.145
+  server: 103.186.155.23
   type: ss
 proxy-groups:
 - name: "\U0001F680 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - '[et/uploads/20251223-]'
+  - '[et/uploads/20251224-]'
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - DIRECT
   - "tg\u9891\u9053:@freenodedaily"
@@ -157,6 +174,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -178,6 +196,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -203,6 +222,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -225,6 +245,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -247,6 +268,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -269,6 +291,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -292,6 +315,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
@@ -331,6 +355,7 @@ proxy-groups:
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
+  - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
