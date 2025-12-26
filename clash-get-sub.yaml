@@ -10,6 +10,7 @@ proxies:
   - {name: 【机场推荐：https://a0a.xyz/】17, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
   - {name: _NL_荷兰, server: 178.23.190.238, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: uo7EbtqIwgZXXHmMv5LbLcOxptyPlNkh, udp: true}
   - {name: _US_美国, server: 173.244.56.6, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: _RU_俄罗斯, server: 194.246.114.101, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -33,6 +34,7 @@ proxy-groups:
       - 【机场推荐：https://a0a.xyz/】17
       - _NL_荷兰
       - _US_美国
+      - _RU_俄罗斯
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -44,6 +46,7 @@ proxy-groups:
       - 【机场推荐：https://a0a.xyz/】17
       - _NL_荷兰
       - _US_美国
+      - _RU_俄罗斯
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -55,6 +58,7 @@ proxy-groups:
       - 【机场推荐：https://a0a.xyz/】17
       - _NL_荷兰
       - _US_美国
+      - _RU_俄罗斯
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -67,6 +71,7 @@ proxy-groups:
       - 【机场推荐：https://a0a.xyz/】17
       - _NL_荷兰
       - _US_美国
+      - _RU_俄罗斯
   - name: 📲 电报消息
     type: select
     proxies:
