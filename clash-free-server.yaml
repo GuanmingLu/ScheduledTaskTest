@@ -5,10 +5,15 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
+  - {name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心, server: cg1c07.waimaojd.com, port: 443, type: vmess, uuid: be8e3136-b874-4085-bd23-ec3699300490, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c07.waimaojd.com}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 俄罗斯 新西伯利亚justhost, server: 2.56.242.210, port: 34895, type: vmess, uuid: 6fe6b62a-dfbe-4753-d795-e02f2561edea, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 英国 V2CROSS.COM, server: w10.luoli.de, port: 443, type: vmess, uuid: 42a99644-b90b-3627-8809-a2d6c4078b59, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ws, headers: {Host: w10.luoli.de}}, udp: true}
+  - {name: 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2, server: cg1c07.waimaojd.com, port: 443, type: vmess, uuid: be8e3136-b874-4085-bd23-ec3699300490, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c07.waimaojd.com}}, udp: true}
   - {name: 香港 电讯盈科有限公司, server: v12.hdacd.com, port: 30812, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 香港 电讯盈科有限公司 2, server: 203.198.84.221, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司 3, server: 58.152.46.60, port: 443, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
-  - {name: 亚太地区 V2CROSS.COM, server: liubu9.singdns.com, port: 17459, type: ss, cipher: aes-128-gcm, password: 57bc0c04-8184-48f5-906b-897d095ed445, udp: true}
+  - {name: 美国 华盛顿Cogent通信公司, server: 38.96.254.102, port: 18509, type: trojan, password: .ie4rghJuMkcf0oF, sni: shoppingmall.electricbanana.click, udp: true}
+  - {name: 英国 V2CROSS.COM 2, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 英国 伦敦DigitalOcean数据中心, server: cg1c16.waimaojd.com, port: 443, type: vmess, uuid: 6fc84fd2-0442-405f-baa7-6daf66b81a10, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /api/v1/graphql, headers: {Host: cg1c16.waimaojd.com}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,30 +32,45 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 亚太地区 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 英国 V2CROSS.COM 2
+      - 英国 伦敦DigitalOcean数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 亚太地区 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 英国 V2CROSS.COM 2
+      - 英国 伦敦DigitalOcean数据中心
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 亚太地区 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 英国 V2CROSS.COM 2
+      - 英国 伦敦DigitalOcean数据中心
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -58,10 +78,15 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
+      - 俄罗斯 新西伯利亚justhost
+      - 英国 V2CROSS.COM
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
-      - 亚太地区 V2CROSS.COM
+      - 美国 华盛顿Cogent通信公司
+      - 英国 V2CROSS.COM 2
+      - 英国 伦敦DigitalOcean数据中心
   - name: 📲 电报消息
     type: select
     proxies:
@@ -264,8 +289,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 香港 电讯盈科有限公司
-      - 香港 电讯盈科有限公司 2
-      - 香港 电讯盈科有限公司 3
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -279,7 +302,10 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
-      - DIRECT
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心
+      - 美国 CloudFlare节点
+      - 美国 加利福尼亚州洛杉矶市SharkTech数据中心 2
+      - 美国 华盛顿Cogent通信公司
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
