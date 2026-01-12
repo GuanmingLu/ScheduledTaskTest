@@ -5,10 +5,13 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: "HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]", server: 71ac3d4f-t6r5s0-t85e8f-141tv.hkt.gotochinatown.net, port: 80, type: vmess, uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 71ac3d4f-t6r5s0-t85e8f-141tv.hkt.gotochinatown.net}}, udp: true}
-  - {name: _KR_韩国, server: 221.139.79.57, port: 13979, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: _KR_韩国, server: 168.126.234.247, port: 51978, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: HK-220.246.190.122-5034, server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net}}, udp: true}
   - {name: _KR_韩国 2, server: 121.170.203.148, port: 11815, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
-  - {name: "HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]", server: 6fdda999-t70f40-tlm64c-xm0q.hkt.gotochinatown.net, port: 80, type: vmess, uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 6fdda999-t70f40-tlm64c-xm0q.hkt.gotochinatown.net}}, udp: true}
+  - {name: HK-220.246.190.122-5033, server: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net, port: 80, type: vmess, uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: f8c38428-t6r5s0-t8jzg2-1hd7v.hkt.gotochinatown.net}}, udp: true}
+  - {name: Join+Telegram:@Farah_VPN🟣, server: 44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net, port: 80, type: vmess, uuid: a4c9b7cc-a816-11ed-9f65-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 44a1b64f-t77ts0-tb592v-4lg6.hkt.gotochinatown.net}}, udp: true}
+  - {name: _KR_韩国 3, server: 221.139.79.20, port: 45833, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: JP3｜原生/疑似家宽｜非常安全, server: tunnel2.qqa678.com, port: 47083, type: vmess, uuid: f66df097-93a0-43a1-b4c7-586e13f61f46, alterId: 0, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -27,30 +30,39 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]
       - _KR_韩国
+      - HK-220.246.190.122-5034
       - _KR_韩国 2
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - HK-220.246.190.122-5033
+      - Join+Telegram:@Farah_VPN🟣
+      - _KR_韩国 3
+      - JP3｜原生/疑似家宽｜非常安全
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]
       - _KR_韩国
+      - HK-220.246.190.122-5034
       - _KR_韩国 2
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - HK-220.246.190.122-5033
+      - Join+Telegram:@Farah_VPN🟣
+      - _KR_韩国 3
+      - JP3｜原生/疑似家宽｜非常安全
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]
       - _KR_韩国
+      - HK-220.246.190.122-5034
       - _KR_韩国 2
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - HK-220.246.190.122-5033
+      - Join+Telegram:@Farah_VPN🟣
+      - _KR_韩国 3
+      - JP3｜原生/疑似家宽｜非常安全
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -58,10 +70,13 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]
       - _KR_韩国
+      - HK-220.246.190.122-5034
       - _KR_韩国 2
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - HK-220.246.190.122-5033
+      - Join+Telegram:@Farah_VPN🟣
+      - _KR_韩国 3
+      - JP3｜原生/疑似家宽｜非常安全
   - name: 📲 电报消息
     type: select
     proxies:
@@ -263,15 +278,15 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - HK²_30|4.3MB/s|0%|YT|X|[原生|住宅]
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - HK-220.246.190.122-5034
+      - HK-220.246.190.122-5033
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - JP3｜原生/疑似家宽｜非常安全
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -301,10 +316,11 @@ proxy-groups:
     proxies:
       - _KR_韩国
       - _KR_韩国 2
+      - _KR_韩国 3
   - name: 🎥 奈飞节点
     type: select
     proxies:
-      - HK²_53|1.8MB/s|0%|YT|NF|X|[原生|住宅]
+      - DIRECT
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
