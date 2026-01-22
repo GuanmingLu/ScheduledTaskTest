@@ -5,13 +5,13 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 挪威 V2CROSS.COM, server: 83.143.87.9, port: 18581, type: trojan, password: RPyW62_b9aH.ztJKeArou, skip-cert-verify: true, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.25.130, port: 443, type: trojan, password: BxceQaOe, sni: t.me/ripaojiedian, udp: true}
-  - {name: 美国 CloudFlare节点, server: 104.18.32.47, port: 443, type: vmess, uuid: 52c7f779-2cbc-4ec9-d4eb-7f62964e4a4e, alterId: 0, cipher: auto, tls: true, servername: dump.nootkasound7.com, network: ws, ws-opts: {path: /ABC, headers: {Host: dump.nootkasound7.com}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: 172.67.204.84, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: cf.090227.xyz, port: 443, type: vmess, uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea, alterId: 0, cipher: auto, tls: true, servername: sgal.dagrate.eu.org, network: ws, ws-opts: {path: /, headers: {Host: sgal.dagrate.eu.org}}, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 80.173.231.254, port: 12420, type: trojan, password: wp9IsiY82uQhcmgNC1eoBM, sni: www.semanticstaplegun.click, udp: true}
+  - {name: 欧盟 V2CROSS.COM, server: 45.87.175.180, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: QCXDxuDlTTMD7jtgHUjIoj, udp: true}
+  - {name: 美国 CloudFlare节点, server: 162.159.152.4, port: 8443, type: vmess, uuid: 688f45e0-9d72-46cf-9ccd-b6395e9d71de, alterId: 0, cipher: auto, tls: true, servername: gbt.panzerh.com, network: ws, ws-opts: {path: /panzerh.com, headers: {Host: gbt.panzerh.com}}, udp: true}
+  - {name: 香港 电讯盈科有限公司, server: 58.152.25.130, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, udp: true}
+  - {name: 法国 国际航空电讯集团公司(SITA), server: 57.129.95.232, port: 11201, type: ss, cipher: chacha20-ietf-poly1305, password: 420946afc5918c49, udp: true}
+  - {name: 日本 V2CROSS.COM, server: ss.021.node-for-bigairport.win, port: 15199, type: ss, cipher: aes-256-gcm, password: c69374da-2208-4cbd-b81e-cdf88b5e7f53, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 美国 惠普HP, server: ss.020.node-for-bigairport.win, port: 11688, type: ss, cipher: aes-256-gcm, password: b0c9d775-32f7-459a-b24d-ecda7c9f3720, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,39 +30,39 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 挪威 V2CROSS.COM
-      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
+      - 法国 国际航空电讯集团公司(SITA)
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 3
-      - 西班牙 V2CROSS.COM
+      - 美国 惠普HP
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 挪威 V2CROSS.COM
-      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
+      - 法国 国际航空电讯集团公司(SITA)
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 3
-      - 西班牙 V2CROSS.COM
+      - 美国 惠普HP
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 挪威 V2CROSS.COM
-      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
+      - 法国 国际航空电讯集团公司(SITA)
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 3
-      - 西班牙 V2CROSS.COM
+      - 美国 惠普HP
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -70,13 +70,13 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 挪威 V2CROSS.COM
-      - 香港 电讯盈科有限公司
+      - 欧盟 V2CROSS.COM
       - 美国 CloudFlare节点
+      - 香港 电讯盈科有限公司
+      - 法国 国际航空电讯集团公司(SITA)
+      - 日本 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 英国 V2CROSS.COM
-      - 美国 CloudFlare节点 3
-      - 西班牙 V2CROSS.COM
+      - 美国 惠普HP
   - name: 📲 电报消息
     type: select
     proxies:
@@ -285,7 +285,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 日本 V2CROSS.COM
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -294,7 +294,7 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 美国 惠普HP
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
