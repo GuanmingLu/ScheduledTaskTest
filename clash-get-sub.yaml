@@ -5,7 +5,8 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: _US_美国, server: www.digitalocean.com, port: 443, type: trojan, password: trojan, sni: azadnet-9ya.pages.dev, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: azadnet-9ya.pages.dev}}, udp: true}
+  - {name: _US_美国, server: www.multiplydose.com, port: 443, type: trojan, password: humanity, sni: www.multiplydose.com, skip-cert-verify: false, network: ws, ws-opts: {path: /assignment, headers: {Host: www.multiplydose.com}}, udp: true}
+  - {name: _CA_加拿大, server: tuntro006.instconn.com, port: 443, type: trojan, password: 30077070-596e-48ea-9400-14c8ed07bd97, sni: torontorm1.686911.xyz, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -25,6 +26,7 @@ proxy-groups:
     type: select
     proxies:
       - _US_美国
+      - _CA_加拿大
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -32,6 +34,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - _US_美国
+      - _CA_加拿大
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -39,6 +42,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - _US_美国
+      - _CA_加拿大
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -47,6 +51,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - _US_美国
+      - _CA_加拿大
   - name: 📲 电报消息
     type: select
     proxies:
