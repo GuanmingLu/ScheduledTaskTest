@@ -5,8 +5,11 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 加拿大 V2CROSS.COM, server: 167.17.185.172, port: 10889, type: trojan, password: cTv.9PDdCt-wybBrG1qlxI5UJuaEj, sni: web.max.ru, udp: true}
-  - {name: 美国 CloudFlare节点, server: 172.67.204.84, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 80.173.230.196, port: 26279, type: trojan, password: a5inYFE=JGV89+hjxIqgDp1tcWBd6, skip-cert-verify: false, udp: true}
+  - {name: 美国 Xerox, server: 13.158.129.83, port: 2595, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, skip-cert-verify: false, udp: true}
+  - {name: 美国 Xerox 2, server: 13.158.129.83, port: 2173, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, udp: true}
+  - {name: 日本 东京Amazon数据中心, server: 18.179.118.202, port: 1867, type: trojan, password: BxceQaOe, sni: t.me%2Fripaojiedian, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 140.82.35.244, port: 20994, type: trojan, password: x.8ur1QiCyzlRHXeaB5UwoDfgZ04s, sni: ads.x5.ru, udp: true}
   - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -26,8 +29,11 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 西班牙 V2CROSS.COM
+      - 美国 Xerox
+      - 美国 Xerox 2
+      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
   - name: ♻️ 自动选择
     type: url-test
@@ -35,8 +41,11 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 西班牙 V2CROSS.COM
+      - 美国 Xerox
+      - 美国 Xerox 2
+      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
   - name: 🔯 故障转移
     type: fallback
@@ -44,8 +53,11 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 西班牙 V2CROSS.COM
+      - 美国 Xerox
+      - 美国 Xerox 2
+      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
   - name: 🔮 负载均衡
     type: load-balance
@@ -54,8 +66,11 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 加拿大 V2CROSS.COM
-      - 美国 CloudFlare节点
+      - 西班牙 V2CROSS.COM
+      - 美国 Xerox
+      - 美国 Xerox 2
+      - 日本 东京Amazon数据中心
+      - 美国 V2CROSS.COM
       - 英国 V2CROSS.COM
   - name: 📲 电报消息
     type: select
@@ -265,14 +280,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 日本 东京Amazon数据中心
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 150
     proxies:
-      - 美国 CloudFlare节点
+      - 美国 Xerox
+      - 美国 Xerox 2
+      - 美国 V2CROSS.COM
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
