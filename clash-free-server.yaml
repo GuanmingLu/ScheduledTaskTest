@@ -5,18 +5,17 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 俄罗斯 V2CROSS.COM, server: ru1.clear-vpn.org, port: 504, type: ss, cipher: chacha20-ietf-poly1305, password: nKohne07VrxB-nq43cxzs7Vu9Nnp4JXY, udp: true}
-  - {name: 英国 V2CROSS.COM, server: 82.198.246.97, port: 180, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: false, udp: true}
-  - {name: 西班牙 V2CROSS.COM, server: 80.173.230.196, port: 26279, type: trojan, password: a5inYFE=JGV89+hjxIqgDp1tcWBd6, skip-cert-verify: false, udp: true}
-  - {name: 美国 CloudFlare节点, server: gggnnjui.191292.xyz, port: 80, type: vmess, uuid: b9bb332d-5e0d-41af-adac-49362dde8661, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iqjxVCqiIAaLCt5Q2GkKGWRMg, headers: {Host: gggnnjui.191292.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: rrrgt.2030.pp.ua, port: 80, type: vmess, uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /eszjp4nTT8TxDHFepMpfNkCk8, headers: {Host: rrrgt.2030.pp.ua}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: bbgtr.7777198.xyz, port: 80, type: vmess, uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GgigazFGDLgFWDItkD5XgXAL, headers: {Host: BBGTR.7777198.XYZ}}, udp: true}
-  - {name: 伊朗 V2CROSS.COM, server: 95.81.123.15, port: 40956, type: vmess, uuid: c6e0562f-7ad1-40fb-a255-26194b2de84a, alterId: 0, cipher: auto, tls: true, servername: imafake.locker, network: ws, ws-opts: {path: /speedtest, headers: {Host: imafake.locker}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: HHhjki.TAIwaN2028.indEvS.in, port: 80, type: vmess, uuid: 5cccb4da-8aee-4b01-be84-2056265e52dc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /AwUJyGh9Ym6vVzg35A6ueyyZnWd, headers: {Host: hHHJkI.taiwAn2028.iNDEVs.in}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: 172.64.152.23, port: 8443, type: vmess, uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17, alterId: 0, cipher: auto, tls: true, servername: frsys.fl-dl.com, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: rrrgt.2030.pp.ua, port: 80, type: vmess, uuid: fc3704d6-8e5e-443a-bd5b-20ec7cfbe990, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: rrrgt.2030.pp.ua}}, udp: true}
+  - {name: 日本 V2CROSS.COM, server: 160.191.245.48, port: 58623, type: vmess, uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 日本 V2CROSS.COM 2, server: 160.191.245.48, port: 58623, type: vmess, uuid: 8d74803e-aa74-47ef-e3ae-23eeaa96f89d, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 英国 V2CROSS.COM, server: gtm1.ktmwan.net, port: 12883, type: vmess, uuid: 3ac9d436-f213-421d-9644-a94686ee9fba, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}, udp: true}
   - {name: 美国 Cloudinnovation数据中心, server: 154.83.2.156, port: 2086, type: vmess, uuid: 92373ed1-78a8-4cbe-aa06-54af1edd0471, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v205.19740822.xyz}}, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.21.69.44, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
-  - {name: 香港 电讯盈科有限公司, server: 58.152.53.45, port: 443, type: trojan, password: BxceQaOe, sni: t.me%252Fripaojiedian, udp: true}
-  - {name: 美国 CloudFlare节点 6, server: 172.67.204.84, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM, server: 212.193.18.144, port: 36158, type: trojan, password: ZblhWr0mqMakCPg.N, sni: ya.ru, skip-cert-verify: false, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: 172.67.204.84, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-511952424.mcitel.co}}, udp: true}
+  - {name: 俄罗斯 V2CROSS.COM 2, server: 185.100.159.79, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: i9lip2dJ8kV4wJQ0pJuRr6, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: bbgtr.7777198.xyz, port: 80, type: vmess, uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: BBGTR.7777198.XYZ}}, udp: true}
+  - {name: 美国 Cloudinnovation数据中心 2, server: 154.83.2.156, port: 2086, type: vmess, uuid: 92373ed1-78a8-4cbe-aa06-54af1edd0471, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v205.19740822.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -35,54 +34,51 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 伊朗 V2CROSS.COM
-      - 美国 CloudFlare节点 4
+      - 日本 V2CROSS.COM
+      - 日本 V2CROSS.COM 2
+      - 英国 V2CROSS.COM
       - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 5
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 4
+      - 美国 Cloudinnovation数据中心 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 伊朗 V2CROSS.COM
-      - 美国 CloudFlare节点 4
+      - 日本 V2CROSS.COM
+      - 日本 V2CROSS.COM 2
+      - 英国 V2CROSS.COM
       - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 5
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 4
+      - 美国 Cloudinnovation数据中心 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 伊朗 V2CROSS.COM
-      - 美国 CloudFlare节点 4
+      - 日本 V2CROSS.COM
+      - 日本 V2CROSS.COM 2
+      - 英国 V2CROSS.COM
       - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 5
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 4
+      - 美国 Cloudinnovation数据中心 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -90,18 +86,17 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 俄罗斯 V2CROSS.COM
-      - 英国 V2CROSS.COM
-      - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
-      - 伊朗 V2CROSS.COM
-      - 美国 CloudFlare节点 4
+      - 日本 V2CROSS.COM
+      - 日本 V2CROSS.COM 2
+      - 英国 V2CROSS.COM
       - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 5
-      - 香港 电讯盈科有限公司
-      - 美国 CloudFlare节点 6
+      - 俄罗斯 V2CROSS.COM
+      - 美国 CloudFlare节点 3
+      - 俄罗斯 V2CROSS.COM 2
+      - 美国 CloudFlare节点 4
+      - 美国 Cloudinnovation数据中心 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -303,14 +298,15 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 电讯盈科有限公司
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 日本 V2CROSS.COM
+      - 日本 V2CROSS.COM 2
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -319,11 +315,10 @@ proxy-groups:
     proxies:
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
+      - 美国 Cloudinnovation数据中心
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 美国 Cloudinnovation数据中心
-      - 美国 CloudFlare节点 5
-      - 美国 CloudFlare节点 6
+      - 美国 Cloudinnovation数据中心 2
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
