@@ -5,20 +5,16 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 美国 CloudFlare节点, server: bmk.1xq.indevs.in, port: 80, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: bmk.1xq.indevs.in}}, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: bgn.1dd.ccwu.cc, port: 80, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: bgn.1dd.ccwu.cc}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 172.64.149.182, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /nasnet/cdn, headers: {Host: nasnet-5712964102.sharghdaily.co}}, udp: true}
-  - {name: 美国 CloudFlare节点 4, server: bgn.1dd.ccwu.cc, port: 443, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: true, servername: bgn.1dd.ccwu.cc, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: bgn.1dd.ccwu.cc}}, udp: true}
-  - {name: 瑞典 V2CROSS.COM, server: 46.246.97.140, port: 53908, type: ss, cipher: chacha20-ietf-poly1305, password: ZweuXavjovuhzt1AF0d6qx, udp: true}
-  - {name: 香港 特别行政区, server: 62.60.233.220, port: 18685, type: ss, cipher: chacha20-ietf-poly1305, password: ixfXBq6dfMQQFiEz6PBcTy, udp: true}
-  - {name: 美国 CloudFlare节点 5, server: 104.17.77.77, port: 8443, type: vmess, uuid: 60441548-b68e-43b2-8191-e3b884be4b3c, alterId: 0, cipher: auto, tls: true, servername: v2ray1.dozapp.xyz, network: ws, ws-opts: {path: /lMnsZUN4/, headers: {Host: v2ray1.dozapp.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点, server: mmhhj.2nn.ccwu.cc, port: 80, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: mmhhj.2nn.ccwu.cc}}, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 206.71.148.7, port: 27149, type: ss, cipher: chacha20-ietf-poly1305, password: 2mHVomKnpjnveNEZOe30rO, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: bgn.1dd.ccwu.cc, port: 80, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: bgn.1dd.ccwu.cc}}, udp: true}
+  - {name: 美国 CloudFlare节点 3, server: kklo.1yy.ccwu.cc, port: 443, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: true, servername: kklo.1yy.ccwu.cc, network: ws, ws-opts: {path: /, headers: {Host: kklo.1yy.ccwu.cc}}, udp: true}
+  - {name: 美国 CloudFlare节点 4, server: 172.64.149.182, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/nasnet/cdn?ed=2560", headers: {Host: nasnet-5712964102.sharghdaily.co}}, udp: true}
+  - {name: 日本 东京阿里云, server: n1753598452.wpg27.xyz, port: 443, type: vmess, uuid: 4f23eb7c-ef2f-43b0-90dd-f2b8a75954a5, alterId: 0, cipher: auto, tls: true, servername: n1753598452.wpg27.xyz, network: ws, ws-opts: {path: /, headers: {Host: n1753598452.wpg27.xyz}}, udp: true}
+  - {name: 美国 CloudFlare节点 5, server: tgju.org, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/nasnet/cdn?ed=2560", headers: {Host: nasnet-5712964102.sharghdaily.co}}, udp: true}
   - {name: 美国 CloudFlare节点 6, server: 104.19.37.10, port: 8080, type: vmess, uuid: nasnet, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /NASNET/cdn, headers: {Host: nasnet-571299667.rahavard365.co}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM, server: 62.133.63.167, port: 61377, type: ss, cipher: chacha20-ietf-poly1305, password: E12yZBPC7y8SnmkSYjf0Wl, udp: true}
-  - {name: 美国 CloudFlare节点 7, server: gbnh.1oo.ccwu.cc, port: 443, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: true, servername: gbnh.1oo.ccwu.cc, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: gbnh.1oo.ccwu.cc}}, udp: true}
-  - {name: 俄罗斯 V2CROSS.COM 2, server: 212.193.18.144, port: 36158, type: trojan, password: ZblhWr0mqMakCPg.N, sni: api.avito.ru, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点 8, server: fbg.1x3.indevs.in, port: 80, type: vmess, uuid: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /iSRWSKUJKNuXvVzsYHmsMrnO, headers: {Host: fbg.1x3.indevs.in}}, udp: true}
-  - {name: 美国 CloudFlare节点 9, server: turk1.net.net, port: 80, type: vmess, uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779, alterId: 0, cipher: auto, tls: false, servername: TM_AZARBAYJAB1.new.99.workers.dev, network: ws, ws-opts: {path: /, headers: {Host: tr1-smart.adelping.com.}}, udp: true}
-  - {name: 美国 CloudFlare节点 10, server: turk1.net.net, port: 80, type: vmess, uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779, alterId: 0, cipher: auto, tls: false, servername: TM_AZARBAYJAB1.new.99.workers.dev, network: ws, ws-opts: {path: "/?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560", headers: {Host: tr1-smart.adelping.com.}}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 80.173.231.254, port: 12420, type: trojan, password: wp9IsiY82uQhcmgNC1eoBM, sni: www.semanticstaplegun.click, udp: true}
+  - {name: 爱尔兰 都柏林Amazon数据中心, server: 52.211.121.231, port: 63371, type: ss, cipher: chacha20-ietf-poly1305, password: LACgdC8dRN72oHJUaZZUhp, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -38,19 +34,15 @@ proxy-groups:
     type: select
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 瑞典 V2CROSS.COM
-      - 香港 特别行政区
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 7
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 CloudFlare节点 10
+      - 西班牙 V2CROSS.COM
+      - 爱尔兰 都柏林Amazon数据中心
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
@@ -58,19 +50,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 瑞典 V2CROSS.COM
-      - 香港 特别行政区
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 7
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 CloudFlare节点 10
+      - 西班牙 V2CROSS.COM
+      - 爱尔兰 都柏林Amazon数据中心
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
@@ -78,19 +66,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 瑞典 V2CROSS.COM
-      - 香港 特别行政区
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 7
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 CloudFlare节点 10
+      - 西班牙 V2CROSS.COM
+      - 爱尔兰 都柏林Amazon数据中心
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -99,19 +83,15 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
-      - 瑞典 V2CROSS.COM
-      - 香港 特别行政区
+      - 日本 东京阿里云
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 俄罗斯 V2CROSS.COM
-      - 美国 CloudFlare节点 7
-      - 俄罗斯 V2CROSS.COM 2
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 CloudFlare节点 10
+      - 西班牙 V2CROSS.COM
+      - 爱尔兰 都柏林Amazon数据中心
   - name: 📲 电报消息
     type: select
     proxies:
@@ -313,14 +293,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 特别行政区
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - DIRECT
+      - 日本 东京阿里云
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -328,15 +308,12 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 美国 CloudFlare节点
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点 2
       - 美国 CloudFlare节点 3
       - 美国 CloudFlare节点 4
       - 美国 CloudFlare节点 5
       - 美国 CloudFlare节点 6
-      - 美国 CloudFlare节点 7
-      - 美国 CloudFlare节点 8
-      - 美国 CloudFlare节点 9
-      - 美国 CloudFlare节点 10
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
