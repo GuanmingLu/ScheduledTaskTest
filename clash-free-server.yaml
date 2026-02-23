@@ -5,13 +5,13 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 西班牙 V2CROSS.COM, server: 80.173.231.254, port: 12420, type: trojan, password: wp9IsiY82uQhcmgNC1eoBM, sni: www.semanticstaplegun.click, skip-cert-verify: true, udp: true}
-  - {name: 美国 CloudFlare节点, server: lop.bb3.indevs.in, port: 80, type: vmess, uuid: b020865b-7404-4894-ba65-a7414b10cda3, alterId: 0, cipher: auto, tls: false, servername: lop.bb3.indevs.in, network: ws, ws-opts: {path: /boWUVaU0sxrNtFSdOPjqSc7fzeJr, headers: {Host: lop.bb3.indevs.in}}, udp: true}
-  - {name: 香港 阿里云, server: n1761214911.74qxv.top, port: 443, type: vmess, uuid: 372c1939-299d-4946-9633-5ffa971f8b67, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: n1761214911.74qxv.top}}, udp: true}
-  - {name: 英国 伦敦Microsoft公司, server: admin.c2.havij.co, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: kaQH3hGdcP80XEDI, udp: true}
-  - {name: 冰岛 V2CROSS.COM, server: 37.235.49.209, port: 28099, type: trojan, password: qmBSKnAl6LYi9=z23Rs.Z, sni: celestialcorset.crystalhamster.click, udp: true}
-  - {name: 美国 CloudFlare节点 2, server: turk1.net.net, port: 80, type: vmess, uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779, alterId: 0, cipher: auto, tls: false, servername: TM_AZARBAYJAB1.new.99.workers.dev, network: ws, ws-opts: {path: /, headers: {Host: tr1-smart.adelping.com.}}, udp: true}
-  - {name: 美国 CloudFlare节点 3, server: 172.67.211.136, port: 443, type: vmess, uuid: 2bfe58f7-da1d-45df-ab43-7c665b20ee29, alterId: 0, cipher: auto, tls: true, servername: vvvbbnhj.191266.xyz, network: ws, ws-opts: {path: /, headers: {Host: vvvbbnhj.191266.xyz}}, udp: true}
+  - {name: 冰岛 V2CROSS.COM, server: 37.235.49.209, port: 28099, type: trojan, password: qmBSKnAl6LYi9=z23Rs.Z, sni: celestialcorset.crystalhamster.click, skip-cert-verify: true, udp: true}
+  - {name: 美国 V2CROSS.COM, server: 209.46.30.199, port: 443, type: vmess, uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c, alterId: 0, cipher: auto, tls: true, servername: ous3.dean52.top, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: 西班牙 V2CROSS.COM, server: 80.173.230.196, port: 26279, type: trojan, password: a5inYFE=JGV89+hjxIqgDp1tcWBd6, sni: io.ozone.ru, udp: true}
+  - {name: 美国 CloudFlare节点, server: t1.620720.xyz, port: 8443, type: vmess, uuid: 516d8a7a-3f0b-41d3-bad0-246116381516, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: t1.620720.xyz}}, udp: true}
+  - {name: 伊朗 V2CROSS.COM, server: 193.151.146.232, port: 17356, type: vmess, uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed, alterId: 0, cipher: auto, tls: false, udp: true}
+  - {name: 美国 CloudFlare节点 2, server: mk.o09.indevs.in, port: 80, type: vmess, uuid: 4115f84d-3b03-4b03-babf-21b36b2f9c03, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /GgigazFGDLgFWDItkD5XgXAL, headers: {Host: mk.o09.indevs.in}}, udp: true}
+  - {name: 伊朗 V2CROSS.COM 2, server: free-de-2.undef.network, port: 443, type: trojan, password: pYIoKUPGpWeTYXEx3HjR7s97B, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -30,39 +30,39 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
+      - 冰岛 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 英国 伦敦Microsoft公司
-      - 冰岛 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 伊朗 V2CROSS.COM 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 冰岛 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 英国 伦敦Microsoft公司
-      - 冰岛 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 伊朗 V2CROSS.COM 2
   - name: 🔯 故障转移
     type: fallback
     url: http://www.google.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - 冰岛 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 英国 伦敦Microsoft公司
-      - 冰岛 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 伊朗 V2CROSS.COM 2
   - name: 🔮 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -70,13 +70,13 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - 冰岛 V2CROSS.COM
+      - 美国 V2CROSS.COM
       - 西班牙 V2CROSS.COM
       - 美国 CloudFlare节点
-      - 香港 阿里云
-      - 英国 伦敦Microsoft公司
-      - 冰岛 V2CROSS.COM
+      - 伊朗 V2CROSS.COM
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
+      - 伊朗 V2CROSS.COM 2
   - name: 📲 电报消息
     type: select
     proxies:
@@ -278,7 +278,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - 香港 阿里云
+      - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.google.com/generate_204
@@ -292,9 +292,9 @@ proxy-groups:
     interval: 60
     tolerance: 150
     proxies:
+      - 美国 V2CROSS.COM
       - 美国 CloudFlare节点
       - 美国 CloudFlare节点 2
-      - 美国 CloudFlare节点 3
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.google.com/generate_204
