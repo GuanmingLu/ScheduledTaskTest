@@ -17,7 +17,7 @@ if __name__ == "__main__":
 	    "udp": "true",
 	}
 
-	access_url = f"https://app.sublink.works/clash?config={quote(args.url, safe="")}&ua=&selectedRules=%5B%22Location%3ACN%22%2C%22Private%22%2C%22Non-China%22%2C%22Github%22%2C%22Google%22%2C%22Youtube%22%2C%22AI+Services%22%2C%22Telegram%22%5D&customRules=%5B%5D&group_by_country=true"
+	access_url = f"https://app.sublink.works/clash?config={quote(args.url, safe='')}&ua=&selectedRules=%5B%22Location%3ACN%22%2C%22Private%22%2C%22Non-China%22%2C%22Github%22%2C%22Google%22%2C%22Youtube%22%2C%22AI+Services%22%2C%22Telegram%22%5D&customRules=%5B%5D&group_by_country=true"
 
 	print(access_url)
 
