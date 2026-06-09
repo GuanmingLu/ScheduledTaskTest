@@ -131,115 +131,7 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 波兰+V2CROSS.COM
-    type: vless
-    server: 141.98.6.113
-    port: 603
-    uuid: bae2fd3a-55fb-4094-99f6-c94e25d7d15d
-    tls: true
-    client-fingerprint: chrome
-    servername: www.amd.com
-    network: grpc
-    reality-opts:
-      public-key: lWJaKBaMPs0NYHGCbfsrmn64R4juEQEvfmHNnL741Ek
-    grpc-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.67.185.178
-    port: 443
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-    tls: true
-    servername: hhlfy.twiladaphne.ndjp.net
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: hhlfy.twiladaphne.ndjp.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
-    tls: true
-    sni: www.jewelapp.click
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: 104.18.152.225
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 广东省+珠江宽频
-    type: vless
-    server: 122.8.44.3
-    port: 993
-    uuid: 2703cda8-5cf4-019d-c4bd-6cf0c2261946
-    tls: true
-    client-fingerprint: chrome
-    servername: dl.google.com
-    network: tcp
-    reality-opts:
-      public-key: UvQ2HZFkQXrBiaprbcmks-aFo1dvnfPlHXcUKcl-i04
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 德国+黑森州法兰克福Amazon数据中心
-    type: hysteria2
-    server: vpn-de-002.fastervpn.world
-    port: 443
-    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-    sni: vpn-de-002.fastervpn.world
-    skip-cert-verify: true
-  - name: 美国+CloudFlare 3
-    type: vless
-    server: 162.159.18.105
-    port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
-    tls: true
-    servername: juzi.qea.ccwu.cc
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: juzi.qea.ccwu.cc
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: trojan
-    server: 104.21.40.34
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.gossipglove.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.gossipglove.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 4
     type: vless
     server: 172.67.211.74
     port: 80
@@ -254,58 +146,76 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: 45.130.125.96
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 149.104.87.182
     port: 443
-    uuid: 28607fa7-db30-47d6-942a-f5744e4be9ad
+    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
     tls: true
-    servername: dfsuporte.garena.com.ex33r.eu.cc
-    network: ws
-    ws-opts:
-      path: /id-pusat
-      headers:
-        host: dfsuporte.garena.com.ex33r.eu.cc
+    sni: www.jewelapp.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚+V2CROSS.COM
+    type: trojan
+    server: 185.137.157.254
+    port: 443
+    password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+    tls: true
+    sni: www.directorypipeline.click
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 5
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 162.159.13.206
-    port: 443
-    uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+    server: 85.234.114.53
+    port: 22231
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
     tls: true
-    servername: juzi.qea.ccwu.cc
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM 2
+    type: vless
+    server: 199.232.197.131
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
     network: ws
     ws-opts:
       path: /
       headers:
-        host: juzi.qea.ccwu.cc
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 217.149.25.106
-    port: 443
-    uuid: 029a4bc6-4557-4b6b-a5fc-6232e943e43b
-    tls: true
-    client-fingerprint: chrome
-    servername: ai.sellflow.org
-    network: tcp
-    reality-opts:
-      public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+        host: max-gb1.global.ssl.fastly.net
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 美国+Fastly全球Anycast节点
+    type: vless
+    server: 151.101.0.1
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -313,43 +223,24 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 广东省+珠江宽频
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国+CloudFlare 3
-      - 美国+CloudFlare节点 3
-      - 美国+CloudFlare节点 4
-      - 美国+V2CROSS.COM 2
-      - 美国+CloudFlare节点 5
+      - 罗马尼亚+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+      - 美国+Fastly全球Anycast节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 广东省+珠江宽频
-      - 德国+黑森州法兰克福Amazon数据中心
-      - 美国+CloudFlare 3
-      - 美国+CloudFlare节点 3
-      - 美国+CloudFlare节点 4
-      - 美国+V2CROSS.COM 2
-      - 美国+CloudFlare节点 5
+      - 罗马尼亚+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-  - name: 🇩🇪 Germany
-    type: url-test
-    proxies:
-      - 德国+黑森州法兰克福Amazon数据中心
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 美国+V2CROSS.COM 2
+      - 美国+Fastly全球Anycast节点
   - name: 🇷🇺 Russia
     type: url-test
     proxies:
@@ -362,12 +253,8 @@ proxy-groups:
     proxies:
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 美国+CloudFlare 3
-      - 美国+CloudFlare节点 3
-      - 美国+CloudFlare节点 4
       - 美国+V2CROSS.COM 2
-      - 美国+CloudFlare节点 5
+      - 美国+Fastly全球Anycast节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -377,7 +264,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -388,7 +274,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -399,7 +284,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -411,7 +295,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -422,7 +305,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -432,7 +314,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -443,7 +324,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -454,7 +334,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -465,7 +344,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇩🇪 Germany
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
