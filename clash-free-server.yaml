@@ -132,68 +132,17 @@ dns:
       - https://dns.google/dns-query
 proxies:
   - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.67.211.74
-    port: 80
-    uuid: e84064cc-617f-4ba8-aa6f-13e920fd2610
-    tls: false
-    servername: ''
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.multiplydose.com
     network: ws
     ws-opts:
-      path: /
-      headers:
-        host: main.boobie.eu.cc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
-    tls: true
-    sni: www.jewelapp.click
-    network: tcp
+      path: /assignment
     tfo: false
     skip-cert-verify: true
-    udp: true
-  - name: 罗马尼亚+V2CROSS.COM
-    type: trojan
-    server: 185.137.157.254
-    port: 443
-    password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
-    tls: true
-    sni: www.directorypipeline.click
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 85.234.114.53
-    port: 22231
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: 199.232.197.131
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
     udp: true
   - name: 美国+Fastly全球Anycast节点
     type: vless
@@ -210,12 +159,93 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 澳大利亚 V2CROSS.COM
+    type: vmess
+    server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
+    port: 10123
+    uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
+    udp: true
+  - name: 美国+Fastly全球Anycast节点 2
+    type: vless
+    server: 151.101.194.219
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 172.65.111.43
+    port: 22
+    uuid: monacoVPN
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 149.104.87.182
+    port: 443
+    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+    tls: true
+    sni: www.jewelapp.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+V2CROSS.COM 2
+    type: vless
+    server: 199.232.197.131
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 85.234.114.53
+    port: 443
+    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+    tls: true
+    servername: r1.mizulina.top
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -224,11 +254,13 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+Fastly全球Anycast节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国+Fastly全球Anycast节点 2
+      - 美国+CloudFlare节点 2
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -236,11 +268,20 @@ proxy-groups:
     type: select
     proxies:
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+Fastly全球Anycast节点
+      - 澳大利亚 V2CROSS.COM
+      - 美国+Fastly全球Anycast节点 2
+      - 美国+CloudFlare节点 2
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
+  - name: 🇦🇺 Australia
+    type: url-test
+    proxies:
+      - 澳大利亚 V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇷🇺 Russia
     type: url-test
     proxies:
@@ -252,9 +293,11 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点
+      - 美国+Fastly全球Anycast节点 2
+      - 美国+CloudFlare节点 2
       - 美国+V2CROSS.COM
       - 美国+V2CROSS.COM 2
-      - 美国+Fastly全球Anycast节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -264,6 +307,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -274,6 +318,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -284,6 +329,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -295,6 +341,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -305,6 +352,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -314,6 +362,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -324,6 +373,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -334,6 +384,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -344,6 +395,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
