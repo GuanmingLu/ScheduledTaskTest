@@ -131,6 +131,53 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: ch-gt-01.com
+    port: 8443
+    uuid: f98ab063-1dfb-41da-b875-fc50f6bdc174
+    tls: true
+    client-fingerprint: chrome
+    servername: storage.yandex.net
+    network: tcp
+    reality-opts:
+      public-key: 8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc
+      short-id: 445ab326fc7c90ac
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+Fastly全球Anycast节点
+    type: vless
+    server: 151.101.66.219
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 南非+V2CROSS.COM
+    type: vless
+    server: ca-dp-01.com
+    port: 8443
+    uuid: 977f2eea-9f37-417b-bdc3-5abfba1e54df
+    tls: true
+    client-fingerprint: chrome
+    servername: storage.yandex.net
+    network: tcp
+    reality-opts:
+      public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
+      short-id: d3ee47fc2f553c44
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: trojan
     server: 104.20.6.134
@@ -142,9 +189,9 @@ proxies:
     ws-opts:
       path: /assignment
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 美国+Fastly全球Anycast节点
+  - name: 美国+Fastly全球Anycast节点 2
     type: vless
     server: 151.101.0.1
     port: 80
@@ -159,82 +206,18 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 澳大利亚 V2CROSS.COM
-    type: vmess
-    server: 6654c734ccab8f440ff0825eb443dc7f.qos.onl
-    port: 10123
-    uuid: 52f9cbfb-5bb3-3dd3-b947-725e365c59f3
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
-    udp: true
-  - name: 美国+Fastly全球Anycast节点 2
+  - name: 南非+V2CROSS.COM 2
     type: vless
-    server: 151.101.194.219
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: vless
-    server: 172.65.111.43
-    port: 22
-    uuid: monacoVPN
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.87.182
-    port: 443
-    password: PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA
+    server: lt-cherry-01.com
+    port: 8443
+    uuid: e97a7931-500b-4777-82a2-4237f15bcedd
     tls: true
-    sni: www.jewelapp.click
+    client-fingerprint: chrome
+    servername: storage.yandex.net
     network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: 199.232.197.131
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 85.234.114.53
-    port: 443
-    uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-    tls: true
-    servername: r1.mizulina.top
-    network: tcp
+    reality-opts:
+      public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+      short-id: 2cfb5a0ae8ab0cb0
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -245,59 +228,46 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点
-      - 澳大利亚 V2CROSS.COM
-      - 美国+Fastly全球Anycast节点 2
-      - 美国+CloudFlare节点 2
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
+      - 美国+Fastly全球Anycast节点
+      - 南非+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点 2
+      - 南非+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点
-      - 澳大利亚 V2CROSS.COM
-      - 美国+Fastly全球Anycast节点 2
-      - 美国+CloudFlare节点 2
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
-  - name: 🇦🇺 Australia
+      - 美国+Fastly全球Anycast节点
+      - 南非+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点 2
+      - 南非+V2CROSS.COM 2
+  - name: 🇿🇦 South Africa
     type: url-test
     proxies:
-      - 澳大利亚 V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 南非+V2CROSS.COM
+      - 南非+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点
-      - 美国+Fastly全球Anycast节点 2
-      - 美国+CloudFlare节点 2
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 美国+Fastly全球Anycast节点
+      - 美国+CloudFlare节点
+      - 美国+Fastly全球Anycast节点 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -307,8 +277,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -318,8 +287,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -329,8 +297,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -341,8 +308,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -352,8 +318,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -362,8 +327,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -373,8 +337,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -384,8 +347,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -395,8 +357,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇷🇺 Russia
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
