@@ -131,25 +131,9 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: ch-gt-01.com
-    port: 8443
-    uuid: f98ab063-1dfb-41da-b875-fc50f6bdc174
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: tcp
-    reality-opts:
-      public-key: 8qHRGcCezzSu4S-Cz9l19BNRLWm4MkaSwZV3dNrLEwc
-      short-id: 445ab326fc7c90ac
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 美国+Fastly全球Anycast节点
     type: vless
-    server: 151.101.66.219
+    server: 151.101.130.219
     port: 80
     uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
@@ -162,38 +146,65 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 南非+V2CROSS.COM
+  - name: 日本+东京Fastly节点
     type: vless
-    server: ca-dp-01.com
-    port: 8443
-    uuid: 977f2eea-9f37-417b-bdc3-5abfba1e54df
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: tcp
-    reality-opts:
-      public-key: pPi-WO8qQFFZ9UJWNLW9YClbjcoAAZWJQ2_FM3Kjhz8
-      short-id: d3ee47fc2f553c44
+    server: 151.101.109.223
+    port: 80
+    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 104.20.6.134
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 167.82.0.1
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 乌克兰+V2CROSS.COM
+    type: vless
+    server: cdn7-39.vk-cdnvideo.com
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 日本+东京Fastly节点 2
+    type: vless
+    server: 151.101.109.223
     port: 443
-    password: humanity
+    uuid: 060cd76b-72e1-478f-b6c9-8e6d2bdc5517
     tls: true
-    sni: www.multiplydose.com
+    servername: default.ssl.fastly.net
     network: ws
     ws-opts:
-      path: /assignment
+      path: /
+      headers:
+        host: bazaryabab.global.ssl.fastly.net
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 美国+Fastly全球Anycast节点 2
+  - name: 美国+V2CROSS.COM 2
     type: vless
-    server: 151.101.0.1
+    server: 199.232.197.131
     port: 80
     uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
     tls: false
@@ -206,68 +217,51 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 南非+V2CROSS.COM 2
-    type: vless
-    server: lt-cherry-01.com
-    port: 8443
-    uuid: e97a7931-500b-4777-82a2-4237f15bcedd
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: tcp
-    reality-opts:
-      public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-      short-id: 2cfb5a0ae8ab0cb0
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 南非+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点 2
-      - 南非+V2CROSS.COM 2
+      - 日本+东京Fastly节点
+      - 美国+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 日本+东京Fastly节点 2
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 南非+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点 2
-      - 南非+V2CROSS.COM 2
-  - name: 🇿🇦 South Africa
+      - 日本+东京Fastly节点
+      - 美国+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 日本+东京Fastly节点 2
+      - 美国+V2CROSS.COM 2
+  - name: 🇯🇵 Japan
     type: url-test
     proxies:
-      - 南非+V2CROSS.COM
-      - 南非+V2CROSS.COM 2
+      - 日本+东京Fastly节点
+      - 日本+东京Fastly节点 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 美国+CloudFlare节点
-      - 美国+Fastly全球Anycast节点 2
+      - 美国+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -277,7 +271,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -287,7 +281,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -297,7 +291,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -308,7 +302,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -318,7 +312,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -327,7 +321,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -337,7 +331,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -347,7 +341,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -357,7 +351,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇿🇦 South Africa
+      - 🇯🇵 Japan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
