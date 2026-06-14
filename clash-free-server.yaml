@@ -131,6 +131,93 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 美国+Fastly全球Anycast节点
+    type: vless
+    server: 151.101.66.219
+    port: 80
+    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: max-gb1.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 南非+V2CROSS.COM
+    type: vless
+    server: uk-gthost-01.com
+    port: 8443
+    uuid: 52faee73-e0fe-4661-992d-67259257170f
+    tls: true
+    client-fingerprint: chrome
+    servername: storage.yandex.net
+    network: tcp
+    reality-opts:
+      public-key: dY9SNEllJMW63xo-JdXufhmjAxB_4uFw_QMjgufjiD8
+      short-id: ea10cd5686751ec5
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 185.229.191.10
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    tls: true
+    servername: ams1.fromblancwithlove.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: ''
+  - name: 罗马尼亚+V2CROSS.COM
+    type: trojan
+    server: 185.137.157.254
+    port: 443
+    password: hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd
+    tls: true
+    sni: www.directorypipeline.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 克罗地亚+V2CROSS.COM
+    type: vless
+    server: 46.229.243.123
+    port: 8443
+    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    tls: true
+    servername: cdn9-33.vk-cdnvideo.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+教育网
+    type: hysteria2
+    server: 140.245.27.220
+    port: 51000
+    password: 940f51d6-e0a4-4add-b96b-328e4a84b642
+    sni: cn.cremedelamer.com
+    skip-cert-verify: true
+  - name: 奥地利+V2CROSS.COM
+    type: trojan
+    server: 212.183.88.136
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmlunch.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 德国+V2CROSS.COM
     type: trojan
     server: 91.233.8.25
@@ -142,96 +229,14 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+V2CROSS.COM
+  - name: 美国+南卡罗来纳州
     type: vless
-    server: cdn7-39.vk-cdnvideo.com
+    server: 169.150.228.24
     port: 8443
-    uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
     tls: true
-    servername: ''
+    servername: bog-co-01.fromblancwithlove.com
     network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+Fastly全球Anycast节点
-    type: vless
-    server: 151.101.2.219
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+Fastly全球Anycast节点 2
-    type: vless
-    server: 151.101.0.1
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 拉脱维亚+V2CROSS.COM
-    type: vless
-    server: 213.21.246.51
-    port: 29800
-    uuid: 3120446f-78e3-4974-8a00-42b718382bda
-    tls: true
-    client-fingerprint: chrome
-    servername: dl.google.com
-    network: tcp
-    reality-opts:
-      public-key: 8Ct5aCwudtGt9MtmAP1kPmoWgaHyrb0iBzmINPHRgSo
-      short-id: b7d4820f3f
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: 199.232.197.131
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM 3
-    type: ss
-    server: 149.28.255.6
-    port: 816
-    cipher: chacha20-ietf-poly1305
-    password: GyZ5Xo0ht41vYmW3H4
-    udp: true
-  - name: 日本+东京Fastly节点
-    type: vless
-    server: 151.101.109.223
-    port: 80
-    uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -242,35 +247,38 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 德国+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 美国+Fastly全球Anycast节点 2
-      - 拉脱维亚+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
-      - 美国+V2CROSS.COM 3
-      - 日本+东京Fastly节点
+      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
+      - 美国+教育网
+      - 奥地利+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 美国+南卡罗来纳州
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 德国+V2CROSS.COM
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 美国+Fastly全球Anycast节点 2
-      - 拉脱维亚+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
-      - 美国+V2CROSS.COM 3
-      - 日本+东京Fastly节点
+      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM
+      - 克罗地亚+V2CROSS.COM
+      - 美国+教育网
+      - 奥地利+V2CROSS.COM
+      - 德国+V2CROSS.COM
+      - 美国+南卡罗来纳州
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
@@ -278,21 +286,26 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇯🇵 Japan
+  - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
-      - 日本+东京Fastly节点
+      - 荷兰+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇿🇦 South Africa
+    type: url-test
+    proxies:
+      - 南非+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国+Fastly全球Anycast节点
-      - 美国+Fastly全球Anycast节点 2
-      - 美国+V2CROSS.COM 2
-      - 美国+V2CROSS.COM 3
+      - 美国+教育网
+      - 美国+南卡罗来纳州
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -303,7 +316,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -314,7 +328,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -325,7 +340,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -337,7 +353,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -348,7 +365,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -358,7 +376,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -369,7 +388,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -380,7 +400,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -391,7 +412,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
