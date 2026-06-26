@@ -131,107 +131,88 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 澳大利亚+Fastly节点
-    type: vless
-    server: 151.101.171.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
+  - name: 印度+V2CROSS.COM
+    type: ss
+    server: 103.111.114.80
+    port: 28061
+    cipher: chacha20-ietf-poly1305
+    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
     udp: true
-  - name: 美国+明尼苏达州明尼阿波利斯Fastly节点
-    type: vless
-    server: 151.101.151.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
+  - name: 台湾省新北市+中华电信
+    type: ss
+    server: r3mrcg001286ek2.cybervena.com
+    port: 50099
+    cipher: chacha20-ietf-poly1305
+    password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
     udp: true
-  - name: 美国+CloudFlare节点
+  - name: 美国+华盛顿Cogent通信公司
     type: trojan
-    server: 104.20.6.134
+    server: 38.54.64.247
     port: 443
-    password: humanity
-    tls: true
-    sni: www.calmloud.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.calmloud.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+俄亥俄州都柏林Amazon数据中心
-    type: hysteria2
-    server: vpn-us-004.fastervpn.world
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: vpn-us-004.fastervpn.world
-    skip-cert-verify: true
-  - name: 美国+Fastly全球Anycast节点
-    type: vless
-    server: 151.101.0.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 希腊+V2CROSS.COM
-    type: trojan
-    server: 92.119.35.93
-    port: 443
-    password: urhj8z8R8nBovrNsYzXhL35jLGC5ruguRh
+    password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
     tls: true
     sni: ''
     network: tcp
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
   - name: 罗马尼亚+V2CROSS.COM
     type: trojan
-    server: 185.137.157.149
+    server: 185.137.157.145
     port: 443
     password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
     tls: true
     sni: ''
     network: tcp
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 日本+东京Fastly节点
-    type: vless
-    server: 151.101.111.151
-    port: 80
-    uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
-    tls: false
-    servername: ''
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: space.byu.id.yxls.eu.cc
+    port: 443
+    password: f922fa0f-3311-4368-85ff-cf65e727c854
+    tls: true
+    sni: ''
     network: ws
     ws-opts:
-      path: /
-      headers:
-        host: max-gb1.global.ssl.fastly.net
+      path: /br-orcl
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 澳大利亚+V2CROSS.COM
+    type: ss
+    server: 104.156.233.234
+    port: 27116
+    cipher: chacha20-ietf-poly1305
+    password: bIOoi5TuImG2KccxV7-jcA7Cez+vun-c_E
+    udp: true
+  - name: 罗马尼亚+V2CROSS.COM 2
+    type: trojan
+    server: 185.137.157.59
+    port: 443
+    password: fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX
+    tls: true
+    sni: www.lateralio.click
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 伊拉克+V2CROSS.COM
+    type: ss
+    server: 91.108.254.252
+    port: 18982
+    cipher: chacha20-ietf-poly1305
+    password: IIMxFMyq3FwyPd21UGWgmNJCAiYN9m2vOo
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: trojan
+    server: 45.61.52.243
+    port: 443
+    password: O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk
+    tls: true
+    sni: 45.61.52.243
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -242,56 +223,65 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 澳大利亚+Fastly节点
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
-      - 美国+CloudFlare节点
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Fastly全球Anycast节点
-      - 希腊+V2CROSS.COM
+      - 印度+V2CROSS.COM
+      - 台湾省新北市+中华电信
+      - 美国+华盛顿Cogent通信公司
       - 罗马尼亚+V2CROSS.COM
-      - 日本+东京Fastly节点
+      - 美国+CloudFlare节点
+      - 澳大利亚+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM 2
+      - 伊拉克+V2CROSS.COM
+      - 美国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 澳大利亚+Fastly节点
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
-      - 美国+CloudFlare节点
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Fastly全球Anycast节点
-      - 希腊+V2CROSS.COM
+      - 印度+V2CROSS.COM
+      - 台湾省新北市+中华电信
+      - 美国+华盛顿Cogent通信公司
       - 罗马尼亚+V2CROSS.COM
-      - 日本+东京Fastly节点
+      - 美国+CloudFlare节点
+      - 澳大利亚+V2CROSS.COM
+      - 罗马尼亚+V2CROSS.COM 2
+      - 伊拉克+V2CROSS.COM
+      - 美国+V2CROSS.COM
   - name: 🇦🇺 Australia
     type: url-test
     proxies:
-      - 澳大利亚+Fastly节点
+      - 澳大利亚+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇯🇵 Japan
+  - name: 🇮🇳 India
     type: url-test
     proxies:
-      - 日本+东京Fastly节点
+      - 印度+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇹🇼 Taiwan
+    type: url-test
+    proxies:
+      - 台湾省新北市+中华电信
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+明尼苏达州明尼阿波利斯Fastly节点
+      - 美国+华盛顿Cogent通信公司
       - 美国+CloudFlare节点
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 美国+Fastly全球Anycast节点
+      - 美国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -302,7 +292,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -313,7 +304,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -324,7 +316,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -336,7 +329,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -347,7 +341,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -357,7 +352,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -368,7 +364,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -379,7 +376,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -390,7 +388,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇦🇺 Australia
-      - 🇯🇵 Japan
+      - 🇮🇳 India
+      - 🇹🇼 Taiwan
       - 🇺🇸 United States
       - DIRECT
       - REJECT
