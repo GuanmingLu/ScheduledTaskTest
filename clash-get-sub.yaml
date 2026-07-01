@@ -131,175 +131,14 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 🇫🇷_FR_法国
+    type: hysteria2
+    server: clash-ip1.934618.xyz
+    port: 18271
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: clash-ip1.934618.xyz
+    skip-cert-verify: false
   - name: 🇨🇦_CA_加拿大
-    type: trojan
-    server: 103.177.136.45
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯
-    type: vless
-    server: 194.87.131.105
-    port: 443
-    uuid: 08379cf5-8256-404f-a6c5-2b933bb6c73f
-    tls: true
-    servername: max.ru
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇧🇬_BG_保加利亚->🇩🇪_DE_德国
-    type: vless
-    server: 79.124.7.236
-    port: 444
-    uuid: 0970324b-8c61-4ae7-8c3f-385a6f1e17e4
-    tls: true
-    servername: vpn47.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: vpn47.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇦_CA_加拿大 2
-    type: trojan
-    server: 103.177.136.45
-    port: 41943
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: az.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 3
-    type: trojan
-    server: 103.177.136.45
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: hysteria2
-    server: mg.baiyi.cloudns.org
-    port: 34604
-    password: 12475dcd-6fc9-4a40-8d84-b34d58d8114a
-    sni: mg.baiyi.cloudns.org
-    skip-cert-verify: false
-    alpn:
-      - h3
-  - name: 🇱🇹_LT_立陶宛
-    type: vless
-    server: 45.194.10.158
-    port: 8443
-    uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-    tls: true
-    servername: storage.yandex.net
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇨🇳_CN_中国
-    type: ss
-    server: 61.171.92.202
-    port: 1001
-    cipher: aes-256-gcm
-    password: '123'
-    udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: hysteria2
-    server: sg.baiyi.cloudns.org
-    port: 29766
-    password: 2014edec-53f7-43db-a39a-4bf33674ca24
-    sni: sg.baiyi.cloudns.org
-    skip-cert-verify: false
-    alpn:
-      - h3
-  - name: 🇰🇷_KR_韩国
-    type: hysteria2
-    server: hg.baiyi.cloudns.org
-    port: 36603
-    password: 555e6448-d1e0-465d-8ee0-b56aad452e32
-    sni: hg.baiyi.cloudns.org
-    skip-cert-verify: false
-    alpn:
-      - h3
-  - name: 🇭🇰_HK_中国香港
-    type: hysteria2
-    server: hk.baiyi.cloudns.org
-    port: 43923
-    password: 89f9b1f6-5301-468f-b394-a7450152d3b5
-    sni: hk.baiyi.cloudns.org
-    skip-cert-verify: false
-    alpn:
-      - h3
-  - name: 🇨🇳_CN_中国 2
-    type: vless
-    server: WangCai
-    port: .nan
-    uuid: 'Telegram🇨🇳 '
-    tls: true
-    servername: support.zoom.us.yxls.eu.cc
-    network: ws
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        host: support.zoom.us.yxls.eu.cc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇩🇪_DE_德国->🇺🇸_US_美国
-    type: vless
-    server: 49.13.73.56
-    port: 8443
-    uuid: 05f7b98c-3cd4-4f15-cb80-ac38e1c08a96
-    tls: true
-    servername: us2.wxgqlfx.icu
-    network: ws
-    ws-opts:
-      path: /TG@wxgqlfx
-      headers:
-        host: us2.wxgqlfx.icu
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇦_CA_加拿大 4
-    type: trojan
-    server: 103.177.136.42
-    port: 45553
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: ch.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯 2
-    type: vless
-    server: 178.250.243.230
-    port: 9823
-    uuid: a88ea8bf-7001-4e29-a9bb-379f6778195c
-    tls: true
-    servername: max.ru
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇨🇦_CA_加拿大 5
     type: trojan
     server: 103.177.136.45
     port: 46424
@@ -310,13 +149,203 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇸🇬_SG_新加坡 2
-    type: hysteria2
-    server: vpn-sg-003.fastervpn.world
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: vpn-sg-003.fastervpn.world
+  - name: 🇨🇦_CA_加拿大 2
+    type: trojan
+    server: 103.177.136.45
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: fr.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
     skip-cert-verify: true
+    udp: true
+  - name: 🇨🇦_CA_加拿大 3
+    type: trojan
+    server: 103.177.136.42
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    type: vless
+    server: 104.20.6.134
+    port: 443
+    uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
+    tls: true
+    servername: r.meDiASHOPPp.sbS
+    network: ws
+    ws-opts:
+      path: >-
+        /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+      headers:
+        host: r.mediashoppp.sbs
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇨🇦_CA_加拿大 4
+    type: trojan
+    server: 103.177.136.42
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: gh.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+    type: vmess
+    server: v29.hdacd.com
+    port: 30829
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+    type: vmess
+    server: v45.hdacd.com
+    port: 30845
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇨🇦_CA_加拿大 5
+    type: trojan
+    server: 103.177.136.42
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: de.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇧_GB_英国
+    type: vless
+    server: 45.206.0.34
+    port: 8443
+    uuid: 52faee73-e0fe-4661-992d-67259257170f
+    tls: true
+    servername: storage.yandex.net
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: '@DeltaKroneckerGithub_Clash_4533'
+    type: vless
+    server: ee-t2.vinnypuxtomoon.today
+    port: 2053
+    uuid: 1ee0c3d2-9c42-463f-8497-ee05f76b84e5
+    tls: true
+    servername: ee-t2.vinnypuxtomoon.today
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸_US_美国 3
+    type: vless
+    server: 172.64.41.202
+    port: 443
+    uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+    tls: true
+    servername: t1s1.rittbo.kdns.fr
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: t1s1.rittbo.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇬🇧_GB_英国 2
+    type: vless
+    server: 45.206.0.53
+    port: 8443
+    uuid: 52faee73-e0fe-4661-992d-67259257170f
+    tls: true
+    servername: storage.yandex.net
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇨🇦_CA_加拿大 6
+    type: trojan
+    server: 103.177.136.45
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    tls: true
+    sni: is.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇮🇷_IR_伊朗->🇩🇪_DE_德国
+    type: vless
+    server: 193.176.240.129
+    port: 8880
+    uuid: d9307ab3-1ed0-4b6d-bfd0-e104c7ccc25a
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: azsv2.ir5ive.ir
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇻🇳_VN_越南
+    type: hysteria2
+    server: vn2.yuntong.click
+    port: 443
+    obfs: salamander
+    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
+    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+    sni: vn2.yuntong.click
+    skip-cert-verify: false
+  - name: 🇰🇷_KR_韩国
+    type: vless
+    server: 152.67.211.233
+    port: 8899
+    uuid: ebf0f3c7-323f-431e-944f-67297178f5bb
+    tls: true
+    servername: www.lovelive-anime.jp
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸_US_美国 4
+    type: vless
+    server: 104.19.134.235
+    port: 443
+    uuid: 72d1797c-cef8-410a-b8fd-db9104dc3cb0
+    tls: true
+    servername: amooaliii.net
+    network: ws
+    ws-opts:
+      path: /jdhfyws
+      headers:
+        host: amooaliii.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
     type: vless
     server: support.zoom.us
@@ -332,119 +361,59 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇩🇪_DE_德国 3
-    type: vless
-    server: de-t2.vinnypuxtomoon.today
-    port: 2053
-    uuid: 1ee0c3d2-9c42-463f-8497-ee05f76b84e5
+  - name: 🇨🇦_CA_加拿大 7
+    type: trojan
+    server: 103.177.136.42
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
     tls: true
-    servername: de-t2.vinnypuxtomoon.today
+    sni: ch.01.naiun.bilibili.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
+    type: vless
+    server: belgium.cloudpath.live
+    port: 443
+    uuid: a1fbffe9-8e5a-5a0e-9333-045d32eccd59
+    tls: true
+    servername: microsoft.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬_SG_新加坡 3
+    type: hysteria2
+    server: 13.250.29.24
+    port: 443
+    password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+    sni: vpn-sg-001.fastervpn.world
+    skip-cert-verify: true
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+    type: vmess
+    server: v8.hdacd.com
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇭🇰_HK_中国香港 4
+    type: vless
+    server: vip.bcjdvip.com
+    port: 14006
+    uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+    tls: true
+    servername: apple.com
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇵🇱_PL_波兰->🇺🇸_US_美国
-    type: vless
-    server: 31.133.0.124
-    port: 2053
-    uuid: 05f7b98c-3cd4-4f15-cb80-ac38e1c08a96
-    tls: true
-    servername: us2.wxgqlfx.icu
-    network: ws
-    ws-opts:
-      path: /TG@wxgqlfx
-      headers:
-        host: us2.wxgqlfx.icu
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇻🇳_VN_越南
-    type: hysteria2
-    server: vn2.yuntong.click
-    port: 443
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: vn2.yuntong.click
-    skip-cert-verify: false
-  - name: 🇨🇦_CA_加拿大 6
-    type: trojan
-    server: 103.177.136.42
-    port: 47909
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: is.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 7
-    type: trojan
-    server: 103.177.136.42
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: fr.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 8
-    type: trojan
-    server: 103.177.136.42
-    port: 46424
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: de.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 9
-    type: trojan
-    server: 103.177.136.45
-    port: 45619
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: fr.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 10
-    type: trojan
-    server: 103.177.136.42
-    port: 48697
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: gh.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 11
-    type: trojan
-    server: 103.177.136.45
-    port: 48697
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: gh.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇨🇦_CA_加拿大 12
-    type: trojan
-    server: 103.177.136.42
-    port: 41943
-    password: 4f4d1167-ef14-4304-9bce-0740472503ef
-    tls: true
-    sni: az.01.naiun.bilibili.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
@@ -452,11 +421,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -464,68 +434,60 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 🇫🇷_FR_法国
       - 🇨🇦_CA_加拿大
-      - 🇷🇺_RU_俄罗斯
-      - 🇧🇬_BG_保加利亚->🇩🇪_DE_德国
       - 🇨🇦_CA_加拿大 2
       - 🇨🇦_CA_加拿大 3
-      - 🇺🇸_US_美国
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国 2
-      - 🇩🇪_DE_德国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇨🇦_CA_加拿大 4
-      - 🇷🇺_RU_俄罗斯 2
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
       - 🇨🇦_CA_加拿大 5
-      - 🇸🇬_SG_新加坡 2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇩🇪_DE_德国 3
-      - 🇵🇱_PL_波兰->🇺🇸_US_美国
-      - 🇻🇳_VN_越南
+      - 🇬🇧_GB_英国
+      - '@DeltaKroneckerGithub_Clash_4533'
+      - 🇺🇸_US_美国 3
+      - 🇬🇧_GB_英国 2
       - 🇨🇦_CA_加拿大 6
+      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
+      - 🇻🇳_VN_越南
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国 4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇨🇦_CA_加拿大 7
-      - 🇨🇦_CA_加拿大 8
-      - 🇨🇦_CA_加拿大 9
-      - 🇨🇦_CA_加拿大 10
-      - 🇨🇦_CA_加拿大 11
-      - 🇨🇦_CA_加拿大 12
+      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
+      - 🇸🇬_SG_新加坡 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇭🇰_HK_中国香港 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 🇫🇷_FR_法国
       - 🇨🇦_CA_加拿大
-      - 🇷🇺_RU_俄罗斯
-      - 🇧🇬_BG_保加利亚->🇩🇪_DE_德国
       - 🇨🇦_CA_加拿大 2
       - 🇨🇦_CA_加拿大 3
-      - 🇺🇸_US_美国
-      - 🇱🇹_LT_立陶宛
-      - 🇨🇳_CN_中国
-      - 🇸🇬_SG_新加坡
-      - 🇰🇷_KR_韩国
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国 2
-      - 🇩🇪_DE_德国->🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
       - 🇨🇦_CA_加拿大 4
-      - 🇷🇺_RU_俄罗斯 2
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
       - 🇨🇦_CA_加拿大 5
-      - 🇸🇬_SG_新加坡 2
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇩🇪_DE_德国 3
-      - 🇵🇱_PL_波兰->🇺🇸_US_美国
-      - 🇻🇳_VN_越南
+      - 🇬🇧_GB_英国
+      - '@DeltaKroneckerGithub_Clash_4533'
+      - 🇺🇸_US_美国 3
+      - 🇬🇧_GB_英国 2
       - 🇨🇦_CA_加拿大 6
+      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
+      - 🇻🇳_VN_越南
+      - 🇰🇷_KR_韩国
+      - 🇺🇸_US_美国 4
+      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
       - 🇨🇦_CA_加拿大 7
-      - 🇨🇦_CA_加拿大 8
-      - 🇨🇦_CA_加拿大 9
-      - 🇨🇦_CA_加拿大 10
-      - 🇨🇦_CA_加拿大 11
-      - 🇨🇦_CA_加拿大 12
+      - 🇬🇪_GE_格鲁吉亚->🇧🇪_BE_比利时
+      - 🇸🇬_SG_新加坡 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇭🇰_HK_中国香港 4
   - name: 🇨🇦 Canada
     type: url-test
     proxies:
@@ -536,27 +498,30 @@ proxy-groups:
       - 🇨🇦_CA_加拿大 5
       - 🇨🇦_CA_加拿大 6
       - 🇨🇦_CA_加拿大 7
-      - 🇨🇦_CA_加拿大 8
-      - 🇨🇦_CA_加拿大 9
-      - 🇨🇦_CA_加拿大 10
-      - 🇨🇦_CA_加拿大 11
-      - 🇨🇦_CA_加拿大 12
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇫🇷 France
+    type: url-test
+    proxies:
+      - 🇫🇷_FR_法国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
-      - 🇧🇬_BG_保加利亚->🇩🇪_DE_德国
-      - 🇩🇪_DE_德国->🇺🇸_US_美国
-      - 🇩🇪_DE_德国 3
+      - 🇮🇷_IR_伊朗->🇩🇪_DE_德国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇭🇰_HK_中国香港 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -567,28 +532,28 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯 2
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - name: 🇸🇬 Singapore
     type: url-test
     proxies:
-      - 🇸🇬_SG_新加坡
-      - 🇸🇬_SG_新加坡 2
+      - 🇸🇬_SG_新加坡 3
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇬🇧 United Kingdom
+    type: url-test
+    proxies:
+      - 🇬🇧_GB_英国
+      - 🇬🇧_GB_英国 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国 3
+      - 🇺🇸_US_美国 4
       - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇵🇱_PL_波兰->🇺🇸_US_美国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -606,11 +571,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -622,11 +588,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -638,11 +605,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -655,11 +623,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - REJECT
@@ -671,11 +640,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - REJECT
@@ -686,11 +656,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -702,11 +673,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -718,11 +690,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
@@ -734,11 +707,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇨🇦 Canada
+      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇰🇷 Korea
-      - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - 🇻🇳 Vietnam
       - DIRECT
