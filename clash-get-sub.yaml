@@ -131,70 +131,104 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇦🇺_AU_澳大利亚
-    type: trojan
-    server: tight-possum.rooster465.autos
+  - name: 🇷🇺_RU_俄罗斯
+    type: vless
+    server: 2.26.8.55
     port: 443
-    password: PI36027154
+    uuid: 10ea33f2-1a66-4dec-99f2-8068a6b56a45
     tls: true
-    sni: ''
+    servername: lk-tra.riseads.in
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸_US_美国->🇨🇭_CH_瑞士
-    type: vless
-    server: 172.65.111.43
-    port: 22
-    uuid: monacoVPN
+    flow: xtls-rprx-vision
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
+    type: vmess
+    server: v9.hdacd.com
+    port: 30809
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
     tls: false
     servername: ''
-    network: http
-    tfo: false
     skip-cert-verify: false
+    network: tcp
     udp: true
-  - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - name: 🇭🇰_HK_中国香港 2
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇵🇱_PL_波兰
     type: vless
-    server: 170.114.46.6
+    server: 45.144.50.249
     port: 443
-    uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+    uuid: a2415a12-3f92-4636-9823-9828d3ceb818
     tls: true
-    servername: support.zoom.us.yxls.eu.cc
-    network: ws
-    ws-opts:
-      path: /sg-amz
-      headers:
-        host: support.zoom.us.yxls.eu.cc
+    servername: www.intel.com
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇻🇳_VN_越南
-    type: hysteria2
-    server: vn2.yuntong.click
-    port: 443
-    obfs: salamander
-    obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
-    password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
-    sni: vn2.yuntong.click
-    skip-cert-verify: false
-  - name: 🇺🇸_US_美国->🇸🇬_SG_新加坡 2
+  - name: 🇷🇺_RU_俄罗斯 2
     type: vless
-    server: support.zoom.us
+    server: lk-tra.riseads.in
     port: 443
-    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+    uuid: 10ea33f2-1a66-4dec-99f2-8068a6b56a45
     tls: true
-    servername: support.zoom.us.yxls.eu.cc
-    network: ws
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        host: support.zoom.us.yxls.eu.cc
+    servername: lk-tra.riseads.in
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇸🇬_SG_新加坡 3
+    flow: xtls-rprx-vision
+  - name: 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+    type: vmess
+    server: v35.hdacd.com
+    port: 30835
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+    type: vmess
+    server: v8.hdacd.com
+    port: 30808
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇸🇪_SE_瑞典
+    type: vless
+    server: swed-yott.red-panda.top
+    port: 1443
+    uuid: f097453b-5fa6-48a7-a164-7fe7ef89a140
+    tls: true
+    servername: www.github.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸_US_美国 3
     type: trojan
-    server: rich-mule.rooster465.autos
+    server: pro-tortoise.rooster465.autos
     port: 443
     password: PI36027154
     tls: true
@@ -203,66 +237,119 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国 3
+    type: vmess
+    server: v4.hdacd.com
+    port: 30804
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国 4
+    type: vmess
+    server: v24.hdacd.com
+    port: 30824
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯->🇳🇱_NL_荷兰
+    type: vless
+    server: 144.31.190.191
+    port: 8443
+    uuid: 91d0fa43-e557-43e7-a731-f0c3d1fb306a
+    tls: true
+    servername: ozon.ru
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇦🇺_AU_澳大利亚
-      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇻🇳_VN_越南
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡 2
-      - 🇸🇬_SG_新加坡 3
+      - 🇷🇺_RU_俄罗斯
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港 2
+      - 🇵🇱_PL_波兰
+      - 🇷🇺_RU_俄罗斯 2
+      - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 4
+      - 🇷🇺_RU_俄罗斯->🇳🇱_NL_荷兰
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇦🇺_AU_澳大利亚
-      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇻🇳_VN_越南
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡 2
-      - 🇸🇬_SG_新加坡 3
-  - name: 🇦🇺 Australia
+      - 🇷🇺_RU_俄罗斯
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港 2
+      - 🇵🇱_PL_波兰
+      - 🇷🇺_RU_俄罗斯 2
+      - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇸🇪_SE_瑞典
+      - 🇺🇸_US_美国 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 4
+      - 🇷🇺_RU_俄罗斯->🇳🇱_NL_荷兰
+  - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 🇦🇺_AU_澳大利亚
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
+      - 🇭🇰_HK_中国香港 2
+      - 🇭🇰_HK_中国香港->🇫🇷_FR_法国
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 2
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 3
+      - 🇭🇰_HK_中国香港->🇺🇸_US_美国 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇸🇬 Singapore
+  - name: 🇷🇺 Russia
     type: url-test
     proxies:
-      - 🇸🇬_SG_新加坡 3
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯 2
+      - 🇷🇺_RU_俄罗斯->🇳🇱_NL_荷兰
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇸🇪 Sweden
+    type: url-test
+    proxies:
+      - 🇸🇪_SE_瑞典
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 🇺🇸_US_美国->🇨🇭_CH_瑞士
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡
-      - 🇺🇸_US_美国->🇸🇬_SG_新加坡 2
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇻🇳 Vietnam
-    type: url-test
-    proxies:
-      - 🇻🇳_VN_越南
+      - 🇺🇸_US_美国 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -272,10 +359,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -284,10 +371,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -296,10 +383,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -309,10 +396,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - REJECT
   - type: select
     name: 🔒 国内服务
@@ -321,10 +408,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - REJECT
   - type: select
     name: 📲 电报消息
@@ -332,10 +419,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -344,10 +431,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -356,10 +443,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
   - type: select
@@ -368,10 +455,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇸🇬 Singapore
+      - 🇭🇰 Hong Kong
+      - 🇷🇺 Russia
+      - 🇸🇪 Sweden
       - 🇺🇸 United States
-      - 🇻🇳 Vietnam
       - DIRECT
       - REJECT
 rules:
