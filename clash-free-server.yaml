@@ -131,116 +131,115 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 新加坡+Digital+VM
-    type: hysteria2
-    server: 45.88.42.29
-    port: 50117
-    password: 13d29042-ab82-4195-9cd4-2bafc518e201
-    sni: iosapps.itunes.apple.com
-    skip-cert-verify: true
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.54.64.247
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 104.17.147.22
     port: 443
-    password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
+    uuid: 073d1d50-8478-47bf-a828-7a1b381931d5
     tls: true
-    sni: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 167.82.101.252
-    port: 443
-    password: MiTiVPN
-    tls: true
-    sni: ssl.fastly.com
+    servername: octopusss.net
     network: ws
     ws-opts:
-      path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Sw
+      path: /odiyfws
       headers:
-        host: miticonfig.global.ssl.fastly.net
+        host: octopusss.net
     tfo: false
     skip-cert-verify: true
     udp: true
   - name: 罗马尼亚+V2CROSS.COM
     type: trojan
-    server: 185.137.157.138
+    server: 185.137.157.142
     port: 443
     password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
     tls: true
-    sni: ''
+    sni: 185.137.157.142
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 亚太地区+V2CROSS.COM
-    type: trojan
-    server: 103.125.216.18
-    port: 443
-    password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-    tls: true
-    sni: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
+  - name: 印度+V2CROSS.COM
+    type: ss
+    server: 103.241.66.76
+    port: 14605
+    cipher: chacha20-ietf-poly1305
+    password: Uk8lfmvhYnx5rJvXxKrRqGRynd9gIpJ.iY
     udp: true
-  - name: 比利时+V2CROSS.COM
+  - name: 美国+华盛顿Cogent通信公司
+    type: ss
+    server: 38.180.221.145
+    port: 17283
+    cipher: chacha20-ietf-poly1305
+    password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
+    udp: true
+  - name: 美国+CloudFlare节点 2
     type: vless
-    server: 155.117.137.103
+    server: 104.17.131.138
     port: 443
-    uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
+    uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
     tls: true
-    client-fingerprint: chrome
-    servername: cdn6-49.yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: 3c9c5d01c6f824dd
+    servername: support.zoom.us.yxls.eu.cc
+    network: ws
+    ws-opts:
+      path: /sg-amz
+      headers:
+        host: support.zoom.us.yxls.eu.cc
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+俄亥俄州都柏林Amazon数据中心
+  - name: 美国+CloudFlare节点 3
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmloud.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmloud.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 南非+V2CROSS.COM
     type: hysteria2
-    server: vpn-us-003.fastervpn.world
-    port: 443
-    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-    sni: vpn-us-003.fastervpn.world
-    skip-cert-verify: true
-  - name: 亚太地区+V2CROSS.COM 2
-    type: trojan
-    server: 103.125.216.68
-    port: 443
-    password: T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf
-    tls: true
-    sni: ''
-    network: tcp
-    tfo: false
+    server: 45.196.182.250
+    port: 8449
+    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+    sni: sni.fi-m247-02.com
     skip-cert-verify: false
+  - name: 美国+V2CROSS.COM
+    type: hysteria2
+    server: 66.234.150.242
+    port: 8449
+    password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+    sni: sni.fi-m247-02.com
+    skip-cert-verify: false
+  - name: 美国+华盛顿Cogent通信公司 2
+    type: ss
+    server: 38.180.221.143
+    port: 17283
+    cipher: chacha20-ietf-poly1305
+    password: bwjNPcwgz5+1gCyi+rB+nfqugw38B7tqVa
     udp: true
-  - name: 比利时+V2CROSS.COM 2
+  - name: 美国+CloudFlare节点 4
     type: vless
-    server: 155.117.137.239
+    server: fm3.pages.dev
     port: 443
-    uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
+    uuid: f0db70ae-559e-4cba-aa00-3a04eb04c3e0
     tls: true
-    client-fingerprint: chrome
-    servername: cdn6-49.yahoo.com
-    network: tcp
-    reality-opts:
-      public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-      short-id: 3c9c5d01c6f824dd
+    servername: fm3.pages.dev
+    network: ws
+    ws-opts:
+      path: /
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 罗马尼亚+V2CROSS.COM 2
+  - name: 美国+华盛顿Cogent通信公司 3
     type: trojan
-    server: 185.137.157.145
+    server: 38.60.136.156
     port: 443
-    password: dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q
+    password: hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey
     tls: true
     sni: ''
     network: tcp
@@ -253,52 +252,67 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 新加坡+Digital+VM
-      - 美国+华盛顿Cogent通信公司
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 罗马尼亚+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 比利时+V2CROSS.COM
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 亚太地区+V2CROSS.COM 2
-      - 比利时+V2CROSS.COM 2
-      - 罗马尼亚+V2CROSS.COM 2
+      - 印度+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 南非+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司 2
+      - 美国+CloudFlare节点 4
+      - 美国+华盛顿Cogent通信公司 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 新加坡+Digital+VM
-      - 美国+华盛顿Cogent通信公司
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 罗马尼亚+V2CROSS.COM
-      - 亚太地区+V2CROSS.COM
-      - 比利时+V2CROSS.COM
-      - 美国+俄亥俄州都柏林Amazon数据中心
-      - 亚太地区+V2CROSS.COM 2
-      - 比利时+V2CROSS.COM 2
-      - 罗马尼亚+V2CROSS.COM 2
-  - name: 🇸🇬 Singapore
+      - 印度+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 南非+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 美国+华盛顿Cogent通信公司 2
+      - 美国+CloudFlare节点 4
+      - 美国+华盛顿Cogent通信公司 3
+  - name: 🇮🇳 India
     type: url-test
     proxies:
-      - 新加坡+Digital+VM
+      - 印度+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇿🇦 South Africa
+    type: url-test
+    proxies:
+      - 南非+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+CloudFlare节点
       - 美国+华盛顿Cogent通信公司
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
       - 美国+V2CROSS.COM
-      - 美国+俄亥俄州都柏林Amazon数据中心
+      - 美国+华盛顿Cogent通信公司 2
+      - 美国+CloudFlare节点 4
+      - 美国+华盛顿Cogent通信公司 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -308,7 +322,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -318,7 +333,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -328,7 +344,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -339,7 +356,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -349,7 +367,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -358,7 +377,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -368,7 +388,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -378,7 +399,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -388,7 +410,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
+      - 🇮🇳 India
+      - 🇿🇦 South Africa
       - 🇺🇸 United States
       - DIRECT
       - REJECT
