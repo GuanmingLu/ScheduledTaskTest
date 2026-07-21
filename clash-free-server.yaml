@@ -131,103 +131,69 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 149.104.104.58
-    port: 443
-    password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
-    tls: true
-    sni: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
+  - name: 日本+东京Digital+VM
+    type: hysteria2
+    server: 45.88.43.116
+    port: 52454
+    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 印度+V2CROSS.COM
+    type: ss
+    server: 103.111.114.71
+    port: 28061
+    cipher: chacha20-ietf-poly1305
+    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
     udp: true
   - name: 荷兰+V2CROSS.COM
-    type: hysteria2
-    server: 5.255.102.165
+    type: trojan
+    server: 188.164.248.122
     port: 443
-    password: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
-    sni: ''
+    password: c206d543-023d-46cc-9d5a-1f0f2fc16323
+    tls: true
+    sni: space.byu.id.yxls.eu.cc
+    network: ws
+    ws-opts:
+      path: /in-pdr
+      headers:
+        host: space.byu.id.yxls.eu.cc
+    tfo: false
     skip-cert-verify: true
-  - name: 美国+CloudFlare节点
+    udp: true
+  - name: 北京市+阿里云BGP服务器
     type: vless
-    server: 172.67.77.213
+    server: 60.205.5.16
     port: 443
     uuid: 7b102311-43fd-4e8f-877e-8090623c101d
     tls: true
-    servername: vp17.cc.cd
+    servername: vp58.cc.cd
     network: ws
     ws-opts:
-      path: /
+      path: Telegram🇨🇳 @VPNine1
       headers:
-        host: vp17.cc.cd
+        host: vp58.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 印度+V2CROSS.COM
-    type: ss
-    server: 103.111.114.82
-    port: 28061
-    cipher: chacha20-ietf-poly1305
-    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-    udp: true
-  - name: 印度+V2CROSS.COM 2
-    type: ss
-    server: 103.111.114.80
-    port: 28061
-    cipher: chacha20-ietf-poly1305
-    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-    udp: true
-  - name: 美国+CloudFlare节点 2
+  - name: 香港+电讯盈科有限公司
     type: trojan
-    server: 162.159.38.183
-    port: 443
-    password: VPNCUSTOMIZE
+    server: jpbgp.netvigor.cc
+    port: 19128
+    password: OccIqeORGQwiNkwS
     tls: true
-    sni: ww.offers.de5.net
-    network: xhttp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+华盛顿Cogent通信公司
-    type: trojan
-    server: 38.54.64.247
-    port: 443
-    password: ks3og6wZ9kH8UJv1bmpvwXbfgDNNaTd1Lk
-    tls: true
-    sni: ''
+    sni: yazhou10.dynu.net
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 英国+V2CROSS.COM
+  - name: 德国+黑森州法兰克福DigitalOcean数据中心
     type: vless
-    server: 31.77.201.85
-    port: 443
-    uuid: 16ad976d-b5df-4b4e-87b6-87cc64ac0a8b
-    tls: true
-    client-fingerprint: chrome
-    servername: ag-03.rita-cloud.com
-    network: raw
-    reality-opts:
-      public-key: yLDI5Qjzn4AHlXVDEXNVcLKAdr_dFeJ3p4eAScGkQjA
-      short-id: 0b0aa9caed9d011e
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 3
-    type: vless
-    server: cloudflare.182682.xyz
-    port: 443
-    uuid: 4a1441b0-7bc8-4906-85cf-6b59c256b480
-    tls: true
-    servername: edt2.yfqh08811.ccwu.cc
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: edt2.yfqh08811.ccwu.cc
+    server: 167.172.173.163
+    port: 58324
+    uuid: 3d675570-43d2-443e-93bb-29b9d1fdc563
+    tls: false
+    servername: ''
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -237,44 +203,59 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 日本+东京Digital+VM
       - 印度+V2CROSS.COM
-      - 印度+V2CROSS.COM 2
-      - 美国+CloudFlare节点 2
-      - 美国+华盛顿Cogent通信公司
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点 3
+      - 荷兰+V2CROSS.COM
+      - 北京市+阿里云BGP服务器
+      - 香港+电讯盈科有限公司
+      - 德国+黑森州法兰克福DigitalOcean数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+V2CROSS.COM
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 日本+东京Digital+VM
       - 印度+V2CROSS.COM
-      - 印度+V2CROSS.COM 2
-      - 美国+CloudFlare节点 2
-      - 美国+华盛顿Cogent通信公司
-      - 英国+V2CROSS.COM
-      - 美国+CloudFlare节点 3
+      - 荷兰+V2CROSS.COM
+      - 北京市+阿里云BGP服务器
+      - 香港+电讯盈科有限公司
+      - 德国+黑森州法兰克福DigitalOcean数据中心
+  - name: 🇩🇪 Germany
+    type: url-test
+    proxies:
+      - 德国+黑森州法兰克福DigitalOcean数据中心
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇭🇰 Hong Kong
+    type: url-test
+    proxies:
+      - 香港+电讯盈科有限公司
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇮🇳 India
     type: url-test
     proxies:
       - 印度+V2CROSS.COM
-      - 印度+V2CROSS.COM 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇯🇵 Japan
+    type: url-test
+    proxies:
+      - 日本+东京Digital+VM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -285,34 +266,17 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    proxies:
-      - 英国+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇺🇸 United States
-    type: url-test
-    proxies:
-      - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+华盛顿Cogent通信公司
-      - 美国+CloudFlare节点 3
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - type: select
     name: 💬 AI 服务
     proxies:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -321,10 +285,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -333,10 +298,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -346,10 +312,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - REJECT
   - type: select
     name: 🔒 国内服务
@@ -358,10 +325,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - REJECT
   - type: select
     name: 📲 电报消息
@@ -369,10 +337,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -381,10 +350,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -393,10 +363,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -405,10 +376,11 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
-      - 🇬🇧 United Kingdom
-      - 🇺🇸 United States
       - DIRECT
       - REJECT
 rules:
