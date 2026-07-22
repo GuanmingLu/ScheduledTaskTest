@@ -131,20 +131,6 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 日本+东京Digital+VM
-    type: hysteria2
-    server: 45.88.43.116
-    port: 52454
-    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: 印度+V2CROSS.COM
-    type: ss
-    server: 103.111.114.71
-    port: 28061
-    cipher: chacha20-ietf-poly1305
-    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
-    udp: true
   - name: 荷兰+V2CROSS.COM
     type: trojan
     server: 188.164.248.122
@@ -160,31 +146,35 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 北京市+阿里云BGP服务器
+  - name: 巴西+V2CROSS.COM
     type: vless
-    server: 60.205.5.16
+    server: 201.51.12.73
     port: 443
-    uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+    uuid: 153560b0-1a33-4b44-b059-ca5b22e55c19
     tls: true
-    servername: vp58.cc.cd
-    network: ws
-    ws-opts:
-      path: Telegram🇨🇳 @VPNine1
-      headers:
-        host: vp58.cc.cd
+    client-fingerprint: chrome
+    servername: corelink.su
+    network: tcp
+    reality-opts:
+      public-key: b0y3fVgL8jKbO3cNmh_qCoZWoWRsY6BYc6VDJFkNe2I
+      short-id: b7fc0f11dda97edb
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 香港+电讯盈科有限公司
-    type: trojan
-    server: jpbgp.netvigor.cc
-    port: 19128
-    password: OccIqeORGQwiNkwS
-    tls: true
-    sni: yazhou10.dynu.net
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
+    flow: xtls-rprx-vision
+  - name: 伊朗+V2CROSS.COM
+    type: ss
+    server: 94.183.124.95
+    port: 82
+    cipher: aes-256-gcm
+    password: EMIruFl6nN37LDQxCIwstG09haCBkyjvZVjWIMOQ0Jk=
+    udp: true
+  - name: 印度+V2CROSS.COM
+    type: ss
+    server: 103.111.114.82
+    port: 28061
+    cipher: chacha20-ietf-poly1305
+    password: WOir3lXBhMHDcLFPQdEZXPu37_pTQDCXfm
     udp: true
   - name: 德国+黑森州法兰克福DigitalOcean数据中心
     type: vless
@@ -203,21 +193,19 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 日本+东京Digital+VM
-      - 印度+V2CROSS.COM
       - 荷兰+V2CROSS.COM
-      - 北京市+阿里云BGP服务器
-      - 香港+电讯盈科有限公司
+      - 巴西+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 印度+V2CROSS.COM
       - 德国+黑森州法兰克福DigitalOcean数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -225,12 +213,18 @@ proxy-groups:
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 日本+东京Digital+VM
-      - 印度+V2CROSS.COM
       - 荷兰+V2CROSS.COM
-      - 北京市+阿里云BGP服务器
-      - 香港+电讯盈科有限公司
+      - 巴西+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 印度+V2CROSS.COM
       - 德国+黑森州法兰克福DigitalOcean数据中心
+  - name: 🇧🇷 Brazil
+    type: url-test
+    proxies:
+      - 巴西+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
@@ -238,24 +232,10 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇭🇰 Hong Kong
-    type: url-test
-    proxies:
-      - 香港+电讯盈科有限公司
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - name: 🇮🇳 India
     type: url-test
     proxies:
       - 印度+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇯🇵 Japan
-    type: url-test
-    proxies:
-      - 日本+东京Digital+VM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -272,10 +252,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -285,10 +264,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -298,10 +276,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -312,10 +289,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - REJECT
   - type: select
@@ -325,10 +301,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - REJECT
   - type: select
@@ -337,10 +312,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -350,10 +324,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -363,10 +336,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
@@ -376,10 +348,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇧🇷 Brazil
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
       - 🇮🇳 India
-      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - DIRECT
       - REJECT
