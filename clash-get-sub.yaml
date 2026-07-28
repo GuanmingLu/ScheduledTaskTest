@@ -131,55 +131,6 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇺🇸_US_美国
-    type: vless
-    server: 172.67.174.37
-    port: 443
-    uuid: 0ba5211f-fb2b-42a0-8e18-9ce7a41745a5
-    tls: true
-    servername: sg.xfj123.top
-    network: ws
-    ws-opts:
-      path: /0ba5211f-fb2b-42a0-8e18-9ce7a41745a5-vless
-      headers:
-        host: sg.xfj123.top
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯
-    type: vless
-    server: 188.225.46.217
-    port: 443
-    uuid: 2a12bb81-f3a3-41bb-99ab-36febf676b4a
-    tls: true
-    servername: api-maps.yandex.ru
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇩🇪_DE_德国
-    type: hysteria2
-    server: 5.83.129.90
-    port: 54177
-    password: dongtaiwang.com
-    up: 11
-    down: 55
-    sni: bing.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 🇺🇸_US_美国 2
-    type: vless
-    server: 180.178.60.252
-    port: 10000
-    uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🇭🇰_HK_中国香港
     type: vmess
     server: v10.hdacd.com
@@ -192,85 +143,18 @@ proxies:
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇩🇪_DE_德国 2
-    type: vless
-    server: germany.superbuba.top
+  - name: 🇸🇬_SG_新加坡
+    type: trojan
+    server: meet-doe.rooster465.autos
     port: 443
-    uuid: b6af5776-fede-4765-b86c-806e827e9a07
+    password: IQ68037294
     tls: true
-    servername: germany.superbuba.top
+    sni: meet-doe.rooster465.autos
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇭🇰_HK_中国香港 2
-    type: vmess
-    server: n1747624260.4u9ma.icu
-    port: 443
-    uuid: eee8cb72-7eab-4034-a308-ed06cb07e003
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers: {}
-    udp: true
-  - name: 🇷🇺_RU_俄罗斯->🇵🇱_PL_波兰
-    type: vless
-    server: 72.56.38.194
-    port: 9892
-    uuid: 884d811f-577b-421e-aabb-608660b0ecfa
-    tls: true
-    servername: dl.google.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: grpc-tunnel
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇷_FR_法国
-    type: tuic
-    server: 195.154.41.99
-    port: 33888
-    uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
-    password: dongtaiwang.com
-    congestion-controller: bbr
-    skip-cert-verify: true
-    alpn:
-      - h3
-    sni: bing.com
-    udp-relay-mode: native
   - name: 🇺🇸_US_美国->🇹🇭_TH_泰国
-    type: vless
-    server: 18.244.214.28
-    port: 80
-    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /GDkX4xpB/
-      headers:
-        host: duatoup3wk8q2.cloudfront.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国->🇫🇷_FR_法国
-    type: vless
-    server: ad-020.vector9nmb3.info
-    port: 8443
-    uuid: 1ad37675-b4cf-42fa-9dc5-83fd35cd63cb
-    tls: true
-    servername: ''
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 2
     type: vless
     server: 18.238.109.26
     port: 80
@@ -285,43 +169,235 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇹🇷_TR_土耳其
+  - name: 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
     type: vless
-    server: 45.196.201.213
-    port: 443
-    uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+    server: 43.255.156.59
+    port: 40118
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
     tls: true
-    servername: storage.yandex.net
+    servername: www.lamer.com.sg
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇹🇷_TR_土耳其 2
-    type: vless
-    server: 45.196.201.181
-    port: 443
-    uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  - name: 🇭🇰_HK_中国香港->🇹🇭_TH_泰国
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20023
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
     tls: true
-    servername: storage.yandex.net
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯
+    type: vless
+    server: 45.155.52.231
+    port: 443
+    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+    tls: true
+    servername: ru2.skydrgn-online.online
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇹🇷_TR_土耳其 3
-    type: vless
-    server: 45.196.201.217
-    port: 443
-    uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-    tls: true
-    servername: storage.yandex.net
+  - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+    type: vmess
+    server: v9.hdacd.com
+    port: 30809
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
     network: tcp
+    udp: true
+  - name: 🇺🇦_UA_乌克兰
+    type: ss
+    server: 194.54.80.37
+    port: 1080
+    cipher: chacha20-ietf-poly1305
+    password: XF0klw7870vXn3uQIxe19Q
+    udp: true
+  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 2
+    type: vless
+    server: 18.244.214.28
+    port: 80
+    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /GDkX4xpB/
+      headers:
+        host: duatoup3wk8q2.cloudfront.net
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
   - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 3
+    type: vless
+    server: 18.244.214.108
+    port: 80
+    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /GDkX4xpB/
+      headers:
+        host: duatoup3wk8q2.cloudfront.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇪_SE_瑞典
+    type: vless
+    server: 87.120.196.68
+    port: 443
+    uuid: 5bb7df8d-ad02-41fa-a8e6-8a8a4650d2c4
+    tls: true
+    servername: yahoo.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20004
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+    type: trojan
+    server: Hkdcrtc-e.catcat321.com
+    port: 20041
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: de.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇨🇿_CZ_捷克
+    type: vless
+    server: 141.133.172.222
+    port: 20342
+    uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇫🇷_FR_法国
+    type: hysteria2
+    server: 62.210.7.139
+    port: 60111
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: bing.com
+    skip-cert-verify: true
+  - name: 🇺🇸_US_美国->🇫🇮_FI_芬兰
+    type: vless
+    server: 151.101.56.7
+    port: 80
+    uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: BankMelat.glObal.ssl.faStly.nEt.
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
+    type: vless
+    server: 167.82.0.17
+    port: 80
+    uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: BankMelat.glObal.ssl.faStly.nEt.
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国 6
+    type: vless
+    server: 180.178.60.252
+    port: 10000
+    uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇵🇱_PL_波兰
+    type: vless
+    server: 151.245.192.193
+    port: 443
+    uuid: da7685a7-15ef-41e4-a0d9-009bb4be7220
+    tls: true
+    servername: auto.malina24.xyz
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇭🇰_HK_中国香港->🇳🇴_NO_挪威
+    type: trojan
+    server: Hkdcrtc-e.catcat321.com
+    port: 20085
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬_SG_新加坡 3
+    type: trojan
+    server: helpful-possum.rooster465.autos
+    port: 443
+    password: FC60532879
+    tls: true
+    sni: helpful-possum.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬_SG_新加坡 4
+    type: trojan
+    server: 45.135.228.169
+    port: 443
+    password: IQ68037294
+    tls: true
+    sni: fun-salmon.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇨🇭_CH_瑞士
+    type: ss
+    server: best.kovira2.ir
+    port: 25026
+    cipher: chacha20-ietf-poly1305
+    password: xp6qduya33bvl863
+    udp: true
+  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 4
     type: vless
     server: 18.244.214.36
     port: 80
@@ -336,126 +412,48 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 4
-    type: vless
-    server: 18.238.109.28
-    port: 80
-    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /GDkX4xpB/
-      headers:
-        host: duatoup3wk8q2.cloudfront.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇹🇷_TR_土耳其 4
-    type: vless
-    server: 45.196.201.239
-    port: 443
-    uuid: f75814f6-8f81-4847-b792-168c41f2dc85
+  - name: 🇭🇰_HK_中国香港->🇺🇦_UA_乌克兰
+    type: trojan
+    server: hkdcrtc-e.catcat321.com
+    port: 20066
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
     tls: true
-    servername: storage.yandex.net
+    sni: ''
     network: tcp
     tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇭🇰_HK_中国香港 3
-    type: ss
-    server: 260323.1.0.l3.unclemanco.com
-    port: 9030
-    cipher: aes-128-gcm
-    password: QHPy2u
-    udp: true
-    plugin: obfs
-    plugin-opts:
-      mode: http
-      host: 94aaf10040.download.windowsupdate.com
-  - name: 🇹🇷_TR_土耳其 5
-    type: vless
-    server: 45.196.201.134
-    port: 443
-    uuid: f75814f6-8f81-4847-b792-168c41f2dc85
-    tls: true
-    servername: storage.yandex.net
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇭🇰_HK_中国香港 4
-    type: vmess
-    server: 47.76.127.88
-    port: 5566
-    uuid: 44712929-c2b7-4fa4-93bd-9de332a78c8c
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 🇨🇿_CZ_捷克
-    type: vless
-    server: 141.133.172.222
-    port: 20342
-    uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 🇳🇱_NL_荷兰
-    type: ss
-    server: 193.29.139.223
-    port: 8080
-    cipher: chacha20-ietf-poly1305
-    password: k1dBOmOB4oqi7Ump37a1bQ
-    udp: true
-  - name: 🇭🇰_HK_中国香港 5
-    type: vmess
-    server: n1747624274.4u9ma.icu
-    port: 443
-    uuid: d8daf507-a4ac-4eea-8399-8f0cd071eb52
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: n1747624274.4u9ma.icu
-    udp: true
-  - name: 🇭🇰_HK_中国香港 6
-    type: vmess
-    server: v10.zgtfqs.click
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 🇩🇪_DE_德国->🇹🇭_TH_泰国
     type: vless
-    server: www.true.th
-    port: 80
-    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /GDkX4xpB/
-      headers:
-        host: duatoup3wk8q2.cloudfront.net
+    server: getsavesafe.net
+    port: 443
+    uuid: 39c42b0a-b823-4c93-bb99-74b4183e518d
+    tls: true
+    servername: getsavesafe.net
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
+    type: trojan
+    server: Hkdcrtc-e.catcat321.com
+    port: 20129
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬_SG_新加坡 5
+    type: trojan
+    server: fun-salmon.rooster465.autos
+    port: 443
+    password: IQ68037294
+    tls: true
+    sni: fun-salmon.rooster465.autos
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -466,75 +464,80 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇷🇺_RU_俄罗斯
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国 2
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国 2
-      - 🇭🇰_HK_中国香港 2
-      - 🇷🇺_RU_俄罗斯->🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国
+      - 🇸🇬_SG_新加坡
       - 🇺🇸_US_美国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港->🇹🇭_TH_泰国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇦_UA_乌克兰
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
-      - 🇹🇷_TR_土耳其
-      - 🇹🇷_TR_土耳其 2
-      - 🇹🇷_TR_土耳其 3
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 3
-      - 🇺🇸_US_美国->🇹🇭_TH_泰国 4
-      - 🇹🇷_TR_土耳其 4
-      - 🇭🇰_HK_中国香港 3
-      - 🇹🇷_TR_土耳其 5
-      - 🇭🇰_HK_中国香港 4
+      - 🇸🇪_SE_瑞典
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
       - 🇨🇿_CZ_捷克
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国 6
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港->🇳🇴_NO_挪威
+      - 🇸🇬_SG_新加坡 3
+      - 🇸🇬_SG_新加坡 4
+      - 🇨🇭_CH_瑞士
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国 4
+      - 🇭🇰_HK_中国香港->🇺🇦_UA_乌克兰
       - 🇳🇱_NL_荷兰
-      - 🇭🇰_HK_中国香港 5
-      - 🇭🇰_HK_中国香港 6
-      - 🇩🇪_DE_德国->🇹🇭_TH_泰国
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
+      - 🇸🇬_SG_新加坡 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇺🇸_US_美国
-      - 🇷🇺_RU_俄罗斯
-      - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国 2
       - 🇭🇰_HK_中国香港
-      - 🇩🇪_DE_德国 2
-      - 🇭🇰_HK_中国香港 2
-      - 🇷🇺_RU_俄罗斯->🇵🇱_PL_波兰
-      - 🇫🇷_FR_法国
+      - 🇸🇬_SG_新加坡
       - 🇺🇸_US_美国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港->🇹🇭_TH_泰国
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇺🇦_UA_乌克兰
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
-      - 🇹🇷_TR_土耳其
-      - 🇹🇷_TR_土耳其 2
-      - 🇹🇷_TR_土耳其 3
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 3
-      - 🇺🇸_US_美国->🇹🇭_TH_泰国 4
-      - 🇹🇷_TR_土耳其 4
-      - 🇭🇰_HK_中国香港 3
-      - 🇹🇷_TR_土耳其 5
-      - 🇭🇰_HK_中国香港 4
+      - 🇸🇪_SE_瑞典
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
       - 🇨🇿_CZ_捷克
+      - 🇫🇷_FR_法国
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国 6
+      - 🇵🇱_PL_波兰
+      - 🇭🇰_HK_中国香港->🇳🇴_NO_挪威
+      - 🇸🇬_SG_新加坡 3
+      - 🇸🇬_SG_新加坡 4
+      - 🇨🇭_CH_瑞士
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国 4
+      - 🇭🇰_HK_中国香港->🇺🇦_UA_乌克兰
       - 🇳🇱_NL_荷兰
-      - 🇭🇰_HK_中国香港 5
-      - 🇭🇰_HK_中国香港 6
-      - 🇩🇪_DE_德国->🇹🇭_TH_泰国
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
+      - 🇸🇬_SG_新加坡 5
   - name: 🇫🇷 France
     type: url-test
     proxies:
@@ -542,24 +545,18 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇩🇪 Germany
-    type: url-test
-    proxies:
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国 2
-      - 🇩🇪_DE_德国->🇹🇭_TH_泰国
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
       - 🇭🇰_HK_中国香港
-      - 🇭🇰_HK_中国香港 2
-      - 🇭🇰_HK_中国香港 3
-      - 🇭🇰_HK_中国香港 4
-      - 🇭🇰_HK_中国香港 5
-      - 🇭🇰_HK_中国香港 6
+      - 🇭🇰_HK_中国香港->🇸🇬_SG_新加坡
+      - 🇭🇰_HK_中国香港->🇹🇭_TH_泰国
+      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+      - 🇭🇰_HK_中国香港->🇳🇴_NO_挪威
+      - 🇭🇰_HK_中国香港->🇺🇦_UA_乌克兰
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -574,30 +571,42 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇷🇺_RU_俄罗斯
-      - 🇷🇺_RU_俄罗斯->🇵🇱_PL_波兰
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇹🇷 Turkey
+  - name: 🇸🇬 Singapore
     type: url-test
     proxies:
-      - 🇹🇷_TR_土耳其
-      - 🇹🇷_TR_土耳其 2
-      - 🇹🇷_TR_土耳其 3
-      - 🇹🇷_TR_土耳其 4
-      - 🇹🇷_TR_土耳其 5
+      - 🇸🇬_SG_新加坡
+      - 🇸🇬_SG_新加坡 3
+      - 🇸🇬_SG_新加坡 4
+      - 🇸🇬_SG_新加坡 5
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇸🇪 Sweden
+    type: url-test
+    proxies:
+      - 🇸🇪_SE_瑞典
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇨🇭 Switzerland
+    type: url-test
+    proxies:
+      - 🇨🇭_CH_瑞士
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国 2
       - 🇺🇸_US_美国->🇹🇭_TH_泰国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 3
+      - 🇺🇸_US_美国->🇫🇮_FI_芬兰
+      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇺🇸_US_美国 6
       - 🇺🇸_US_美国->🇹🇭_TH_泰国 4
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -609,11 +618,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -624,11 +634,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -639,11 +650,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -655,11 +667,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -670,11 +683,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -684,11 +698,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -699,11 +714,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -714,11 +730,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -729,11 +746,12 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇫🇷 France
-      - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
+      - 🇸🇬 Singapore
+      - 🇸🇪 Sweden
+      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
