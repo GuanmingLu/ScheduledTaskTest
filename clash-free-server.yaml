@@ -131,10 +131,41 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: sylva51.ceoiii.com
+    port: 36822
+    uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /hls/cctv5phd.m3u8
+      headers:
+        host: ajax.microsoft.com
+    udp: true
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 104.18.37.228
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    servername: hhlfy.twiladaphne.ndjp.net
+    network: ws
+    ws-opts:
+      path: /fp
+      headers:
+        host: hhlfy.twiladaphne.ndjp.net
+    tfo: false
+    skip-cert-verify: true
+    udp: true
   - name: 英国+Technicolor+SA
     type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20023
+    server: Hkdcrtc-e.catcat321.com
+    port: 20066
     password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
     tls: true
     sni: hk.catxstar.com
@@ -142,39 +173,40 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 阿塞拜疆+V2CROSS.COM
-    type: hysteria2
-    server: 94.20.88.13
-    port: 8443
-    password: ew9_M93_6a31Qd45_hUX3984F_jNZ83x_Nz1l_f
-    sni: azer-tea-grape.bumbleshrimp.com
-    skip-cert-verify: false
-  - name: 香港+Amazon数据中心
-    type: ss
-    server: ss.047.node-for-bigairport.win
-    port: 19001
-    cipher: chacha20-ietf-poly1305
-    password: 792e0bdb-01db-450c-94c4-925151eb396e
-    udp: true
-  - name: 加拿大+V2CROSS.COM
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 167.17.68.205
+    server: 199.232.78.159
     port: 443
-    uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+    uuid: 75b38c79-92e3-454b-b98e-52fbd254884d
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: towndtime.global.ssl.fastly.neT.
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 南非+V2CROSS.COM
+    type: vless
+    server: 154.193.55.183
+    port: 443
+    uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
     tls: true
     client-fingerprint: chrome
-    servername: www.cloudflare.com
+    servername: storage.yandex.net
     network: tcp
     reality-opts:
-      public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
-      short-id: 250b5976473a
+      public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
+      short-id: dbbe8dca27a92c35
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 印度+V2CROSS.COM
+  - name: 法国+V2CROSS.COM
     type: vless
-    server: 103.54.16.230
+    server: 51.89.23.94
     port: 2053
     uuid: c7e9c591-2764-423a-afca-efbd010fd396
     tls: true
@@ -187,54 +219,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+V2CROSS.COM
+  - name: 美国+CloudFlare节点 2
     type: vless
-    server: 167.82.0.17
-    port: 80
-    uuid: c9380ef8-23f8-422e-81fe-ebbb032202cf
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      headers:
-        host: BankMelat.glObal.ssl.faStly.nEt.
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 46.8.229.48
-    port: 443
-    uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
-    tls: true
-    servername: furrycdn.net
-    network: ws
-    ws-opts:
-      path: /api/v1/video-stream
-      headers:
-        host: furrycdn.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: jdwadgw.cvewfjg.shop
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: raw
-    reality-opts:
-      public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-      short-id: 7a76f3c4b9dd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 104.17.149.233
+    server: 198.41.208.112
     port: 443
     uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
     tls: true
@@ -247,9 +234,35 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+V2CROSS.COM 3
+  - name: 英国+Technicolor+SA 2
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20066
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 3
     type: vless
-    server: jdvymxi.cvewfjg.shop
+    server: 172.67.185.178
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    servername: hhlfy.twiladaphne.ndjp.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: hhlfy.twiladaphne.ndjp.net
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+V2CROSS.COM 2
+    type: vless
+    server: jdwadgw.cvewfjg.shop
     port: 443
     uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: true
@@ -263,54 +276,14 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 保加利亚+V2CROSS.COM
-    type: hysteria2
-    server: swe-one.quiet-rogue.site
-    port: 443
-    password: 71cada65-d23e-418c-88e4-a06188d14689
-    sni: swe-one.quiet-rogue.site
-    skip-cert-verify: false
-  - name: 美国+麻省理工学院
-    type: vless
-    server: 18.244.214.108
-    port: 80
-    uuid: f27894bf-349c-44e6-a0ce-4c787e18476f
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /GDkX4xpB/
-      headers:
-        host: duatoup3wk8q2.cloudfront.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM 4
-    type: vless
-    server: 45.155.52.231
-    port: 443
-    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-    tls: true
-    client-fingerprint: chrome
-    servername: ru2.skydrgn-online.online
-    network: tcp
-    reality-opts:
-      public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-      short-id: 0b
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: ''
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -318,63 +291,43 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 英国+Technicolor+SA
-      - 阿塞拜疆+V2CROSS.COM
-      - 香港+Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 印度+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 美国 V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM 3
-      - 保加利亚+V2CROSS.COM
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM 4
+      - 英国+Technicolor+SA
+      - 美国+V2CROSS.COM
+      - 南非+V2CROSS.COM
+      - 法国+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 英国+Technicolor+SA 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 英国+Technicolor+SA
-      - 阿塞拜疆+V2CROSS.COM
-      - 香港+Amazon数据中心
-      - 加拿大+V2CROSS.COM
-      - 印度+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 美国 V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM 3
-      - 保加利亚+V2CROSS.COM
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM 4
-  - name: 🇨🇦 Canada
+      - 英国+Technicolor+SA
+      - 美国+V2CROSS.COM
+      - 南非+V2CROSS.COM
+      - 法国+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 英国+Technicolor+SA 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM 2
+  - name: 🇫🇷 France
     type: url-test
     proxies:
-      - 加拿大+V2CROSS.COM
+      - 法国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇭🇰 Hong Kong
+  - name: 🇿🇦 South Africa
     type: url-test
     proxies:
-      - 香港+Amazon数据中心
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇮🇳 India
-    type: url-test
-    proxies:
-      - 印度+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 南非+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -382,18 +335,19 @@ proxy-groups:
     type: url-test
     proxies:
       - 英国+Technicolor+SA
+      - 英国+Technicolor+SA 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 美国 V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM 3
-      - 美国+麻省理工学院
-      - 美国+V2CROSS.COM 4
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -403,10 +357,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -417,10 +369,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -431,10 +381,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -446,10 +394,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -460,10 +406,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -473,10 +417,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -487,10 +429,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -501,10 +441,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -515,10 +453,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
-      - 🇭🇰 Hong Kong
-      - 🇮🇳 India
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇿🇦 South Africa
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
