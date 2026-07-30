@@ -131,138 +131,35 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: sylva51.ceoiii.com
-    port: 36822
-    uuid: 4f198ea9-311e-3dcf-910c-896de6cb160b
-    alterId: 0
-    cipher: auto
+  - name: 美国+宾利大学
+    type: vless
+    server: 141.133.172.222
+    port: 20342
+    uuid: 5eecb34f-c905-4c77-b7fb-d830b451cd11
     tls: false
     servername: ''
+    network: tcp
+    tfo: false
     skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        host: ajax.microsoft.com
     udp: true
   - name: 美国+CloudFlare节点
     type: vless
-    server: 104.18.37.228
+    server: 104.16.72.251
     port: 443
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: true
     servername: hhlfy.twiladaphne.ndjp.net
     network: ws
     ws-opts:
-      path: /fp
+      path: /
       headers:
         host: hhlfy.twiladaphne.ndjp.net
     tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 英国+Technicolor+SA
-    type: trojan
-    server: Hkdcrtc-e.catcat321.com
-    port: 20066
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
   - name: 美国+V2CROSS.COM
     type: vless
-    server: 199.232.78.159
-    port: 443
-    uuid: 75b38c79-92e3-454b-b98e-52fbd254884d
-    tls: true
-    servername: ssl.fastly.com
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: towndtime.global.ssl.fastly.neT.
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: 154.193.55.183
-    port: 443
-    uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: tcp
-    reality-opts:
-      public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-      short-id: dbbe8dca27a92c35
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 法国+V2CROSS.COM
-    type: vless
-    server: 51.89.23.94
-    port: 2053
-    uuid: c7e9c591-2764-423a-afca-efbd010fd396
-    tls: true
-    servername: forfreeuse.sub-flow.online
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: forfreeuse.sub-flow.online
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: vless
-    server: 198.41.208.112
-    port: 443
-    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
-    tls: true
-    servername: support.zoom.us.yxls.eu.cc
-    network: ws
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        host: support.zoom.us.yxls.eu.cc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国+Technicolor+SA 2
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20066
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: vless
-    server: 172.67.185.178
-    port: 443
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-    tls: true
-    servername: hhlfy.twiladaphne.ndjp.net
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: hhlfy.twiladaphne.ndjp.net
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: jdwadgw.cvewfjg.shop
+    server: 152.53.236.22
     port: 443
     uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: true
@@ -276,14 +173,84 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
+  - name: 英国+Technicolor+SA
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20035
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 104.17.144.235
+    port: 443
+    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+    tls: true
+    servername: hhlfy.twiladaphne.ndjp.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: hhlfy.twiladaphne.ndjp.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 韩国+首尔Amazon数据中心
+    type: hysteria2
+    server: vpn-kr-003.fastervpn.world
+    port: 443
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    sni: vpn-kr-003.fastervpn.world
+    skip-cert-verify: true
+  - name: 美国+CloudFlare节点 3
+    type: trojan
+    server: 104.17.121.43
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmlunch.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国+Technicolor+SA 2
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20004
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 香港+Simcentric网络公司
+    type: vless
+    server: 180.178.60.252
+    port: 10000
+    uuid: 431fe973-a43a-4fac-bf83-2a772e0d0625
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -291,43 +258,41 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
+      - 美国+宾利大学
       - 美国+CloudFlare节点
-      - 英国+Technicolor+SA
       - 美国+V2CROSS.COM
-      - 南非+V2CROSS.COM
-      - 法国+V2CROSS.COM
+      - 英国+Technicolor+SA
       - 美国+CloudFlare节点 2
-      - 英国+Technicolor+SA 2
+      - 韩国+首尔Amazon数据中心
       - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM 2
+      - 英国+Technicolor+SA 2
+      - 香港+Simcentric网络公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国 V2CROSS.COM
+      - 美国+宾利大学
       - 美国+CloudFlare节点
-      - 英国+Technicolor+SA
       - 美国+V2CROSS.COM
-      - 南非+V2CROSS.COM
-      - 法国+V2CROSS.COM
+      - 英国+Technicolor+SA
       - 美国+CloudFlare节点 2
-      - 英国+Technicolor+SA 2
+      - 韩国+首尔Amazon数据中心
       - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM 2
-  - name: 🇫🇷 France
+      - 英国+Technicolor+SA 2
+      - 香港+Simcentric网络公司
+  - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 法国+V2CROSS.COM
+      - 香港+Simcentric网络公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇿🇦 South Africa
+  - name: 🇰🇷 Korea
     type: url-test
     proxies:
-      - 南非+V2CROSS.COM
+      - 韩国+首尔Amazon数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -342,12 +307,11 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国 V2CROSS.COM
+      - 美国+宾利大学
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -357,8 +321,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -369,8 +333,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -381,8 +345,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -394,8 +358,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -406,8 +370,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -417,8 +381,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -429,8 +393,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -441,8 +405,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -453,8 +417,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇿🇦 South Africa
+      - 🇭🇰 Hong Kong
+      - 🇰🇷 Korea
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
