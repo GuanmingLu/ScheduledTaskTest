@@ -133,54 +133,103 @@ dns:
 proxies:
   - name: 美国+CloudFlare节点
     type: vless
-    server: 172.66.44.97
-    port: 443
+    server: 108.162.198.240
+    port: 2053
     uuid: 29ca503d-e6b8-4509-b666-48133f450857
     tls: true
     servername: learn00.evany.de5.net
     network: ws
     ws-opts:
-      path: /sg-melbi
+      path: /
       headers:
         host: learn00.evany.de5.net
     tfo: false
     skip-cert-verify: true
     udp: true
   - name: 美国+V2CROSS.COM
-    type: vless
-    server: 199.232.78.159
+    type: trojan
+    server: 149.104.104.58
     port: 443
-    uuid: 0c0b895d-b954-4bec-94e6-5770677e7925
+    password: S.ibYdZshHTF-ne.M+.Fznp_-hyFFnCSix
     tls: true
-    servername: ssl.fastly.com
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: trojan
+    server: www.speedtest.org
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
     network: ws
     ws-opts:
-      path: >-
-        /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053fp=chrome
-      headers:
-        host: pan1.global.ssl.fastly.neT
+      path: /assignment
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 俄罗斯+莫斯科TransTeleCom公司
+  - name: 巴拿马+V2CROSS.COM
     type: vless
-    server: 188.43.105.233
-    port: 7098
-    uuid: 152003f4-7659-43eb-88b3-da1dfad2a223
+    server: 190.97.165.84
+    port: 448
+    uuid: 54bb59cf-96fc-4a66-8488-fa2391f2e650
     tls: true
     client-fingerprint: chrome
-    servername: static.vk.com
+    servername: www.cloudflare.com
     network: tcp
     reality-opts:
-      public-key: BjJOlYcS3QvqafeDIHyfG1xBUiK_Zs3eYKjMCs2DWQo
-      short-id: '1488'
+      public-key: XxCsLlJ3kJJa2MiPHS3FlF0DyAS9TkQkn8lfCVZgDQw
+      short-id: cd2d4a8f08aa985d
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
+  - name: 巴西圣保罗+CloudFlare节点
+    type: vless
+    server: 188.114.98.66
+    port: 443
+    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+    tls: true
+    servername: support.zoom.us.yxls.eu.cc
+    network: ws
+    ws-opts:
+      path: /sg-melbi
+      headers:
+        host: support.zoom.us.yxls.eu.cc
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 62.238.63.51
+    port: 1234
+    uuid: 8b0c48db-c228-47d9-b634-6ea6edf81e22
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 美国+V2CROSS.COM 2
     type: vless
-    server: 152.53.127.214
+    server: www.true.th
+    port: 80
+    uuid: ff0c1cde-6f94-4bf1-9774-ab25c6b4977d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /knl8
+      headers:
+        host: d7iwyzy9wpvuu.cloudfront.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM 3
+    type: vless
+    server: jdvymxi.cvewfjg.shop
     port: 443
     uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
     tls: true
@@ -196,6 +245,21 @@ proxies:
     flow: xtls-rprx-vision
   - name: 希腊+V2CROSS.COM
     type: vless
+    server: 92.119.90.67
+    port: 2053
+    uuid: c7e9c591-2764-423a-afca-efbd010fd396
+    tls: true
+    servername: forfreeuse.sub-flow.online
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: forfreeuse.sub-flow.online
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 希腊+V2CROSS.COM 2
+    type: vless
     server: 88.218.44.4
     port: 993
     uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
@@ -206,102 +270,17 @@ proxies:
     reality-opts:
       public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
     tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 2
-    type: vless
-    server: 162.159.8.155
-    port: 443
-    uuid: 29ca503d-e6b8-4509-b666-48133f450857
-    tls: true
-    servername: learn00.evany.de5.net
-    network: ws
-    ws-opts:
-      path: /fdip=tw.william.us.ci!txt?ed=2560fp=random
-      headers:
-        host: learn00.evany.de5.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 南非+V2CROSS.COM
-    type: vless
-    server: 154.193.55.183
-    port: 443
-    uuid: 11e57eeb-ffdf-4983-a9fa-ad352dea7253
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: tcp
-    reality-opts:
-      public-key: EMS0wzISeSbEe4JABPD8EgDnyLXgDmrX4_lcfG6VVX4
-      short-id: dbbe8dca27a92c35
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 3
-    type: hysteria2
-    server: 104.36.86.93
-    port: 9992
-    password: 57ad54a0-59ca-4553-bdad-35aab6bd3aa5
-    sni: 104.36.86.93
     skip-cert-verify: true
-  - name: 美国 V2CROSS.COM
-    type: vmess
-    server: cindy50.ceoiii.com
-    port: 36801
-    uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        host: ajax.microsoft.com
-    udp: true
-  - name: 美国+V2CROSS.COM 4
-    type: vless
-    server: jdwadgw.cvewfjg.shop
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: raw
-    reality-opts:
-      public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-      short-id: 7a76f3c4b9dd
-    tfo: false
-    skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 5
-    type: vless
-    server: 45.155.52.231
-    port: 443
-    uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
-    tls: true
-    client-fingerprint: chrome
-    servername: ru2.skydrgn-online.online
-    network: tcp
-    reality-opts:
-      public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-      short-id: 0b
-    tfo: false
-    skip-cert-verify: false
-    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -310,15 +289,14 @@ proxy-groups:
     proxies:
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 俄罗斯+莫斯科TransTeleCom公司
-      - 美国+V2CROSS.COM 2
-      - 希腊+V2CROSS.COM
       - 美国+CloudFlare节点 2
-      - 南非+V2CROSS.COM
+      - 巴拿马+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 荷兰+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
       - 美国+V2CROSS.COM 3
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM 4
-      - 美国+V2CROSS.COM 5
+      - 希腊+V2CROSS.COM
+      - 希腊+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -327,26 +305,25 @@ proxy-groups:
     proxies:
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 俄罗斯+莫斯科TransTeleCom公司
-      - 美国+V2CROSS.COM 2
-      - 希腊+V2CROSS.COM
       - 美国+CloudFlare节点 2
-      - 南非+V2CROSS.COM
+      - 巴拿马+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 荷兰+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
       - 美国+V2CROSS.COM 3
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM 4
-      - 美国+V2CROSS.COM 5
-  - name: 🇷🇺 Russia
+      - 希腊+V2CROSS.COM
+      - 希腊+V2CROSS.COM 2
+  - name: 🇧🇷 Brazil
     type: url-test
     proxies:
-      - 俄罗斯+莫斯科TransTeleCom公司
+      - 巴西圣保罗+CloudFlare节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇿🇦 South Africa
+  - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
-      - 南非+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -355,12 +332,9 @@ proxy-groups:
     proxies:
       - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+CloudFlare节点 2
+      - 美国+V2CROSS.COM 2
       - 美国+V2CROSS.COM 3
-      - 美国 V2CROSS.COM
-      - 美国+V2CROSS.COM 4
-      - 美国+V2CROSS.COM 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -370,8 +344,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -381,8 +355,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -392,8 +366,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -404,8 +378,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -415,8 +389,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -425,8 +399,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -436,8 +410,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -447,8 +421,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -458,8 +432,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
-      - 🇿🇦 South Africa
+      - 🇧🇷 Brazil
+      - 🇳🇱 Netherlands
       - 🇺🇸 United States
       - DIRECT
       - REJECT
