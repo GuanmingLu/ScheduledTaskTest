@@ -131,123 +131,131 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 罗马尼亚+V2CROSS.COM
-    type: hysteria2
-    server: 85.120.228.208
-    port: 47257
-    password: 35415e5e-3666-4454-8c45-903af0fcddf4
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: jdvymxi.cvewfjg.shop
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: raw
-    reality-opts:
-      public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-      short-id: 7a76f3c4b9dd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: 152.53.236.22
-    port: 443
-    uuid: 711c018e-2692-4aa8-93f3-544d83fcd16c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: HyVSZ2OyySwXT-xRhTAqoiuYflIaj_b0Jxm7S1Iq9hs
-      short-id: 7a76f3c4b9dd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: vless
-    server: 104.16.72.70
+    server: 104.25.244.217
+    port: 443
+    uuid: 4d10c997-4781-4cd9-82c3-15453523e12c
+    tls: true
+    servername: support.zoom.us.yxls.eu.cc
+    network: ws
+    ws-opts:
+      path: /sg-melbi
+      headers:
+        host: support.zoom.us.yxls.eu.cc
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 104.16.72.251
     port: 443
     uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
     tls: true
     servername: hhlfy.twiladaphne.ndjp.net
     network: ws
     ws-opts:
-      path: >-
-        /?TELEGRAM-MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI?ed=2560
+      path: /
       headers:
         host: hhlfy.twiladaphne.ndjp.net
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 荷兰+V2CROSS.COM
-    type: hysteria2
-    server: 5.255.102.165
+  - name: 加拿大+V2CROSS.COM
+    type: vless
+    server: jyvlryz.cvewfjg.shop
     port: 443
-    password: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
-    sni: www.microsoft.com
+    uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+    tls: true
+    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    network: tcp
+    reality-opts:
+      public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+      short-id: 250b5976473a
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 北美地区+V2CROSS.COM
+    type: ss
+    server: 23.185.200.135
+    port: 57841
+    cipher: aes-128-gcm
+    password: xo6k84l7b00n2hJp
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 199.232.78.159
+    port: 443
+    uuid: 82880171-779d-4c28-8a38-59f2769dccfa
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: >-
+        /TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER,TELEGRAM_NUFiLTER?ed=2053
+      headers:
+        host: pan11.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 加拿大+V2CROSS.COM 2
+    type: vless
+    server: 167.17.68.205
+    port: 443
+    uuid: 4e0f4e59-3613-4f0c-b824-7348413d20e6
+    tls: true
+    client-fingerprint: chrome
+    servername: www.cloudflare.com
+    network: tcp
+    reality-opts:
+      public-key: UE8hUjH1WYwemxIriq5lvtFCnHTdLF817okXr-u7MGs
+      short-id: 250b5976473a
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 3
+    type: trojan
+    server: 104.18.152.143
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 希腊+V2CROSS.COM
+    type: vless
+    server: 88.218.44.4
+    port: 993
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    tls: true
+    client-fingerprint: chrome
+    servername: dl.google.com
+    network: tcp
+    reality-opts:
+      public-key: Rt2wltCWOxIroFggNWMudZDBJXls8DsF4icaWqxKDk8
+    tfo: false
     skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
   - name: 英国+V2CROSS.COM
     type: vless
-    server: 31.76.251.127.cdn-one.org
+    server: 31.76.11.46.cdn-one.org
     port: 443
     uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
     tls: true
-    servername: 31.76.251.127.cdn-one.org
+    servername: 31.76.11.46.cdn-one.org
     network: ws
     ws-opts:
-      path: /10336/2GCOqG7bvA
+      path: /52872/BNzG4FvIAr
       headers:
-        host: 31.76.251.127.cdn-one.org
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国 Microsoft数据中心
-    type: vmess
-    server: cindy52.ceoiii.com
-    port: 36803
-    uuid: a6ab6513-6ec3-327f-a068-b89fe72954b8
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /hls/cctv5phd.m3u8
-      headers:
-        host: ajax.microsoft.com
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: vless
-    server: josni.hoyes.cloudns.ch
-    port: 2053
-    uuid: 83afd88f-200f-4d89-bfc7-66eff160c1d8
-    tls: true
-    servername: ''
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: vless
-    server: 172.64.145.202
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: fangbinxingnmsl.pusytroller.gq
+        host: 31.76.11.46.cdn-one.org
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -257,7 +265,7 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -265,34 +273,35 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+CloudFlare节点
-      - 荷兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国 Microsoft数据中心
       - 美国+CloudFlare节点 2
+      - 加拿大+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM 2
       - 美国+CloudFlare节点 3
+      - 希腊+V2CROSS.COM
+      - 英国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 罗马尼亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+CloudFlare节点
-      - 荷兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 美国 Microsoft数据中心
       - 美国+CloudFlare节点 2
+      - 加拿大+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM 2
       - 美国+CloudFlare节点 3
-  - name: 🇳🇱 Netherlands
+      - 希腊+V2CROSS.COM
+      - 英国+V2CROSS.COM
+  - name: 🇨🇦 Canada
     type: url-test
     proxies:
-      - 荷兰+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 加拿大+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -306,11 +315,9 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 美国+CloudFlare节点
-      - 美国 Microsoft数据中心
       - 美国+CloudFlare节点 2
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点 3
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -321,7 +328,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -332,7 +339,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -343,7 +350,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -355,7 +362,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -366,7 +373,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -376,7 +383,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -387,7 +394,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -398,7 +405,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -409,7 +416,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇳🇱 Netherlands
+      - 🇨🇦 Canada
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
