@@ -131,50 +131,17 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20004
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国
-    type: ss
-    server: 23.185.200.135
-    port: 57841
-    cipher: aes-128-gcm
-    password: xo6k84l7b00n2hJp
-    udp: true
   - name: 🇩🇪_DE_德国
     type: hysteria2
     server: 5.83.129.90
     port: 54177
     password: dongtaiwang.com
-    up: 11
-    down: 55
-    sni: bing.com
+    up: 500
+    down: 1000
+    sni: apple.com
     skip-cert-verify: true
     alpn:
       - h3
-  - name: 🇺🇸_US_美国->🇫🇷_FR_法国
-    type: vless
-    server: paul.ns.cloudflare.com
-    port: 443
-    uuid: f028a8c0-6763-4558-aee3-2563db9d7825
-    tls: true
-    servername: ziro.skin
-    network: ws
-    ws-opts:
-      path: /xxvclws
-      headers:
-        host: ziro.skin
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
     type: vless
     server: 170.168.97.5
@@ -185,6 +152,67 @@ proxies:
     network: grpc
     grpc-opts:
       grpc-service-name: TunService
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+    type: trojan
+    server: hkdcrtc-e.catcat321.com
+    port: 20041
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: de.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国
+    type: vless
+    server: 88.218.44.4
+    port: 993
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    tls: true
+    servername: download.nvidia.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇳🇱_NL_荷兰
+    type: vless
+    server: 202.71.13.197
+    port: 443
+    uuid: 06d44c57-8e1a-41f4-b9c4-65d35869e078
+    tls: true
+    servername: nd11.skorostnet.space
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国
+    type: vless
+    server: 3.162.103.26
+    port: 443
+    uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+    tls: true
+    servername: d1yxsk0zprgivr.cloudfront.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: d1yxsk0zprgivr.cloudfront.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+    type: trojan
+    server: hkdcrtc-e.catcat321.com
+    port: 20129
+    password: 41c406e2-12b5-41f2-a329-d0621052d675
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -199,47 +227,49 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
+  - name: 🇨🇳_CN_中国
     type: vless
-    server: 170.168.97.3
-    port: 8443
-    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
-    tls: true
-    servername: download.nvidia.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: TunService
+    server: 120.227.1.43
+    port: 12528
+    uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
+    tls: false
+    servername: ''
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸_US_美国 3
+  - name: 🇭🇰_HK_中国香港 3
     type: vmess
-    server: guanwang.awsno.com
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
     cipher: auto
-    tls: true
+    tls: false
     servername: ''
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20041
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
-    tls: true
-    sni: de.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸_US_美国 4
+  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国 2
     type: vless
-    server: 88.218.44.4
+    server: www.true.th
+    port: 443
+    uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
+    tls: true
+    servername: d1yxsk0zprgivr.cloudfront.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: d1yxsk0zprgivr.cloudfront.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
+    type: vless
+    server: 170.168.97.3
     port: 993
-    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
     tls: true
     servername: download.nvidia.com
     network: tcp
@@ -247,23 +277,11 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: '@DeltaKroneckerGithub_3909'
+  - name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 3
     type: vless
-    server: 89.23.103.121
-    port: 443
-    uuid: 7596b721-f311-4194-96e6-b7b407cd6083
-    tls: true
-    servername: www.debian.org
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇺🇸_US_美国 5
-    type: vless
-    server: 88.218.44.4
+    server: 170.168.97.3
     port: 8443
-    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
+    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
     tls: true
     servername: download.nvidia.com
     network: grpc
@@ -283,29 +301,7 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
-    type: trojan
-    server: hkdcrtc-e.catcat321.com
-    port: 20129
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇳_CN_中国
-    type: vless
-    server: 120.227.1.43
-    port: 12528
-    uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇮_FI_芬兰 3
+  - name: 🇫🇮_FI_芬兰 4
     type: hysteria2
     server: musicclips.videolinks.ru
     port: 8443
@@ -314,57 +310,37 @@ proxies:
     password: 22j0d00lev7mq0yv
     sni: musicclips.videolinks.ru
     skip-cert-verify: true
-  - name: 🇳🇱_NL_荷兰
+  - name: 🇩🇪_DE_德国 3
     type: hysteria2
-    server: 5.129.235.85
+    server: de-two.quiet-rogue.site
     port: 443
-    password: gf1:gfhysteria2024
-    sni: www.linux.com
-    skip-cert-verify: true
-  - name: 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 3
+    password: 71cada65-d23e-418c-88e4-a06188d14689
+    sni: de-two.quiet-rogue.site
+    skip-cert-verify: false
+  - name: 🇺🇸_US_美国 4
     type: vless
-    server: 170.168.97.3
-    port: 993
-    uuid: e6d41d6f-d58a-7650-bba4-d7f0dde3ba4d
+    server: 88.218.44.4
+    port: 8443
+    uuid: 7c74b0e4-f132-5583-4692-622a7d6b71a4
     tls: true
     servername: download.nvidia.com
-    network: tcp
+    network: grpc
+    grpc-opts:
+      grpc-service-name: TunService
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇮🇳_IN_印度
-    type: hysteria2
-    server: ln4.xiaoliyu.cyou
-    port: 4433
-    password: 18cf8030-1ceb-4b7d-8c0c-c036413c144e
-    sni: ln4.xiaoliyu.cyou
-    skip-cert-verify: true
-  - name: 🇨🇳_CN_中国->🇵🇱_PL_波兰
-    type: vless
-    server: 77.105.163.46
+  - name: 🇺🇸_US_美国 5
+    type: vmess
+    server: guanwang.awsno.com
     port: 443
-    uuid: 3e37ef76-835d-4ad2-a1d3-414ef90532bf
+    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+    alterId: 0
+    cipher: auto
     tls: true
-    servername: ov186.ochmaybrooooo.online
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: ov186.ochmaybrooooo.online
-    tfo: false
+    servername: ''
     skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰_HK_中国香港->🇰🇷_KR_韩国
-    type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20088
-    password: 41c406e2-12b5-41f2-a329-d0621052d675
-    tls: true
-    sni: hk.catxstar.com
     network: tcp
-    tfo: false
-    skip-cert-verify: true
     udp: true
 proxy-groups:
   - type: select
@@ -374,7 +350,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -384,76 +359,63 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-      - 🇺🇸_US_美国
       - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
       - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
-      - 🇷🇺_RU_俄罗斯
-      - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
-      - 🇺🇸_US_美国 3
       - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-      - 🇺🇸_US_美国 4
-      - '@DeltaKroneckerGithub_3909'
-      - 🇺🇸_US_美国 5
-      - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
-      - 🇨🇳_CN_中国
-      - 🇫🇮_FI_芬兰 3
+      - 🇺🇸_US_美国
       - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国
+      - 🇭🇰_HK_中国香港 3
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
+      - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
       - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 3
-      - 🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇵🇱_PL_波兰
-      - 🇭🇰_HK_中国香港->🇰🇷_KR_韩国
+      - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
+      - 🇫🇮_FI_芬兰 4
+      - 🇩🇪_DE_德国 3
+      - 🇺🇸_US_美国 4
+      - 🇺🇸_US_美国 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-      - 🇺🇸_US_美国
       - 🇩🇪_DE_德国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
       - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其
-      - 🇷🇺_RU_俄罗斯
-      - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
-      - 🇺🇸_US_美国 3
       - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
-      - 🇺🇸_US_美国 4
-      - '@DeltaKroneckerGithub_3909'
-      - 🇺🇸_US_美国 5
-      - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
-      - 🇨🇳_CN_中国
-      - 🇫🇮_FI_芬兰 3
+      - 🇺🇸_US_美国
       - 🇳🇱_NL_荷兰
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国
+      - 🇭🇰_HK_中国香港 3
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
+      - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 2
       - 🇫🇮_FI_芬兰->🇹🇷_TR_土耳其 3
-      - 🇮🇳_IN_印度
-      - 🇨🇳_CN_中国->🇵🇱_PL_波兰
-      - 🇭🇰_HK_中国香港->🇰🇷_KR_韩国
+      - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
+      - 🇫🇮_FI_芬兰 4
+      - 🇩🇪_DE_德国 3
+      - 🇺🇸_US_美国 4
+      - 🇺🇸_US_美国 5
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
       - 🇩🇪_DE_德国
+      - 🇩🇪_DE_德国 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
       - 🇭🇰_HK_中国香港->🇩🇪_DE_德国
+      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港 3
       - 🇭🇰_HK_中国香港->🇲🇴_MO_中国澳门
-      - 🇭🇰_HK_中国香港->🇯🇵_JP_日本 2
-      - 🇭🇰_HK_中国香港->🇰🇷_KR_韩国
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇮🇳 India
-    type: url-test
-    proxies:
-      - 🇮🇳_IN_印度
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -484,8 +446,8 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇫🇷_FR_法国
-      - 🇺🇸_US_美国 3
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国 2
       - 🇺🇸_US_美国 4
       - 🇺🇸_US_美国 5
     url: https://www.gstatic.com/generate_204
@@ -499,7 +461,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -514,7 +475,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -529,7 +489,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -545,7 +504,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -560,7 +518,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -574,7 +531,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -589,7 +545,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -604,7 +559,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
@@ -619,7 +573,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
-      - 🇮🇳 India
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇹🇷 Turkey
