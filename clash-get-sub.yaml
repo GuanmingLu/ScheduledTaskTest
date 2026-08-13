@@ -131,10 +131,123 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇨🇳_CN_中国->🇭🇰_HK_中国香港
+  - name: 🇨🇦_CA_加拿大
+    type: ss
+    server: 212.193.6.107
+    port: 30331
+    cipher: aes-256-gcm
+    password: fbcec76953a2d173
+    udp: true
+  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+    type: trojan
+    server: oplosgru-c.catcat321.com
+    port: 20004
+    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 2
+    type: trojan
+    server: supreme-lobster.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: supreme-lobster.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇮🇪_IE_爱尔兰
+    type: trojan
+    server: kind-stork.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇮🇪_IE_爱尔兰 2
+    type: trojan
+    server: unbiased-garfish.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬_SG_新加坡
+    type: trojan
+    server: integral-quetzal.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 3
+    type: trojan
+    server: premium-weevil.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇦🇺_AU_澳大利亚
+    type: trojan
+    server: together-dingo.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇫🇷_FR_法国
+    type: trojan
+    server: distinct-quail.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 4
+    type: trojan
+    server: polished-imp.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: polished-imp.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯
+    type: ss
+    server: 195.133.23.200
+    port: 30331
+    cipher: aes-256-gcm
+    password: 81a20429165df87e
+    udp: true
+  - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
     type: vmess
-    server: v9.hdacd.com
-    port: 30809
+    server: v6.hdacd.com
+    port: 30806
     uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
     alterId: 2
     cipher: auto
@@ -143,32 +256,45 @@ proxies:
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇫🇷_FR_法国
-    type: vless
-    server: fr199.mechvpn.online
+  - name: 🇦🇺_AU_澳大利亚 2
+    type: trojan
+    server: darling-mutt.rooster465.autos
     port: 443
-    uuid: 53c76647-14d1-4df5-99cb-be99ad2e6bd9
+    password: AE62539071
     tls: true
-    servername: ''
+    sni: ''
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇩🇪_DE_德国->🇧🇷_BR_巴西
-    type: vless
-    server: 18.198.227.161
+  - name: 🇯🇵_JP_日本 6
+    type: trojan
+    server: literate-cow.rooster465.autos
     port: 443
-    uuid: 4f375fb4-3c95-425f-bc7b-8085487a6f3c
+    password: AE62539071
     tls: true
-    servername: titandarkness.mooo.com
-    network: ws
-    ws-opts:
-      path: /21381/0kO2id8FMQ
-      headers:
-        host: titandarkness.mooo.com
+    sni: ''
+    network: tcp
     tfo: false
     skip-cert-verify: false
+    udp: true
+  - name: 🇰🇷_KR_韩国
+    type: trojan
+    server: sacred-hound.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇵🇱_PL_波兰
+    type: ss
+    server: 194.61.121.93
+    port: 7538
+    cipher: chacha20-ietf-poly1305
+    password: U9YAoqBgg5VyGBc6vQv1sN
     udp: true
   - name: 🇺🇸_US_美国
     type: vmess
@@ -182,54 +308,91 @@ proxies:
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇺🇸_US_美国->🇩🇪_DE_德国
-    type: vless
-    server: 104.25.194.196
-    port: 2086
-    uuid: e3c7c198-2b02-42c2-b78f-22dfc078219c
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
-      headers:
-        host: uj-kn9gcgkzl0wmmy5wrkmalvhzdw62z.soltannatlos.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+  - name: 🇩🇪_DE_德国
     type: trojan
-    server: oplosgru-c.catcat321.com
-    port: 20004
-    password: ba07a8af-5544-48ac-ab62-3b6c00a44fa6
+    server: sterling-macaw.rooster465.autos
+    port: 443
+    password: AE62539071
     tls: true
-    sni: hk.catxstar.com
+    sni: ''
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸_US_美国 3
-    type: vless
-    server: 172.67.209.127
-    port: 8880
-    uuid: 942bdcfc-e522-44f1-b899-3bd8db7c5ae2
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.SG.CMLiussss.net
-      headers:
-        host: winter-leaf-b4da.122-6c9.workers.dev
+  - name: 🇳🇱_NL_荷兰
+    type: trojan
+    server: thorough-falcon.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇨🇳_CN_中国 2
+  - name: 🇵🇱_PL_波兰 2
+    type: trojan
+    server: tolerant-mosquito.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇩🇪_DE_德国 2
+    type: trojan
+    server: moved-bluegill.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
     type: vless
-    server: 120.227.1.43
-    port: 12528
-    uuid: f0169b08-43fd-4dc3-8195-18f6ad2fe39d
-    tls: false
+    server: ru211.mechvpn.online
+    port: 443
+    uuid: 1c6824de-312c-4876-aa3f-5a30e3df2de7
+    tls: true
     servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇯🇵_JP_日本 7
+    type: trojan
+    server: main-impala.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰_HK_中国香港 2
+    type: trojan
+    server: upright-bedbug.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇵🇱_PL_波兰 3
+    type: trojan
+    server: relative-locust.rooster465.autos
+    port: 443
+    password: AE62539071
+    tls: true
+    sni: ''
     network: tcp
     tfo: false
     skip-cert-verify: false
@@ -240,37 +403,94 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-      - 🇫🇷_FR_法国
-      - 🇩🇪_DE_德国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大
       - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-      - 🇺🇸_US_美国 3
-      - 🇨🇳_CN_中国 2
+      - 🇯🇵_JP_日本 2
+      - 🇮🇪_IE_爱尔兰
+      - 🇮🇪_IE_爱尔兰 2
+      - 🇸🇬_SG_新加坡
+      - 🇯🇵_JP_日本 3
+      - 🇦🇺_AU_澳大利亚
+      - 🇫🇷_FR_法国
+      - 🇯🇵_JP_日本 4
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇦🇺_AU_澳大利亚 2
+      - 🇯🇵_JP_日本 6
+      - 🇰🇷_KR_韩国
+      - 🇵🇱_PL_波兰
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰 2
+      - 🇩🇪_DE_德国 2
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇯🇵_JP_日本 7
+      - 🇭🇰_HK_中国香港 2
+      - 🇵🇱_PL_波兰 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
-      - 🇫🇷_FR_法国
-      - 🇩🇪_DE_德国->🇧🇷_BR_巴西
-      - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
+      - 🇨🇦_CA_加拿大
       - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
-      - 🇺🇸_US_美国 3
-      - 🇨🇳_CN_中国 2
+      - 🇯🇵_JP_日本 2
+      - 🇮🇪_IE_爱尔兰
+      - 🇮🇪_IE_爱尔兰 2
+      - 🇸🇬_SG_新加坡
+      - 🇯🇵_JP_日本 3
+      - 🇦🇺_AU_澳大利亚
+      - 🇫🇷_FR_法国
+      - 🇯🇵_JP_日本 4
+      - 🇷🇺_RU_俄罗斯
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇦🇺_AU_澳大利亚 2
+      - 🇯🇵_JP_日本 6
+      - 🇰🇷_KR_韩国
+      - 🇵🇱_PL_波兰
+      - 🇺🇸_US_美国
+      - 🇩🇪_DE_德国
+      - 🇳🇱_NL_荷兰
+      - 🇵🇱_PL_波兰 2
+      - 🇩🇪_DE_德国 2
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+      - 🇯🇵_JP_日本 7
+      - 🇭🇰_HK_中国香港 2
+      - 🇵🇱_PL_波兰 3
+  - name: 🇦🇺 Australia
+    type: url-test
+    proxies:
+      - 🇦🇺_AU_澳大利亚
+      - 🇦🇺_AU_澳大利亚 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇨🇦 Canada
+    type: url-test
+    proxies:
+      - 🇨🇦_CA_加拿大
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇫🇷 France
     type: url-test
     proxies:
@@ -281,15 +501,65 @@ proxy-groups:
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
-      - 🇩🇪_DE_德国->🇧🇷_BR_巴西
+      - 🇩🇪_DE_德国
+      - 🇩🇪_DE_德国 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 🇨🇳_CN_中国->🇭🇰_HK_中国香港
       - 🇭🇰_HK_中国香港->🇯🇵_JP_日本
+      - 🇭🇰_HK_中国香港 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇮🇪 Ireland
+    type: url-test
+    proxies:
+      - 🇮🇪_IE_爱尔兰
+      - 🇮🇪_IE_爱尔兰 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇯🇵 Japan
+    type: url-test
+    proxies:
+      - 🇯🇵_JP_日本 2
+      - 🇯🇵_JP_日本 3
+      - 🇯🇵_JP_日本 4
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇯🇵_JP_日本 6
+      - 🇯🇵_JP_日本 7
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇰🇷 Korea
+    type: url-test
+    proxies:
+      - 🇰🇷_KR_韩国
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇳🇱 Netherlands
+    type: url-test
+    proxies:
+      - 🇳🇱_NL_荷兰
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇷🇺 Russia
+    type: url-test
+    proxies:
+      - 🇷🇺_RU_俄罗斯
+      - 🇷🇺_RU_俄罗斯->🇫🇮_FI_芬兰
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇸🇬 Singapore
+    type: url-test
+    proxies:
+      - 🇸🇬_SG_新加坡
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -297,8 +567,6 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国->🇩🇪_DE_德国
-      - 🇺🇸_US_美国 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -308,9 +576,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -320,9 +596,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -332,9 +616,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -345,9 +637,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -357,9 +657,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -368,9 +676,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -380,9 +696,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -392,9 +716,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -404,9 +736,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇦🇺 Australia
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
