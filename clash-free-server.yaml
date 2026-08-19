@@ -133,7 +133,78 @@ dns:
 proxies:
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.18.152.144
+    server: 104.16.174.117
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.ignitelimit.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: trojan
+    server: 104.16.73.213
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.ignitelimit.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 3
+    type: trojan
+    server: 104.18.152.233
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 4
+    type: trojan
+    server: 104.18.152.207
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.ignitelimit.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 5
+    type: trojan
+    server: 104.18.152.50
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 6
+    type: trojan
+    server: 104.16.174.109
     port: 443
     password: humanity
     tls: true
@@ -146,75 +217,21 @@ proxies:
     udp: true
   - name: 英国+V2CROSS.COM
     type: vless
-    server: 195.184.247.222
+    server: 31.76.69.40
     port: 443
-    uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
     tls: true
     client-fingerprint: chrome
-    servername: savesafe.co
+    servername: eu-central.cendora.ru
     network: tcp
     reality-opts:
-      public-key: 6z3YcVP0f2pK3iANKIkBUZOgNeErDjxY83mHZG5jrnI
-      short-id: f63805c3ecc7a483
+      public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+      short-id: 00bca5982f82d083
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+ 2
-    type: vless
-    server: 40.160.69.112
-    port: 8080
-    uuid: 11af1c47-865a-47c6-92ff-118013655d78
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /?ed
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: 104.26.14.137
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: trojan
-    server: 104.16.174.22
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: //assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+加州
-    type: trojan
-    server: 216.24.57.7
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 4
+  - name: 美国+CloudFlare节点 7
     type: trojan
     server: join-telegram-channel-tirexnet.trex.kdns.fr
     port: 443
@@ -227,24 +244,26 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 5
-    type: trojan
-    server: 104.18.23.63
-    port: 443
-    password: humanity
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 151.242.17.99
+    port: 8443
+    uuid: a04814d9-d006-4e7b-ae20-8ab304b3b429
     tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
+    client-fingerprint: chrome
+    servername: de.emvservice.com
+    network: grpc
+    reality-opts:
+      public-key: 6Yskxg5U0WxPGtuCAAGH9uD57T4U8LeGrErTBNvIrwM
+      short-id: bc
+    grpc-opts: {}
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 6
+    flow: ''
+  - name: 美国+加州
     type: trojan
-    server: 104.16.174.14
+    server: 216.24.57.7
     port: 443
     password: humanity
     tls: true
@@ -255,65 +274,66 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 巴西圣保罗+CloudFlare节点
-    type: trojan
-    server: 188.114.97.7
-    port: 443
-    password: humanity
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 95.163.232.54
+    port: 8443
+    uuid: 93fab704-cea7-4ca4-a9ac-5bb46aef263c
     tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
+    client-fingerprint: chrome
+    servername: max.ru
+    network: tcp
+    reality-opts:
+      public-key: M_V1dM8_wcpwnmh2VZp-s3LCBjy38ZWCRpxLrBc58Do
+      short-id: a48d397391861a3c
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 7
-    type: trojan
-    server: 104.18.152.152
-    port: 443
-    password: humanity
+  - name: 俄罗斯+V2CROSS.COM 2
+    type: vless
+    server: 78.159.247.253
+    port: 2027
+    uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
     tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
+    client-fingerprint: chrome
+    servername: storage.yandex.net
+    network: raw
+    reality-opts:
+      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+      short-id: 8d3293f0066e129a
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点 8
     type: trojan
-    server: 104.16.72.2
+    server: 104.18.152.175
     port: 443
     password: humanity
     tls: true
-    sni: www.calmlunch.com
+    sni: www.ignitelimit.com
     network: ws
     ws-opts:
       path: /assignment
-      headers:
-        host: www.calmlunch.com
     tfo: false
     skip-cert-verify: true
     udp: true
   - name: 美国+CloudFlare节点 9
     type: trojan
-    server: www.speedtest.org
+    server: 104.19.229.21
     port: 443
     password: humanity
     tls: true
     sni: www.ignitelimit.com
     network: ws
     ws-opts:
-      path: /assignment
+      path: assignment
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国+CloudFlare节点 10
     type: trojan
-    server: 104.18.152.175
+    server: 104.20.6.134
     port: 443
     password: humanity
     tls: true
@@ -326,35 +346,7 @@ proxies:
     udp: true
   - name: 美国+CloudFlare节点 11
     type: trojan
-    server: 198.41.223.96
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 12
-    type: trojan
-    server: 104.18.22.63
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国+CloudFlare节点 13
-    type: trojan
-    server: 104.18.152.113
+    server: 104.18.152.246
     port: 443
     password: humanity
     tls: true
@@ -365,6 +357,39 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 美国+CloudFlare节点 12
+    type: trojan
+    server: 104.18.152.179
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 13
+    type: trojan
+    server: 104.18.152.159
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 俄罗斯+鞑靼斯坦喀山justhost
+    type: hysteria2
+    server: els1.mangshe.xyz
+    port: 2056
+    password: 22d891f5-ad85-4824-b0b8-e30cf3d37eb5
+    sni: 127.0.0.1
+    skip-cert-verify: true
   - name: 美国+CloudFlare节点 14
     type: trojan
     server: 104.18.152.204
@@ -380,43 +405,13 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 荷兰+V2CROSS.COM
-    type: vless
-    server: 185.206.170.114
-    port: 20184
-    uuid: d4d4d103-5074-47e9-96e6-5431f4e35c57
-    tls: true
-    client-fingerprint: chrome
-    servername: jgirpgor3g54.vpvr4ib84nuv6hdkt.ru
-    network: tcp
-    reality-opts:
-      public-key: HVT2ZMgVLqnL1eccq5a7CRcYsOJ_FKUUv-88tix4Om0
-      short-id: e695831a6e5f2ba4
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 15
-    type: trojan
-    server: 104.16.174.71
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: true
-    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -425,25 +420,25 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 英国+V2CROSS.COM
-      - 美国+ 2
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+加州
       - 美国+CloudFlare节点 4
       - 美国+CloudFlare节点 5
       - 美国+CloudFlare节点 6
-      - 巴西圣保罗+CloudFlare节点
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 7
+      - 伊朗+V2CROSS.COM
+      - 美国+加州
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM 2
       - 美国+CloudFlare节点 8
       - 美国+CloudFlare节点 9
       - 美国+CloudFlare节点 10
       - 美国+CloudFlare节点 11
       - 美国+CloudFlare节点 12
       - 美国+CloudFlare节点 13
+      - 俄罗斯+鞑靼斯坦喀山justhost
       - 美国+CloudFlare节点 14
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点 15
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -451,36 +446,31 @@ proxy-groups:
     type: select
     proxies:
       - 美国+CloudFlare节点
-      - 英国+V2CROSS.COM
-      - 美国+ 2
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+加州
       - 美国+CloudFlare节点 4
       - 美国+CloudFlare节点 5
       - 美国+CloudFlare节点 6
-      - 巴西圣保罗+CloudFlare节点
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 7
+      - 伊朗+V2CROSS.COM
+      - 美国+加州
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM 2
       - 美国+CloudFlare节点 8
       - 美国+CloudFlare节点 9
       - 美国+CloudFlare节点 10
       - 美国+CloudFlare节点 11
       - 美国+CloudFlare节点 12
       - 美国+CloudFlare节点 13
+      - 俄罗斯+鞑靼斯坦喀山justhost
       - 美国+CloudFlare节点 14
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点 15
-  - name: 🇧🇷 Brazil
+  - name: 🇷🇺 Russia
     type: url-test
     proxies:
-      - 巴西圣保罗+CloudFlare节点
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    proxies:
-      - 荷兰+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM 2
+      - 俄罗斯+鞑靼斯坦喀山justhost
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -495,14 +485,13 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 美国+ 2
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+加州
       - 美国+CloudFlare节点 4
       - 美国+CloudFlare节点 5
       - 美国+CloudFlare节点 6
       - 美国+CloudFlare节点 7
+      - 美国+加州
       - 美国+CloudFlare节点 8
       - 美国+CloudFlare节点 9
       - 美国+CloudFlare节点 10
@@ -510,7 +499,6 @@ proxy-groups:
       - 美国+CloudFlare节点 12
       - 美国+CloudFlare节点 13
       - 美国+CloudFlare节点 14
-      - 美国+CloudFlare节点 15
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -520,8 +508,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -532,8 +519,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -544,8 +530,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -557,8 +542,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -569,8 +553,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -580,8 +563,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -592,8 +574,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -604,8 +585,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -616,8 +596,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇳🇱 Netherlands
+      - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT

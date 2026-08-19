@@ -131,16 +131,173 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇺🇸_US_美国
-    type: hysteria2
-    server: starlink-ft.251313.xyz
-    port: 443
-    password: https//xship.top
-    sni: xship.top
-    skip-cert-verify: true
-  - name: 🇳🇱_NL_荷兰->🇹🇭_TH_泰国
+  - name: 🇨🇦_CA_加拿大->🇺🇸_US_美国
+    type: ss
+    server: cdn.shopify.com
+    port: 80
+    cipher: 2022-blake3-aes-128-gcm
+    password: YTE1ZWU4ZTEyZjc3YmEzZA==
+    udp: true
+    plugin: gost-plugin
+    plugin-opts:
+      mode: websocket
+      host: ous1.337777777.xyz
+      tls: 'false'
+      path: /api/v1/stream/us1
+  - name: 🇨🇴_CO_哥伦比亚
     type: vless
-    server: 18.239.83.52
+    server: 157.137.219.126
+    port: 62145
+    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇩🇪_DE_德国
+    type: vless
+    server: 18.199.26.134
+    port: 22223
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本
+    type: trojan
+    server: wealthy-gobbler.rooster465.autos
+    port: 443
+    password: EQ30679154
+    tls: true
+    sni: wealthy-gobbler.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国 2
+    type: vless
+    server: 104.18.28.234
+    port: 2095
+    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: download.pusytroller.gq
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国 3
+    type: trojan
+    server: 162.221.197.83
+    port: 5453
+    password: fg20mtCFHy
+    tls: true
+    sni: trdatas.southbyte.xyz
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇵🇱_PL_波兰
+    type: vless
+    server: 31.77.59.83
+    port: 9800
+    uuid: f4685d27-73e3-4588-9622-add50b84046a
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国 4
+    type: ss
+    server: 18.188.213.207
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: 🇩🇪_DE_德国 2
+    type: vless
+    server: 63.185.0.55
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 2
+    type: ss
+    server: 108.61.223.231
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: WbEN0g6Rbnsye8EJZz94OF
+    udp: true
+  - name: 🇯🇵_JP_日本 3
+    type: trojan
+    server: pet-albacore.rooster465.autos
+    port: 443
+    password: HC04361579
+    tls: true
+    sni: pet-albacore.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸_US_美国 5
+    type: vless
+    server: 40.160.69.112
+    port: 8080
+    uuid: 11af1c47-865a-47c6-92ff-118013655d78
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 4
+    type: trojan
+    server: 172.105.197.232
+    port: 5710
+    password: fg20mtCFHy
+    tls: true
+    sni: jpcaw.southbyte.xyz
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇰🇷_KR_韩国
+    type: trojan
+    server: novel-kodiak.rooster465.autos
+    port: 443
+    password: EQ30679154
+    tls: true
+    sni: novel-kodiak.rooster465.autos
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇩🇪_DE_德国 3
+    type: vless
+    server: 63.187.235.95
+    port: 22222
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国->🇹🇭_TH_泰国
+    type: vless
+    server: 18.238.217.65
     port: 443
     uuid: 7ce54bb3-d612-4aa7-be08-089d3c461d53
     tls: true
@@ -153,64 +310,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇪🇸_ES_西班牙
-    type: trojan
-    server: 172.233.107.18
-    port: 5575
-    password: fg20mtCFHy
-    tls: true
-    sni: fgrsd.southbyte.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇰🇷_KR_韩国
-    type: trojan
-    server: awake-redbird.rooster465.autos
-    port: 443
-    password: PQ05174892
-    tls: true
-    sni: awake-redbird.rooster465.autos
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇳🇱_NL_荷兰 2
+  - name: 🇩🇪_DE_德国 4
     type: vless
-    server: 141.148.225.158
-    port: 62145
-    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国 2
-    type: trojan
-    server: 173.255.247.228
-    port: 5444
-    password: fg20mtCFHy
-    tls: true
-    sni: frsdata.southbyte.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇬🇧_GB_英国
-    type: trojan
-    server: 104.248.167.79
-    port: 5624
-    password: fg20mtCFHy
-    tls: true
-    sni: dsgvc.southbyte.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇩🇪_DE_德国
-    type: vless
-    server: 3.79.218.80
+    server: 18.199.26.134
     port: 22222
     uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
     tls: false
@@ -219,200 +321,94 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇸🇬_SG_新加坡
-    type: vless
-    server: paid.sshehi.ggff.net
-    port: 443
-    uuid: 49c86212-ae0b-430e-9abb-244e715b533f
-    tls: true
-    servername: ''
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇦_UA_乌克兰->🇩🇪_DE_德国
-    type: vless
-    server: 2.59.223.72
-    port: 667
-    uuid: 76fd8cd7-cff8-42fa-9b65-d10532536ae7
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国 3
-    type: vless
-    server: 40.160.69.53
-    port: 8080
-    uuid: 11af1c47-865a-47c6-92ff-118013655d78
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇳🇱_NL_荷兰 3
-    type: vless
-    server: serv40.strettenvpn.com
-    port: 7771
-    uuid: 707db87b-9cbf-438f-b4c7-9d984c8e944a
-    tls: true
-    servername: sun6-21.userapi.com
-    network: grpc
-    grpc-opts:
-      grpc-service-name: vless-grpc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇮🇳_IN_印度
+  - name: 🇫🇷_FR_法国
     type: trojan
-    server: 157.245.99.215
-    port: 5750
+    server: 172.232.42.44
+    port: 5577
     password: fg20mtCFHy
     tls: true
-    sni: inyct.southbyte.xyz
+    sni: gtyxz.southbyte.xyz
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇹🇼_TW_中国台湾
-    type: vmess
-    server: 202.153.4.171
-    port: 31172
-    uuid: 2bb735a0-b26e-4628-9f1a-23a6661b1275
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+    type: ss
+    server: 121.46.230.235
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     udp: true
-  - name: 🇩🇪_DE_德国 3
-    type: vless
-    server: 18.157.224.206
-    port: 22224
-    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国 4
-    type: vless
-    server: 104.21.89.181
-    port: 8880
-    uuid: d6c595c9-bff4-4510-893a-dfa3c87fa0cd
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /pyip=ProxyIP.US.CMLiussss.net
-      headers:
-        host: lucky-cell-d20c.78-107.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇼_CW_CW
-    type: vless
-    server: 88.216.67.50
-    port: 8880
-    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: vms.lifetime05.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇧🇷_BR_巴西->🇫🇮_FI_芬兰
-    type: vless
-    server: 201.24.49.62
-    port: 1
-    uuid: fa4babae-cea3-49b1-9d6f-342495a46ea9
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇯🇵_JP_日本
+  - name: 🇸🇬_SG_新加坡
     type: trojan
-    server: driven-doberman.rooster465.autos
+    server: fleet-pony.rooster465.autos
+    port: 443
+    password: PQ05174892
+    tls: true
+    sni: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇯🇵_JP_日本 5
+    type: trojan
+    server: legible-ocelot.rooster465.autos
     port: 443
     password: HC04361579
     tls: true
-    sni: driven-doberman.rooster465.autos
+    sni: legible-ocelot.rooster465.autos
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸_US_美国 6
+  - name: 🇯🇵_JP_日本 6
     type: trojan
-    server: 147.182.198.83
-    port: 5444
-    password: fg20mtCFHy
+    server: settling-shad.rooster465.autos
+    port: 443
+    password: HC04361579
     tls: true
-    sni: sfouctc.southbyte.xyz
+    sni: settling-shad.rooster465.autos
     network: tcp
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+  - name: 🇭🇰_HK_中国香港
+    type: ss
+    server: 212.192.15.46
+    port: 60112
+    cipher: aes-256-gcm
+    password: 72553320ae6bcc8f
+    udp: true
+  - name: 🇨🇴_CO_哥伦比亚 2
     type: vless
-    server: 80.76.60.120
-    port: 989
-    uuid: ab19e2eb-e025-4a8c-aa75-8f5324bdafc9
+    server: 157.137.219.244
+    port: 62145
+    uuid: 8fb65472-5957-4f64-ba2d-b5812b2f155a
     tls: false
     servername: ''
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇫🇷_FR_法国
+  - name: 🇷🇺_RU_俄罗斯
     type: ss
-    server: 15.237.189.197
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
+    server: 195.133.23.200
+    port: 10998
+    cipher: aes-256-gcm
+    password: 81a20429165df87e
     udp: true
   - name: 🇺🇸_US_美国 7
     type: vless
-    server: 169.40.42.89
-    port: 443
-    uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-    tls: true
-    servername: yahoo.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇯🇵_JP_日本 2
-    type: trojan
-    server: 3.112.15.214
-    port: 443
-    password: ND91608427
-    tls: true
-    sni: adjusted-labrador.rooster465.autos
-    network: tcp
+    server: 104.16.72.41
+    port: 80
+    uuid: dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /http
+      headers:
+        host: de.vpnbase.net
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -422,84 +418,82 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇳🇱_NL_荷兰->🇹🇭_TH_泰国
-      - 🇪🇸_ES_西班牙
-      - 🇰🇷_KR_韩国
-      - 🇳🇱_NL_荷兰 2
-      - 🇺🇸_US_美国 2
-      - 🇬🇧_GB_英国
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇨🇴_CO_哥伦比亚
       - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
-      - 🇺🇦_UA_乌克兰->🇩🇪_DE_德国
-      - 🇺🇸_US_美国 3
-      - 🇳🇱_NL_荷兰 3
-      - 🇮🇳_IN_印度
-      - 🇹🇼_TW_中国台湾
-      - 🇩🇪_DE_德国 3
-      - 🇺🇸_US_美国 4
-      - 🇨🇼_CW_CW
-      - 🇧🇷_BR_巴西->🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国 6
-      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-      - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国 7
+      - 🇺🇸_US_美国 2
+      - 🇺🇸_US_美国 3
+      - 🇵🇱_PL_波兰
+      - 🇺🇸_US_美国 4
+      - 🇩🇪_DE_德国 2
       - 🇯🇵_JP_日本 2
+      - 🇯🇵_JP_日本 3
+      - 🇺🇸_US_美国 5
+      - 🇯🇵_JP_日本 4
+      - 🇰🇷_KR_韩国
+      - 🇩🇪_DE_德国 3
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
+      - 🇩🇪_DE_德国 4
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡
+      - 🇯🇵_JP_日本 5
+      - 🇯🇵_JP_日本 6
+      - 🇭🇰_HK_中国香港
+      - 🇨🇴_CO_哥伦比亚 2
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国 7
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇺🇸_US_美国
-      - 🇳🇱_NL_荷兰->🇹🇭_TH_泰国
-      - 🇪🇸_ES_西班牙
-      - 🇰🇷_KR_韩国
-      - 🇳🇱_NL_荷兰 2
-      - 🇺🇸_US_美国 2
-      - 🇬🇧_GB_英国
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇨🇴_CO_哥伦比亚
       - 🇩🇪_DE_德国
-      - 🇸🇬_SG_新加坡
-      - 🇺🇦_UA_乌克兰->🇩🇪_DE_德国
-      - 🇺🇸_US_美国 3
-      - 🇳🇱_NL_荷兰 3
-      - 🇮🇳_IN_印度
-      - 🇹🇼_TW_中国台湾
-      - 🇩🇪_DE_德国 3
-      - 🇺🇸_US_美国 4
-      - 🇨🇼_CW_CW
-      - 🇧🇷_BR_巴西->🇫🇮_FI_芬兰
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 🇯🇵_JP_日本
-      - 🇺🇸_US_美国 6
-      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-      - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国 7
+      - 🇺🇸_US_美国 2
+      - 🇺🇸_US_美国 3
+      - 🇵🇱_PL_波兰
+      - 🇺🇸_US_美国 4
+      - 🇩🇪_DE_德国 2
       - 🇯🇵_JP_日本 2
-  - name: 🇧🇷 Brazil
+      - 🇯🇵_JP_日本 3
+      - 🇺🇸_US_美国 5
+      - 🇯🇵_JP_日本 4
+      - 🇰🇷_KR_韩国
+      - 🇩🇪_DE_德国 3
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
+      - 🇩🇪_DE_德国 4
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇸🇬_SG_新加坡
+      - 🇯🇵_JP_日本 5
+      - 🇯🇵_JP_日本 6
+      - 🇭🇰_HK_中国香港
+      - 🇨🇴_CO_哥伦比亚 2
+      - 🇷🇺_RU_俄罗斯
+      - 🇺🇸_US_美国 7
+  - name: 🇨🇦 Canada
     type: url-test
     proxies:
-      - 🇧🇷_BR_巴西->🇫🇮_FI_芬兰
+      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -514,15 +508,16 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇩🇪_DE_德国
-      - 🇺🇦_UA_乌克兰->🇩🇪_DE_德国
+      - 🇩🇪_DE_德国 2
       - 🇩🇪_DE_德国 3
+      - 🇩🇪_DE_德国 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇮🇳 India
+  - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 🇮🇳_IN_印度
+      - 🇭🇰_HK_中国香港
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -531,6 +526,10 @@ proxy-groups:
     proxies:
       - 🇯🇵_JP_日本
       - 🇯🇵_JP_日本 2
+      - 🇯🇵_JP_日本 3
+      - 🇯🇵_JP_日本 4
+      - 🇯🇵_JP_日本 5
+      - 🇯🇵_JP_日本 6
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -538,22 +537,14 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇰🇷_KR_韩国
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    proxies:
-      - 🇳🇱_NL_荷兰->🇹🇭_TH_泰国
-      - 🇳🇱_NL_荷兰 2
-      - 🇳🇱_NL_荷兰 3
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇷🇺 Russia
     type: url-test
     proxies:
-      - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
+      - 🇷🇺_RU_俄罗斯
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -564,36 +555,14 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇪🇸 Spain
-    type: url-test
-    proxies:
-      - 🇪🇸_ES_西班牙
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇹🇼 Taiwan
-    type: url-test
-    proxies:
-      - 🇹🇼_TW_中国台湾
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    proxies:
-      - 🇬🇧_GB_英国
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
       - 🇺🇸_US_美国 2
       - 🇺🇸_US_美国 3
       - 🇺🇸_US_美国 4
-      - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国 6
+      - 🇺🇸_US_美国 5
+      - 🇺🇸_US_美国->🇹🇭_TH_泰国
       - 🇺🇸_US_美国 7
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -604,18 +573,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -625,18 +590,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -646,18 +607,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -668,18 +625,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -689,18 +642,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -709,18 +658,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -730,18 +675,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -751,18 +692,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -772,18 +709,14 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇮🇳 India
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
-      - 🇪🇸 Spain
-      - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
