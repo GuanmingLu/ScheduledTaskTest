@@ -131,9 +131,22 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 拉脱维亚+V2CROSS.COM
+  - name: 美国+CloudFlare节点
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国+V2CROSS.COM
     type: vless
-    server: 195.123.210.168
+    server: 31.76.5.26
     port: 13443
     uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
     tls: true
@@ -147,22 +160,9 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
+  - name: 立陶宛+V2CROSS.COM
     type: trojan
-    server: 198.41.223.96
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 法国巴黎+CloudFlare节点
-    type: trojan
-    server: 141.101.90.101
+    server: 86.38.214.205
     port: 443
     password: humanity
     tls: true
@@ -173,18 +173,25 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.70.32
+  - name: 英国+V2CROSS.COM 2
+    type: hysteria2
+    server: fast.wwwinternetvideo.click
     port: 443
-    uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+    password: C91FbOXGY9XRymrcEebtax9R1Nj62UizoT8S6kCb7xwey8IE
+    sni: fast.wwwinternetvideo.click
+    skip-cert-verify: true
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 46.29.235.9
+    port: 443
+    uuid: d67af820-f54c-48ab-862c-19086357f276
     tls: true
     client-fingerprint: chrome
-    servername: baltic.cendora.ru
+    servername: telegraf.lv
     network: tcp
     reality-opts:
-      public-key: t_qv0VOfWhKZJV_giGC55-ipgHYWo44Yfvik_B8T8ik
-      short-id: 4a46213c935e2ee4
+      public-key: dhLgVSqPBDrdbhyTS2j60LWZDGEZh-smkcjUNSic-WI
+      short-id: a1b2c3d4
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -199,33 +206,25 @@ proxies:
     network: ws
     ws-opts:
       path: /assignment
-      headers:
-        host: www.ignitelimit.com
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 日本+V2CROSS.COM
-    type: hysteria2
-    server: 43.167.198.167
-    port: 443
-    password: fJT5wNXNkYDvYKKGWUc9f2vd0LvHKSwc
-    sni: 43.167.198.167
-    skip-cert-verify: true
-  - name: 英国+V2CROSS.COM 2
+  - name: 俄罗斯+V2CROSS.COM 2
     type: vless
-    server: 194.154.30.154
-    port: 443
-    uuid: c7e9c591-2764-423a-afca-efbd010fd396
+    server: 78.159.247.253
+    port: 2027
+    uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
     tls: true
-    servername: forfreeuse.rtqa.ru
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: forfreeuse.rtqa.ru
+    client-fingerprint: chrome
+    servername: storage.yandex.net
+    network: tcp
+    reality-opts:
+      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+      short-id: dc8109baf0f607ea
     tfo: false
     skip-cert-verify: true
     udp: true
+    flow: xtls-rprx-vision
   - name: 日本+东京Choopa数据中心
     type: hysteria2
     server: 45.32.252.144
@@ -235,7 +234,7 @@ proxies:
     skip-cert-verify: false
   - name: 美国+CloudFlare节点 2
     type: trojan
-    server: join-telegram-channel.tirexnet.kdns.fr
+    server: 104.26.14.137
     port: 443
     password: humanity
     tls: true
@@ -244,43 +243,21 @@ proxies:
     ws-opts:
       path: /assignment
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 香港+Simcentric网络公司
-    type: vless
-    server: 180.178.60.254
-    port: 10000
-    uuid: caec0d8d-ab2f-4247-b97d-7fb1a34ab195
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 78.159.247.253
-    port: 2027
-    uuid: 851ed0d8-a37b-452d-8ef2-5b6c2d28a060
-    tls: true
-    client-fingerprint: chrome
-    servername: storage.yandex.net
-    network: raw
-    reality-opts:
-      public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-      short-id: 8d3293f0066e129a
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
+  - name: 美国+惠普公司
+    type: hysteria2
+    server: 16.79.28.237
+    port: 26001
+    password: l25nJa8z0D5pT6jl
+    sni: id-ls-c-4.nebulacloud.win
+    skip-cert-verify: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -290,52 +267,35 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 拉脱维亚+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 法国巴黎+CloudFlare节点
       - 英国+V2CROSS.COM
-      - 美国+加州
-      - 日本+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
       - 英国+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
+      - 美国+加州
+      - 俄罗斯+V2CROSS.COM 2
       - 日本+东京Choopa数据中心
       - 美国+CloudFlare节点 2
-      - 香港+Simcentric网络公司
-      - 俄罗斯+V2CROSS.COM
+      - 美国+惠普公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 拉脱维亚+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 法国巴黎+CloudFlare节点
       - 英国+V2CROSS.COM
-      - 美国+加州
-      - 日本+V2CROSS.COM
+      - 立陶宛+V2CROSS.COM
       - 英国+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
+      - 美国+加州
+      - 俄罗斯+V2CROSS.COM 2
       - 日本+东京Choopa数据中心
       - 美国+CloudFlare节点 2
-      - 香港+Simcentric网络公司
-      - 俄罗斯+V2CROSS.COM
-  - name: 🇫🇷 France
-    type: url-test
-    proxies:
-      - 法国巴黎+CloudFlare节点
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇭🇰 Hong Kong
-    type: url-test
-    proxies:
-      - 香港+Simcentric网络公司
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 美国+惠普公司
   - name: 🇯🇵 Japan
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
       - 日本+东京Choopa数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -344,6 +304,7 @@ proxy-groups:
     type: url-test
     proxies:
       - 俄罗斯+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -361,6 +322,7 @@ proxy-groups:
       - 美国+CloudFlare节点
       - 美国+加州
       - 美国+CloudFlare节点 2
+      - 美国+惠普公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -370,8 +332,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -384,8 +344,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -398,8 +356,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -413,8 +369,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -427,8 +381,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -440,8 +392,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -454,8 +404,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -468,8 +416,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
@@ -482,8 +428,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇬🇧 United Kingdom
