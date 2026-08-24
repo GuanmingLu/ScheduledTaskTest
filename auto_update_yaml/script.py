@@ -48,6 +48,7 @@ ALL_URLS = [
     { "name": "clashgithub", "urls": [f"https://clashgithub.com/wp-content/uploads/rss/{y}{m}{d}.yml" for (y, m, d) in date_list()] },
     { "name": "oneclash", "urls": [f"https://oneclash.githubrowcontent.com/{y}/{m}/{y}{m}{d}.yaml" for (y, m, d) in date_list()] },
     { "name": "v2rayshare", "urls": [f"https://v2rayshare.githubrowcontent.com/{y}/{m}/{y}{m}{d}.yaml" for (y, m, d) in date_list()] },
+	{ "name": "yoyapai", "urls": [f"https://freenode.yoyapai.com/{y}/{m}/{d}-yoyapai.com-clashvpn-mian-fei-jiedian.yaml" for (y, m, d) in date_list()] },
 ]
 
 
