@@ -131,69 +131,6 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 🇺🇸_US_美国
-    type: vless
-    server: 104.18.109.147
-    port: 80
-    uuid: c29d39bd-92a4-45db-bb61-56013998617c
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /Telegram-XV2ry2?ed=2048
-      headers:
-        host: >-
-          www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰_HK_中国香港
-    type: vmess
-    server: planb.mojcn.com.linuxlh.xin
-    port: 16632
-    uuid: 56a511bd-f207-48f4-be5b-4652afe178a4
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: 686a7558df571afb1408b0e77ae4f687.mobgslb.tbcache.com
-    udp: true
-  - name: 🇨🇳_CN_中国
-    type: vmess
-    server: 112.132.215.108
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 🇨🇭_CH_瑞士
-    type: vless
-    server: 151.243.190.90
-    port: 25301
-    uuid: 62a05f8e-eedf-4500-8c79-c9315f565bcc
-    tls: true
-    servername: proxy11.h1guro.ovh
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇹🇭_TH_泰国
-    type: ss
-    server: 103.169.67.34
-    port: 65443
-    cipher: aes-256-cfb
-    password: 7eadc6dbe2ae
-    udp: true
   - name: 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
     type: vless
     server: 31.76.71.140
@@ -206,29 +143,41 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇳🇱_NL_荷兰
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
     type: vless
-    server: chat.taksavps.ru
-    port: 443
-    uuid: 601fe32b-0c1a-403d-bbb1-2560fa2057ec
-    tls: true
-    servername: chat.taksavps.ru
-    network: ws
-    ws-opts:
-      path: /api/user
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰_HK_中国香港 2
-    type: vless
-    server: df132ade-tki800-traezq-1t5n1.nw4.hyhuawei.com
-    port: 443
-    uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    tls: true
-    servername: dl.delivery.mp.microsoft.com
+    server: jp.sofast.live
+    port: 52683
+    uuid: 399b6b23-cc40-4831-a494-61948e2df133
+    tls: false
+    servername: ''
     network: tcp
     tfo: false
     skip-cert-verify: false
+    udp: true
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国 2
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇮🇪_IE_爱尔兰
+    type: ss
+    server: 3.252.205.48
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: 🇲🇾_MY_马来西亚
+    type: ss
+    server: 118.107.222.231
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     udp: true
   - name: 🇬🇧_GB_英国
     type: ss
@@ -237,14 +186,7 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: 🇭🇰_HK_中国香港->🇺🇸_US_美国
-    type: ss
-    server: us1002.lunartrace.io
-    port: 40013
-    cipher: chacha20-ietf-poly1305
-    password: 86bf33ea-62d9-49a1-9bd0-73e45f6e1403
-    udp: true
-  - name: 🇳🇱_NL_荷兰 2
+  - name: 🇳🇱_NL_荷兰
     type: vless
     server: 31.76.61.232
     port: 443
@@ -256,35 +198,26 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  - name: 🇹🇭_TH_泰国
     type: ss
-    server: 121.46.230.232
+    server: 103.169.67.34
     port: 65443
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-  - name: 🇺🇸_US_美国 4
-    type: vless
-    server: vu2us7.87544899.xyz
+  - name: 🇺🇸_US_美国 3
+    type: hysteria2
+    server: starlink-ft.251313.xyz
     port: 443
-    uuid: 58c14e54-6db0-46fb-a1fb-8f3184197d94
-    tls: true
-    servername: maps.apple.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇭🇰_HK_中国香港 4
-    type: vless
-    server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
-    port: 443
-    uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
-    tls: true
-    servername: download.windowsupdate.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
+    password: https//xship.best
+    sni: xship.top
+    skip-cert-verify: true
+  - name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+    type: ss
+    server: 121.46.230.138
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     udp: true
   - name: 🇫🇷_FR_法国
     type: ss
@@ -293,30 +226,13 @@ proxies:
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-  - name: 🇺🇸_US_美国 5
-    type: vmess
-    server: guanwang.awsno.com
-    port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国 3
+    type: ss
+    server: 121.46.230.233
+    port: 65443
+    cipher: aes-256-cfb
+    password: 7eadc6dbe2ae
     udp: true
-  - name: 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-    type: vless
-    server: 153.75.89.35
-    port: 443
-    uuid: 24623d40-0a9a-4ae8-9b30-da896fac4ca9
-    tls: true
-    servername: cdn.dodostatic.net
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 🇨🇳_CN_中国->🇯🇵_JP_日本
     type: ss
     server: 121.46.230.137
@@ -324,65 +240,59 @@ proxies:
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
-  - name: 🇺🇸_US_美国 6
-    type: vmess
-    server: 192.227.247.27
+  - name: 🇨🇦_CA_加拿大
+    type: ss
+    server: 3.97.16.160
     port: 443
-    uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
+    cipher: aes-256-cfb
+    password: amazonskr05
     udp: true
-  - name: 🇨🇦_CA_加拿大->🇺🇸_US_美国
-    type: ss
-    server: cdn.shopify.com
-    port: 80
-    cipher: 2022-blake3-aes-128-gcm
-    password: YTE1ZWU4ZTEyZjc3YmEzZA==
-    udp: true
-    plugin: gost-plugin
-    plugin-opts:
-      mode: websocket
-      host: ous1.337777777.xyz
-      tls: 'false'
-      path: /api/v1/stream/us1
-  - name: 🇺🇸_US_美国 8
-    type: vless
-    server: 162.159.152.4
-    port: 80
-    uuid: bea3807d-4080-4078-a08d-747107a3426b
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /rF4GstgkEkNbLD2B
-      headers:
-        host: worker3.tacajop464.workers.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇳_CN_中国->🇫🇷_FR_法国
+  - name: 🇨🇳_CN_中国 6
     type: vmess
-    server: v35.hdacd.com
-    port: 30835
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
+    server: 112.132.215.108
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
     cipher: auto
     tls: false
     servername: ''
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇨🇳_CN_中国->🇺🇸_US_美国 2
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国 4
     type: ss
-    server: 121.46.230.233
+    server: 121.46.230.232
     port: 65443
     cipher: aes-256-cfb
     password: 7eadc6dbe2ae
     udp: true
+  - name: 🇺🇸_US_美国 6
+    type: vmess
+    server: 38.246.226.240
+    port: 52080
+    uuid: 7d4bd961-230c-4b34-ab5d-05cf0dfb4ea5
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: http
+    http-opts:
+      method: GET
+      path:
+        - /
+    udp: true
+  - name: 🇩🇪_DE_德国 2
+    type: hysteria2
+    server: 5.83.129.153
+    port: 20088
+    password: dongtaiwang.com
+    up: 500
+    down: 1000
+    sni: apple.com
+    skip-cert-verify: true
+    alpn:
+      - h3
 proxy-groups:
   - type: select
     name: 🚀 节点选择
@@ -391,11 +301,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -404,62 +316,52 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国
-      - 🇨🇭_CH_瑞士
-      - 🇹🇭_TH_泰国
       - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-      - 🇳🇱_NL_荷兰
-      - 🇭🇰_HK_中国香港 2
-      - 🇬🇧_GB_英国
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇳🇱_NL_荷兰 2
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国 4
-      - 🇭🇰_HK_中国香港 4
-      - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国 5
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国 6
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国 8
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
       - 🇨🇳_CN_中国->🇺🇸_US_美国 2
+      - 🇮🇪_IE_爱尔兰
+      - 🇲🇾_MY_马来西亚
+      - 🇬🇧_GB_英国
+      - 🇳🇱_NL_荷兰
+      - 🇹🇭_TH_泰国
+      - 🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国 6
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸_US_美国 6
+      - 🇩🇪_DE_德国 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港
-      - 🇨🇳_CN_中国
-      - 🇨🇭_CH_瑞士
-      - 🇹🇭_TH_泰国
       - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-      - 🇳🇱_NL_荷兰
-      - 🇭🇰_HK_中国香港 2
-      - 🇬🇧_GB_英国
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇳🇱_NL_荷兰 2
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国 4
-      - 🇭🇰_HK_中国香港 4
-      - 🇫🇷_FR_法国
-      - 🇺🇸_US_美国 5
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
-      - 🇨🇳_CN_中国->🇯🇵_JP_日本
-      - 🇺🇸_US_美国 6
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
-      - 🇺🇸_US_美国 8
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
       - 🇨🇳_CN_中国->🇺🇸_US_美国 2
+      - 🇮🇪_IE_爱尔兰
+      - 🇲🇾_MY_马来西亚
+      - 🇬🇧_GB_英国
+      - 🇳🇱_NL_荷兰
+      - 🇹🇭_TH_泰国
+      - 🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+      - 🇫🇷_FR_法国
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇯🇵_JP_日本
+      - 🇨🇦_CA_加拿大
+      - 🇨🇳_CN_中国 6
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸_US_美国 6
+      - 🇩🇪_DE_德国 2
   - name: 🇨🇦 Canada
     type: url-test
     proxies:
-      - 🇨🇦_CA_加拿大->🇺🇸_US_美国
+      - 🇨🇦_CA_加拿大
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -467,17 +369,20 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇫🇷_FR_法国
-      - 🇨🇳_CN_中国->🇫🇷_FR_法国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇭🇰 Hong Kong
+  - name: 🇩🇪 Germany
     type: url-test
     proxies:
-      - 🇭🇰_HK_中国香港
-      - 🇭🇰_HK_中国香港 2
-      - 🇭🇰_HK_中国香港->🇺🇸_US_美国
-      - 🇭🇰_HK_中国香港 4
+      - 🇩🇪_DE_德国 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇮🇪 Ireland
+    type: url-test
+    proxies:
+      - 🇮🇪_IE_爱尔兰
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -488,12 +393,24 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
+  - name: 🇰🇷 Korea
+    type: url-test
+    proxies:
+      - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇲🇾 Malaysia
+    type: url-test
+    proxies:
+      - 🇲🇾_MY_马来西亚
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
       - 🇳🇱_NL_荷兰
-      - 🇳🇱_NL_荷兰 2
-      - 🇳🇱_NL_荷兰->🇩🇪_DE_德国
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -501,13 +418,6 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇷🇺_RU_俄罗斯->🇩🇪_DE_德国
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇨🇭 Switzerland
-    type: url-test
-    proxies:
-      - 🇨🇭_CH_瑞士
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -528,13 +438,12 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
       - 🇨🇳_CN_中国->🇺🇸_US_美国
-      - 🇺🇸_US_美国 4
-      - 🇺🇸_US_美国 5
-      - 🇺🇸_US_美国 6
-      - 🇺🇸_US_美国 8
       - 🇨🇳_CN_中国->🇺🇸_US_美国 2
+      - 🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 3
+      - 🇨🇳_CN_中国->🇺🇸_US_美国 4
+      - 🇺🇸_US_美国 6
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -546,11 +455,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -564,11 +475,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -582,11 +495,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -601,11 +516,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -619,11 +536,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -636,11 +555,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -654,11 +575,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -672,11 +595,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -690,11 +615,13 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇨🇦 Canada
       - 🇫🇷 France
-      - 🇭🇰 Hong Kong
+      - 🇩🇪 Germany
+      - 🇮🇪 Ireland
       - 🇯🇵 Japan
+      - 🇰🇷 Korea
+      - 🇲🇾 Malaysia
       - 🇳🇱 Netherlands
       - 🇷🇺 Russia
-      - 🇨🇭 Switzerland
       - 🇹🇭 Thailand
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
