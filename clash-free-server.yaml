@@ -131,9 +131,31 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: aldebaran.yokkastars.com
+    port: 40443
+    uuid: ed91e79c-f6bf-4fba-8cc0-6d45acaec22b
+    tls: true
+    client-fingerprint: chrome
+    servername: deepl.com
+    network: tcp
+    reality-opts:
+      public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
+      short-id: '7606'
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 丹麦+V2CROSS.COM
+    type: ss
+    server: 158.173.221.214
+    port: 11001
+    cipher: chacha20-ietf-poly1305
+    password: c58d16e593d44f42
+    udp: true
   - name: 美国+CloudFlare节点
     type: trojan
-    server: join-telegram-channel-tirexnet.trex.kdns.fr
+    server: 172.67.221.242
     port: 443
     password: humanity
     tls: true
@@ -145,79 +167,30 @@ proxies:
     skip-cert-verify: false
     udp: true
   - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: join-telegram-channel.tirexnet.kdns.fr
+    type: vless
+    server: 104.21.86.133
     port: 443
-    password: humanity
+    uuid: 1aa96574-c28b-4ee9-855d-ebdbbf1f7e90
     tls: true
-    sni: www.ignitelimit.com
+    servername: 1-m13.AyutThAya-9.KDNs.fr
     network: ws
     ws-opts:
-      path: /assignment
+      path: /ED3ZQPu7lqyeDGD58KabZ
+      headers:
+        host: 1-m13.aYuTThaYA-9.kDNS.fR
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 波兰+V2CROSS.COM
-    type: vless
-    server: 87.199.208.136
+  - name: 英国+V2CROSS.COM
+    type: hysteria2
+    server: gta.internet-card.sbs
     port: 443
-    uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-    tls: true
-    client-fingerprint: chrome
-    servername: nid3.pinkmoon.pro
-    network: tcp
-    reality-opts:
-      public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-      short-id: 8ffa160e608bf539
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 爱尔兰+V2CROSS.COM
-    type: vless
-    server: 89.124.92.66
-    port: 443
-    uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-    tls: true
-    client-fingerprint: chrome
-    servername: nid3.pinkmoon.pro
-    network: tcp
-    reality-opts:
-      public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-      short-id: 8ffa160e608bf539
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 95.163.232.171
-    port: 14443
-    uuid: fb67fd37-8d41-43a9-a093-c0b807fc5299
-    tls: true
-    servername: pr-media.pepro.site
-    network: ws
-    ws-opts:
-      path: /ws
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 法国巴黎+CloudFlare节点
-    type: trojan
-    server: 141.101.90.101
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
+    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+    sni: gta.internet-card.sbs
+    skip-cert-verify: true
   - name: 美国+CloudFlare节点 3
     type: trojan
-    server: 104.26.15.137
+    server: 104.21.46.3
     port: 443
     password: humanity
     tls: true
@@ -228,9 +201,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 巴西圣保罗+CloudFlare节点
+  - name: 美国+CloudFlare节点 4
     type: trojan
-    server: 188.114.97.7
+    server: 172.67.188.109
     port: 443
     password: humanity
     tls: true
@@ -241,37 +214,33 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: 31.59.150.174
-    port: 9443
-    uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
-    tls: true
-    client-fingerprint: chrome
-    servername: hotcoals.aeternavpn.space
-    network: tcp
-    reality-opts:
-      public-key: RWu6ktBE4DFbUz_prmz-5KuolLhO53ehh19mNxhP-wI
-      short-id: a1b2c3d4
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM
+  - name: 美国+CloudFlare节点 5
     type: trojan
-    server: 167.82.76.7
+    server: 198.41.223.96
     port: 443
-    password: MiTiVPN
+    password: humanity
     tls: true
-    sni: ssl.fastly.com
+    sni: www.ignitelimit.com
     network: ws
     ws-opts:
-      path: >-
-        /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+      path: /assignment
       headers:
-        host: mitivpn---ss--s---mitivpn-33.global.ssl.fastly.net
+        host: www.ignitelimit.com
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 6
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
     udp: true
 proxy-groups:
   - type: select
@@ -279,67 +248,49 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 俄罗斯+V2CROSS.COM
+      - 丹麦+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
-      - 波兰+V2CROSS.COM
-      - 爱尔兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 法国巴黎+CloudFlare节点
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 3
-      - 巴西圣保罗+CloudFlare节点
-      - 伊朗+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+CloudFlare节点 6
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 俄罗斯+V2CROSS.COM
+      - 丹麦+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
-      - 波兰+V2CROSS.COM
-      - 爱尔兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 法国巴黎+CloudFlare节点
+      - 英国+V2CROSS.COM
       - 美国+CloudFlare节点 3
-      - 巴西圣保罗+CloudFlare节点
-      - 伊朗+V2CROSS.COM
-      - 美国+V2CROSS.COM
-  - name: 🇧🇷 Brazil
-    type: url-test
-    proxies:
-      - 巴西圣保罗+CloudFlare节点
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇫🇷 France
-    type: url-test
-    proxies:
-      - 法国巴黎+CloudFlare节点
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇮🇪 Ireland
-    type: url-test
-    proxies:
-      - 爱尔兰+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+CloudFlare节点 6
   - name: 🇷🇺 Russia
     type: url-test
     proxies:
       - 俄罗斯+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇬🇧 United Kingdom
+    type: url-test
+    proxies:
+      - 英国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -349,7 +300,9 @@ proxy-groups:
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+CloudFlare节点 6
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -359,10 +312,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -372,10 +323,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -385,10 +334,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -399,10 +346,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -412,10 +357,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -424,10 +367,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -437,10 +378,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -450,10 +389,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -463,10 +400,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
       - 🇷🇺 Russia
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
