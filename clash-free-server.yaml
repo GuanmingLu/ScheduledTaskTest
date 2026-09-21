@@ -131,9 +131,25 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 美国+FDC芝加哥机房
+    type: vless
+    server: 67.159.17.62
+    port: 443
+    uuid: 1e6fed5b-5edc-4ddb-a268-79d7fae4365c
+    tls: true
+    client-fingerprint: chrome
+    servername: filesconvert.org
+    network: tcp
+    reality-opts:
+      public-key: U_E3xSI6QY_Mj-3zjkB4esvMj0aVvYH6W6oHOR50XBs
+      short-id: 10debbdf94767541
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.16.174.44
+    server: 104.17.177.143
     port: 443
     password: humanity
     tls: true
@@ -141,156 +157,10 @@ proxies:
     network: ws
     ws-opts:
       path: /assignment
-      headers:
-        host: www.ignitelimit.com
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
   - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: 104.16.174.6
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 3
-    type: trojan
-    server: 104.18.152.103
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: edge6.multikons.shop
-    port: 443
-    uuid: 4f8a1d19-4d21-47f5-816e-a8f475fbd3f7
-    tls: true
-    client-fingerprint: chrome
-    servername: edge6.multikons.shop
-    network: tcp
-    reality-opts:
-      public-key: 9J0h1tl0PRGXSKMLbu-_nsnoxhw3IHJ4jZTi2p_4i00
-      short-id: e2422c761ef3fb15
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 4
-    type: trojan
-    server: ip.myip2.qzz.io
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 5
-    type: trojan
-    server: 104.18.152.77
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 6
-    type: trojan
-    server: 104.16.174.22
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 7
-    type: trojan
-    server: 104.18.152.246
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 8
-    type: trojan
-    server: 104.18.152.210
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.ignitelimit.com
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 芬兰+V2CROSS.COM
-    type: vless
-    server: finkafsb.finiki.lol
-    port: 443
-    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
-    tls: true
-    client-fingerprint: chrome
-    servername: finkafsb.finiki.lol
-    network: tcp
-    reality-opts:
-      public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-      short-id: d110331f200987ae
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare公司CDN节点(iPower)
-    type: vless
-    server: us15.zuoai.cf
-    port: 443
-    uuid: b2593749-691c-428c-9481-14979cba3446
-    tls: true
-    servername: xi.tbv.ccwu.cc
-    network: ws
-    ws-opts:
-      path: /proxyip=us.xiabibi.cf
-      headers:
-        host: xi.tbv.ccwu.cc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 9
     type: trojan
     server: 104.18.152.230
     port: 443
@@ -305,9 +175,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 10
+  - name: 美国+CloudFlare节点 3
     type: trojan
-    server: 104.18.152.225
+    server: 104.16.174.124
     port: 443
     password: humanity
     tls: true
@@ -318,9 +188,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 11
+  - name: 美国+CloudFlare节点 4
     type: trojan
-    server: 104.18.152.108
+    server: 104.26.14.137
     port: 443
     password: humanity
     tls: true
@@ -331,9 +201,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 12
+  - name: 美国+CloudFlare节点 5
     type: trojan
-    server: 104.16.174.148
+    server: ip.myip2.qzz.io
     port: 443
     password: humanity
     tls: true
@@ -344,9 +214,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 13
+  - name: 美国+CloudFlare节点 6
     type: trojan
-    server: 104.18.152.187
+    server: 104.18.152.77
     port: 443
     password: humanity
     tls: true
@@ -357,22 +227,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 14
+  - name: 美国+CloudFlare节点 7
     type: trojan
-    server: 104.18.152.229
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 15
-    type: trojan
-    server: 162.159.136.234
+    server: 104.18.152.73
     port: 443
     password: humanity
     tls: true
@@ -385,81 +242,246 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 芬兰+V2CROSS.COM 2
-    type: vless
-    server: 196.196.206.38
+  - name: 美国+CloudFlare节点 8
+    type: trojan
+    server: 104.18.152.244
     port: 443
-    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    password: humanity
     tls: true
-    client-fingerprint: chrome
-    servername: finkafsb.finiki.lol
-    network: tcp
-    reality-opts:
-      public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-      short-id: d110331f200987ae
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 9
+    type: trojan
+    server: 104.18.152.187
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国+法尔肯施泰因Hetzner
+    type: trojan
+    server: 88.198.82.150
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 10
+    type: trojan
+    server: 104.18.152.149
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.ignitelimit.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 11
+    type: trojan
+    server: 104.16.174.36
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.ignitelimit.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国+Hanaro+Telecom
+    type: vless
+    server: 123.111.169.70
+    port: 443
+    uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+    tls: true
+    servername: vip.868068.xyz
+    network: ws
+    ws-opts:
+      path: /proxyip=us.xiabibi.cf
+      headers:
+        host: vip.868068.xyz
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 12
+    type: trojan
+    server: 104.18.152.246
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 13
+    type: trojan
+    server: 104.20.6.134
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+CloudFlare节点 14
+    type: trojan
+    server: 104.18.152.155
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 15
+    type: trojan
+    server: 104.16.174.46
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 16
+    type: trojan
+    server: 104.17.111.1
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 17
+    type: trojan
+    server: 104.17.111.8
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 美国+FDC芝加哥机房
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 伊朗+V2CROSS.COM
       - 美国+CloudFlare节点 4
       - 美国+CloudFlare节点 5
       - 美国+CloudFlare节点 6
       - 美国+CloudFlare节点 7
       - 美国+CloudFlare节点 8
-      - 芬兰+V2CROSS.COM
-      - 美国+CloudFlare公司CDN节点(iPower)
       - 美国+CloudFlare节点 9
+      - 德国+法尔肯施泰因Hetzner
       - 美国+CloudFlare节点 10
       - 美国+CloudFlare节点 11
+      - 韩国+Hanaro+Telecom
       - 美国+CloudFlare节点 12
       - 美国+CloudFlare节点 13
       - 美国+CloudFlare节点 14
       - 美国+CloudFlare节点 15
-      - 芬兰+V2CROSS.COM 2
+      - 美国+CloudFlare节点 16
+      - 美国+CloudFlare节点 17
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 美国+FDC芝加哥机房
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 伊朗+V2CROSS.COM
       - 美国+CloudFlare节点 4
       - 美国+CloudFlare节点 5
       - 美国+CloudFlare节点 6
       - 美国+CloudFlare节点 7
       - 美国+CloudFlare节点 8
-      - 芬兰+V2CROSS.COM
-      - 美国+CloudFlare公司CDN节点(iPower)
       - 美国+CloudFlare节点 9
+      - 德国+法尔肯施泰因Hetzner
       - 美国+CloudFlare节点 10
       - 美国+CloudFlare节点 11
+      - 韩国+Hanaro+Telecom
       - 美国+CloudFlare节点 12
       - 美国+CloudFlare节点 13
       - 美国+CloudFlare节点 14
       - 美国+CloudFlare节点 15
-      - 芬兰+V2CROSS.COM 2
+      - 美国+CloudFlare节点 16
+      - 美国+CloudFlare节点 17
+  - name: 🇩🇪 Germany
+    type: url-test
+    proxies:
+      - 德国+法尔肯施泰因Hetzner
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇰🇷 Korea
+    type: url-test
+    proxies:
+      - 韩国+Hanaro+Telecom
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+FDC芝加哥机房
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
@@ -468,7 +490,6 @@ proxy-groups:
       - 美国+CloudFlare节点 6
       - 美国+CloudFlare节点 7
       - 美国+CloudFlare节点 8
-      - 美国+CloudFlare公司CDN节点(iPower)
       - 美国+CloudFlare节点 9
       - 美国+CloudFlare节点 10
       - 美国+CloudFlare节点 11
@@ -476,6 +497,8 @@ proxy-groups:
       - 美国+CloudFlare节点 13
       - 美国+CloudFlare节点 14
       - 美国+CloudFlare节点 15
+      - 美国+CloudFlare节点 16
+      - 美国+CloudFlare节点 17
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -485,6 +508,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -494,6 +519,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -503,6 +530,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -513,6 +542,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -522,6 +553,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -530,6 +563,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -539,6 +574,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -548,6 +585,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -557,6 +596,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇩🇪 Germany
+      - 🇰🇷 Korea
       - 🇺🇸 United States
       - DIRECT
       - REJECT
