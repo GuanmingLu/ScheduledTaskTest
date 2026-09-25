@@ -131,7 +131,45 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 🇹🇼_TW_中国台湾
+    type: vmess
+    server: 24864168545164.oylfmxz.cn
+    port: 443
+    uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      headers: {}
+    udp: true
+  - name: 🇨🇳_CN_中国
+    type: vmess
+    server: 112.132.215.108
+    port: 50002
+    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+    alterId: 64
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
   - name: 🇺🇸_US_美国
+    type: vless
+    server: roundhouse.proxy.rlwy.net
+    port: 28058
+    uuid: 5300170c-0c94-44d9-a276-a6af3fcc6d5f
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts: {}
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸_US_美国 2
     type: vmess
     server: guanwang.awsno.com
     port: 443
@@ -148,17 +186,6 @@ proxies:
         host: guanwang.awsno.com
     udp: true
   - name: 🇩🇪_DE_德国
-    type: hysteria2
-    server: 5.83.129.90
-    port: 54177
-    password: dongtaiwang.com
-    up: 500
-    down: 1000
-    sni: apple.com
-    skip-cert-verify: true
-    alpn:
-      - h3
-  - name: 🇩🇪_DE_德国 2
     type: vless
     server: 2.59.134.226
     port: 443
@@ -170,31 +197,19 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇭🇰_HK_中国香港
-    type: vmess
-    server: v10.hdacd.com
-    port: 30807
-    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    alterId: 2
-    cipher: auto
+  - name: 🇺🇸_US_美国 3
+    type: vless
+    server: centerbeam.proxy.rlwy.net
+    port: 57787
+    uuid: 62fdc131-c75f-4750-b78f-da03b6782c6a
     tls: false
     servername: ''
+    network: ws
+    ws-opts: {}
+    tfo: false
     skip-cert-verify: false
-    network: tcp
     udp: true
-  - name: 🇨🇳_CN_中国
-    type: vmess
-    server: 112.132.215.108
-    port: 50002
-    uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-    alterId: 64
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 🇺🇸_US_美国 2
+  - name: 🇺🇸_US_美国 4
     type: vmess
     server: www.shopify.com
     port: 443
@@ -209,6 +224,25 @@ proxies:
       path: /hls/cctv5phd.m3u8
       headers:
         host: guanwang.awsno.com
+    udp: true
+  - name: 🇭🇰_HK_中国香港
+    type: anytls
+    server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+    port: 443
+    password: 9sK2mP8xQ7vL3nZ6
+    udp: true
+    sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+    skip-cert-verify: false
+  - name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 防范境外势力渗透
     type: vmess
@@ -390,13 +424,6 @@ proxies:
     password: f317b5d6-d399-4d3d-a051-89d674ae953c
     sni: ''
     skip-cert-verify: false
-  - name: 俄罗斯
-    type: hysteria2
-    server: gta.internet-card.sbs
-    port: 443
-    password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-    sni: gta.internet-card.sbs
-    skip-cert-verify: true
   - name: '咕 #1'
     type: hysteria2
     server: 47.129.241.226
@@ -410,6 +437,13 @@ proxies:
     port: 443
     password: qQe1z5kU8kN6SlKnDt9Ru3Qp
     sni: vk.com
+    skip-cert-verify: true
+  - name: 🪐31@oneclickvpnkeys
+    type: hysteria2
+    server: 194.87.55.90
+    port: 443
+    password: 4927997d847df94e1cc3f8dd77ce3283
+    sni: api-maps.yandex.ru
     skip-cert-verify: true
   - name: '@Begoo_VPN ²⁹⁰'
     type: hysteria2
@@ -438,6 +472,20 @@ proxies:
     password: 6aab8efdf13945829ae3699c342be406
     sni: fiproxy1.lockdwn.com
     skip-cert-verify: true
+  - name: 🪐44@oneclickvpnkeys
+    type: hysteria2
+    server: 140.238.213.114
+    port: 50160
+    password: 84a506ca5aca505696a454d828420b3f
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 🪐72@oneclickvpnkeys
+    type: hysteria2
+    server: 217.60.33.215
+    port: 443
+    password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+    sni: streambox.wwwinternetvideo.click
+    skip-cert-verify: true
   - name: Telegram 🆔@Cnetvpn 🇺🇲
     type: hysteria2
     server: giftcard.gateway-stream.com
@@ -456,12 +504,37 @@ proxies:
     password: 8z2e26xkqsa598s3
     sni: gift-catalog.aroonia.ir
     skip-cert-verify: true
-  - name: 🛞55@oneclickvpnkeys
+  - name: 🪐33@oneclickvpnkeys
     type: hysteria2
-    server: hys13.wba-pn.ru
+    server: 35.181.166.40
     port: 443
-    password: CnVfXXvMzh
-    sni: ''
+    password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+    sni: vpn-fr-002.fastervpn.world
+    skip-cert-verify: true
+  - name: 🪐91@oneclickvpnkeys
+    type: hysteria2
+    server: 51.15.19.206
+    port: 8443
+    obfs: salamander
+    obfs-password: HysteriaHowdy
+    password: HowdyHysteria2023w0W
+    sni: sni-here.com
+    skip-cert-verify: true
+  - name: 🪐89@oneclickvpnkeys
+    type: hysteria2
+    server: hysteria.udpgw.com
+    port: 8443
+    obfs: salamander
+    obfs-password: HysteriaHowdy
+    password: HowdyHysteria2023w0W
+    sni: sni-here.com
+    skip-cert-verify: true
+  - name: 🪐78@oneclickvpnkeys
+    type: hysteria2
+    server: 85.204.107.171
+    port: 8080
+    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+    sni: hopp-romania-new.roxa.org
     skip-cert-verify: true
   - name: '@v2raybaaz'
     type: hysteria2
@@ -470,34 +543,13 @@ proxies:
     password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
     sni: hopp-romania-new.roxa.org
     skip-cert-verify: true
-  - name: 🛞84@oneclickvpnkeys
+  - name: 🪐79@oneclickvpnkeys
     type: hysteria2
-    server: 85.204.107.177
+    server: 85.204.107.174
     port: 8080
     password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
     sni: hopp-romania-new.roxa.org
     skip-cert-verify: false
-  - name: 🛞83@oneclickvpnkeys
-    type: hysteria2
-    server: 85.204.107.178
-    port: 8080
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    sni: hopp-romania-new.roxa.org
-    skip-cert-verify: true
-  - name: 🛞81@oneclickvpnkeys
-    type: hysteria2
-    server: 85.204.107.181
-    port: 8080
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    sni: hopp-romania-new.roxa.org
-    skip-cert-verify: true
-  - name: 🛞87@oneclickvpnkeys
-    type: hysteria2
-    server: 85.204.107.183
-    port: 8080
-    password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-    sni: hopp-romania-new.roxa.org
-    skip-cert-verify: true
   - name: '@v2raybaaz #1'
     type: hysteria2
     server: 85.204.107.184
@@ -521,7 +573,14 @@ proxies:
     password: KevinZakarian
     sni: 179.61.132.96
     skip-cert-verify: true
-  - name: 🇩🇪179878 | ⚡️Telegram = t.me/S...
+  - name: 🪐40@oneclickvpnkeys
+    type: hysteria2
+    server: 151.247.197.253
+    port: 36723
+    password: Krab9Hyst2_Rk7pQ2xL
+    sni: 151.247.197.253
+    skip-cert-verify: true
+  - name: '@Daily_Configs'
     type: hysteria2
     server: 162.249.125.133
     port: 443
@@ -530,7 +589,7 @@ proxies:
     password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
     sni: hy2-new.aspidnet.xyz
     skip-cert-verify: true
-  - name: 🇩🇪DE_1|3.1MB/s
+  - name: '🇩🇪@FreakConfig #1'
     type: hysteria2
     server: api.ohbah.com
     port: 25287
@@ -539,7 +598,7 @@ proxies:
     password: TELEGRAM-ID-conf0088
     sni: ''
     skip-cert-verify: true
-  - name: 🇩🇪@FreakConfig
+  - name: '🇩🇪@FreakConfig #2'
     type: hysteria2
     server: 168.222.43.35
     port: 443
@@ -566,7 +625,7 @@ proxies:
     password: b4bd0613-ff7c-4f2f-954d-185915e6ddad
     sni: api.kermanshahi.org
     skip-cert-verify: true
-  - name: 'Tel: @Daily_Configs'
+  - name: 🇷🇺@FreakConfig
     type: hysteria2
     server: 144.31.49.138
     port: 443
@@ -575,7 +634,7 @@ proxies:
     password: cd74c0a406664a5bc0bac098220a2468
     sni: ru1.sferavpn.pro
     skip-cert-verify: true
-  - name: 🇩🇪179879 | ⚡️Telegram = t.me/S...
+  - name: 'Channel : @Daily_Configs #1'
     type: hysteria2
     server: 2.27.59.206
     port: 443
@@ -584,14 +643,12 @@ proxies:
     password: cd74c0a406664a5bc0bac098220a2468
     sni: de1.sferavpn.pro
     skip-cert-verify: true
-  - name: 🛞62@oneclickvpnkeys
+  - name: 🪐32@oneclickvpnkeys
     type: hysteria2
-    server: nl1.sferavpn.pro
-    port: 443
-    obfs: salamander
-    obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-    password: cd74c0a406664a5bc0bac098220a2468
-    sni: nl1.sferavpn.pro
+    server: 95.85.252.47
+    port: 9443
+    password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+    sni: onecloudstream.com
     skip-cert-verify: true
   - name: 'Telegram 🆔@Cnetvpn 🇺🇲 #1'
     type: hysteria2
@@ -601,6 +658,13 @@ proxies:
     obfs-password: fuw2k1ddrouwxr3u
     password: fmaznn1lrzys7ddy
     sni: giftcard.gateway-stream.com
+    skip-cert-verify: true
+  - name: 🪐34@oneclickvpnkeys
+    type: hysteria2
+    server: 173.212.201.85
+    port: 443
+    password: gf1
+    sni: www.docker.com
     skip-cert-verify: true
   - name: '✨ @NOFiLTERING2 | ❤️ وصل شدی ج... #1'
     type: hysteria2
@@ -631,6 +695,22 @@ proxies:
     password: s6gt5e4mof43sfg8
     sni: giftcard.gateway-stream.com
     skip-cert-verify: true
+  - name: 🪐88@oneclickvpnkeys
+    type: hysteria2
+    server: 159.223.157.129
+    port: 8443
+    password: suAmQS9LlInNq4Wumh-FUF4GGlpgmG_g
+    sni: ''
+    skip-cert-verify: true
+  - name: 🪐87@oneclickvpnkeys
+    type: hysteria2
+    server: 2.26.97.21
+    port: 8443
+    obfs: salamander
+    obfs-password: 8zzng75tz4tf82pj
+    password: sxc15led4b0vp5fy
+    sni: musicclips.videolinks.ru
+    skip-cert-verify: false
   - name: '@ICV2RAY'
     type: hysteria2
     server: api.ohbah.com
@@ -649,15 +729,6 @@ proxies:
     password: tnnls
     sni: bwdf2fnt.xn--e1aatfr8bwa.online
     skip-cert-verify: true
-  - name: 'V2RayyNGvpn 🇩🇪 #1'
-    type: hysteria2
-    server: 168.222.43.35
-    port: 443
-    obfs: salamander
-    obfs-password: V2RayyNGvpn
-    password: v2rayyngvpn
-    sni: www.bing.com
-    skip-cert-verify: true
   - name: Telegram 🆔@cnetvpn 🇸🇪
     type: hysteria2
     server: giftcard.gateway-stream.com
@@ -666,6 +737,13 @@ proxies:
     obfs-password: fuw2k1ddrouwxr3u
     password: vz86jgszv4zszchv
     sni: giftcard.gateway-stream.com
+    skip-cert-verify: true
+  - name: 🪐52@oneclickvpnkeys
+    type: hysteria2
+    server: 82.38.64.229
+    port: 8443
+    password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+    sni: hopp-swizland-new.mysynology.net
     skip-cert-verify: true
   - name: Telegram 🆔@cnetvpn 🇫🇮
     type: hysteria2
@@ -683,91 +761,17 @@ proxies:
     cipher: aes-256-cfb
     password: amazonskr05
     udp: true
-  - name: 香港2|@ripaojiedian
-    type: ss
-    server: 103.236.66.4
-    port: 10001
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 香港3|@ripaojiedian
-    type: ss
-    server: 112.28.141.77
-    port: 10006
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 香港4|@ripaojiedian
-    type: trojan
-    server: 43.199.146.46
-    port: 2716
-    password: BxceQaOe
-    tls: true
-    sni: t.me/ripaojiedian
+  - name: 🇭🇰 香港|@ripaojiedian
+    type: vmess
+    server: v10.hdacd.com
+    port: 30807
+    uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+    alterId: 2
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
     network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 香港5|@ripaojiedian
-    type: trojan
-    server: 13.215.162.132
-    port: 51391
-    password: BxceQaOe
-    tls: true
-    sni: t.me/ripaojiedian
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 日本|@ripaojiedian
-    type: trojan
-    server: 35.73.128.210
-    port: 3893
-    password: BxceQaOe
-    tls: true
-    sni: t.me/ripaojiedian
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 日本2|@ripaojiedian
-    type: ss
-    server: 103.236.66.4
-    port: 40001
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 日本3|@ripaojiedian
-    type: ss
-    server: 103.236.66.4
-    port: 40002
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 新加坡3|@ripaojiedian
-    type: trojan
-    server: 54.251.190.150
-    port: 41142
-    password: BxceQaOe
-    tls: true
-    sni: t.me/ripaojiedian
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 美国|@ripaojiedian
-    type: ss
-    server: 103.236.66.4
-    port: 50001
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 美国2|@ripaojiedian
-    type: ss
-    server: 103.236.66.4
-    port: 50003
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
     udp: true
   - name: 美国3|@ripaojiedian
     type: trojan
@@ -780,125 +784,119 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 台湾|@ripaojiedian
-    type: ss
-    server: 36.33.35.105
-    port: 30001
-    cipher: aes-256-gcm
-    password: Butterfly123@qwe9527
-    udp: true
-  - name: 🇫🇮FI_1|2.8MB/s
-    type: vless
-    server: c5b47b423412e973.fn-1.globalmymusic.com
+  - name: 印尼
+    type: vmess
+    server: 24864168545164.oylfmxz.cn
     port: 443
-    uuid: fcc64e6f-bdcd-471a-a2d4-27c757578070
+    uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+    alterId: 0
+    cipher: auto
     tls: true
-    servername: nr6.nl
-    network: tcp
-    tfo: false
+    servername: 24864168545164.oylfmxz.cn
     skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 🇰🇷KR_1|1.3MB/s
-    type: vless
-    server: 123.111.169.70
-    port: 2096
-    uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
-    tls: true
-    servername: mia12.pages.dev
-    network: ws
-    ws-opts:
-      path: /TG:@MiaChatChannelfp=chrome
-      headers:
-        host: mia12.pages.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇵🇱PL_1|1.3MB/s
-    type: vless
-    server: 194.93.63.246
-    port: 443
-    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-    tls: true
-    servername: pl.bubahero.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 🇺🇸US_1|1.2MB/s
-    type: vless
-    server: cb7144e9e019ff74.us-1.globalmymusic.com
-    port: 443
-    uuid: fcc64e6f-bdcd-471a-a2d4-27c757578070
-    tls: true
-    servername: thestraightpath.ca
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision-udp443
-  - name: 🇩🇪DE_2|1.3MB/s
-    type: vless
-    server: 5.75.202.116
-    port: 21349
-    uuid: 2789c2ec-d860-4b75-a614-49e8ab65f7bc
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇷FR_1|1.0MB/s
-    type: trojan
-    server: 172.67.221.242
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸US_4|3.6MB/s
-    type: vless
-    server: openai.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    servername: ''
     network: ws
     ws-opts:
       path: /
       headers:
-        host: llm-api.sofurry.dpdns.org
-    tfo: false
-    skip-cert-verify: false
+        host: 24864168545164.oylfmxz.cn
     udp: true
-  - name: 🇸🇪SE_1|3.0MB/s
+  - name: 🇭🇰 香港2|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36602
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇭🇰 香港3|@ripaojiedian
+    type: ss
+    server: gd2.bjnet2.com
+    port: 36602
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇨🇳 台湾|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36603
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇸🇬 新加坡|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36604
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇯🇵 日本|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36609
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇺🇸 美国2-IEPL-GPT
+    type: ss
+    server: gd2.bjnet2.com
+    port: 36608
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇺🇸 美国|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36608
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+  - name: 🇸🇪SE_1|1.7MB/s
+    type: hysteria2
+    server: se-node.rumedia-cdn.com
+    port: 25443
+    password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+    sni: cf2.rumedia-cdn.com
+    skip-cert-verify: true
+  - name: 🇺🇸US_1|2.7MB/s
     type: vless
-    server: 161.104.38.98
+    server: 172.67.212.14
     port: 443
-    uuid: 256c5e3e-431d-002f-bed4-bfcf1334f64b
+    uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
     tls: true
-    servername: donatov.net
-    network: tcp
+    servername: 8-m19.souTh-afRiCA-ONLinE.CcwU.CC
+    network: ws
+    ws-opts:
+      path: /CjBjB9sn5pCvaSwSccfp=chrome
+      headers:
+        host: 8-m19.SoUth-AFriCa-onlInE.cCwU.cC
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇵🇱PL_4|2.6MB/s
+  - name: 🇫🇷FR_1|2.5MB/s
+    type: hysteria2
+    server: 62.210.7.139
+    port: 60111
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 🇯🇵JP_1|2.2MB/s
+    type: hysteria2
+    server: msjp1.mangshe.xyz
+    port: 20561
+    password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+    sni: www.microsoft.com
+    skip-cert-verify: true
+  - name: 🇵🇱PL_2|1.1MB/s
     type: vless
-    server: 46.243.142.42
-    port: 7443
-    uuid: 65cd649c-f2f5-49c4-8f57-94d9b706e846
+    server: d1-pl.cloud-cdn.xyz
+    port: 443
+    uuid: a0248c3b-b631-4ada-b8d6-e2f6af2986d0
     tls: true
-    servername: shprcdn.homes
+    servername: d1-pl.cloud-cdn.xyz
     network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
+    flow: xtls-rprx-vision-udp443
   - name: US_speednode_0130
     type: vless
     server: 38.244.4.1
@@ -1007,205 +1005,148 @@ proxies:
     skip-cert-verify: true
     udp: true
     flow: xtls-rprx-vision-udp443
-  - name: 🇦🇹 奥地利 | AUT
+  - name: 美国|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36608
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 新加坡|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36604
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 台湾|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36603
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 香港2|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36602
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 香港3|@ripaojiedian
+    type: ss
+    server: gd2.bjnet2.com
+    port: 36602
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 日本|@ripaojiedian
+    type: ss
+    server: gd.bjnet2.com
+    port: 36609
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 🇺🇸美国2-IEPL-GPT
+    type: ss
+    server: gd2.bjnet2.com
+    port: 36608
+    cipher: aes-128-gcm
+    password: 17b70f72-fc4f-41a7-a32f-e0bbad7d1400
+    udp: true
+    plugin: obfs-local
+    plugin-opts:
+      mode: http
+      host: 3c183f1f4eae079d708e817ae656417a.baidu.com
+  - name: 🇧🇪 比利时 | BEL
     type: vless
-    server: g2.haxat.bestvbest.ir
-    port: 20610
-    uuid: 8ec5d86b-d895-477d-bc96-21fa01049f2f
+    server: 150.251.143.3
+    port: 16857
+    uuid: 44ff6d71-319e-4bcb-a956-58d31290e45b
     tls: true
     client-fingerprint: chrome
-    servername: cdn-apple.com
+    servername: image.semiconductor.samsung.com
     network: tcp
     reality-opts:
-      public-key: lcXIrYi2o8yXrYHR321qQ--5lqVT8a6TKbaGpYTq4CI
-      short-id: 1d1a8f9fefeff5e6
+      public-key: lB6OaYmyeYYrTWzaE3U4Elp0TayJt4136HcLfnrdFQ0
+      short-id: '31'
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇨🇦 加拿大 | CAN
-    type: vless
-    server: 147.182.151.199
-    port: 11186
-    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-    tls: false
-    servername: ''
-    network: http
-    tfo: false
-    skip-cert-verify: false
-    udp: true
+    flow: xtls-rprx-vision
   - name: 🇩🇪 德国 | DEU
     type: vless
-    server: 31.76.249.44
-    port: 443
-    uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
+    server: speedtest.org
+    port: 2053
+    uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
     tls: true
-    client-fingerprint: chrome
-    servername: www.akamai.com
-    network: tcp
-    reality-opts:
-      public-key: gydLdekl4sNcE2j7vueKJJhpYWTBxlGs_VQ6-ZH55iQ
+    servername: tlpsoa.vqok.ir
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: tlpsoa.vqok.ir
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
   - name: 🇩🇪 德国 | DEU 2
-    type: vless
-    server: 2.26.252.61
+    type: trojan
+    server: 45.80.111.7
     port: 443
-    uuid: 61da8f4b-6ab1-4ca7-bae0-1cec4f9be2f8
+    password: humanity
     tls: true
-    client-fingerprint: chrome
-    servername: cdn.jsdelivr.net
+    sni: www.calmlunch.com
     network: tcp
-    reality-opts:
-      public-key: gMkxxxFo7F0gLBe93tRyfDKFSH0YlfTFPd7X-fHfJ1s
-      short-id: abcded1950c35dcc
     tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 德国 | DEU 3
-    type: hysteria2
-    server: 168.222.43.35
-    port: 443
-    obfs: salamander
-    obfs-password: salamander
-    password: V2RayyNGvpn
-    sni: Play.google.com
     skip-cert-verify: true
-  - name: 🇩🇪 德国 | DEU 4
+    udp: true
+  - name: 🇩🇪 德国 | DEU 3
     type: vless
-    server: 138.124.121.233
+    server: 162.159.140.85
     port: 443
-    uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    client-fingerprint: chrome
-    servername: amd.com
-    network: tcp
-    reality-opts:
-      public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-      short-id: a696de84963656de
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇩🇪 德国 | DEU 5
-    type: vless
-    server: 207.154.208.81
-    port: 11186
-    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
-    tls: false
-    servername: ''
-    network: http
-    tfo: false
-    skip-cert-verify: false
+  - name: 🇩🇪 德国 | DEU 4
+    type: ss
+    server: creativeboxfin.zanity.net
+    port: 5223
+    cipher: chacha20-ietf-poly1305
+    password: xXsl5l3ZfdG9zRWGkkft1j
     udp: true
   - name: 🇫🇷 法国 | FRA
-    type: vless
-    server: 77.110.104.125
-    port: 8443
-    uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-    tls: true
-    client-fingerprint: chrome
-    servername: maps.apple.com
-    network: grpc
-    reality-opts:
-      public-key: OMlQAFrCMZ3DX0xlnbEZiByLBFzpUE8XJHJsrBzLdlY
-      short-id: 2da4299da566b7
-    grpc-opts:
-      grpc-service-name: ''
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇷 法国 | FRA 2
-    type: trojan
-    server: 104.16.174.121
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 3
-    type: trojan
-    server: 104.18.152.77
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 4
-    type: trojan
-    server: 104.21.8.107
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 5
-    type: trojan
-    server: 86.38.214.205
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 6
-    type: trojan
-    server: 104.16.174.117
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 7
-    type: trojan
-    server: 104.16.174.46
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 8
-    type: trojan
-    server: 104.16.174.72
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 9
-    type: trojan
-    server: 172.67.221.242
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇫🇷 法国 | FRA 10
     type: trojan
     server: 104.18.152.97
     port: 443
@@ -1216,9 +1157,9 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇫🇷 法国 | FRA 11
+  - name: 🇫🇷 法国 | FRA 2
     type: trojan
-    server: 104.18.15.230
+    server: 104.18.152.50
     port: 443
     password: humanity
     tls: true
@@ -1227,144 +1168,146 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇫🇷 法国 | FRA 12
-    type: vless
-    server: fra2.loozerp.wiki
+  - name: 🇫🇷 法国 | FRA 3
+    type: trojan
+    server: 104.16.174.33
     port: 443
-    uuid: f495298f-2bdb-4fd8-9ac9-5dd33d1b482a
+    password: humanity
     tls: true
-    client-fingerprint: chrome
-    servername: fra2.loozerp.wiki
+    sni: www.ignitelimit.com
     network: tcp
-    reality-opts:
-      public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-      short-id: ff776ff77be48b88
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-    flow: xtls-rprx-vision
+  - name: 🇫🇷 法国 | FRA 4
+    type: trojan
+    server: 104.16.174.121
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇫🇷 法国 | FRA 5
+    type: trojan
+    server: 104.18.152.219
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
   - name: 🇬🇧 英国 | GBR
     type: vless
-    server: 66.90.105.211
-    port: 2083
-    uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+    server: vn74kujn.selqora.ir
+    port: 51595
+    uuid: 94459532-f38d-40a2-9bbe-74deb93b3a22
     tls: false
     servername: ''
-    network: grpc
-    grpc-opts:
-      grpc-service-name: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇬🇧 英国 | GBR 2
+    type: vless
+    server: 18.135.254.77
+    port: 22223
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇬🇧 英国 | GBR 3
     type: ss
-    server: 129.151.75.161
+    server: 144.24.231.161
     port: 61312
     cipher: 2022-blake3-chacha20-poly1305
-    password: HtWG23QPL9XJw6cFok28NcS5EfPs4ufTNqnzYQr7k8c=
+    password: MVpdGZDDUTWwOb5S96x+CeotQ55Jfrhf8TGdD65wEv0=
+    udp: true
+  - name: 🇬🇧 英国 | GBR 4
+    type: ss
+    server: 129.151.66.29
+    port: 61312
+    cipher: 2022-blake3-chacha20-poly1305
+    password: ynimyaH7xURtsxq5gIGo/UpaTNIslRReaWGE1btx+4A=
+    udp: true
+  - name: 🇬🇧 英国 | GBR 5
+    type: vless
+    server: 18.135.254.77
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇬🇧 英国 | GBR 6
+    type: vless
+    server: 188.166.146.136
+    port: 11186
+    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+    tls: false
+    servername: ''
+    network: http
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 🇭🇰 香港 | HKG
     type: vless
-    server: 45.207.157.136
+    server: 141.11.149.89
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇭🇰 香港 | HKG 2
+  - name: 🇮🇱 以色列 | ISR
     type: vless
-    server: 45.207.156.204
+    server: fserver-worker-001.mapleridgeway.top
     port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    uuid: 83b4af70-376e-427c-8c11-a025bec6b085
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: fserver-worker-001.mapleridgeway.top
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /cdn/99294c014f2c7791?ed=2056
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰 香港 | HKG 3
-    type: vless
-    server: 45.207.156.69
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰 香港 | HKG 4
-    type: vless
-    server: 45.8.186.20
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰 香港 | HKG 5
-    type: vless
-    server: 16.163.174.115
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: fserver-worker-001.mapleridgeway.top
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇯🇵 日本 | JPN
-    type: vless
-    server: 18.166.216.113
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    tfo: false
-    skip-cert-verify: false
-    udp: true
+    type: hysteria2
+    server: open.2ml.cc.cd
+    port: 5443
+    password: my_super_password_123
+    sni: ''
+    skip-cert-verify: true
   - name: 🇯🇵 日本 | JPN 2
     type: vless
-    server: 45.202.255.219
+    server: cf.3666888.xyz
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -1385,343 +1328,450 @@ proxies:
     udp: true
     flow: xtls-rprx-vision
   - name: 🇳🇱 荷兰 | NLD
+    type: ss
+    server: 84.235.183.181
+    port: 45819
+    cipher: 2022-blake3-chacha20-poly1305
+    password: hwsOUex03cMr2ldIKYMl6U62jMRDnlv6HyQOCe3WAdI=
+    udp: true
+  - name: 🇳🇱 荷兰 | NLD 2
     type: vless
-    server: lc.gtunnel.co
-    port: 443
-    uuid: 8715c0e4-7936-4e3d-a41f-6cd4c80d6fc7
+    server: 188.114.97.3
+    port: 2096
+    uuid: 50414e45-4c5f-5a45-5553-6f51879c0594
     tls: true
-    client-fingerprint: chrome
-    servername: lc.gtunnel.co
-    network: tcp
-    reality-opts:
-      public-key: PaK5c5KT3BpGNpSBoLyF6RAmDzDQWtHBNo3DVqs5TzI
-      short-id: cb6e881071f5e11b
+    servername: levikoconfig.levikogjgfdd.ir
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: levikoconfig.levikogjgfdd.ir
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 🇳🇱 荷兰 | NLD 3
+    type: hysteria2
+    server: 77.74.123.99
+    port: 8443
+    password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+    sni: grape-test-italy.dynuddns.net
+    skip-cert-verify: true
   - name: 🇵🇱 波兰 | POL
     type: vless
-    server: 2.26.173.70
+    server: d1-pl.cloud-cdn.xyz
     port: 443
-    uuid: 974f2c7e-a292-4207-8315-ef4151bdca41
+    uuid: a0248c3b-b631-4ada-b8d6-e2f6af2986d0
     tls: true
     client-fingerprint: chrome
-    servername: poland.travel
+    servername: d1-pl.cloud-cdn.xyz
     network: tcp
     reality-opts:
-      public-key: TIKEWdxQBblFGWMQmQWserNef8P1rqJCfCLLi-KB32s
+      public-key: nFJCJ2tvxLdLrc9G-O1laW8KDir5SDnaOTmYndVaOGQ
+      short-id: 7a3f9e2b1c8d4f6a
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
   - name: 🇵🇱 波兰 | POL 2
     type: vless
-    server: 45.198.0.98
-    port: 1337
-    uuid: 94dd5fa3-ce24-4b16-8534-2e6b64a97087
+    server: pl.bubahero.com
+    port: 443
+    uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
     tls: true
     client-fingerprint: chrome
-    servername: www.booking.com
+    servername: pl.bubahero.com
     network: tcp
     reality-opts:
-      public-key: tm-eZylkXA8308bx_Gik886Gfc2uMVrjs-4SVVZlMUI
-      short-id: d774703ebee04d5f
+      public-key: GmZv3anSeAeHr_cMFKr-6MPLli-nyKNatnY6P3AFK00
+      short-id: 9c2378562188c3cb
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇸🇪 瑞典 | SWE
+  - name: 🇵🇱 波兰 | POL 3
     type: vless
-    server: surstreming.vvzzkontaktezzvv.garden
-    port: 443
-    uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+    server: 45.140.204.34
+    port: 8443
+    uuid: a56a3bda-e89a-4182-a671-a1858bb0f47c
     tls: true
     client-fingerprint: chrome
-    servername: surstreming.vvzzkontaktezzvv.garden
-    network: tcp
-    reality-opts:
-      public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
-      short-id: fb442438e2223836
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇸🇪 瑞典 | SWE 2
-    type: vless
-    server: 161.104.38.98
-    port: 443
-    uuid: 256c5e3e-431d-002f-bed4-bfcf1334f64b
-    tls: true
-    client-fingerprint: chrome
-    servername: donatov.net
+    servername: web.max.ru
     network: xhttp
     reality-opts:
-      public-key: kYwdZueXQt_DEKPrWTw8yoj6G4AWqupg8UrWjAgWbkE
-      short-id: 8ba6e72ee60667f6
+      public-key: N4UtYAhibzkb0n_U2Qmqze5-lZMQqDozqg7OCqvufGA
+      short-id: 7c8e3d4a9b1f26d3
     tfo: false
     skip-cert-verify: false
+    udp: true
+  - name: 🇷🇺 俄罗斯 | RUS
+    type: hysteria2
+    server: 77.110.104.238
+    port: 443
+    password: 5413edfb-08d6-4fba-b51c-809c04feb127
+    sni: ch2-hy2.veilvpn.life
+    skip-cert-verify: true
+  - name: 🇸🇪 瑞典 | SWE
+    type: ss
+    server: 51.20.86.152
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: 🇸🇪 瑞典 | SWE 2
+    type: ss
+    server: 13.51.242.39
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
+    udp: true
+  - name: 🇸🇪 瑞典 | SWE 3
+    type: ss
+    server: 51.20.122.188
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
     udp: true
   - name: 🇸🇬 新加坡 | SGP
     type: vless
-    server: 104.18.40.77
+    server: 163.128.99.14
     port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    uuid: bda35755-c838-49c3-a19e-3712f2d54275
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    client-fingerprint: chrome
+    servername: www.apple.com
+    network: tcp
+    reality-opts:
+      public-key: '-LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0'
+      short-id: e3a4bdfe3d6fd8ec
     tfo: false
     skip-cert-verify: false
     udp: true
+    flow: xtls-rprx-vision
   - name: 🇸🇬 新加坡 | SGP 2
-    type: ss
-    server: 168.107.84.176
-    port: 56927
-    cipher: 2022-blake3-chacha20-poly1305
-    password: zfRw8qHR5DsiUSSiFqxRnNjXZ0/oOyLeNKOqv5VW0PM=
-    udp: true
-  - name: 🇸🇬 新加坡 | SGP 3
     type: vless
-    server: 13.212.102.10
+    server: 104.18.33.145
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬 新加坡 | SGP 3
+    type: vless
+    server: 162.159.43.187
+    port: 2086
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇸🇬 新加坡 | SGP 4
-    type: ss
-    server: 158.178.229.235
-    port: 56927
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 4nphreJpAUpxvkVQmO2l37kEup8qRu7pcSYU0JbJLVM=
+    type: vless
+    server: 185.81.28.39
+    port: 443
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: true
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 🇸🇬 新加坡 | SGP 5
     type: vless
-    server: 43.160.241.174
+    server: 172.64.145.38
     port: 443
-    uuid: 3db635e4-f9ec-42d6-8aba-e23df8b0e6da
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: mia11.pages.dev
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
-      path: /TG:@MiaChatChannel
+      path: /?ed=2560
       headers:
-        host: mia11.pages.dev
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇸🇬 新加坡 | SGP 6
     type: vless
-    server: 104.18.46.254
+    server: 185.81.28.101
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA
-    type: trojan
-    server: 104.18.22.63
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 2
-    type: ss
-    server: 18.234.148.112
-    port: 443
-    cipher: aes-256-cfb
-    password: amazonskr05
-    udp: true
-  - name: 🇺🇸 美国 | USA 3
-    type: trojan
-    server: 104.16.174.12
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 4
+  - name: 🇸🇬 新加坡 | SGP 7
     type: vless
-    server: 104.17.114.126
+    server: 172.64.156.76
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇬 新加坡 | SGP 8
+    type: vless
+    server: 163.128.99.57
+    port: 443
+    uuid: 1a049739-b873-4242-9a2b-239951eb2dd3
+    tls: true
+    client-fingerprint: chrome
+    servername: www.apple.com
+    network: tcp
+    reality-opts:
+      public-key: 4S52pKhsJA4gK-_MLW8_R8TTeZsS4pH7ef6St-aKVBQ
+      short-id: ab1df8505f6e0072
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇸🇬 新加坡 | SGP 9
+    type: vless
+    server: 172.64.156.99
+    port: 443
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: true
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇹🇷 土耳其 | TUR
+    type: vless
+    server: gameeeeeig1.ark-cloudservice.ir
+    port: 39484
+    uuid: 187ac39f-f966-4cd7-846c-799f43b940a7
+    tls: true
+    client-fingerprint: chrome
+    servername: snapp.ir
+    network: xhttp
+    reality-opts:
+      public-key: WnCje_Ih3BNXYjiIHmLQ6OzdPFmSAor8LnBg8we4szE
+      short-id: 2f0adfb96ffcb71b
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇦 乌克兰 | UKR
+    type: vless
+    server: 13.143.170.24
+    port: 2096
+    uuid: 04e22546-96b6-4d43-8301-c098d822789b
+    tls: true
+    servername: maple-press.justext.space
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 🇺🇸 美国 | USA
+    type: vless
+    server: 172.67.142.235
+    port: 443
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+    tls: true
+    servername: 1.I0-4.de5.Net
+    network: ws
+    ws-opts:
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
+      headers:
+        host: 1.i0-4.De5.nEt
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 2
+    type: vless
+    server: 104.21.9.194
+    port: 443
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+    tls: true
+    servername: OoOO.huanGshanG.HidNS.CO
+    network: ws
+    ws-opts:
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
+      headers:
+        host: OooO.huanGSHang.HIDns.co
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 3
+    type: vless
+    server: 172.64.229.170
+    port: 80
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /?ed=2560security=tls
+      headers:
+        host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 4
+    type: vless
+    server: 172.67.210.12
+    port: 443
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
+    tls: true
+    servername: rR.i0-0.De5.NEt
+    network: ws
+    ws-opts:
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
+      headers:
+        host: Rr.i0-0.De5.NeT
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 5
     type: vless
-    server: 179.253.233.128
-    port: 8443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    server: 172.67.189.137
+    port: 443
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: Cc.huAnGshANg.hIDNs.cO
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: CC.HUangSHANG.HIdNs.cO
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 6
-    type: trojan
-    server: 104.17.111.4
+    type: vless
+    server: 104.21.43.13
     port: 443
-    password: humanity
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
     tls: true
-    sni: www.ignitelimit.com
-    network: tcp
+    servername: 0.i0-6.dE5.NEt
+    network: ws
+    ws-opts:
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
+      headers:
+        host: 0.I0-6.de5.neT
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 7
     type: vless
-    server: ln.edu.hk
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
-    network: ws
-    ws-opts:
-      path: /?ed=2560
-      headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    server: 146.190.72.139
+    port: 11186
+    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 8
     type: vless
-    server: 104.17.220.227
-    port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-    tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    server: 172.67.143.139
+    port: 8080
+    uuid: 18907dc3-7e4c-476f-9ed8-b360db563bf9
+    tls: false
+    servername: ''
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: >-
+        /eyJqdW5rIjoiN3FOeFprWFkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyYTAyOjg5ODoxNDY6NjQ6Ol0iXX0=
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: server8.faway91418.workers.dev
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 9
-    type: trojan
-    server: 104.16.174.34
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 10
     type: vless
-    server: 104.17.69.244
+    server: 179.253.233.235
     port: 443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 10
+    type: vless
+    server: 104.17.152.114
+    port: 443
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: true
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇺🇸 美国 | USA 11
-    type: trojan
-    server: 104.16.174.33
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 12
-    type: trojan
-    server: www.speedtest.net
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 13
-    type: trojan
-    server: 104.18.152.155
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 14
     type: vless
-    server: 104.16.110.90
+    server: 172.67.215.180
     port: 443
-    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    uuid: 62e499fe-458e-47da-a0c8-cae69144ebe9
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2.i0-6.de5.Net
     network: ws
     ws-opts:
-      path: /?ed=2560
+      path: /FbLtzaav4GSW7GPL6LUGsEkZ
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2.I0-6.DE5.neT
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 15
-    type: trojan
-    server: 104.16.174.185
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
+  - name: 🇺🇸 美国 | USA 12
+    type: hysteria2
+    server: pq.us2.globals-download.com
+    port: 35000
+    password: b07db61f-a207-4508-97f5-68182991c2d6
+    sni: www.apple.com
     skip-cert-verify: true
+  - name: 🇺🇸 美国 | USA 13
+    type: ss
+    server: 18.205.21.144
+    port: 443
+    cipher: aes-256-cfb
+    password: amazonskr05
     udp: true
-  - name: 🇺🇸 美国 | USA 16
+  - name: 🇺🇸 美国 | USA 14
     type: trojan
     server: 104.26.14.137
     port: 443
@@ -1732,107 +1782,66 @@ proxies:
     tfo: false
     skip-cert-verify: true
     udp: true
-  - name: 🇺🇸 美国 | USA 17
+  - name: 🇺🇸 美国 | USA 15
     type: vless
-    server: blog.cloudflare.com
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    servername: ''
+    server: 162.159.192.192
+    port: 443
+    uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+    tls: true
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
-      path: /
+      path: /?ed=2560
       headers:
-        host: llm-api.sofurry.dpdns.org
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 18
+  - name: 🇺🇸 美国 | USA 16
     type: vless
-    server: 162.243.210.25
-    port: 11186
-    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+    server: UsaNewSpeed1234554321.soft355.ir
+    port: 33017
+    uuid: a54166f2-56c7-44f6-abc5-24dbed940bc3
     tls: false
     servername: ''
     network: http
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 19
+  - name: 🇺🇸 美国 | USA 17
     type: vless
-    server: www.whatismyip.net
-    port: 2095
-    uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: llm-api.sofurry.dpdns.org
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 | USA 20
-    type: vless
-    server: adheres-scruple.quick-cdn.net
-    port: 443
-    uuid: c9ff358e-20c4-4979-bc14-acc3daaf1297
-    tls: true
-    servername: adheres-scruple.quick-cdn.net
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        host: adheres-scruple.quick-cdn.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 | USA 21
-    type: trojan
-    server: 104.18.152.149
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 22
-    type: trojan
-    server: render.com
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 23
-    type: trojan
-    server: 104.18.152.179
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.ignitelimit.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 🇺🇸 美国 | USA 24
-    type: vless
-    server: 104.16.65.1
-    port: 443
+    server: 179.255.148.157
+    port: 8443
     uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
     tls: true
-    servername: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+    servername: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
     network: ws
     ws-opts:
       path: /?ed=2560
       headers:
-        host: htu3i.bvjs.u2n.hh.vavava.kdns.fr
+        host: 2ymxf.st3o.5o7.hh.vavava.kdns.fr
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 18
+    type: trojan
+    server: 104.17.177.143
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.ignitelimit.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸 美国 | USA 19
+    type: vless
+    server: 161.35.187.182
+    port: 11186
+    uuid: fd4b654f-9ae2-42c5-977b-6aa54e8e9a83
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -1842,7 +1851,6 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -1852,6 +1860,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -1859,12 +1868,15 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国 2
-      - 🇭🇰_HK_中国香港
+      - 🇹🇼_TW_中国台湾
       - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国
       - 🇺🇸_US_美国 2
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国 3
+      - 🇺🇸_US_美国 4
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 防范境外势力渗透
       - '防范境外势力渗透 #1'
       - '防范境外势力渗透 #2'
@@ -1883,62 +1895,62 @@ proxy-groups:
       - 嘎
       - '@KAFING_2'
       - '嘎嘎 #1'
-      - 俄罗斯
       - '咕 #1'
       - 🇺🇸139909 | ⚡️Telegram = t.me/S...
+      - 🪐31@oneclickvpnkeys
       - '@Begoo_VPN ²⁹⁰'
       - Telegram 🆔@cnetvpn 🇷🇺
       - ✨ @NOFiLTERING2 | ❤️ وصل شدی ج...
+      - 🪐44@oneclickvpnkeys
+      - 🪐72@oneclickvpnkeys
       - Telegram 🆔@Cnetvpn 🇺🇲
       - Telegram 🆔@cnetvpn 🇩🇪
-      - 🛞55@oneclickvpnkeys
+      - 🪐33@oneclickvpnkeys
+      - 🪐91@oneclickvpnkeys
+      - 🪐89@oneclickvpnkeys
+      - 🪐78@oneclickvpnkeys
       - '@v2raybaaz'
-      - 🛞84@oneclickvpnkeys
-      - 🛞83@oneclickvpnkeys
-      - 🛞81@oneclickvpnkeys
-      - 🛞87@oneclickvpnkeys
+      - 🪐79@oneclickvpnkeys
       - '@v2raybaaz #1'
       - '@v2raybaaz #2'
       - 🩵+@Azarakhsh_Proxy+🩷
-      - 🇩🇪179878 | ⚡️Telegram = t.me/S...
-      - 🇩🇪DE_1|3.1MB/s
-      - 🇩🇪@FreakConfig
+      - 🪐40@oneclickvpnkeys
+      - '@Daily_Configs'
+      - '🇩🇪@FreakConfig #1'
+      - '🇩🇪@FreakConfig #2'
       - 🇳🇱 - NL - @FreeOnlineVPN
       - '@KAFING_2 #2'
-      - 'Tel: @Daily_Configs'
-      - 🇩🇪179879 | ⚡️Telegram = t.me/S...
-      - 🛞62@oneclickvpnkeys
+      - 🇷🇺@FreakConfig
+      - 'Channel : @Daily_Configs #1'
+      - 🪐32@oneclickvpnkeys
       - 'Telegram 🆔@Cnetvpn 🇺🇲 #1'
+      - 🪐34@oneclickvpnkeys
       - '✨ @NOFiLTERING2 | ❤️ وصل شدی ج... #1'
       - 🇱🇻hysteria
       - Telegram 🆔@cnetvpn 🇳🇱
+      - 🪐88@oneclickvpnkeys
+      - 🪐87@oneclickvpnkeys
       - '@ICV2RAY'
       - '@fastkanfig کانال تلگرام'
-      - 'V2RayyNGvpn 🇩🇪 #1'
       - Telegram 🆔@cnetvpn 🇸🇪
+      - 🪐52@oneclickvpnkeys
       - Telegram 🆔@cnetvpn 🇫🇮
       - tg频道:@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
-      - 香港5|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 新加坡3|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 🇫🇮FI_1|2.8MB/s
-      - 🇰🇷KR_1|1.3MB/s
-      - 🇵🇱PL_1|1.3MB/s
-      - 🇺🇸US_1|1.2MB/s
-      - 🇩🇪DE_2|1.3MB/s
-      - 🇫🇷FR_1|1.0MB/s
-      - 🇺🇸US_4|3.6MB/s
-      - 🇸🇪SE_1|3.0MB/s
-      - 🇵🇱PL_4|2.6MB/s
+      - 印尼
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇺🇸 美国2-IEPL-GPT
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇪SE_1|1.7MB/s
+      - 🇺🇸US_1|2.7MB/s
+      - 🇫🇷FR_1|2.5MB/s
+      - 🇯🇵JP_1|2.2MB/s
+      - 🇵🇱PL_2|1.1MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -1948,46 +1960,55 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 🇦🇹 奥地利 | AUT
-      - 🇨🇦 加拿大 | CAN
+      - 美国|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 台湾|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - 香港3|@ripaojiedian
+      - 日本|@ripaojiedian
+      - 🇺🇸美国2-IEPL-GPT
+      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇩🇪 德国 | DEU 5
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
+      - 🇬🇧 英国 | GBR 3
+      - 🇬🇧 英国 | GBR 4
+      - 🇬🇧 英国 | GBR 5
+      - 🇬🇧 英国 | GBR 6
       - 🇭🇰 香港 | HKG
-      - 🇭🇰 香港 | HKG 2
-      - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
+      - 🇮🇱 以色列 | ISR
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
+      - 🇳🇱 荷兰 | NLD 3
       - 🇵🇱 波兰 | POL
       - 🇵🇱 波兰 | POL 2
+      - 🇵🇱 波兰 | POL 3
+      - 🇷🇺 俄罗斯 | RUS
       - 🇸🇪 瑞典 | SWE
       - 🇸🇪 瑞典 | SWE 2
+      - 🇸🇪 瑞典 | SWE 3
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
       - 🇸🇬 新加坡 | SGP 4
       - 🇸🇬 新加坡 | SGP 5
       - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
+      - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -2007,23 +2028,21 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
-      - 🇺🇸 美国 | USA 22
-      - 🇺🇸 美国 | USA 23
-      - 🇺🇸 美国 | USA 24
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 🇺🇸_US_美国
-      - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国 2
-      - 🇭🇰_HK_中国香港
+      - 🇹🇼_TW_中国台湾
       - 🇨🇳_CN_中国
+      - 🇺🇸_US_美国
       - 🇺🇸_US_美国 2
+      - 🇩🇪_DE_德国
+      - 🇺🇸_US_美国 3
+      - 🇺🇸_US_美国 4
+      - 🇭🇰_HK_中国香港
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 防范境外势力渗透
       - '防范境外势力渗透 #1'
       - '防范境外势力渗透 #2'
@@ -2042,62 +2061,62 @@ proxy-groups:
       - 嘎
       - '@KAFING_2'
       - '嘎嘎 #1'
-      - 俄罗斯
       - '咕 #1'
       - 🇺🇸139909 | ⚡️Telegram = t.me/S...
+      - 🪐31@oneclickvpnkeys
       - '@Begoo_VPN ²⁹⁰'
       - Telegram 🆔@cnetvpn 🇷🇺
       - ✨ @NOFiLTERING2 | ❤️ وصل شدی ج...
+      - 🪐44@oneclickvpnkeys
+      - 🪐72@oneclickvpnkeys
       - Telegram 🆔@Cnetvpn 🇺🇲
       - Telegram 🆔@cnetvpn 🇩🇪
-      - 🛞55@oneclickvpnkeys
+      - 🪐33@oneclickvpnkeys
+      - 🪐91@oneclickvpnkeys
+      - 🪐89@oneclickvpnkeys
+      - 🪐78@oneclickvpnkeys
       - '@v2raybaaz'
-      - 🛞84@oneclickvpnkeys
-      - 🛞83@oneclickvpnkeys
-      - 🛞81@oneclickvpnkeys
-      - 🛞87@oneclickvpnkeys
+      - 🪐79@oneclickvpnkeys
       - '@v2raybaaz #1'
       - '@v2raybaaz #2'
       - 🩵+@Azarakhsh_Proxy+🩷
-      - 🇩🇪179878 | ⚡️Telegram = t.me/S...
-      - 🇩🇪DE_1|3.1MB/s
-      - 🇩🇪@FreakConfig
+      - 🪐40@oneclickvpnkeys
+      - '@Daily_Configs'
+      - '🇩🇪@FreakConfig #1'
+      - '🇩🇪@FreakConfig #2'
       - 🇳🇱 - NL - @FreeOnlineVPN
       - '@KAFING_2 #2'
-      - 'Tel: @Daily_Configs'
-      - 🇩🇪179879 | ⚡️Telegram = t.me/S...
-      - 🛞62@oneclickvpnkeys
+      - 🇷🇺@FreakConfig
+      - 'Channel : @Daily_Configs #1'
+      - 🪐32@oneclickvpnkeys
       - 'Telegram 🆔@Cnetvpn 🇺🇲 #1'
+      - 🪐34@oneclickvpnkeys
       - '✨ @NOFiLTERING2 | ❤️ وصل شدی ج... #1'
       - 🇱🇻hysteria
       - Telegram 🆔@cnetvpn 🇳🇱
+      - 🪐88@oneclickvpnkeys
+      - 🪐87@oneclickvpnkeys
       - '@ICV2RAY'
       - '@fastkanfig کانال تلگرام'
-      - 'V2RayyNGvpn 🇩🇪 #1'
       - Telegram 🆔@cnetvpn 🇸🇪
+      - 🪐52@oneclickvpnkeys
       - Telegram 🆔@cnetvpn 🇫🇮
       - tg频道:@ripaojiedian
-      - 香港2|@ripaojiedian
-      - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
-      - 香港5|@ripaojiedian
-      - 日本|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 日本3|@ripaojiedian
-      - 新加坡3|@ripaojiedian
-      - 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
+      - 🇭🇰 香港|@ripaojiedian
       - 美国3|@ripaojiedian
-      - 台湾|@ripaojiedian
-      - 🇫🇮FI_1|2.8MB/s
-      - 🇰🇷KR_1|1.3MB/s
-      - 🇵🇱PL_1|1.3MB/s
-      - 🇺🇸US_1|1.2MB/s
-      - 🇩🇪DE_2|1.3MB/s
-      - 🇫🇷FR_1|1.0MB/s
-      - 🇺🇸US_4|3.6MB/s
-      - 🇸🇪SE_1|3.0MB/s
-      - 🇵🇱PL_4|2.6MB/s
+      - 印尼
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
+      - 🇨🇳 台湾|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 🇯🇵 日本|@ripaojiedian
+      - 🇺🇸 美国2-IEPL-GPT
+      - 🇺🇸 美国|@ripaojiedian
+      - 🇸🇪SE_1|1.7MB/s
+      - 🇺🇸US_1|2.7MB/s
+      - 🇫🇷FR_1|2.5MB/s
+      - 🇯🇵JP_1|2.2MB/s
+      - 🇵🇱PL_2|1.1MB/s
       - US_speednode_0130
       - US_speednode_0132
       - US_speednode_0135
@@ -2107,46 +2126,55 @@ proxy-groups:
       - US_speednode_0139
       - US_speednode_0142
       - US_speednode_0144
-      - 🇦🇹 奥地利 | AUT
-      - 🇨🇦 加拿大 | CAN
+      - 美国|@ripaojiedian
+      - 新加坡|@ripaojiedian
+      - 台湾|@ripaojiedian
+      - 香港2|@ripaojiedian
+      - 香港3|@ripaojiedian
+      - 日本|@ripaojiedian
+      - 🇺🇸美国2-IEPL-GPT
+      - 🇧🇪 比利时 | BEL
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇩🇪 德国 | DEU 5
       - 🇫🇷 法国 | FRA
       - 🇫🇷 法国 | FRA 2
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
+      - 🇬🇧 英国 | GBR 3
+      - 🇬🇧 英国 | GBR 4
+      - 🇬🇧 英国 | GBR 5
+      - 🇬🇧 英国 | GBR 6
       - 🇭🇰 香港 | HKG
-      - 🇭🇰 香港 | HKG 2
-      - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
+      - 🇮🇱 以色列 | ISR
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
       - 🇰🇿 哈萨克斯坦 | KAZ
       - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
+      - 🇳🇱 荷兰 | NLD 3
       - 🇵🇱 波兰 | POL
       - 🇵🇱 波兰 | POL 2
+      - 🇵🇱 波兰 | POL 3
+      - 🇷🇺 俄罗斯 | RUS
       - 🇸🇪 瑞典 | SWE
       - 🇸🇪 瑞典 | SWE 2
+      - 🇸🇪 瑞典 | SWE 3
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
       - 🇸🇬 新加坡 | SGP 4
       - 🇸🇬 新加坡 | SGP 5
       - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
+      - 🇹🇷 土耳其 | TUR
+      - 🇺🇦 乌克兰 | UKR
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -2166,18 +2194,6 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
-      - 🇺🇸 美国 | USA 22
-      - 🇺🇸 美国 | USA 23
-      - 🇺🇸 美国 | USA 24
-  - name: 🇨🇦 Canada
-    type: url-test
-    proxies:
-      - 🇨🇦 加拿大 | CAN
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
   - name: 🇫🇷 France
     type: url-test
     proxies:
@@ -2186,13 +2202,6 @@ proxy-groups:
       - 🇫🇷 法国 | FRA 3
       - 🇫🇷 法国 | FRA 4
       - 🇫🇷 法国 | FRA 5
-      - 🇫🇷 法国 | FRA 6
-      - 🇫🇷 法国 | FRA 7
-      - 🇫🇷 法国 | FRA 8
-      - 🇫🇷 法国 | FRA 9
-      - 🇫🇷 法国 | FRA 10
-      - 🇫🇷 法国 | FRA 11
-      - 🇫🇷 法国 | FRA 12
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2200,12 +2209,10 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇩🇪_DE_德国
-      - 🇩🇪_DE_德国 2
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
-      - 🇩🇪 德国 | DEU 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2213,24 +2220,20 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇭🇰_HK_中国香港
+      - 🇭🇰 香港|@ripaojiedian
+      - 🇭🇰 香港2|@ripaojiedian
+      - 🇭🇰 香港3|@ripaojiedian
       - 香港2|@ripaojiedian
       - 香港3|@ripaojiedian
-      - 香港4|@ripaojiedian
-      - 香港5|@ripaojiedian
       - 🇭🇰 香港 | HKG
-      - 🇭🇰 香港 | HKG 2
-      - 🇭🇰 香港 | HKG 3
-      - 🇭🇰 香港 | HKG 4
-      - 🇭🇰 香港 | HKG 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇯🇵 Japan
     type: url-test
     proxies:
+      - 🇯🇵 日本|@ripaojiedian
       - 日本|@ripaojiedian
-      - 日本2|@ripaojiedian
-      - 日本3|@ripaojiedian
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
     url: https://www.gstatic.com/generate_204
@@ -2240,26 +2243,32 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
+      - 🇳🇱 荷兰 | NLD 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇷🇺 Russia
     type: url-test
     proxies:
-      - 俄罗斯
+      - 🇷🇺 俄罗斯 | RUS
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇸🇬 Singapore
     type: url-test
     proxies:
-      - 新加坡3|@ripaojiedian
+      - 🇸🇬 新加坡|@ripaojiedian
+      - 新加坡|@ripaojiedian
       - 🇸🇬 新加坡 | SGP
       - 🇸🇬 新加坡 | SGP 2
       - 🇸🇬 新加坡 | SGP 3
       - 🇸🇬 新加坡 | SGP 4
       - 🇸🇬 新加坡 | SGP 5
       - 🇸🇬 新加坡 | SGP 6
+      - 🇸🇬 新加坡 | SGP 7
+      - 🇸🇬 新加坡 | SGP 8
+      - 🇸🇬 新加坡 | SGP 9
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2268,13 +2277,23 @@ proxy-groups:
     proxies:
       - 🇸🇪 瑞典 | SWE
       - 🇸🇪 瑞典 | SWE 2
+      - 🇸🇪 瑞典 | SWE 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇹🇼 Taiwan
     type: url-test
     proxies:
+      - 🇹🇼_TW_中国台湾
+      - 🇨🇳 台湾|@ripaojiedian
       - 台湾|@ripaojiedian
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇹🇷 Turkey
+    type: url-test
+    proxies:
+      - 🇹🇷 土耳其 | TUR
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2283,6 +2302,10 @@ proxy-groups:
     proxies:
       - 🇬🇧 英国 | GBR
       - 🇬🇧 英国 | GBR 2
+      - 🇬🇧 英国 | GBR 3
+      - 🇬🇧 英国 | GBR 4
+      - 🇬🇧 英国 | GBR 5
+      - 🇬🇧 英国 | GBR 6
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2291,9 +2314,14 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国
       - 🇺🇸_US_美国 2
-      - 美国|@ripaojiedian
-      - 美国2|@ripaojiedian
+      - 🇺🇸_US_美国 3
+      - 🇺🇸_US_美国 4
+      - 🇨🇳_CN_中国->🇺🇸_US_美国
       - 美国3|@ripaojiedian
+      - 🇺🇸 美国2-IEPL-GPT
+      - 🇺🇸 美国|@ripaojiedian
+      - 美国|@ripaojiedian
+      - 🇺🇸美国2-IEPL-GPT
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -2313,11 +2341,6 @@ proxy-groups:
       - 🇺🇸 美国 | USA 17
       - 🇺🇸 美国 | USA 18
       - 🇺🇸 美国 | USA 19
-      - 🇺🇸 美国 | USA 20
-      - 🇺🇸 美国 | USA 21
-      - 🇺🇸 美国 | USA 22
-      - 🇺🇸 美国 | USA 23
-      - 🇺🇸 美国 | USA 24
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -2327,7 +2350,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2337,6 +2359,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2347,7 +2370,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2357,6 +2379,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2367,7 +2390,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2377,6 +2399,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2388,7 +2411,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2398,6 +2420,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -2408,7 +2431,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2418,6 +2440,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -2427,7 +2450,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2437,6 +2459,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2447,7 +2470,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2457,6 +2479,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2467,7 +2490,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2477,6 +2499,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -2487,7 +2510,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇨🇦 Canada
       - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
@@ -2497,6 +2519,7 @@ proxy-groups:
       - 🇸🇬 Singapore
       - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
+      - 🇹🇷 Turkey
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
