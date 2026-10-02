@@ -131,84 +131,21 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 巴西圣保罗+CloudFlare节点
+  - name: 保加利亚+V2CROSS.COM
     type: vless
-    server: 188.114.96.3
+    server: ee10.zazazuza.ru
     port: 8443
-    uuid: 69848b7f-3ee7-4c30-b035-6cff5e08ac4a
+    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
     tls: true
-    servername: us.luxes.network
+    servername: fdghyt.com
     network: ws
     ws-opts:
-      path: /assets
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 加拿大温哥华+CloudFlare节点
-    type: vless
-    server: 103.31.4.10
-    port: 443
-    uuid: 77dc177b-79d9-49ac-92e1-2f1011faa5e3
-    tls: true
-    servername: f871a986.69lover.site
-    network: ws
-    ws-opts:
-      path: /api/v2/b8ee4ba356df307c/stream
+      path: /vpn-wss/fluxor/59011/
       headers:
-        host: f871a986.69lover.site
+        host: fdghyt.com
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 新加坡+甲骨文机房
-    type: hysteria2
-    server: 138.2.73.238
-    port: 50160
-    password: f87376e17da040ed04c9665ce8972930
-    sni: 138.2.73.238
-    skip-cert-verify: true
-  - name: 立陶宛+V2CROSS.COM
-    type: trojan
-    server: 195.181.244.216
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.calmlunch.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
-    type: hysteria2
-    server: 91.240.86.70
-    port: 24443
-    password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-    sni: hy.quattro-tech.ru
-    skip-cert-verify: false
-  - name: 日本+V2CROSS.COM
-    type: vless
-    server: 103.245.229.32
-    port: 443
-    uuid: 8bbe5178-a991-4a56-871c-553e2f8e9e70
-    tls: true
-    client-fingerprint: chrome
-    servername: adminvps.ru
-    network: tcp
-    reality-opts:
-      public-key: sUDdxp5g9lRHlVEH6meJWXah84yhLDyVI7KuZhW-MTQ
-      short-id: b4e44a
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 伊朗+V2CROSS.COM
-    type: hysteria2
-    server: 31.57.248.176
-    port: 50160
-    password: b0917015b656b3dd2286b5633af0c5c1
-    sni: www.bing.com
-    skip-cert-verify: true
   - name: 乌克兰+V2CROSS.COM
     type: trojan
     server: 82.117.245.125
@@ -222,12 +159,62 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 俄罗斯+V2CROSS.COM 2
+  - name: 澳大利亚+V2CROSS.COM
     type: hysteria2
-    server: 91.240.86.70
-    port: 22443
-    password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-    sni: hy.quattro-tech.ru
+    server: de1.xiaoliyu.cyou
+    port: 4433
+    password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+    sni: de1.xiaoliyu.cyou
+    skip-cert-verify: true
+  - name: 美国+V2CROSS.COM
+    type: hysteria2
+    server: 162.249.127.143
+    port: 8443
+    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+    sni: hop-germany-september.dynuddns.com
+    skip-cert-verify: false
+  - name: 加拿大+V2CROSS.COM
+    type: hysteria2
+    server: 108.181.5.106
+    port: 51285
+    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 美国+惠普HP
+    type: vless
+    server: tk1.high-speed-test-56424.me
+    port: 443
+    uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+    tls: true
+    client-fingerprint: chrome
+    servername: aws.amazon.com
+    network: tcp
+    reality-opts:
+      public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
+      short-id: 21270a66
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: fbsv6.guardora.pro
+    port: 443
+    uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+    tls: true
+    servername: fbsv6.guardora.pro
+    network: ws
+    ws-opts:
+      path: /ws
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM 2
+    type: hysteria2
+    server: 144.31.212.253
+    port: 443
+    password: cf83b611-6cba-4535-adcb-8da06c6a9146
+    sni: vps155-edge.kermemehori.ru
     skip-cert-verify: false
 proxy-groups:
   - type: select
@@ -235,58 +222,48 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 巴西圣保罗+CloudFlare节点
-      - 加拿大温哥华+CloudFlare节点
-      - 新加坡+甲骨文机房
-      - 立陶宛+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM 2
+      - 澳大利亚+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 巴西圣保罗+CloudFlare节点
-      - 加拿大温哥华+CloudFlare节点
-      - 新加坡+甲骨文机房
-      - 立陶宛+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 日本+V2CROSS.COM
-      - 伊朗+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM 2
-  - name: 🇧🇷 Brazil
+      - 澳大利亚+V2CROSS.COM
+      - 美国+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
+      - 美国+惠普HP
+      - 俄罗斯+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+  - name: 🇦🇺 Australia
     type: url-test
     proxies:
-      - 巴西圣保罗+CloudFlare节点
+      - 澳大利亚+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇨🇦 Canada
     type: url-test
     proxies:
-      - 加拿大温哥华+CloudFlare节点
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇯🇵 Japan
-    type: url-test
-    proxies:
-      - 日本+V2CROSS.COM
+      - 加拿大+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -294,14 +271,15 @@ proxy-groups:
     type: url-test
     proxies:
       - 俄罗斯+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇸🇬 Singapore
+  - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 新加坡+甲骨文机房
+      - 美国+V2CROSS.COM
+      - 美国+惠普HP
+      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -311,11 +289,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -324,11 +301,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -337,11 +313,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -351,11 +326,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - REJECT
   - type: select
     name: 🔒 国内服务
@@ -364,11 +338,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - REJECT
   - type: select
     name: 📲 电报消息
@@ -376,11 +349,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -389,11 +361,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -402,11 +373,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
   - type: select
@@ -415,11 +385,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇸🇬 Singapore
+      - 🇺🇸 United States
       - DIRECT
       - REJECT
 rules:
