@@ -131,135 +131,93 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 保加利亚+V2CROSS.COM
+  - name: 美国+CloudFlare节点
     type: vless
-    server: ee10.zazazuza.ru
-    port: 8443
-    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+    server: geo.shkola112.site
+    port: 443
+    uuid: 76ac91c5-ea82-4046-8ee7-2ffbb563ac94
     tls: true
-    servername: fdghyt.com
+    servername: geo.shkola112.site
     network: ws
     ws-opts:
-      path: /vpn-wss/fluxor/59011/
+      path: /api-vless
       headers:
-        host: fdghyt.com
+        host: geo.shkola112.site
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 乌克兰+V2CROSS.COM
-    type: trojan
-    server: 82.117.245.125
-    port: 2053
-    password: humanity
-    tls: true
-    sni: www.calmlunch.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 澳大利亚+V2CROSS.COM
-    type: hysteria2
-    server: de1.xiaoliyu.cyou
-    port: 4433
-    password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-    sni: de1.xiaoliyu.cyou
-    skip-cert-verify: true
-  - name: 美国+V2CROSS.COM
-    type: hysteria2
-    server: 162.249.127.143
-    port: 8443
-    password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-    sni: hop-germany-september.dynuddns.com
-    skip-cert-verify: false
   - name: 加拿大+V2CROSS.COM
     type: hysteria2
-    server: 108.181.5.106
-    port: 51285
-    password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+    server: 216.151.165.219
+    port: 1655
+    password: 91be3262-93f4-46c5-aa33-ecac2368e8d6
     sni: www.bing.com
     skip-cert-verify: true
-  - name: 美国+惠普HP
-    type: vless
-    server: tk1.high-speed-test-56424.me
-    port: 443
-    uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-    tls: true
-    client-fingerprint: chrome
-    servername: aws.amazon.com
-    network: tcp
-    reality-opts:
-      public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-      short-id: 21270a66
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: fbsv6.guardora.pro
-    port: 443
-    uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-    tls: true
-    servername: fbsv6.guardora.pro
-    network: ws
-    ws-opts:
-      path: /ws
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM 2
+  - name: 新加坡+甲骨文机房
+    type: hysteria2
+    server: 138.2.73.238
+    port: 50160
+    password: f87376e17da040ed04c9665ce8972930
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 美国+V2CROSS.COM
     type: hysteria2
     server: 144.31.212.253
     port: 443
     password: cf83b611-6cba-4535-adcb-8da06c6a9146
     sni: vps155-edge.kermemehori.ru
+    skip-cert-verify: true
+  - name: 北京市+百度电信节点
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
     skip-cert-verify: false
+    udp: true
+  - name: 法国+ONLINE+S.A.S.数据中心
+    type: hysteria2
+    server: 62.210.7.139
+    port: 60111
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: t.me
+    skip-cert-verify: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 保加利亚+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 美国+惠普HP
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 新加坡+甲骨文机房
+      - 美国+V2CROSS.COM
+      - 北京市+百度电信节点
+      - 法国+ONLINE+S.A.S.数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 保加利亚+V2CROSS.COM
-      - 乌克兰+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点
       - 加拿大+V2CROSS.COM
-      - 美国+惠普HP
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
-  - name: 🇦🇺 Australia
-    type: url-test
-    proxies:
-      - 澳大利亚+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 新加坡+甲骨文机房
+      - 美国+V2CROSS.COM
+      - 北京市+百度电信节点
+      - 法国+ONLINE+S.A.S.数据中心
   - name: 🇨🇦 Canada
     type: url-test
     proxies:
@@ -267,19 +225,25 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇷🇺 Russia
+  - name: 🇫🇷 France
     type: url-test
     proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 法国+ONLINE+S.A.S.数据中心
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇸🇬 Singapore
+    type: url-test
+    proxies:
+      - 新加坡+甲骨文机房
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+CloudFlare节点
       - 美国+V2CROSS.COM
-      - 美国+惠普HP
-      - 美国+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -289,9 +253,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -301,9 +265,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -313,9 +277,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -326,9 +290,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -338,9 +302,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -349,9 +313,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -361,9 +325,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -373,9 +337,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -385,9 +349,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
       - 🇨🇦 Canada
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇸🇬 Singapore
       - 🇺🇸 United States
       - DIRECT
       - REJECT
