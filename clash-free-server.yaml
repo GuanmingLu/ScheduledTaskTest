@@ -131,131 +131,217 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 法国+ONLINE+S.A.S.数据中心
-    type: hysteria2
-    server: 62.210.7.139
-    port: 60111
-    password: github.com/Alvin9999-newpac/fanqiang
-    sni: ''
-    skip-cert-verify: true
-  - name: 韩国+V2CROSS.COM
+  - name: 波兰+V2CROSS.COM
     type: vless
-    server: 211.229.56.86
-    port: 30021
-    uuid: 88ee0e1e-a2a2-477e-88ce-4875c058aeba
+    server: 87.199.199.25
+    port: 8443
+    uuid: 67bb6612-261d-47b5-811e-aa2aeb2100c7
     tls: true
-    servername: 123.714541.xyz
-    network: ws
-    ws-opts:
-      path: /Ra-vl
-      headers:
-        host: 123.714541.xyz
+    client-fingerprint: chrome
+    servername: fileharbor.cc
+    network: tcp
+    reality-opts:
+      public-key: kQV48T3zJZQbisn4n1EEGVP8Ok3gSB5Uml2LLdplNU4
+      short-id: a53f8c1e6d9b2740
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 俄罗斯+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点
     type: vless
-    server: 91.107.151.122
-    port: 8080
-    uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
+    server: 104.25.122.72
+    port: 80
+    uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
     tls: false
     servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: trojan
-    server: 167.82.76.27
-    port: 443
-    password: mitivpn
-    tls: true
-    sni: ssl.fastly.com
     network: ws
     ws-opts:
       path: >-
-        /---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/des---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1
+        /eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
       headers:
-        host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 北京市+百度电信节点
-    type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 399b6b23-cc40-4831-a494-61948e2df133
-    tls: false
-    servername: ''
-    network: tcp
+        host: billowing-cloud-d339.sospanel.workers.dev
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 俄罗斯+V2CROSS.COM 2
+  - name: 立陶宛+V2CROSS.COM
     type: vless
-    server: 188.225.42.6
+    server: 84.32.215.96
     port: 443
     uuid: 7610be85-9855-4010-8929-ce16d4993969
     tls: true
     client-fingerprint: chrome
-    servername: app6.betust.net
+    servername: app26.betust.net
     network: tcp
     reality-opts:
-      public-key: sS3x_ZygtA9uZ5WaYm7pHjy0_lPNUUK7kOSLz0BNhCs
-      short-id: 54ac91da
+      public-key: 5pR15ATlWW3tVzfnMN3xoiN56LjIUbhnOMp37ZvTFUc
+      short-id: d44d6d46
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 澳大利亚+V2CROSS.COM
-    type: hysteria2
-    server: de1.xiaoliyu.cyou
-    port: 4433
-    password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-    sni: de1.xiaoliyu.cyou
-    skip-cert-verify: true
-  - name: 美国+CloudFlare节点
+  - name: 荷兰+V2CROSS.COM
     type: vless
-    server: argo6.5671234.xyz
+    server: 212.237.216.55
     port: 443
-    uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
+    uuid: 790910c3-9a97-4375-998a-fcc36b0a2902
     tls: true
-    servername: argo6.5671234.xyz
-    network: ws
-    ws-opts:
-      path: /e8e2cecb6188f7fb
-      headers:
-        host: argo6.5671234.xyz
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 香港+电讯盈科有限公司
-    type: hysteria2
-    server: 2dd0472e-tmm5c0-twj07b-fm2v.hk3.hyhuawei.com
-    port: 443
-    password: 3fed19ea-1671-11f0-bd2e-f23c9164ca5d
-    sni: 2dd0472e-tmm5c0-twj07b-fm2v.hk3.hyhuawei.com
-    skip-cert-verify: true
-  - name: 美国+V2CROSS.COM 2
-    type: hysteria2
-    server: 129.159.156.109
-    port: 50160
-    password: f25f19f29ce3fb53a35bf1b35b452a43
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: 广东省东莞市+联通
-    type: vless
-    server: 27.44.143.169
-    port: 14343
-    uuid: 1b60cff4-49ce-4bf3-9027-e4f9c47d6158
-    tls: true
-    servername: thuk.huaweiyouxuan.com
+    client-fingerprint: chrome
+    servername: repo1.maven.org
     network: tcp
+    reality-opts:
+      public-key: QsXrvjhVX6Kwp5Gn9dMx8F9p3wUzXAp7ETkbPodmdC8
+      short-id: af0c601348f39d8a
     tfo: false
-    skip-cert-verify: true
+    skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 广东省东莞市+联通 2
+  - name: 北京市+百度电信节点
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 104.21.0.115
+    port: 8880
+    uuid: 8995976a-1c81-4b44-a414-d3bc71058a21
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: muddy-queen-cdda.181-cf9.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 英国+V2CROSS.COM
+    type: vless
+    server: 80.93.202.40
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: vms.lifetime02.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 3
+    type: vless
+    server: 104.26.2.223
+    port: 8080
+    uuid: 9cc42ee7-1f5f-46f5-a8b0-2da76b6b6641
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: pe2ev-frosty-poetry-3d08.s67y4jl8.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 立陶宛+V2CROSS.COM 2
+    type: vless
+    server: 185.148.107.40
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        host: vms.lifetime55.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 4
+    type: vless
+    server: 104.16.72.41
+    port: 8880
+    uuid: 28201cd6-c2a9-4703-a31b-eaf31ecb18fd
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip
+      headers:
+        host: summer-butterfly-cbc8.26-971.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 5
+    type: vless
+    server: 104.16.98.215
+    port: 8880
+    uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        host: super-sunset-010c.24-43d.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 63.141.128.30
+    port: 8880
+    uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: vms.lifetime42.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 6
+    type: vless
+    server: 104.18.39.196
+    port: 8880
+    uuid: 5fc8a5e4-d0c5-4ad2-8bfe-db589553c6c1
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip
+      headers:
+        host: red-disk-58df.153-2ce.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 7
+    type: vless
+    server: log.bpminecraft.com
+    port: 8880
+    uuid: 5bbf0601-8431-45f6-a4e9-a1e8b44c0055
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip=proxyip.kr.cmliussss.net
+      headers:
+        host: misty-mouse-141d.177-f18.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 广东省东莞市+联通
     type: vless
     server: 27.44.143.169
     port: 33102
@@ -267,32 +353,58 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
+  - name: 美国+CloudFlare节点 8
     type: vless
-    server: pl-waw.dontblockmepls.com
-    port: 2063
-    uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-    tls: true
-    client-fingerprint: chrome
-    servername: rusbid.de
-    network: tcp
-    reality-opts:
-      public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+    server: 104.16.97.215
+    port: 8880
+    uuid: 35e8826f-0873-492d-8b8a-d495c9947480
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.KR.CMLiussss.net
+      headers:
+        host: super-sunset-010c.24-43d.workers.dev
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 9
+    type: vless
+    server: 104.21.55.229
+    port: 8880
+    uuid: 3adac494-0eb1-4d89-a187-b2181691444d
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.SG.CMLiussss.net
+      headers:
+        host: tiny-lake-bbf1.369-766.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 10
+    type: vless
+    server: 172.64.88.251
+    port: 8880
+    uuid: 1cae67cd-9f09-4c59-94e6-998ed0346c44
+    tls: false
+    servername: ''
+    network: ws
+    ws-opts:
+      path: /pyip=ProxyIP.US.CMLiussss.net
+      headers:
+        host: lingering-lab-91a6.54-8c3.workers.dev
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -300,71 +412,52 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 法国+ONLINE+S.A.S.数据中心
-      - 韩国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 北京市+百度电信节点
-      - 俄罗斯+V2CROSS.COM 2
-      - 澳大利亚+V2CROSS.COM
+      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 美国+V2CROSS.COM 2
-      - 广东省东莞市+联通
-      - 广东省东莞市+联通 2
+      - 立陶宛+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 北京市+百度电信节点
+      - 美国+CloudFlare节点 2
       - 英国+V2CROSS.COM
+      - 美国+CloudFlare节点 3
+      - 立陶宛+V2CROSS.COM 2
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
+      - 广东省东莞市+联通
+      - 美国+CloudFlare节点 8
+      - 美国+CloudFlare节点 9
+      - 美国+CloudFlare节点 10
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 法国+ONLINE+S.A.S.数据中心
-      - 韩国+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 北京市+百度电信节点
-      - 俄罗斯+V2CROSS.COM 2
-      - 澳大利亚+V2CROSS.COM
+      - 波兰+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 香港+电讯盈科有限公司
-      - 美国+V2CROSS.COM 2
-      - 广东省东莞市+联通
-      - 广东省东莞市+联通 2
+      - 立陶宛+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
+      - 北京市+百度电信节点
+      - 美国+CloudFlare节点 2
       - 英国+V2CROSS.COM
-  - name: 🇦🇺 Australia
+      - 美国+CloudFlare节点 3
+      - 立陶宛+V2CROSS.COM 2
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
+      - 广东省东莞市+联通
+      - 美国+CloudFlare节点 8
+      - 美国+CloudFlare节点 9
+      - 美国+CloudFlare节点 10
+  - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
-      - 澳大利亚+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇫🇷 France
-    type: url-test
-    proxies:
-      - 法国+ONLINE+S.A.S.数据中心
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇭🇰 Hong Kong
-    type: url-test
-    proxies:
-      - 香港+电讯盈科有限公司
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇰🇷 Korea
-    type: url-test
-    proxies:
-      - 韩国+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 俄罗斯+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM 2
+      - 荷兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -378,9 +471,17 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM 2
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 美国+CloudFlare节点 4
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
+      - 美国+CloudFlare节点 8
+      - 美国+CloudFlare节点 9
+      - 美国+CloudFlare节点 10
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -390,11 +491,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -405,11 +502,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -420,11 +513,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -436,11 +525,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -451,11 +536,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -465,11 +546,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -480,11 +557,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -495,11 +568,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -510,11 +579,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇫🇷 France
-      - 🇭🇰 Hong Kong
-      - 🇰🇷 Korea
-      - 🇷🇺 Russia
+      - 🇳🇱 Netherlands
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
