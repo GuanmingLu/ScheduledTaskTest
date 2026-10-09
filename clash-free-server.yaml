@@ -131,6 +131,89 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 香港+阿里云
+    type: ss
+    server: 47.85.168.157
+    port: 443
+    cipher: 2022-blake3-chacha20-poly1305
+    password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+    udp: true
+  - name: 美国+加利福尼亚州洛杉矶
+    type: vless
+    server: 185.106.96.231
+    port: 10829
+    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+    tls: true
+    servername: u695098u99a93686s848.gogocs.xyz
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 奥地利+V2CROSS.COM
+    type: trojan
+    server: 212.183.88.136
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        host: www.calmlunch.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 北京市+百度电信节点
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 172.64.158.170
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: ccc.010304.xyz
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 法国+ONLINE+S.A.S.数据中心
+    type: hysteria2
+    server: 62.210.147.2
+    port: 43115
+    password: github.com/Alvin9999-newpac/fanqiang
+    sni: www.microsoft.com
+    skip-cert-verify: true
+  - name: 爱尔兰+V2CROSS.COM
+    type: vless
+    server: assets.halyvanedorogo.ru
+    port: 11515
+    uuid: cb8fbad5-4f14-55bc-a24a-3510f47f4b1b
+    tls: true
+    client-fingerprint: chrome
+    servername: www.sony.com
+    network: tcp
+    reality-opts:
+      public-key: A826RSu-yeVM_t6v7kwHKasHSdfI9KOzUw3WaIa9SWc
+      short-id: 65149fc5ba
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
   - name: 英国+V2CROSS.COM
     type: vless
     server: 2.26.231.218
@@ -146,168 +229,15 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: tk1.high-speed-test-56424.me
-    port: 443
-    uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-    tls: true
-    client-fingerprint: chrome
-    servername: aws.amazon.com
-    network: tcp
-    reality-opts:
-      public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-      short-id: 21270a66
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 芬兰+V2CROSS.COM
-    type: vless
-    server: s1244.csgfw.top
-    port: 10829
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098ueb8953b4s861.gogocs.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 212.192.15.191
-    port: 443
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098u54d73951s298.kukuss.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM 2
-    type: vless
-    server: pl-waw.dontblockmepls.com
-    port: 2063
-    uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-    tls: true
-    client-fingerprint: chrome
-    servername: rusbid.de
-    network: tcp
-    reality-opts:
-      public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 亚太地区+V2CROSS.COM
-    type: vless
-    server: 160.25.74.91
-    port: 443
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098ue79dbcd4s783.gogocs.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 英国+桑德兰大学
-    type: vless
-    server: 157.228.128.59
-    port: 443
-    uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-    tls: true
-    client-fingerprint: chrome
-    servername: addons.mozilla.org
-    network: tcp
-    reality-opts:
-      public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-      short-id: 06e00e7c
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 芬兰+V2CROSS.COM 2
-    type: vless
-    server: s1243.sspcccdn.xyz
-    port: 10829
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098ueb8953b4s861.gogocs.xyz
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: cf.877774.xyz
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: ccc.010304.xyz
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: 104.27.21.22
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.volumeroot.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国+桑德兰大学 2
-    type: vless
-    server: 157.228.160.166
-    port: 443
-    uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-    tls: true
-    client-fingerprint: chrome
-    servername: addons.mozilla.org
-    network: tcp
-    reality-opts:
-      public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-      short-id: 3cef317b
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 英国+桑德兰大学 3
-    type: vless
-    server: 157.228.150.34
-    port: 443
-    uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-    tls: true
-    client-fingerprint: chrome
-    servername: addons.mozilla.org
-    network: tcp
-    reality-opts:
-      public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
-      short-id: 3cef317b
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -315,40 +245,46 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 芬兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+V2CROSS.COM 2
-      - 亚太地区+V2CROSS.COM
-      - 英国+桑德兰大学
-      - 芬兰+V2CROSS.COM 2
+      - 香港+阿里云
+      - 美国+加利福尼亚州洛杉矶
+      - 奥地利+V2CROSS.COM
+      - 北京市+百度电信节点
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 英国+桑德兰大学 2
-      - 英国+桑德兰大学 3
+      - 法国+ONLINE+S.A.S.数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 英国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 英国+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 芬兰+V2CROSS.COM
-      - 俄罗斯+V2CROSS.COM
-      - 英国+V2CROSS.COM 2
-      - 亚太地区+V2CROSS.COM
-      - 英国+桑德兰大学
-      - 芬兰+V2CROSS.COM 2
+      - 香港+阿里云
+      - 美国+加利福尼亚州洛杉矶
+      - 奥地利+V2CROSS.COM
+      - 北京市+百度电信节点
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 英国+桑德兰大学 2
-      - 英国+桑德兰大学 3
-  - name: 🇷🇺 Russia
+      - 法国+ONLINE+S.A.S.数据中心
+      - 爱尔兰+V2CROSS.COM
+      - 英国+V2CROSS.COM
+  - name: 🇫🇷 France
     type: url-test
     proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 法国+ONLINE+S.A.S.数据中心
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇭🇰 Hong Kong
+    type: url-test
+    proxies:
+      - 香港+阿里云
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇮🇪 Ireland
+    type: url-test
+    proxies:
+      - 爱尔兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -356,19 +292,14 @@ proxy-groups:
     type: url-test
     proxies:
       - 英国+V2CROSS.COM
-      - 英国+V2CROSS.COM 2
-      - 英国+桑德兰大学
-      - 英国+桑德兰大学 2
-      - 英国+桑德兰大学 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -378,7 +309,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -389,7 +322,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -400,7 +335,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -412,7 +349,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -423,7 +362,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -433,7 +374,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -444,7 +387,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -455,7 +400,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -466,7 +413,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇷🇺 Russia
+      - 🇫🇷 France
+      - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
