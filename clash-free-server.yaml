@@ -131,110 +131,113 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 45.144.179.112
-    port: 443
-    uuid: 86096188-0ece-41af-922d-792c5f96c3ad
-    tls: true
-    client-fingerprint: chrome
-    servername: ru.caloribro.uno
-    network: tcp
-    reality-opts:
-      public-key: 8cN2ldJOVJ_ulUORM3mblWMg1etGrTruJoAtYyhE5h8
-      short-id: 73cd09c320ca209d
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+Xerox
-    type: vless
-    server: 13.143.137.206
-    port: 8443
-    uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-    tls: true
-    client-fingerprint: chrome
-    servername: ya.ru
-    network: tcp
-    reality-opts:
-      public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-      short-id: d2061bb1
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+俄勒冈州波特兰Amazon数据中心
-    type: vless
-    server: tk1.high-speed-test-56424.me
-    port: 443
-    uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
-    tls: true
-    client-fingerprint: chrome
-    servername: aws.amazon.com
-    network: tcp
-    reality-opts:
-      public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
-      short-id: 21270a66
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 亚太地区+V2CROSS.COM
-    type: vless
-    server: s593.sspcccdn.xyz
-    port: 10829
-    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-    tls: true
-    servername: u695098u4d99b056s591.csgfw.top
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+Xerox 2
-    type: vless
-    server: gw1.edgemedia.lol
-    port: 13443
-    uuid: 9ebf4fda-7395-4800-b42f-b2dda649880a
-    tls: true
-    client-fingerprint: chrome
-    servername: ya.ru
-    network: tcp
-    reality-opts:
-      public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-      short-id: d2061bb1
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 2
-    type: vless
-    server: c20s5.portablesubmarines.com
-    port: 443
-    uuid: 85fe968d-fbb5-40dc-8422-30635eccb149
-    tls: true
-    client-fingerprint: chrome
-    servername: portal.citygrainla.com
-    network: tcp
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: 051f20c2344a2dfd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 巴西+V2CROSS.COM
     type: vless
-    server: de2.srv.vbuste.ru
+    server: fl1.balancer.vbuste-bot.com
     port: 443
     uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
     tls: true
     client-fingerprint: chrome
-    servername: de2.srv.vbuste.ru
+    servername: fl1.balancer.vbuste-bot.com
     network: tcp
     reality-opts:
       public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
       short-id: 4be4110078ebed4a
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 伊拉克+V2CROSS.COM
+    type: vless
+    server: blog.salphetka.ru
+    port: 443
+    uuid: 92295a0d-b610-4075-85e9-bfab09ec6f3a
+    tls: true
+    client-fingerprint: chrome
+    servername: www.uni-bonn.de
+    network: tcp
+    reality-opts:
+      public-key: ahmKn2YPXJJ0gGtSKyEVCavB2YHyGQSbHCq40tgfHkA
+      short-id: e96c3d6878c984bf
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 104.16.10.2
+    port: 443
+    uuid: 3c52e091-6714-4915-949f-2149fe69951b
+    tls: true
+    servername: v2ray.simspeedup.com
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        host: v2ray.simspeedup.com
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 英国+桑德兰大学
+    type: hysteria2
+    server: spainspeedboostjbl88.qcloud.surf
+    port: 27313
+    password: 8bd04756-3beb-4348-82c9-d35453df50ce
+    sni: spainspeedboostjbl88.qcloud.surf
+    skip-cert-verify: true
+  - name: 捷克+V2CROSS.COM
+    type: vless
+    server: 95.85.243.168
+    port: 443
+    uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
+    tls: true
+    client-fingerprint: chrome
+    servername: est-2.ardesnode.ru
+    network: tcp
+    reality-opts:
+      public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+      short-id: 9ea74b83f4993ca9
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+CloudFlare节点 2
+    type: trojan
+    server: 104.27.21.22
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.volumeroot.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 德国+V2CROSS.COM
+    type: vless
+    server: s8748.okgg.top
+    port: 10829
+    uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+    tls: true
+    servername: u695098u2c5f47d6s8746.gogocs.xyz
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 丹麦+V2CROSS.COM
+    type: vless
+    server: 87.58.158.82
+    port: 443
+    uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
+    tls: true
+    client-fingerprint: chrome
+    servername: dk7.bbobr.win
+    network: tcp
+    reality-opts:
+      public-key: zBNHm7DwlBZ2rfu2F5e3jMsmR2q74KpS2L6EavCVmkA
+      short-id: f6985908fcb5612f
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -246,32 +249,36 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 美国+Xerox 2
-      - 美国+V2CROSS.COM 2
       - 巴西+V2CROSS.COM
+      - 伊拉克+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 英国+桑德兰大学
+      - 捷克+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 德国+V2CROSS.COM
+      - 丹麦+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 亚太地区+V2CROSS.COM
-      - 美国+Xerox 2
-      - 美国+V2CROSS.COM 2
       - 巴西+V2CROSS.COM
+      - 伊拉克+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 英国+桑德兰大学
+      - 捷克+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 德国+V2CROSS.COM
+      - 丹麦+V2CROSS.COM
   - name: 🇧🇷 Brazil
     type: url-test
     proxies:
@@ -279,14 +286,25 @@ proxy-groups:
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
+  - name: 🇩🇪 Germany
+    type: url-test
+    proxies:
+      - 德国+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇬🇧 United Kingdom
+    type: url-test
+    proxies:
+      - 英国+桑德兰大学
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+V2CROSS.COM
-      - 美国+Xerox
-      - 美国+俄勒冈州波特兰Amazon数据中心
-      - 美国+Xerox 2
-      - 美国+V2CROSS.COM 2
+      - 美国+CloudFlare节点
+      - 美国+CloudFlare节点 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -297,6 +315,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -307,6 +327,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -317,6 +339,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -328,6 +352,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -338,6 +364,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -347,6 +375,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -357,6 +387,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -367,6 +399,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -377,6 +411,8 @@ proxy-groups:
       - ⚡ 自动选择
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
