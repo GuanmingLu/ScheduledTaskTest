@@ -131,32 +131,29 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 挪威+V2CROSS.COM
+  - name: 日本+V2CROSS.COM
     type: vless
-    server: 138.124.98.219
-    port: 443
-    uuid: 92295a0d-b610-4075-85e9-bfab09ec6f3a
-    tls: true
-    client-fingerprint: chrome
-    servername: www.ah.nl
+    server: jp.sofast.live
+    port: 52683
+    uuid: 399b6b23-cc40-4831-a494-61948e2df133
+    tls: false
+    servername: ''
     network: tcp
-    reality-opts:
-      public-key: IyUvo6owCe4Zfr8aIVdtweSNHQSpSyiO-OKsRDJ9BBs
-      short-id: a111111111111111
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 108.162.194.134
+  - name: 印度+V2CROSS.COM
+    type: vless
+    server: 103.160.59.198
     port: 443
-    password: humanity
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
-    sni: www.pleadcourt.org
+    servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /assignment
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
@@ -176,176 +173,92 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM
-    type: hysteria2
-    server: 152.69.231.175
-    port: 50160
-    password: 1beb216e3f60aea9555dae60d219a5ca
-    sni: 152-69-231-175.liao.kdns.fr
-    skip-cert-verify: false
-  - name: 巴西+V2CROSS.COM
-    type: vless
-    server: 177.1.187.139
-    port: 1984
-    uuid: d9eb02da-a469-44a7-a393-ba1c5fbbc8c4
-    tls: true
-    client-fingerprint: chrome
-    servername: ruori.ai
-    network: tcp
-    reality-opts:
-      public-key: ikKnBJfcuPy1U0O3Cb71zv_G1liM5QcAYhR10A0Ech0
-      short-id: 0f00666a
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点 2
+  - name: 美国+CloudFlare节点
     type: trojan
-    server: 104.27.21.22
+    server: 108.162.194.134
     port: 443
     password: humanity
     tls: true
-    sni: www.volumeroot.com
+    sni: www.pleadcourt.org
     network: ws
     ws-opts:
       path: /assignment
+      headers:
+        host: www.pleadcourt.org
     tfo: false
-    skip-cert-verify: false
+    skip-cert-verify: true
     udp: true
-  - name: 巴西+V2CROSS.COM 2
-    type: hysteria2
-    server: qcloudge1.exitvpn.shop
-    port: 20270
-    password: 8bd04756-3beb-4348-82c9-d35453df50ce
-    sni: qcloudge1.exitvpn.shop
+  - name: 美国 V2CROSS.COM
+    type: vmess
+    server: oc.imfun.fun
+    port: 18112
+    uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
     skip-cert-verify: false
-  - name: 乌克兰+V2CROSS.COM
-    type: trojan
-    server: 82.117.245.125
-    port: 2053
-    password: humanity
-    tls: true
-    sni: www.calmlunch.com
-    network: ws
-    ws-opts:
-      path: /assignment
-    tfo: false
-    skip-cert-verify: false
+    network: tcp
     udp: true
-  - name: 土耳其+V2CROSS.COM
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 78.135.77.55
-    port: 443
-    uuid: 6c6be9c5-e364-4053-a8ef-c9c3ec5edd0b
+    server: 95.181.170.27
+    port: 8443
+    uuid: c96f941e-dd8a-00aa-89d5-740b79202ed0
     tls: true
     client-fingerprint: chrome
-    servername: www.akakce.com
+    servername: x5club.ru
     network: tcp
     reality-opts:
-      public-key: QWyYs5c2v8Tmna5k3FJA7bcyv-oQQbsREtHclza4pH0
-      short-id: 209d915f3688b110
+      public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
+      short-id: 187eea0acfb7f778
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+圣凯瑟琳女子大学
-    type: vless
-    server: 140.225.199.210
-    port: 443
-    uuid: 6c713691-3ca2-0009-ad25-113d1bed6b03
-    tls: true
-    client-fingerprint: chrome
-    servername: hatch.senko.ru
-    network: tcp
-    reality-opts:
-      public-key: JWDpSUaLgiXGXpgZzzxfDnYGvi4MBFcadN6cHZ-He1E
-      short-id: b8c6965f3596688a
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 巴西+V2CROSS.COM 3
-    type: vless
-    server: 152.233.71.81
-    port: 443
-    uuid: 741809be-e44e-000b-b411-bf66f0ae3860
-    tls: true
-    client-fingerprint: chrome
-    servername: brointelengence.com
-    network: tcp
-    reality-opts:
-      public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-      short-id: 1c3e8241a8743df9
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 伊朗+V2CROSS.COM
-    type: vless
-    server: 31.56.18.67
-    port: 2083
-    uuid: 0be0a2bf-aa20-4e52-aa5a-3d59d56b1582
-    tls: true
-    client-fingerprint: chrome
-    servername: dege.underground.company
-    network: tcp
-    reality-opts:
-      public-key: RAsD3YMZiEtRBEQ6hNpsyfVE9ro1M4H2AQ-CKbBjJGU
-      short-id: 7878a3f029e04e23
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 挪威+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 日本+V2CROSS.COM
+      - 印度+V2CROSS.COM
       - 白俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 巴西+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 巴西+V2CROSS.COM 2
-      - 乌克兰+V2CROSS.COM
-      - 土耳其+V2CROSS.COM
-      - 美国+圣凯瑟琳女子大学
-      - 巴西+V2CROSS.COM 3
-      - 伊朗+V2CROSS.COM
+      - 美国+CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 挪威+V2CROSS.COM
-      - 美国+CloudFlare节点
+      - 日本+V2CROSS.COM
+      - 印度+V2CROSS.COM
       - 白俄罗斯+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 巴西+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 巴西+V2CROSS.COM 2
-      - 乌克兰+V2CROSS.COM
-      - 土耳其+V2CROSS.COM
-      - 美国+圣凯瑟琳女子大学
-      - 巴西+V2CROSS.COM 3
-      - 伊朗+V2CROSS.COM
-  - name: 🇧🇷 Brazil
+      - 美国+CloudFlare节点
+      - 美国 V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
+  - name: 🇮🇳 India
     type: url-test
     proxies:
-      - 巴西+V2CROSS.COM
-      - 巴西+V2CROSS.COM 2
-      - 巴西+V2CROSS.COM 3
+      - 印度+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇯🇵 Japan
+    type: url-test
+    proxies:
+      - 日本+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -353,13 +266,7 @@ proxy-groups:
     type: url-test
     proxies:
       - 白俄罗斯+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇹🇷 Turkey
-    type: url-test
-    proxies:
-      - 土耳其+V2CROSS.COM
+      - 俄罗斯+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -367,9 +274,7 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 2
-      - 美国+圣凯瑟琳女子大学
+      - 美国 V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -379,9 +284,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -391,9 +296,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -403,9 +308,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -416,9 +321,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -428,9 +333,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -439,9 +344,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -451,9 +356,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -463,9 +368,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -475,9 +380,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
+      - 🇮🇳 India
+      - 🇯🇵 Japan
       - 🇷🇺 Russia
-      - 🇹🇷 Turkey
       - 🇺🇸 United States
       - DIRECT
       - REJECT
