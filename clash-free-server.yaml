@@ -131,99 +131,7 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 104.18.0.181
-    port: 8080
-    uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /sg-melbi
-      headers:
-        host: hhlfy.twiladaphne.ndjp.net
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: trojan
-    server: 108.162.194.134
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.pleadcourt.org
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.pleadcourt.org
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 新加坡+Amazon数据中心
-    type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 56656
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    tls: true
-    client-fingerprint: chrome
-    servername: cdn-dynmedia-1.microsoft.com
-    network: tcp
-    reality-opts:
-      public-key: QFM3jTzb5n-E9L2cfFo6GHqioGmIkjmG60l8wXA4IXc
-      short-id: aae6d935
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-    type: vless
-    server: platform109.golnamakcert.top
-    port: 80
-    uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /platform109
-      headers:
-        host: platform109.halalkhor.info
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 31.76.227.60
-    port: 443
-    uuid: 05c8eabe-96af-4db2-bb2f-a24fa84344ba
-    tls: true
-    client-fingerprint: chrome
-    servername: assets-mi-29.spbstudentlife.com
-    network: tcp
-    reality-opts:
-      public-key: CcMEJ-JOS4clB3gXbc6wXgzkiJQbyNpKY90I8B6AqyU
-      short-id: 4c188683e2c14a3c
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
-    type: vless
-    server: platform102.golnamakcert.top
-    port: 80
-    uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-    tls: false
-    servername: ''
-    network: ws
-    ws-opts:
-      path: /platform102
-      headers:
-        host: platform102.halalkhor.info
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 新加坡+Amazon数据中心 2
+  - name: 日本+V2CROSS.COM
     type: vless
     server: funagfrdfs.alixxplay.com
     port: 56415
@@ -239,12 +147,136 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 154.36.158.197
-    port: 8388
-    cipher: aes-256-gcm
-    password: BeaUf9c0AEWH40Pu
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 172.64.150.43
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=unsafe
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 中国+阿里云
+    type: hysteria2
+    server: 8.209.247.109
+    port: 443
+    password: usqmqUKJFIlCmvkCNSY64L3k
+    sni: bing.com
+    skip-cert-verify: true
+  - name: 日本+V2CROSS.COM 2
+    type: vless
+    server: funagfrdfs.alixxplay.com
+    port: 47691
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    tls: true
+    client-fingerprint: chrome
+    servername: m.media-amazon.com
+    network: tcp
+    reality-opts:
+      public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
+      short-id: 2905326a
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: 195.133.17.250
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 爱尔兰+V2CROSS.COM
+    type: vless
+    server: 78.17.178.125
+    port: 443
+    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+    tls: true
+    client-fingerprint: chrome
+    servername: cdn.tbank.ru
+    network: tcp
+    reality-opts:
+      public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
+      short-id: e0215064d8d1fd7c
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 日本+V2CROSS.COM 3
+    type: vless
+    server: funagfrdfs.alixxplay.com
+    port: 34379
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    tls: true
+    client-fingerprint: chrome
+    servername: us1p1.xn--ghq880n3na965a.com
+    network: tcp
+    reality-opts:
+      public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
+      short-id: e51285e3
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 日本+V2CROSS.COM 4
+    type: vless
+    server: funagfrdfs.alixxplay.com
+    port: 30892
+    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    tls: true
+    client-fingerprint: chrome
+    servername: us1p1.xn--ghq880n3na965a.com
+    network: tcp
+    reality-opts:
+      public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
+      short-id: 3d31326f95
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 亚太地区+V2CROSS.COM
+    type: vless
+    server: 103.161.178.72
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 阿富汗+V2CROSS.COM
+    type: vless
+    server: 121.127.37.211
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
     udp: true
 proxy-groups:
   - type: select
@@ -252,48 +284,62 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 日本+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 新加坡+Amazon数据中心
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 英国+V2CROSS.COM
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
-      - 新加坡+Amazon数据中心 2
-      - 美国+V2CROSS.COM
+      - 中国+阿里云
+      - 日本+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
+      - 爱尔兰+V2CROSS.COM
+      - 日本+V2CROSS.COM 3
+      - 日本+V2CROSS.COM 4
+      - 亚太地区+V2CROSS.COM
+      - 阿富汗+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 日本+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 新加坡+Amazon数据中心
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 英国+V2CROSS.COM
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
-      - 新加坡+Amazon数据中心 2
-      - 美国+V2CROSS.COM
-  - name: 🇸🇬 Singapore
+      - 中国+阿里云
+      - 日本+V2CROSS.COM 2
+      - 俄罗斯+V2CROSS.COM
+      - 爱尔兰+V2CROSS.COM
+      - 日本+V2CROSS.COM 3
+      - 日本+V2CROSS.COM 4
+      - 亚太地区+V2CROSS.COM
+      - 阿富汗+V2CROSS.COM
+  - name: 🇮🇪 Ireland
     type: url-test
     proxies:
-      - 新加坡+Amazon数据中心
-      - 新加坡+Amazon数据中心 2
+      - 爱尔兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇬🇧 United Kingdom
+  - name: 🇯🇵 Japan
     type: url-test
     proxies:
-      - 英国+V2CROSS.COM
+      - 日本+V2CROSS.COM
+      - 日本+V2CROSS.COM 2
+      - 日本+V2CROSS.COM 3
+      - 日本+V2CROSS.COM 4
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇷🇺 Russia
+    type: url-test
+    proxies:
+      - 俄罗斯+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -301,10 +347,6 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司
-      - 美国+科罗拉多州阿拉帕霍县格林伍德村市NTT美国股份有限公司 2
-      - 美国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -314,8 +356,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -325,8 +368,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -336,8 +380,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -348,8 +393,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -359,8 +405,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -369,8 +416,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -380,8 +428,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -391,8 +440,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -402,8 +452,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
+      - 🇮🇪 Ireland
+      - 🇯🇵 Japan
+      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
