@@ -131,74 +131,72 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 日本+V2CROSS.COM
-    type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 56415
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    tls: true
-    client-fingerprint: chrome
-    servername: www.kaidee.com
-    network: tcp
-    reality-opts:
-      public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-      short-id: cbd39bea0805e2
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 美国+CloudFlare节点
     type: vless
-    server: 172.64.150.43
+    server: 104.19.45.195
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /fp=unsafe
+      path: /?TELEGRAM-TOOTFFARANGIfp=chrome
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 中国+阿里云
-    type: hysteria2
-    server: 8.209.247.109
+  - name: 美国+CloudFlare节点 2
+    type: vless
+    server: 162.159.135.234
     port: 443
-    password: usqmqUKJFIlCmvkCNSY64L3k
-    sni: bing.com
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 3
+    type: vless
+    server: 104.16.111.102
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    tls: true
+    servername: jp3.yohototo.top
+    network: ws
+    ws-opts:
+      path: /tyxyws
+      headers:
+        host: jp3.yohototo.top
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 154.36.158.197
+    port: 8388
+    cipher: aes-256-gcm
+    password: BeaUf9c0AEWH40Pu
+    udp: true
+  - name: 美国+CloudFlare节点 4
+    type: vless
+    server: www.5199dy.com
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
+    network: ws
+    ws-opts:
+      path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
+      headers:
+        host: ccc.010304.xyz
+    tfo: false
     skip-cert-verify: true
-  - name: 日本+V2CROSS.COM 2
-    type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 47691
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    tls: true
-    client-fingerprint: chrome
-    servername: m.media-amazon.com
-    network: tcp
-    reality-opts:
-      public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
-      short-id: 2905326a
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 195.133.17.250
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
     udp: true
   - name: 爱尔兰+V2CROSS.COM
     type: vless
@@ -216,76 +214,57 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 日本+V2CROSS.COM 3
+  - name: 法国 国际航空电讯集团公司(SITA)
+    type: vmess
+    server: 57.131.168.202
+    port: 53183
+    uuid: 2cb092f6-d62c-4e8c-a9f2-db9d46f42de7
+    alterId: 0
+    cipher: auto
+    tls: false
+    servername: ''
+    skip-cert-verify: false
+    network: tcp
+    udp: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: 172.67.161.144
+    port: 8443
+    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: v2ray1.dozapp.xyz
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /lMnsZUN4/
+      headers:
+        host: v2ray1.dozapp.xyz
+    udp: true
+  - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 34379
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    server: 85.193.85.231
+    port: 443
+    uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
     tls: true
     client-fingerprint: chrome
-    servername: us1p1.xn--ghq880n3na965a.com
+    servername: yoy-api.bachidze.com
     network: tcp
     reality-opts:
-      public-key: KfOrtENkHAXDFlsCluw6fv62Q-WuJXCKI98XZihtemA
-      short-id: e51285e3
+      public-key: ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 日本+V2CROSS.COM 4
-    type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 30892
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    tls: true
-    client-fingerprint: chrome
-    servername: us1p1.xn--ghq880n3na965a.com
-    network: tcp
-    reality-opts:
-      public-key: YinI5MijeZpRatg6QNDvP0qXEif-6VHC6gV5yoji4i4
-      short-id: 3d31326f95
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 亚太地区+V2CROSS.COM
-    type: vless
-    server: 103.161.178.72
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 阿富汗+V2CROSS.COM
-    type: vless
-    server: 121.127.37.211
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -293,46 +272,41 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 中国+阿里云
-      - 日本+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 4
       - 爱尔兰+V2CROSS.COM
-      - 日本+V2CROSS.COM 3
-      - 日本+V2CROSS.COM 4
-      - 亚太地区+V2CROSS.COM
-      - 阿富汗+V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 日本+V2CROSS.COM
       - 美国+CloudFlare节点
-      - 中国+阿里云
-      - 日本+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 4
       - 爱尔兰+V2CROSS.COM
-      - 日本+V2CROSS.COM 3
-      - 日本+V2CROSS.COM 4
-      - 亚太地区+V2CROSS.COM
-      - 阿富汗+V2CROSS.COM
+      - 法国 国际航空电讯集团公司(SITA)
+      - 美国 CloudFlare节点
+      - 俄罗斯+V2CROSS.COM
+  - name: 🇫🇷 France
+    type: url-test
+    proxies:
+      - 法国 国际航空电讯集团公司(SITA)
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇮🇪 Ireland
     type: url-test
     proxies:
       - 爱尔兰+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇯🇵 Japan
-    type: url-test
-    proxies:
-      - 日本+V2CROSS.COM
-      - 日本+V2CROSS.COM 2
-      - 日本+V2CROSS.COM 3
-      - 日本+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -347,6 +321,11 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
+      - 美国+CloudFlare节点 2
+      - 美国+CloudFlare节点 3
+      - 美国+V2CROSS.COM
+      - 美国+CloudFlare节点 4
+      - 美国 CloudFlare节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -356,8 +335,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -368,8 +347,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -380,8 +359,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -393,8 +372,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -405,8 +384,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -416,8 +395,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -428,8 +407,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -440,8 +419,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -452,8 +431,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇮🇪 Ireland
-      - 🇯🇵 Japan
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
