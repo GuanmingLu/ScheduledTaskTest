@@ -131,24 +131,9 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+CloudFlare节点
+  - name: 荷兰+V2CROSS.COM
     type: vless
-    server: 104.19.45.195
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /?TELEGRAM-TOOTFFARANGIfp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+CloudFlare节点 2
-    type: vless
-    server: 162.159.135.234
+    server: 130.78.190.134
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -161,110 +146,101 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+CloudFlare节点 3
-    type: vless
-    server: 104.16.111.102
-    port: 443
-    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-    tls: true
-    servername: jp3.yohototo.top
-    network: ws
-    ws-opts:
-      path: /tyxyws
-      headers:
-        host: jp3.yohototo.top
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: ss
-    server: 154.36.158.197
-    port: 8388
-    cipher: aes-256-gcm
-    password: BeaUf9c0AEWH40Pu
-    udp: true
-  - name: 美国+CloudFlare节点 4
-    type: vless
-    server: www.5199dy.com
-    port: 443
-    uuid: d342d11e-d224-4463-b982-532309285094
-    tls: true
-    servername: ccc.010304.xyz
-    network: ws
-    ws-opts:
-      path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2048
-      headers:
-        host: ccc.010304.xyz
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 爱尔兰+V2CROSS.COM
-    type: vless
-    server: 78.17.178.125
-    port: 443
-    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
-    tls: true
-    client-fingerprint: chrome
-    servername: cdn.tbank.ru
-    network: tcp
-    reality-opts:
-      public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
-      short-id: e0215064d8d1fd7c
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 法国 国际航空电讯集团公司(SITA)
-    type: vmess
-    server: 57.131.168.202
-    port: 53183
-    uuid: 2cb092f6-d62c-4e8c-a9f2-db9d46f42de7
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 美国 CloudFlare节点
-    type: vmess
-    server: 172.67.161.144
-    port: 8443
-    uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: v2ray1.dozapp.xyz
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /lMnsZUN4/
-      headers:
-        host: v2ray1.dozapp.xyz
-    udp: true
   - name: 俄罗斯+V2CROSS.COM
     type: vless
-    server: 85.193.85.231
+    server: 195.133.17.250
     port: 443
-    uuid: 8a9c586c-4b2c-49e5-9e78-97408bf58500
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
-    client-fingerprint: chrome
-    servername: yoy-api.bachidze.com
-    network: tcp
-    reality-opts:
-      public-key: ZJlfiMh4ebjrTl2_kwAk_zXMAaCiwNS7yMd5XzlUgmI
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 巴西圣保罗+CloudFlare节点
+    type: trojan
+    server: 188.114.97.8
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.volumeroot.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 日本+软银网络
+    type: vless
+    server: 60.130.209.253
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 104.17.147.22
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+Muskingum+College
+    type: trojan
+    server: 143.246.136.99
+    port: 443
+    password: humanity
+    tls: true
+    sni: www.volumeroot.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+科罗拉多州NTT(美国)通信公司
+    type: vless
+    server: 207.57.122.65
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -272,41 +248,44 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 4
-      - 爱尔兰+V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 CloudFlare节点
+      - 荷兰+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
+      - 巴西圣保罗+CloudFlare节点
+      - 日本+软银网络
+      - 美国+CloudFlare节点
+      - 美国+Muskingum+College
+      - 美国+科罗拉多州NTT(美国)通信公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 4
-      - 爱尔兰+V2CROSS.COM
-      - 法国 国际航空电讯集团公司(SITA)
-      - 美国 CloudFlare节点
+      - 荷兰+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-  - name: 🇫🇷 France
+      - 巴西圣保罗+CloudFlare节点
+      - 日本+软银网络
+      - 美国+CloudFlare节点
+      - 美国+Muskingum+College
+      - 美国+科罗拉多州NTT(美国)通信公司
+  - name: 🇧🇷 Brazil
     type: url-test
     proxies:
-      - 法国 国际航空电讯集团公司(SITA)
+      - 巴西圣保罗+CloudFlare节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇮🇪 Ireland
+  - name: 🇯🇵 Japan
     type: url-test
     proxies:
-      - 爱尔兰+V2CROSS.COM
+      - 日本+软银网络
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇳🇱 Netherlands
+    type: url-test
+    proxies:
+      - 荷兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -321,11 +300,8 @@ proxy-groups:
     type: url-test
     proxies:
       - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+CloudFlare节点 3
-      - 美国+V2CROSS.COM
-      - 美国+CloudFlare节点 4
-      - 美国 CloudFlare节点
+      - 美国+Muskingum+College
+      - 美国+科罗拉多州NTT(美国)通信公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -335,8 +311,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -347,8 +324,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -359,8 +337,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -372,8 +351,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -384,8 +364,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -395,8 +376,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -407,8 +389,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -419,8 +402,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -431,8 +415,9 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇫🇷 France
-      - 🇮🇪 Ireland
+      - 🇧🇷 Brazil
+      - 🇯🇵 Japan
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
