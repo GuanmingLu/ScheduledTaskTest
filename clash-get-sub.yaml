@@ -148,46 +148,6 @@ proxies:
         host: guanwang.awsno.com
     udp: true
   - name: 🇨🇳_CN_中国
-    type: vless
-    server: us22.sofast.live
-    port: 58011
-    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸_US_美国 2
-    type: vless
-    server: cfnode-11ivy8.pages.dev
-    port: 443
-    uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
-    tls: true
-    servername: cfnode-11ivy8.pages.dev
-    network: ws
-    ws-opts:
-      path: /ws
-      headers:
-        host: cfnode-11ivy8.pages.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇨🇳_CN_中国 2
-    type: vmess
-    server: 120.48.133.162
-    port: 10086
-    uuid: 4fc543d5-23ce-4556-ae2b-01685edd4397
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      headers: {}
-    udp: true
-  - name: 🇨🇳_CN_中国 3
     type: vmess
     server: 112.132.215.108
     port: 50002
@@ -199,24 +159,31 @@ proxies:
     skip-cert-verify: false
     network: tcp
     udp: true
-  - name: 🇦🇹 奥地利 | AUT
-    type: vless
-    server: 110.172.148.33
+  - name: 🇵🇱_PL_波兰
+    type: trojan
+    server: 78.17.171.106
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    password: u93yPGuY2zgIsisJZKS2QzJzg
     tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
+    sni: 2.HI-L.IM
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇧🇬 保加利亚 | BGR
+  - name: 🇩🇪_DE_德国
     type: vless
-    server: 104.152.48.248
+    server: edge10.cyrionflare.com
+    port: 2052
+    uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇦🇹 奥地利 | AUT
+    type: vless
+    server: 130.78.185.4
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -229,9 +196,24 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇧🇷 巴西 | BRA
+  - name: 🇦🇿 AZ_15
     type: vless
-    server: 104.64.59.9
+    server: 94.20.154.66
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇧🇬 保加利亚 | BGR
+    type: vless
+    server: 104.152.48.248
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -261,138 +243,194 @@ proxies:
     udp: true
   - name: 🇩🇪 德国 | DEU
     type: vless
-    server: 62.133.60.134
-    port: 8443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    server: 144.31.34.146
+    port: 2096
+    uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
     tls: true
-    servername: snip.edgeoneai.cc.cd
+    servername: fi1.merky.one
     network: ws
     ws-opts:
-      path: /
+      path: /mky-ws-4f19c8a7
       headers:
-        host: snip.edgeoneai.cc.cd
+        host: fi1.merky.one
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇩🇪 德国 | DEU 2
     type: vless
-    server: 13.143.162.138
+    server: 212.87.222.10
     port: 8443
-    uuid: 5d0c6f95-7e53-45eb-ba93-89c90331954a
+    uuid: 8afeb33c-b686-43e9-a629-0d98f991ec28
     tls: true
     client-fingerprint: chrome
-    servername: st7-23.vk.com
+    servername: www.nokia.com
     network: tcp
     reality-opts:
-      public-key: D16XKCyXDstbMKxA1qHzgL6AfOcwbQBFF9XKdNoVL04
-      short-id: '00000000'
+      public-key: f25sygANXTpzdc9YPCwkggwSmm3piA3BluSeHdfG-hg
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
   - name: 🇩🇪 德国 | DEU 3
     type: vless
-    server: wwww.qarvian.ir
+    server: 3.77.199.28
     port: 443
-    uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
-    tls: true
-    servername: firefox.com
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: copy_az_channel_NUFiLTER_a11ia.global.ssl.fastly.net.
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇩🇪 德国 | DEU 4
     type: vless
-    server: 146.75.59.189
+    server: 45.95.0.43
     port: 443
-    uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
-    servername: firefox.com
+    servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /
+      path: /fp=chrome
       headers:
-        host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
+        host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇩🇪 德国 | DEU 5
     type: vless
-    server: 188.114.98.0
-    port: 2087
-    uuid: fd6fb48f-b324-4a82-9dcd-f8bdb1bd5301
-    tls: true
-    servername: ssmeall.javanrooo.ir
-    network: xhttp
+    server: 63.178.23.66
+    port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇩🇪 德国 | DEU 6
     type: vless
-    server: 152.53.127.16
+    server: 63.179.5.24
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: snip.edgeoneai.cc.cd
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇩🇪 德国 | DEU 7
+  - name: 🇪🇸 西班牙 | ESP
     type: vless
-    server: 103.160.59.198
+    server: 51.49.134.60
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇫🇷 法国 | FRA
-    type: vless
-    server: redrocketnode-bidarbash.sbs
-    port: 443
-    uuid: 2bdcf0ac-f84e-471f-98dc-a1807acab1cb
-    tls: true
-    servername: redrocketnode-bidarbash.sbs
-    network: ws
-    ws-opts:
-      path: /zoodi
-      headers:
-        host: redrocketnode-bidarbash.sbs
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇬🇧 英国 | GBR
     type: vless
-    server: 185.139.7.254
-    port: 8080
-    uuid: 2e2409a6-ed8d-4d6c-9765-73d0245f11f0
-    tls: true
-    client-fingerprint: chrome
-    servername: www.parliament.uk
+    server: 13.134.170.98
+    port: 22223
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
     network: tcp
-    reality-opts:
-      public-key: JMK1eCWs3Lzw5O0OjisTlZo4WaSCpIvaG5AB2YYgjnE
-      short-id: a5252fb47a0e9c6f
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
+  - name: 🇬🇧 英国 | GBR 2
+    type: vless
+    server: 13.134.170.98
+    port: 22224
+    uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
   - name: 🇭🇰 香港 | HKG
+    type: vmess
+    server: i2psm3knof5qjjix.v.3dns.vip
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        host: i2psm3knof5qjjix.v.3dns.vip
+    udp: true
+  - name: 🇭🇰 香港 | HKG 2
+    type: vmess
+    server: 47.243.194.125
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        host: nycqg19zkwacpm1b.v.3dns.vip
+    udp: true
+  - name: 🇭🇰 香港 | HKG 3
+    type: vmess
+    server: 47.243.153.153
+    port: 443
+    uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: ''
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws-vmess
+      headers:
+        host: i2psm3knof5qjjix.v.3dns.vip
+    udp: true
+  - name: 🇭🇰 香港 | HKG 4
+    type: vless
+    server: 68.64.179.129
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰 香港 | HKG 5
+    type: vless
+    server: 103.180.20.176
+    port: 8443
+    uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+    tls: true
+    servername: tse1.mm.bing.net
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        host: tse1.mm.bing.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇭🇰 香港 | HKG 6
     type: vless
     server: 103.148.73.173
     port: 8443
@@ -407,17 +445,36 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇭🇰 香港 | HKG 2
-    type: hysteria2
-    server: 202.73.4.182
-    port: 58090
-    password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-    sni: 202.73.4.182
-    skip-cert-verify: true
-  - name: 🇭🇰 香港 | HKG 3
+  - name: 🇭🇰 香港 | HKG 7
     type: vless
-    server: 207.57.132.76
+    server: 103.180.20.108
+    port: 8443
+    uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+    tls: true
+    servername: ty986gfazs.cainiaohub.xyz
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        host: ty986gfazs.cainiaohub.xyz
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇮🇪 爱尔兰 | IRL
+    type: vless
+    server: 34.245.155.44
     port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇮🇪 爱尔兰 | IRL 2
+    type: vless
+    server: 167.148.156.160
+    port: 8443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
@@ -429,169 +486,106 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇭🇰 香港 | HKG 4
+  - name: 🇮🇱 以色列 | ISR
     type: vless
-    server: 47.238.210.5
-    port: 13779
-    uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-    tls: true
-    client-fingerprint: chrome
-    servername: tesla.com
-    network: tcp
-    reality-opts:
-      public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-      short-id: af1bdd293097b664
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇭🇰 香港 | HKG 5
-    type: vless
-    server: 38.207.177.113
-    port: 443
+    server: 185.239.48.154
+    port: 8443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /fp=chrome
+      path: /
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 🇮🇹 意大利 | ITA
+    type: ss
+    server: 202.50.253.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 🇮🇹 意大利 | ITA 2
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
   - name: 🇯🇵 日本 | JPN
     type: vless
-    server: freev2.cloudflare.182682.xyz
-    port: 443
-    uuid: ed6ae8d0-0ad4-4828-8fee-621a650abb39
+    server: 161.248.62.26
+    port: 8443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
-    servername: jp-osa.862400.xyz
+    servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /announcement?ed=2048
+      path: /
       headers:
-        host: jp-osa.862400.xyz
+        host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇯🇵 日本 | JPN 2
-    type: hysteria2
-    server: 131.186.60.56
-    port: 8090
-    password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-    sni: 131.186.60.56
-    skip-cert-verify: true
-  - name: 🇯🇵 日本 | JPN 3
     type: vless
-    server: 131.186.60.56
-    port: 8080
-    uuid: 17c125c4-32cf-4962-bc00-64501a965e56
+    server: pyygg0769.sys-metric-report.com
+    port: 52804
+    uuid: 2c8c4c3b-4616-400c-a2d4-f3669ea18fe9
     tls: true
     client-fingerprint: chrome
-    servername: www.japan.go.jp
+    servername: japp.cfastcdn.com
     network: tcp
     reality-opts:
-      public-key: 6N5z8vKZQR7YXVjOKwH5uVH-fESVWBscCTp75BrGlCM
-      short-id: ecdf75157a3b899f
+      public-key: cCwvNI8D-LX-kLH1IDuBZwnKkkyMPJm_0sJXsxz-_mA
+      short-id: 68c4f6b0
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇯🇵 日本 | JPN 4
-    type: vless
-    server: 176.97.71.215
-    port: 9443
-    uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
-    tls: true
-    client-fingerprint: chrome
-    servername: www.amazon.com
-    network: tcp
-    reality-opts:
-      public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-      short-id: b390142456517acc
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇯🇵 日本 | JPN 5
-    type: vless
-    server: 161.33.192.73
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
   - name: 🇰🇷 韩国 | KOR
     type: vless
-    server: 144.24.77.185
-    port: 8080
-    uuid: 17c125c4-32cf-4962-bc00-64501a965e56
-    tls: true
-    client-fingerprint: chrome
-    servername: www.korea.net
-    network: tcp
-    reality-opts:
-      public-key: l8pmRRQbIW6ElyaAQBUaWm4M14XqwtDbOJZXefDO4hs
-      short-id: 1d15daf7c72d3d10
+    server: 3.36.86.28
+    port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 🇰🇷 韩国 | KOR 2
-    type: vless
-    server: 141.164.56.22
+  - name: 🇳🇱 荷兰 | NLD
+    type: trojan
+    server: 104.18.35.86
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    password: humanity
     tls: true
-    servername: snip.edgeoneai.cc.cd
+    sni: www.volumerOot.coM.
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇳🇱 荷兰 | NLD 2
+    type: vless
+    server: 188.164.248.216
+    port: 443
+    uuid: d342d11e-d224-4463-b982-532309285094
+    tls: true
+    servername: ccc.010304.xyz
     network: ws
     ws-opts:
       path: /
       headers:
-        host: snip.edgeoneai.cc.cd
+        host: ccc.010304.xyz
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇰🇷 韩国 | KOR 3
-    type: vmess
-    server: seoul01.zgjok.com
-    port: 443
-    uuid: 182f1650-ca13-480c-b0b4-1ca44ed0504e
-    alterId: 0
-    cipher: auto
-    tls: true
-    servername: ''
-    skip-cert-verify: false
-    network: ws
-    ws-opts:
-      path: /henis01
-      headers:
-        host: seoul01.zgjok.com
-    udp: true
-  - name: 🇰🇷 韩国 | KOR 4
-    type: hysteria2
-    server: 144.24.77.185
-    port: 8090
-    password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-    sni: 144.24.77.185
-    skip-cert-verify: true
-  - name: 🇲🇾 马来西亚 | MYS
-    type: hysteria2
-    server: my1.deeprush.ai
-    port: 8090
-    password: FizGVblL7_JqY-tzhmuhXWOAZw8DnwQZ
-    sni: my1.deeprush.ai
-    skip-cert-verify: true
-  - name: 🇲🇾 马来西亚 | MYS 2
+  - name: 🇵🇱 波兰 | POL
     type: vless
-    server: 72.60.236.128
+    server: 104.245.245.16
     port: 8443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -605,17 +599,109 @@ proxies:
     skip-cert-verify: false
     udp: true
   - name: 🇷🇺 俄罗斯 | RUS
+    type: ss
+    server: 176.32.34.253
+    port: 18443
+    cipher: aes-256-gcm
+    password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+    udp: true
+  - name: 🇸🇪 瑞典 | SWE
     type: vless
-    server: 78.159.246.179
-    port: 2053
-    uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
-    tls: true
-    servername: randomquaint.net
-    network: xhttp
+    server: 51.21.247.148
+    port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇸🇪 瑞典 | SWE 2
+    type: vless
+    server: 13.60.198.133
+    port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
     tfo: false
     skip-cert-verify: false
     udp: true
   - name: 🇸🇬 新加坡 | SGP
+    type: hysteria2
+    server: 56.10.64.57
+    port: 443
+    password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+    sni: www.bing.com
+    skip-cert-verify: true
+  - name: 🇹🇼 🇨🇳 台湾 | TWN
+    type: vless
+    server: 60.248.219.53
+    port: 443
+    uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+    tls: true
+    servername: ty986gfazs.cainiaohub.xyz
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        host: ty986gfazs.cainiaohub.xyz
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇹🇼 🇨🇳 台湾 | TWN 2
+    type: vless
+    server: 59.125.69.23
+    port: 443
+    uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+    tls: true
+    servername: ty986gfazs.cainiaohub.xyz
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        host: ty986gfazs.cainiaohub.xyz
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇹🇼 🇨🇳 台湾 | TWN 3
+    type: vless
+    server: 59.125.69.22
+    port: 443
+    uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+    tls: true
+    servername: tse1.mm.bing.net
+    network: ws
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        host: tse1.mm.bing.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA
+    type: trojan
+    server: 104.21.82.155
+    port: 443
+    password: bd85f5fe32d9446a8b1f59e4f710455b
+    tls: true
+    sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸 美国 | USA 2
+    type: trojan
+    server: b2n.ir
+    port: 443
+    password: mitivpn
+    tls: true
+    sni: de.mitivpn.in.net
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸 美国 | USA 3
     type: vless
     server: 104.18.35.86
     port: 2082
@@ -630,79 +716,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇸🇬 新加坡 | SGP 2
-    type: hysteria2
-    server: 95.134.250.190
-    port: 8090
-    password: FUdYqhnJnTWM-89-Id6Rzhq37szlxZDt
-    sni: 95.134.250.190
-    skip-cert-verify: true
-  - name: 🇸🇬 新加坡 | SGP 3
+  - name: 🇺🇸 美国 | USA 4
     type: vless
-    server: 104.18.35.86
-    port: 2083
-    uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
-    tls: true
-    servername: vlsovip.1d.mom
-    network: ws
-    ws-opts:
-      path: /fp=unsafe
-      headers:
-        host: vlsovip.1d.mom
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇸🇬 新加坡 | SGP 4
-    type: vless
-    server: 95.134.250.190
-    port: 8080
-    uuid: 17c125c4-32cf-4962-bc00-64501a965e56
-    tls: true
-    client-fingerprint: chrome
-    servername: www.gov.sg
-    network: tcp
-    reality-opts:
-      public-key: YuQJBPkwrRR0EBNknG2ZDWhyCWCV5YMJFj1DlC8F5RU
-      short-id: 4e37af843f76e999
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 🇹🇼 🇨🇳 台湾 | TWN
-    type: vless
-    server: 59.125.69.24
-    port: 443
-    uuid: 06e177f7-240d-4687-bd85-235505801a5e
-    tls: true
-    servername: ty986gfazs.cainiaohub.xyz
-    network: ws
-    ws-opts:
-      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-      headers:
-        host: ty986gfazs.cainiaohub.xyz
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 | USA
-    type: vless
-    server: 9bc578g.us4.h1clayd.click
-    port: 443
-    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-    tls: true
-    client-fingerprint: chrome
-    servername: 9bc578g.us4.h1clayd.click
-    network: grpc
-    reality-opts:
-      public-key: uUWYLl2Fdhr74k9o5WacesJjvsCwLiOHccgfR23TIk4
-      short-id: 29b29106d4769e3a
-    grpc-opts:
-      grpc-service-name: ''
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 🇺🇸 美国 | USA 2
-    type: vless
-    server: 179.255.107.216
+    server: 104.17.148.22
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -715,89 +731,181 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 3
+  - name: 🇺🇸 美国 | USA 5
     type: vless
-    server: a0688bt.us4.h1clayd.click
+    server: grimness-backlogs.cdn-content.com
     port: 443
-    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+    uuid: 1263d819-9089-4b14-ab52-09a747817ebc
     tls: true
-    client-fingerprint: chrome
-    servername: a0688bt.us4.h1clayd.click
-    network: tcp
-    reality-opts:
-      public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-      short-id: 257420d9d430152a
+    servername: grimness-backlogs.cdn-content.com
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        host: grimness-backlogs.cdn-content.com
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 4
+  - name: 🇺🇸 美国 | USA 6
     type: vless
-    server: 185.92.182.106
-    port: 2083
+    server: 199.232.78.160
+    port: 443
+    uuid: XpnTeam-30
+    tls: true
+    servername: ssl.fastly.com
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: Appxdn.global.ssl.fastly.net
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 7
+    type: vless
+    server: 13.143.182.82
+    port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /fp=chrome
+      path: /
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 5
+  - name: 🇺🇸 美国 | USA 8
     type: vless
-    server: 107.172.79.9
-    port: 8081
-    uuid: 2e2409a6-ed8d-4d6c-9765-73d0245f11f0
+    server: 54.191.98.142
+    port: 443
+    uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+    tls: false
+    servername: ''
+    network: http
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 9
+    type: vless
+    server: 203.88.117.190
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 10
+    type: vless
+    server: 156.229.164.4
+    port: 9443
+    uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
     tls: true
     client-fingerprint: chrome
-    servername: www.usa.gov
+    servername: www.amazon.com
     network: tcp
     reality-opts:
-      public-key: YDQA69QQ08Rk4DysoiSepqcP0E6NwyP7jGLN9dzmFC4
-      short-id: 1efd713c7a45ee57
+      public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+      short-id: b390142456517acc
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 🇺🇸 美国 | USA 6
+  - name: 🇺🇸 美国 | USA 11
     type: vless
-    server: shortbig.ir
+    server: 162.35.127.65
     port: 443
-    uuid: ed6c724c-435f-4f83-a781-f57579af320b
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
-    servername: alman.5f2vvtqh5syot.info
+    servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /9d9fdbc18c834cffab4276811501fbae
+      path: /
       headers:
-        host: alman.5f2vvtqh5syot.info
+        host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 🇺🇸 美国 | USA 7
-    type: hysteria2
-    server: 96.47.230.162
-    port: 8090
-    password: FUdYqhnJnTWM-89-Id6Rzhq37szlxZDt
-    sni: 96.47.230.162
+  - name: 🇺🇸 美国 | USA 12
+    type: vless
+    server: 104.19.45.195
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /?TELEGRAM-TOOTFFARANGI
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 13
+    type: trojan
+    server: x.com
+    port: 2087
+    password: 31794262-b429-4f35-8ffe-c1fa8a43b8d7
+    tls: true
+    sni: au3.yang-1989.xyz
+    network: tcp
+    tfo: false
     skip-cert-verify: true
+    udp: true
+  - name: 🇺🇸 美国 | USA 14
+    type: vless
+    server: 166.88.33.91
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 🇺🇸 美国 | USA 15
+    type: vless
+    server: 141.98.41.20
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: fp=unsafe
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -808,12 +916,11 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国 2
-      - 🇨🇳_CN_中国 2
-      - 🇨🇳_CN_中国 3
+      - 🇵🇱_PL_波兰
+      - 🇩🇪_DE_德国
       - 🇦🇹 奥地利 | AUT
+      - 🇦🇿 AZ_15
       - 🇧🇬 保加利亚 | BGR
-      - 🇧🇷 巴西 | BRA
       - 🇨🇾 塞浦路斯 | CYP
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
@@ -821,31 +928,34 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇫🇷 法国 | FRA
+      - 🇪🇸 西班牙 | ESP
       - 🇬🇧 英国 | GBR
+      - 🇬🇧 英国 | GBR 2
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
       - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇮🇪 爱尔兰 | IRL
+      - 🇮🇪 爱尔兰 | IRL 2
+      - 🇮🇱 以色列 | ISR
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
-      - 🇯🇵 日本 | JPN 3
-      - 🇯🇵 日本 | JPN 4
-      - 🇯🇵 日本 | JPN 5
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇲🇾 马来西亚 | MYS
-      - 🇲🇾 马来西亚 | MYS 2
+      - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
+      - 🇵🇱 波兰 | POL
       - 🇷🇺 俄罗斯 | RUS
+      - 🇸🇪 瑞典 | SWE
+      - 🇸🇪 瑞典 | SWE 2
       - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
       - 🇹🇼 🇨🇳 台湾 | TWN
+      - 🇹🇼 🇨🇳 台湾 | TWN 2
+      - 🇹🇼 🇨🇳 台湾 | TWN 3
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -853,6 +963,14 @@ proxy-groups:
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
       - 🇺🇸 美国 | USA 7
+      - 🇺🇸 美国 | USA 8
+      - 🇺🇸 美国 | USA 9
+      - 🇺🇸 美国 | USA 10
+      - 🇺🇸 美国 | USA 11
+      - 🇺🇸 美国 | USA 12
+      - 🇺🇸 美国 | USA 13
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA 15
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -861,12 +979,11 @@ proxy-groups:
     proxies:
       - 🇺🇸_US_美国
       - 🇨🇳_CN_中国
-      - 🇺🇸_US_美国 2
-      - 🇨🇳_CN_中国 2
-      - 🇨🇳_CN_中国 3
+      - 🇵🇱_PL_波兰
+      - 🇩🇪_DE_德国
       - 🇦🇹 奥地利 | AUT
+      - 🇦🇿 AZ_15
       - 🇧🇬 保加利亚 | BGR
-      - 🇧🇷 巴西 | BRA
       - 🇨🇾 塞浦路斯 | CYP
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
@@ -874,31 +991,34 @@ proxy-groups:
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
-      - 🇫🇷 法国 | FRA
+      - 🇪🇸 西班牙 | ESP
       - 🇬🇧 英国 | GBR
+      - 🇬🇧 英国 | GBR 2
       - 🇭🇰 香港 | HKG
       - 🇭🇰 香港 | HKG 2
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
       - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+      - 🇮🇪 爱尔兰 | IRL
+      - 🇮🇪 爱尔兰 | IRL 2
+      - 🇮🇱 以色列 | ISR
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
-      - 🇯🇵 日本 | JPN 3
-      - 🇯🇵 日本 | JPN 4
-      - 🇯🇵 日本 | JPN 5
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
-      - 🇲🇾 马来西亚 | MYS
-      - 🇲🇾 马来西亚 | MYS 2
+      - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
+      - 🇵🇱 波兰 | POL
       - 🇷🇺 俄罗斯 | RUS
+      - 🇸🇪 瑞典 | SWE
+      - 🇸🇪 瑞典 | SWE 2
       - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
       - 🇹🇼 🇨🇳 台湾 | TWN
+      - 🇹🇼 🇨🇳 台湾 | TWN 2
+      - 🇹🇼 🇨🇳 台湾 | TWN 3
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -906,30 +1026,24 @@ proxy-groups:
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
       - 🇺🇸 美国 | USA 7
-  - name: 🇧🇷 Brazil
-    type: url-test
-    proxies:
-      - 🇧🇷 巴西 | BRA
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇫🇷 France
-    type: url-test
-    proxies:
-      - 🇫🇷 法国 | FRA
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 🇺🇸 美国 | USA 8
+      - 🇺🇸 美国 | USA 9
+      - 🇺🇸 美国 | USA 10
+      - 🇺🇸 美国 | USA 11
+      - 🇺🇸 美国 | USA 12
+      - 🇺🇸 美国 | USA 13
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA 15
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
+      - 🇩🇪_DE_德国
       - 🇩🇪 德国 | DEU
       - 🇩🇪 德国 | DEU 2
       - 🇩🇪 德国 | DEU 3
       - 🇩🇪 德国 | DEU 4
       - 🇩🇪 德国 | DEU 5
       - 🇩🇪 德国 | DEU 6
-      - 🇩🇪 德国 | DEU 7
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -941,6 +1055,24 @@ proxy-groups:
       - 🇭🇰 香港 | HKG 3
       - 🇭🇰 香港 | HKG 4
       - 🇭🇰 香港 | HKG 5
+      - 🇭🇰 香港 | HKG 6
+      - 🇭🇰 香港 | HKG 7
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇮🇪 Ireland
+    type: url-test
+    proxies:
+      - 🇮🇪 爱尔兰 | IRL
+      - 🇮🇪 爱尔兰 | IRL 2
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇮🇹 Italy
+    type: url-test
+    proxies:
+      - 🇮🇹 意大利 | ITA
+      - 🇮🇹 意大利 | ITA 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -949,9 +1081,6 @@ proxy-groups:
     proxies:
       - 🇯🇵 日本 | JPN
       - 🇯🇵 日本 | JPN 2
-      - 🇯🇵 日本 | JPN 3
-      - 🇯🇵 日本 | JPN 4
-      - 🇯🇵 日本 | JPN 5
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -959,17 +1088,14 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇰🇷 韩国 | KOR
-      - 🇰🇷 韩国 | KOR 2
-      - 🇰🇷 韩国 | KOR 3
-      - 🇰🇷 韩国 | KOR 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇲🇾 Malaysia
+  - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
-      - 🇲🇾 马来西亚 | MYS
-      - 🇲🇾 马来西亚 | MYS 2
+      - 🇳🇱 荷兰 | NLD
+      - 🇳🇱 荷兰 | NLD 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -984,9 +1110,21 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇸🇬 新加坡 | SGP
-      - 🇸🇬 新加坡 | SGP 2
-      - 🇸🇬 新加坡 | SGP 3
-      - 🇸🇬 新加坡 | SGP 4
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇪🇸 Spain
+    type: url-test
+    proxies:
+      - 🇪🇸 西班牙 | ESP
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
+  - name: 🇸🇪 Sweden
+    type: url-test
+    proxies:
+      - 🇸🇪 瑞典 | SWE
+      - 🇸🇪 瑞典 | SWE 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -994,6 +1132,8 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇹🇼 🇨🇳 台湾 | TWN
+      - 🇹🇼 🇨🇳 台湾 | TWN 2
+      - 🇹🇼 🇨🇳 台湾 | TWN 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -1001,6 +1141,7 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇬🇧 英国 | GBR
+      - 🇬🇧 英国 | GBR 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -1008,7 +1149,6 @@ proxy-groups:
     type: url-test
     proxies:
       - 🇺🇸_US_美国
-      - 🇺🇸_US_美国 2
       - 🇺🇸 美国 | USA
       - 🇺🇸 美国 | USA 2
       - 🇺🇸 美国 | USA 3
@@ -1016,6 +1156,14 @@ proxy-groups:
       - 🇺🇸 美国 | USA 5
       - 🇺🇸 美国 | USA 6
       - 🇺🇸 美国 | USA 7
+      - 🇺🇸 美国 | USA 8
+      - 🇺🇸 美国 | USA 9
+      - 🇺🇸 美国 | USA 10
+      - 🇺🇸 美国 | USA 11
+      - 🇺🇸 美国 | USA 12
+      - 🇺🇸 美国 | USA 13
+      - 🇺🇸 美国 | USA 14
+      - 🇺🇸 美国 | USA 15
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -1025,15 +1173,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1045,15 +1195,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1065,15 +1217,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1086,15 +1240,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1106,15 +1262,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1125,15 +1283,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1145,15 +1305,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1165,15 +1327,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
@@ -1185,15 +1349,17 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇫🇷 France
       - 🇩🇪 Germany
       - 🇭🇰 Hong Kong
+      - 🇮🇪 Ireland
+      - 🇮🇹 Italy
       - 🇯🇵 Japan
       - 🇰🇷 Korea
-      - 🇲🇾 Malaysia
+      - 🇳🇱 Netherlands
       - 🇷🇺 Russia
       - 🇸🇬 Singapore
+      - 🇪🇸 Spain
+      - 🇸🇪 Sweden
       - 🇹🇼 Taiwan
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States

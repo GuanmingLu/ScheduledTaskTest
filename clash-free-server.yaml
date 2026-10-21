@@ -131,24 +131,40 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 荷兰+V2CROSS.COM
+  - name: >-
+      TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560#美国+CloudFlare节点
     type: vless
-    server: 130.78.190.134
+    server: 172.67.118.45
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /
+      path: /fdip
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 195.133.17.250
+    server: 209.182.100.216
+    port: 8443
+    uuid: 2620fca9-2d47-0082-b51a-50ff5ed307d3
+    tls: true
+    client-fingerprint: chrome
+    servername: x5club.ru
+    network: tcp
+    reality-opts:
+      public-key: 7T9ZSCdUh4IUlx17R1Vbzk8kjiopA3j5mI7-inh6aQU
+      short-id: 187eea0acfb7f778
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 欧盟+V2CROSS.COM
+    type: vless
+    server: 45.95.0.43
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -161,22 +177,93 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 巴西圣保罗+CloudFlare节点
-    type: trojan
-    server: 188.114.97.8
-    port: 443
-    password: humanity
+  - name: 俄罗斯+V2CROSS.COM
+    type: vless
+    server: ss2.soreanapanel.com
+    port: 8080
+    uuid: 22136b20-6365-4ae6-b21a-799a00ab1346
     tls: true
-    sni: www.volumeroot.com
-    network: ws
-    ws-opts:
-      path: /assignment
+    client-fingerprint: chrome
+    servername: graphs.4cdn.de
+    network: tcp
+    reality-opts:
+      public-key: t_z1GMEv2FYr0Bo57WBuKRRlkyOMj40025j-OcWCtkU
+      short-id: 8d542c72c84f
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 日本+软银网络
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: jp4.998998.best
+    port: 443
+    uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: nat12.9966338.xyz
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /vvvvvvvvv
+      headers:
+        host: nat12.9966338.xyz
+    udp: true
+  - name: 柬埔寨+V2CROSS.COM
     type: vless
-    server: 60.130.209.253
+    server: 103.242.15.87
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 乌克兰+V2CROSS.COM
+    type: vless
+    server: 185.230.44.140
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 新西兰+V2CROSS.COM
+    type: ss
+    server: 202.50.253.99
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 保加利亚+V2CROSS.COM
+    type: vless
+    server: 83.219.97.18
+    port: 443
+    uuid: fe551942-d6e5-4361-ae5c-1f2e9077cd79
+    tls: true
+    client-fingerprint: chrome
+    servername: fi5.silalink.sbs
+    network: tcp
+    reality-opts:
+      public-key: 32XFmS-ifqooBFY89KNP3ZrqgSBOd3vel9GlNinL6yw
+      short-id: '03'
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+加利福尼亚州洛杉矶Vultr数据中心
+    type: vless
+    server: 207.246.105.197
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -191,7 +278,7 @@ proxies:
     udp: true
   - name: 美国+CloudFlare节点
     type: vless
-    server: 104.17.147.22
+    server: www.speedtest.net
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -204,29 +291,32 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+Muskingum+College
-    type: trojan
-    server: 143.246.136.99
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 31.59.216.141
     port: 443
-    password: humanity
+    uuid: c6cfcc53-9271-4ef7-88c5-5141621c8db1
     tls: true
-    sni: www.volumeroot.com
-    network: ws
-    ws-opts:
-      path: /assignment
+    client-fingerprint: chrome
+    servername: 193.23.216.239.cdn-one.org
+    network: tcp
+    reality-opts:
+      public-key: 7zsU1U-30jh-qqfmqZukMfoqHB75ksKFA5aQFi8LGW4
+      short-id: 70b4ca
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+科罗拉多州NTT(美国)通信公司
+    flow: xtls-rprx-vision
+  - name: 澳大利亚+V2CROSS.COM
     type: vless
-    server: 207.57.122.65
+    server: 203.88.117.227
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /fp=chrome
+      path: /
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
@@ -238,9 +328,8 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -248,44 +337,51 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 荷兰+V2CROSS.COM
+      - >-
+        TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560#美国+CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-      - 巴西圣保罗+CloudFlare节点
-      - 日本+软银网络
+      - 美国 CloudFlare节点
+      - 柬埔寨+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Vultr数据中心
       - 美国+CloudFlare节点
-      - 美国+Muskingum+College
-      - 美国+科罗拉多州NTT(美国)通信公司
+      - 伊朗+V2CROSS.COM
+      - 澳大利亚+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 荷兰+V2CROSS.COM
+      - >-
+        TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560#美国+CloudFlare节点
+      - 美国+V2CROSS.COM
+      - 欧盟+V2CROSS.COM
       - 俄罗斯+V2CROSS.COM
-      - 巴西圣保罗+CloudFlare节点
-      - 日本+软银网络
+      - 美国 CloudFlare节点
+      - 柬埔寨+V2CROSS.COM
+      - 乌克兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM
+      - 保加利亚+V2CROSS.COM
+      - 美国+加利福尼亚州洛杉矶Vultr数据中心
       - 美国+CloudFlare节点
-      - 美国+Muskingum+College
-      - 美国+科罗拉多州NTT(美国)通信公司
-  - name: 🇧🇷 Brazil
+      - 伊朗+V2CROSS.COM
+      - 澳大利亚+V2CROSS.COM
+  - name: 🇦🇺 Australia
     type: url-test
     proxies:
-      - 巴西圣保罗+CloudFlare节点
+      - 澳大利亚+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇯🇵 Japan
+  - name: 🇳🇿 New Zealand
     type: url-test
     proxies:
-      - 日本+软银网络
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    proxies:
-      - 荷兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -299,9 +395,10 @@ proxy-groups:
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
+      - 美国+加利福尼亚州洛杉矶Vultr数据中心
       - 美国+CloudFlare节点
-      - 美国+Muskingum+College
-      - 美国+科罗拉多州NTT(美国)通信公司
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -311,9 +408,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -324,9 +420,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -337,9 +432,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -351,9 +445,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -364,9 +457,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
@@ -376,9 +468,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -389,9 +480,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -402,9 +492,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
@@ -415,9 +504,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
-      - 🇳🇱 Netherlands
+      - 🇦🇺 Australia
+      - 🇳🇿 New Zealand
       - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
