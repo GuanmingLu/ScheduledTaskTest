@@ -131,23 +131,53 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 新西兰+V2CROSS.COM
-    type: ss
-    server: 202.50.253.36
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 美国+CloudFlare节点
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: 162.159.140.116
+    server: 162.35.169.69
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 新西兰+V2CROSS.COM
+    type: ss
+    server: 202.50.253.90
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 荷兰+V2CROSS.COM
+    type: vless
+    server: 130.78.185.4
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点
+    type: vless
+    server: 104.18.42.153
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
@@ -155,14 +185,14 @@ proxies:
     udp: true
   - name: 美国+CloudFlare节点 2
     type: vless
-    server: 172.64.153.61
+    server: 104.16.137.145
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
     network: ws
     ws-opts:
-      path: /fdip
+      path: /
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
@@ -170,7 +200,7 @@ proxies:
     udp: true
   - name: 美国+CloudFlare节点 3
     type: vless
-    server: 172.64.150.43
+    server: 104.16.65.1
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -183,9 +213,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 柬埔寨+V2CROSS.COM
+  - name: 美国+CloudFlare节点 4
     type: vless
-    server: 103.242.15.87
+    server: 104.17.147.22
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -198,10 +228,10 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+佛罗里达州迈阿密市
+  - name: 美国加利福尼亚州洛杉矶+V2CROSS.COM
     type: vless
-    server: 72.56.106.210
-    port: 443
+    server: 45.157.233.109
+    port: 2087
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
     servername: snip.edgeoneai.cc.cd
@@ -213,100 +243,44 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 罗马尼亚+V2CROSS.COM
-    type: vless
-    server: 81.181.166.197
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
+  - name: 新西兰+V2CROSS.COM 2
+    type: ss
+    server: 202.50.253.63
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 北美地区+V2CROSS.COM
+  - name: 拉脱维亚+V2CROSS.COM
     type: vless
-    server: 104.152.48.248
+    server: lite.3apes.online
     port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 波兰+V2CROSS.COM
-    type: vless
-    server: 141.98.41.20
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: fp=unsafe
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 乌克兰+V2CROSS.COM
-    type: vless
-    server: 213.111.177.107
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /fp=chrome
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 193.36.95.34
-    port: 443
-    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-    tls: true
-    servername: snip.edgeoneai.cc.cd
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: snip.edgeoneai.cc.cd
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 新加坡+Amazon数据中心
-    type: vless
-    server: funagfrdfs.alixxplay.com
-    port: 46105
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+    uuid: c31dc85a-747e-4dac-94b9-2d5ca7791367
     tls: true
     client-fingerprint: chrome
-    servername: www.lamer.com.sg
+    servername: lite.3apes.online
     network: tcp
     reality-opts:
-      public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-      short-id: 28f5c1f8f98a
+      public-key: q4_o7NvD6vQg4hYsyO29Q6PVufjTJHDUbQTqstre9EQ
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+Xerox
+  - name: 乌克兰+V2CROSS.COM
+    type: trojan
+    server: 82.117.245.125
+    port: 2053
+    password: humanity
+    tls: true
+    sni: www.calmlunch.com
+    network: ws
+    ws-opts:
+      path: /assignment
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 5
     type: vless
-    server: 13.140.29.253
+    server: 172.64.155.209
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -314,6 +288,21 @@ proxies:
     network: ws
     ws-opts:
       path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+  - name: 美国+V2CROSS.COM 2
+    type: vless
+    server: 162.35.127.65
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
@@ -321,7 +310,7 @@ proxies:
     udp: true
   - name: 亚太地区+V2CROSS.COM
     type: vless
-    server: 103.161.178.72
+    server: 103.161.179.36
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -334,9 +323,24 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 澳大利亚+V2CROSS.COM
+  - name: 美国+Xerox
     type: vless
-    server: 203.88.117.190
+    server: 13.143.182.82
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 6
+    type: vless
+    server: 162.159.128.253
     port: 443
     uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
     tls: true
@@ -344,6 +348,21 @@ proxies:
     network: ws
     ws-opts:
       path: /
+      headers:
+        host: snip.edgeoneai.cc.cd
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+CloudFlare节点 7
+    type: vless
+    server: 104.17.29.46
+    port: 443
+    uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+    tls: true
+    servername: snip.edgeoneai.cc.cd
+    network: ws
+    ws-opts:
+      path: /fp=chrome
       headers:
         host: snip.edgeoneai.cc.cd
     tfo: false
@@ -355,56 +374,58 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 美国+V2CROSS.COM
       - 新西兰+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 柬埔寨+V2CROSS.COM
-      - 美国+佛罗里达州迈阿密市
-      - 罗马尼亚+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 波兰+V2CROSS.COM
+      - 美国+CloudFlare节点 4
+      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 拉脱维亚+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 美国+Xerox
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM 2
       - 亚太地区+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
+      - 美国+Xerox
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 美国+V2CROSS.COM
       - 新西兰+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 柬埔寨+V2CROSS.COM
-      - 美国+佛罗里达州迈阿密市
-      - 罗马尼亚+V2CROSS.COM
-      - 北美地区+V2CROSS.COM
-      - 波兰+V2CROSS.COM
+      - 美国+CloudFlare节点 4
+      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 拉脱维亚+V2CROSS.COM
       - 乌克兰+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-      - 美国+Xerox
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM 2
       - 亚太地区+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
-  - name: 🇦🇺 Australia
+      - 美国+Xerox
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
+  - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
-      - 澳大利亚+V2CROSS.COM
+      - 荷兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -412,31 +433,24 @@ proxy-groups:
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇸🇬 Singapore
-    type: url-test
-    proxies:
-      - 新加坡+Amazon数据中心
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    proxies:
-      - 英国+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+V2CROSS.COM
       - 美国+CloudFlare节点
       - 美国+CloudFlare节点 2
       - 美国+CloudFlare节点 3
-      - 美国+佛罗里达州迈阿密市
+      - 美国+CloudFlare节点 4
+      - 美国加利福尼亚州洛杉矶+V2CROSS.COM
+      - 美国+CloudFlare节点 5
+      - 美国+V2CROSS.COM 2
       - 美国+Xerox
+      - 美国+CloudFlare节点 6
+      - 美国+CloudFlare节点 7
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -446,10 +460,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -459,10 +471,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -472,10 +482,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -486,10 +494,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -499,10 +505,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -511,10 +515,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -524,10 +526,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -537,10 +537,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -550,10 +548,8 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
+      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
