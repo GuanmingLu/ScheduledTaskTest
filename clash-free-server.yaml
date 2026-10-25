@@ -131,6 +131,20 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
+  - name: 新西兰+V2CROSS.COM
+    type: ss
+    server: 202.50.253.81
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 新西兰+V2CROSS.COM 2
+    type: ss
+    server: 202.50.253.36
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
   - name: 荷兰+V2CROSS.COM
     type: vless
     server: 213.152.165.203
@@ -147,89 +161,103 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
-    type: trojan
-    server: 108.162.194.134
-    port: 443
-    password: humanity
-    tls: true
-    sni: www.pleadcourt.org
-    network: ws
-    ws-opts:
-      path: /assignment
-      headers:
-        host: www.pleadcourt.org
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 保加利亚+V2CROSS.COM
-    type: vless
-    server: 83.219.97.18
-    port: 443
-    uuid: fe551942-d6e5-4361-ae5c-1f2e9077cd79
-    tls: true
-    client-fingerprint: chrome
-    servername: fi5.silalink.sbs
-    network: tcp
-    reality-opts:
-      public-key: 32XFmS-ifqooBFY89KNP3ZrqgSBOd3vel9GlNinL6yw
-      short-id: '03'
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+Xerox
+  - name: 日本+东京都Amazon数据中心
     type: vless
     server: funagfrdfs.alixxplay.com
-    port: 56415
+    port: 54528
     uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
     tls: true
     client-fingerprint: chrome
-    servername: www.kaidee.com
+    servername: www.apple.com
     network: tcp
     reality-opts:
-      public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-      short-id: cbd39bea0805e2
+      public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+      short-id: 54cca3c1c1c7
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 罗马尼亚+V2CROSS.COM
+  - name: 美国+FDC芝加哥机房
     type: vless
-    server: 89.34.230.66
-    port: 60023
-    uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+    server: 66.90.115.122
+    port: 2090
+    uuid: 3644635c-f8c4-449c-a665-fce1897a7bf3
     tls: true
     client-fingerprint: chrome
-    servername: starlink.com
-    network: grpc
+    servername: www.apple.com
+    network: tcp
     reality-opts:
-      public-key: PFL3AoMNTu9-VrM2WIrvQl2l-ibVgR5vIE1Vh-txKVg
-      short-id: 6070d424a64f75
-    grpc-opts: {}
+      public-key: qBobe6KSNkFLqTPCffcJo0nXgxy-3JKru9WRqY9rkjk
+      short-id: bb472a184677af64
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 新西兰+V2CROSS.COM
-    type: ss
-    server: 202.50.253.90
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    flow: xtls-rprx-vision
+  - name: 江苏省南京市+腾讯云
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
     udp: true
   - name: 美国+V2CROSS.COM
-    type: ss
-    server: 154.36.158.197
-    port: 8388
-    cipher: aes-256-gcm
-    password: BeaUf9c0AEWH40Pu
+    type: vless
+    server: 45.144.221.169
+    port: 443
+    uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+    tls: true
+    client-fingerprint: chrome
+    servername: arizona.eosapp.net
+    network: tcp
+    reality-opts:
+      public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+    tfo: false
+    skip-cert-verify: false
     udp: true
+    flow: xtls-rprx-vision
+  - name: 伊朗+V2CROSS.COM
+    type: vless
+    server: 31.59.216.141
+    port: 443
+    uuid: c6cfcc53-9271-4ef7-88c5-5141621c8db1
+    tls: true
+    client-fingerprint: chrome
+    servername: 193.23.216.239.cdn-one.org
+    network: tcp
+    reality-opts:
+      public-key: 7zsU1U-30jh-qqfmqZukMfoqHB75ksKFA5aQFi8LGW4
+      short-id: 70b4ca
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 荷兰+V2CROSS.COM 2
+    type: vless
+    server: 213.152.165.203
+    port: 2093
+    uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+    tls: true
+    client-fingerprint: chrome
+    servername: www.apple.com
+    network: tcp
+    reality-opts:
+      public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+      short-id: 8a9725533854a7e8
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -238,30 +266,42 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 保加利亚+V2CROSS.COM
-      - 美国+Xerox
-      - 罗马尼亚+V2CROSS.COM
       - 新西兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 荷兰+V2CROSS.COM
+      - 日本+东京都Amazon数据中心
+      - 美国+FDC芝加哥机房
+      - 江苏省南京市+腾讯云
       - 美国+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 荷兰+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 荷兰+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 保加利亚+V2CROSS.COM
-      - 美国+Xerox
-      - 罗马尼亚+V2CROSS.COM
       - 新西兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 荷兰+V2CROSS.COM
+      - 日本+东京都Amazon数据中心
+      - 美国+FDC芝加哥机房
+      - 江苏省南京市+腾讯云
       - 美国+V2CROSS.COM
+      - 伊朗+V2CROSS.COM
+      - 荷兰+V2CROSS.COM 2
+  - name: 🇯🇵 Japan
+    type: url-test
+    proxies:
+      - 日本+东京都Amazon数据中心
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇳🇱 Netherlands
     type: url-test
     proxies:
       - 荷兰+V2CROSS.COM
+      - 荷兰+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -269,14 +309,14 @@ proxy-groups:
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+CloudFlare节点
-      - 美国+Xerox
+      - 美国+FDC芝加哥机房
       - 美国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
@@ -287,6 +327,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -298,6 +339,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -309,6 +351,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -321,6 +364,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -332,6 +376,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -342,6 +387,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -353,6 +399,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -364,6 +411,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
@@ -375,6 +423,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇯🇵 Japan
       - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
