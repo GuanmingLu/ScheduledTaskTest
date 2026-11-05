@@ -131,17 +131,13 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 87.242.119.253
-    port: 443
-    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-    tls: true
-    servername: hvtlr-ru-47sb.fade.mom
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
+  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
+    type: hysteria2
+    server: 129.146.124.201
+    port: 51000
+    password: 1d491f8c-ccaa-43e1-b62d-f255c7832e27
+    sni: cn.cremedelamer.com
+    skip-cert-verify: true
   - name: 新西兰+V2CROSS.COM
     type: ss
     server: 202.50.253.63
@@ -149,84 +145,50 @@ proxies:
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 北京市+惟译天创信息技术有限公司
-    type: vless
-    server: jp.sofast.live
-    port: 52683
-    uuid: 399b6b23-cc40-4831-a494-61948e2df133
-    tls: false
-    servername: ''
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 以色列+V2CROSS.COM
-    type: vless
-    server: 79.182.39.57
+  - name: 巴西+圣保罗
+    type: hysteria2
+    server: steel7.hadsvpn.com
     port: 443
-    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+    password: 23c82941-70f4-4381-90db-bd28e9a902e9
+    sni: steel7.hadsvpn.com
+    skip-cert-verify: false
+  - name: 新西兰+V2CROSS.COM 2
+    type: ss
+    server: 202.50.253.27
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 美国+FDCServers数据中心
+    type: vless
+    server: 198.16.113.220
+    port: 8443
+    uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
     tls: true
     client-fingerprint: chrome
-    servername: a0688bt.us4.h1clayd.click
+    servername: www.apple.com
     network: tcp
     reality-opts:
-      public-key: 5-9YzvyXcZ4J5Z4OaVTUbxUU2InvnwT17m0XY-Jse1E
-      short-id: 257420d9d430152a
+      public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+      short-id: 69984b9e02545831
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 新西兰+V2CROSS.COM 2
+    flow: xtls-rprx-vision
+  - name: 新西兰+V2CROSS.COM 3
+    type: ss
+    server: 202.50.253.54
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 新西兰+V2CROSS.COM 4
     type: ss
     server: 202.50.253.45
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 新西兰+V2CROSS.COM 3
-    type: ss
-    server: 202.50.253.99
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 美国+Xerox
-    type: hysteria2
-    server: pl2.nexfile.net
-    port: 4444
-    password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-    sni: pl2.nexfile.net
-    skip-cert-verify: false
-  - name: 巴西+V2CROSS.COM
-    type: vless
-    server: 186.246.9.29
-    port: 443
-    uuid: b2847c3b-5278-4b06-9c66-bc919d2dfec7
-    tls: true
-    client-fingerprint: chrome
-    servername: wordpress.com
-    network: tcp
-    reality-opts:
-      public-key: MPNMomAMn_lu9YMYjD2jAQWrI-rTM4hj9Jgg9d6qzTA
-      short-id: 50ad5564
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+V2CROSS.COM
-    type: vless
-    server: 45.129.242.56
-    port: 443
-    uuid: ebdfaf99-41d8-4e48-8196-d54510ffb556
-    tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: YURKlEQ3rap4KOXXGsVFZyYev2oDU2gCEbNTXPdKWRY
-      short-id: abcdef
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
@@ -235,41 +197,36 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 新西兰+V2CROSS.COM
-      - 北京市+惟译天创信息技术有限公司
-      - 以色列+V2CROSS.COM
+      - 巴西+圣保罗
       - 新西兰+V2CROSS.COM 2
+      - 美国+FDCServers数据中心
       - 新西兰+V2CROSS.COM 3
-      - 美国+Xerox
-      - 巴西+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 新西兰+V2CROSS.COM
-      - 北京市+惟译天创信息技术有限公司
-      - 以色列+V2CROSS.COM
+      - 巴西+圣保罗
       - 新西兰+V2CROSS.COM 2
+      - 美国+FDCServers数据中心
       - 新西兰+V2CROSS.COM 3
-      - 美国+Xerox
-      - 巴西+V2CROSS.COM
-      - 美国+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 4
   - name: 🇧🇷 Brazil
     type: url-test
     proxies:
-      - 巴西+V2CROSS.COM
+      - 巴西+圣保罗
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -279,21 +236,15 @@ proxy-groups:
       - 新西兰+V2CROSS.COM
       - 新西兰+V2CROSS.COM 2
       - 新西兰+V2CROSS.COM 3
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+Xerox
-      - 美国+V2CROSS.COM
+      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
+      - 美国+FDCServers数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -305,7 +256,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -317,7 +267,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -329,7 +278,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -342,7 +290,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -354,7 +301,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -365,7 +311,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -377,7 +322,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -389,7 +333,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -401,7 +344,6 @@ proxy-groups:
       - 🖐️ 手动切换
       - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
       - 🇺🇸 United States
       - DIRECT
       - REJECT
