@@ -131,27 +131,47 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国+亚利桑那州凤凰城Oracle云计算数据中心
-    type: hysteria2
-    server: 129.146.124.201
-    port: 51000
-    password: 1d491f8c-ccaa-43e1-b62d-f255c7832e27
-    sni: cn.cremedelamer.com
-    skip-cert-verify: true
   - name: 新西兰+V2CROSS.COM
     type: ss
-    server: 202.50.253.63
+    server: 202.50.253.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 巴西+圣保罗
-    type: hysteria2
-    server: steel7.hadsvpn.com
-    port: 443
-    password: 23c82941-70f4-4381-90db-bd28e9a902e9
-    sni: steel7.hadsvpn.com
+  - name: 北京市+惟译天创信息技术有限公司
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 399b6b23-cc40-4831-a494-61948e2df133
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
     skip-cert-verify: false
+    udp: true
+  - name: 美国+V2CROSS.COM
+    type: ss
+    server: 154.36.158.197
+    port: 8388
+    cipher: aes-256-gcm
+    password: BeaUf9c0AEWH40Pu
+    udp: true
+  - name: 美国 CloudFlare节点
+    type: vmess
+    server: cf.877771.xyz
+    port: 443
+    uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+    alterId: 0
+    cipher: auto
+    tls: true
+    servername: vmess.lbw666.dpdns.org
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws?ed=2048
+      headers:
+        host: vmess.lbw666.dpdns.org
+    udp: true
   - name: 新西兰+V2CROSS.COM 2
     type: ss
     server: 202.50.253.27
@@ -159,35 +179,23 @@ proxies:
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 美国+FDCServers数据中心
-    type: vless
-    server: 198.16.113.220
-    port: 8443
-    uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
-    tls: true
-    client-fingerprint: chrome
-    servername: www.apple.com
-    network: tcp
-    reality-opts:
-      public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-      short-id: 69984b9e02545831
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 新西兰+V2CROSS.COM 3
     type: ss
-    server: 202.50.253.54
+    server: 202.50.253.99
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 新西兰+V2CROSS.COM 4
-    type: ss
-    server: 202.50.253.45
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 北京市+惟译天创信息技术有限公司 2
+    type: vless
+    server: jp.sofast.live
+    port: 52683
+    uuid: 5aaa5259-f924-4682-a4a3-149d472a9dcc
+    tls: false
+    servername: ''
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
     udp: true
 proxy-groups:
   - type: select
@@ -195,7 +203,6 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -203,48 +210,40 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 新西兰+V2CROSS.COM
-      - 巴西+圣保罗
+      - 北京市+惟译天创信息技术有限公司
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 新西兰+V2CROSS.COM 2
-      - 美国+FDCServers数据中心
       - 新西兰+V2CROSS.COM 3
-      - 新西兰+V2CROSS.COM 4
+      - 北京市+惟译天创信息技术有限公司 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
       - 新西兰+V2CROSS.COM
-      - 巴西+圣保罗
+      - 北京市+惟译天创信息技术有限公司
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
       - 新西兰+V2CROSS.COM 2
-      - 美国+FDCServers数据中心
       - 新西兰+V2CROSS.COM 3
-      - 新西兰+V2CROSS.COM 4
-  - name: 🇧🇷 Brazil
-    type: url-test
-    proxies:
-      - 巴西+圣保罗
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 北京市+惟译天创信息技术有限公司 2
   - name: 🇳🇿 New Zealand
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
       - 新西兰+V2CROSS.COM 2
       - 新西兰+V2CROSS.COM 3
-      - 新西兰+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+亚利桑那州凤凰城Oracle云计算数据中心
-      - 美国+FDCServers数据中心
+      - 美国+V2CROSS.COM
+      - 美国 CloudFlare节点
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -254,7 +253,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -265,7 +263,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -276,7 +273,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -288,7 +284,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - REJECT
@@ -299,7 +294,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - REJECT
@@ -309,7 +303,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -320,7 +313,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -331,7 +323,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
@@ -342,7 +333,6 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
       - 🇳🇿 New Zealand
       - 🇺🇸 United States
       - DIRECT
