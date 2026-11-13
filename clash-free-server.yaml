@@ -131,359 +131,105 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 日本+V2CROSS.COM
+  - name: 美国+Amazon+EC2服务器
     type: vless
-    server: 43.163.112.174
+    server: 3.169.9.125
     port: 443
-    uuid: 0dedd47d-47b9-4ed1-9c9f-cbeecad57a68
+    uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
     tls: true
-    client-fingerprint: chrome
-    servername: www.cloudflare.com
-    network: tcp
-    reality-opts:
-      public-key: mXQudYHNu0pebcdk1_qn-UgcmwhjaV7y9UrYu3HX7Rg
-      short-id: 0123456789abcdef
+    servername: d2ex4nxd2e01ub.cloudfront.net
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        host: d2ex4nxd2e01ub.cloudfront.net
     tfo: false
     skip-cert-verify: false
     udp: true
-    flow: xtls-rprx-vision
-  - name: 智利+V2CROSS.COM
-    type: vless
-    server: 152.175.6.229
-    port: 31884
-    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-    tls: true
-    servername: hk010.zestapp778.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 巴西+V2CROSS.COM
-    type: vless
-    server: 179.253.98.66
-    port: 8443
-    uuid: af185070-7170-46a8-b1e9-d61a035f4691
-    tls: true
-    client-fingerprint: chrome
-    servername: skskks.top
-    network: grpc
-    reality-opts:
-      public-key: am-3rjmrITvv3q3smauPEtMZYnwvt-48611YJfKQhig
-      short-id: e722d6ff
-    grpc-opts: {}
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 罗马尼亚+V2CROSS.COM
-    type: vless
-    server: 212.69.135.27
-    port: 8443
-    uuid: 857e5668-88b9-45cd-a600-79e55c04d8a8
-    tls: true
-    client-fingerprint: chrome
-    servername: uk-room05.filesnap.tech
-    network: tcp
-    reality-opts:
-      public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
-      short-id: 7da3ba09a037e956
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 巴西+V2CROSS.COM 2
-    type: hysteria2
-    server: 186.246.18.62
-    port: 443
-    password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
-    sni: hy.cardlist24.shop
-    skip-cert-verify: true
-  - name: 伊拉克+V2CROSS.COM
-    type: vless
-    server: 5.104.74.144
-    port: 8443
-    uuid: a2c7856f-718d-47fc-980d-7ee15000225b
-    tls: true
-    client-fingerprint: chrome
-    servername: uk-room07.filesnap.tech
-    network: tcp
-    reality-opts:
-      public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
-      short-id: dbef98744832b751
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 伊拉克+V2CROSS.COM 2
-    type: vless
-    server: 5.104.74.25
-    port: 8443
-    uuid: c1f87d4d-3ea2-4378-925a-b4942e930a7d
-    tls: true
-    client-fingerprint: chrome
-    servername: uk-room07.filesnap.tech
-    network: tcp
-    reality-opts:
-      public-key: 48j01Jsa4o8zfmCGEFoVjn-YeALM80-DSG_-nAZUBDM
-      short-id: dbef98744832b751
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+FDC芝加哥机房
-    type: vless
-    server: prime.jarbook.net
-    port: 443
-    uuid: 95d0e214-eab0-4701-93ed-fea4f1b56062
-    tls: true
-    client-fingerprint: chrome
-    servername: prime.jarbook.net
-    network: tcp
-    reality-opts:
-      public-key: oAX7soFKfN3xURgCD26trmjeF-e-eEjW3pBVXuuvW0k
-      short-id: 77a8c8c8
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 瑞典+V2CROSS.COM
-    type: trojan
-    server: 167.88.61.175
-    port: 443
-    password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-    tls: true
-    sni: blog.browseseniorrolesandenhanceyourcareertoday.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 巴西+V2CROSS.COM 3
-    type: vless
-    server: 191.217.211.161
-    port: 443
-    uuid: 0806e6e2-e01d-482c-b530-be3b57d486d4
-    tls: true
-    client-fingerprint: chrome
-    servername: pl1.song69.fun
-    network: tcp
-    reality-opts:
-      public-key: 5H_MmyfvF4SkwS84wTbLmtcZDecXJIJtZ3uisiKQpSM
-      short-id: 0c774b50
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 瑞士+V2CROSS.COM
-    type: vless
-    server: at1.japancase.site
-    port: 443
-    uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-    tls: true
-    client-fingerprint: chrome
-    servername: at1.japancase.site
-    network: tcp
-    reality-opts:
-      public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
-      short-id: 41ae8e266bc3346f
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
   - name: 新西兰+V2CROSS.COM
     type: ss
-    server: 202.50.253.27
+    server: 202.50.253.90
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 🇹🇷[www.v2cross.com] Trojan VPN-TR-16214224
+    type: trojan
+    server: sclass-b1.catcat321.com
+    port: 20027
+    password: d7563108-615c-4338-a7bd-77f359869a4a
+    tls: true
+    sni: hk.catxstar.com
+    network: tcp
+    tfo: false
+    skip-cert-verify: true
     udp: true
   - name: 新西兰+V2CROSS.COM 2
-    type: ss
-    server: 202.50.253.63
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 新西兰+V2CROSS.COM 3
     type: ss
     server: 202.50.253.72
     port: 19999
     cipher: aes-256-gcm
     password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 巴西+V2CROSS.COM 4
-    type: hysteria2
-    server: hy.cardlist24.shop
-    port: 443
-    password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
-    sni: hy.cardlist24.shop
-    skip-cert-verify: false
-  - name: 巴西+V2CROSS.COM 5
-    type: hysteria2
-    server: 186.246.18.62
-    port: 443
-    password: f4b80b26-b6d4-49a6-a460-f50efb7a457c
-    sni: hy.cardlist24.shop
-    skip-cert-verify: false
-  - name: 罗马尼亚+V2CROSS.COM 2
-    type: vless
-    server: 212.69.135.26
-    port: 8443
-    uuid: e1b32562-91ba-404f-946e-d4c41293a67b
-    tls: true
-    client-fingerprint: chrome
-    servername: uk-room05.filesnap.tech
-    network: tcp
-    reality-opts:
-      public-key: FdZlh9FC4ay9OGnKG6K_iNqhz1I3tWDfNZhxrDYuQl8
-      short-id: 7da3ba09a037e956
-    tfo: false
-    skip-cert-verify: false
+  - name: 新西兰+V2CROSS.COM 3
+    type: ss
+    server: 202.50.253.54
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-    flow: xtls-rprx-vision
-  - name: 俄罗斯+V2CROSS.COM
-    type: vless
-    server: 15d7fft.nl11.h1clayd.click
-    port: 443
-    uuid: b7b8ee80-db83-4276-8c68-87dc88b0b0b5
-    tls: true
-    client-fingerprint: chrome
-    servername: 15d7fft.nl11.h1clayd.click
-    network: tcp
-    reality-opts:
-      public-key: xv6OUZcyzEHXFMTfumuJH-1Rd4NQ0cdmWikek4mm0m4
-      short-id: c71118d9399fb8c2
-    tfo: false
-    skip-cert-verify: false
+  - name: 新西兰+V2CROSS.COM 4
+    type: ss
+    server: 202.50.253.81
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 伊拉克+V2CROSS.COM 3
-    type: vless
-    server: 5.104.74.69
-    port: 8443
-    uuid: 16cd1338-ecb9-44f3-8f0c-919242370ef2
-    tls: true
-    client-fingerprint: chrome
-    servername: uk-room06.filesnap.tech
-    network: tcp
-    reality-opts:
-      public-key: D9IxnCLtXuDLR1yBNZwWdxxbNDfsZgN3C9IsqKgG8Ec
-      short-id: 17a35165f9d25923
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 日本+V2CROSS.COM
-      - 智利+V2CROSS.COM
-      - 巴西+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 巴西+V2CROSS.COM 2
-      - 伊拉克+V2CROSS.COM
-      - 伊拉克+V2CROSS.COM 2
-      - 美国+FDC芝加哥机房
-      - 瑞典+V2CROSS.COM
-      - 巴西+V2CROSS.COM 3
-      - 瑞士+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
       - 新西兰+V2CROSS.COM
+      - 🇹🇷[www.v2cross.com] Trojan VPN-TR-16214224
       - 新西兰+V2CROSS.COM 2
       - 新西兰+V2CROSS.COM 3
-      - 巴西+V2CROSS.COM 4
-      - 巴西+V2CROSS.COM 5
-      - 罗马尼亚+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
-      - 伊拉克+V2CROSS.COM 3
+      - 新西兰+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 日本+V2CROSS.COM
-      - 智利+V2CROSS.COM
-      - 巴西+V2CROSS.COM
-      - 罗马尼亚+V2CROSS.COM
-      - 巴西+V2CROSS.COM 2
-      - 伊拉克+V2CROSS.COM
-      - 伊拉克+V2CROSS.COM 2
-      - 美国+FDC芝加哥机房
-      - 瑞典+V2CROSS.COM
-      - 巴西+V2CROSS.COM 3
-      - 瑞士+V2CROSS.COM
+      - 美国+Amazon+EC2服务器
       - 新西兰+V2CROSS.COM
+      - 🇹🇷[www.v2cross.com] Trojan VPN-TR-16214224
       - 新西兰+V2CROSS.COM 2
       - 新西兰+V2CROSS.COM 3
-      - 巴西+V2CROSS.COM 4
-      - 巴西+V2CROSS.COM 5
-      - 罗马尼亚+V2CROSS.COM 2
-      - 俄罗斯+V2CROSS.COM
-      - 伊拉克+V2CROSS.COM 3
-  - name: 🇧🇷 Brazil
-    type: url-test
-    proxies:
-      - 巴西+V2CROSS.COM
-      - 巴西+V2CROSS.COM 2
-      - 巴西+V2CROSS.COM 3
-      - 巴西+V2CROSS.COM 4
-      - 巴西+V2CROSS.COM 5
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇯🇵 Japan
-    type: url-test
-    proxies:
-      - 日本+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
+      - 新西兰+V2CROSS.COM 4
   - name: 🇳🇿 New Zealand
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
       - 新西兰+V2CROSS.COM 2
       - 新西兰+V2CROSS.COM 3
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇷🇺 Russia
-    type: url-test
-    proxies:
-      - 俄罗斯+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇸🇪 Sweden
-    type: url-test
-    proxies:
-      - 瑞典+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇨🇭 Switzerland
-    type: url-test
-    proxies:
-      - 瑞士+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+FDC芝加哥机房
+      - 美国+Amazon+EC2服务器
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -493,12 +239,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -508,12 +249,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -523,12 +259,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -539,12 +270,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -554,12 +280,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -568,12 +289,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -583,12 +299,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -598,12 +309,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -613,12 +319,7 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇧🇷 Brazil
-      - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
-      - 🇸🇪 Sweden
-      - 🇨🇭 Switzerland
       - 🇺🇸 United States
       - DIRECT
       - REJECT
