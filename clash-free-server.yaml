@@ -131,60 +131,33 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 美国 Alabanza
-    type: vmess
-    server: 65.108.240.210
-    port: 39018
-    uuid: 77fb7a80-4724-4e33-9558-4f20c1634c5a
-    alterId: 0
-    cipher: auto
-    tls: false
-    servername: ''
-    skip-cert-verify: false
-    network: tcp
-    udp: true
-  - name: 美国+CloudFlare节点
-    type: vless
-    server: 172.64.149.88
-    port: 443
-    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-    tls: true
-    servername: top-e4s.pages.dev
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        host: top-e4s.pages.dev
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 澳大利亚+V2CROSS.COM
+  - name: 日本+东京Amazon数据中心
     type: trojan
-    server: 103.11.76.183
-    port: 443
-    password: f426d3c9-fb43-43c0-868b-898dfa451a74
+    server: sclass-c2.catcat321.com
+    port: 20051
+    password: d9064589-74af-432a-9390-5d8a9da281bf
     tls: true
-    sni: likejennie.pages.dev
-    network: ws
-    ws-opts:
-      path: /
+    sni: hk.catxstar.com
+    network: tcp
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 新西兰+V2CROSS.COM
-    type: ss
-    server: 202.50.253.18
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  - name: 爱沙尼亚+V2CROSS.COM
+    type: vless
+    server: 196.196.148.76
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    tls: true
+    client-fingerprint: chrome
+    servername: 8a2e72t.nl20.h1clayd.shop
+    network: tcp
+    reality-opts:
+      public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+      short-id: 8d0d0679f42ffd98
+    tfo: false
+    skip-cert-verify: false
     udp: true
-  - name: 新西兰+V2CROSS.COM 2
-    type: ss
-    server: 202.50.253.36
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
+    flow: xtls-rprx-vision
   - name: 亚太地区+V2CROSS.COM
     type: vless
     server: 103.116.7.67
@@ -197,26 +170,45 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 德国+阿里云
-    type: ss
-    server: 47.254.175.2
-    port: 443
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-    udp: true
-  - name: 美国+CloudFlare节点 2
+  - name: 西班牙+V2CROSS.COM
     type: vless
-    server: 104.17.147.208
+    server: 196.196.149.80
     port: 443
-    uuid: 258ca28a-d982-4a40-b620-7c1c81108060
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
     tls: true
-    servername: b.rack.sxsc.dpdns.org
-    network: ws
-    ws-opts: {}
+    client-fingerprint: chrome
+    servername: 7aa271t.es1.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+      short-id: 42426c882c5fcd41
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 爱沙尼亚+V2CROSS.COM
+    flow: xtls-rprx-vision
+  - name: 西班牙+V2CROSS.COM 2
+    type: vless
+    server: 196.245.52.187
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    tls: true
+    client-fingerprint: chrome
+    servername: 04535dt.us8.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+      short-id: ba2a3dce62b99092
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 新西兰+V2CROSS.COM
+    type: ss
+    server: 202.50.253.81
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 爱沙尼亚+V2CROSS.COM 2
     type: vless
     server: 196.196.148.85
     port: 443
@@ -231,48 +223,9 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 美国+V2CROSS.COM
+  - name: 美国+Xerox
     type: vless
-    server: 66.163.118.113
-    port: 443
-    uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-    tls: true
-    client-fingerprint: chrome
-    servername: www.apple.com
-    network: tcp
-    reality-opts:
-      public-key: PwN5VWqwWKVfrqqrbLE4kzVu9vIXSENAUiAPjMWIrVY
-      short-id: 32209e627ee109c7
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 美国+V2CROSS.COM 2
-    type: ss
-    server: 154.36.158.197
-    port: 8388
-    cipher: aes-256-gcm
-    password: BeaUf9c0AEWH40Pu
-    udp: true
-  - name: 日本+东京Amazon数据中心
-    type: vless
-    server: zfapi.zalolink.com
-    port: 43149
-    uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-    tls: true
-    client-fingerprint: chrome
-    servername: psstatic.cdn.bcebos.com
-    network: tcp
-    reality-opts:
-      public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-      short-id: 15aa0ad4
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 塞舌尔+V2CROSS.COM
-    type: vless
-    server: 196.199.122.2
+    server: 7aa271t.es1.h1clayd.click
     port: 443
     uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
     tls: true
@@ -286,7 +239,7 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 新加坡+Amazon数据中心
+  - name: 香港+葵兴数据中心
     type: trojan
     server: sclass-01.catcat321.com
     port: 20103
@@ -297,68 +250,84 @@ proxies:
     tfo: false
     skip-cert-verify: false
     udp: true
+  - name: 美国+Xerox 2
+    type: vless
+    server: 04535dt.us8.h1clayd.click
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    tls: true
+    client-fingerprint: chrome
+    servername: 04535dt.us8.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+      short-id: ba2a3dce62b99092
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+Muskingum+College
+    type: vless
+    server: 345739t.de15.h1clayd.click
+    port: 443
+    uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+    tls: true
+    client-fingerprint: chrome
+    servername: 345739t.de15.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+      short-id: 23732d14a527990d
+    tfo: false
+    skip-cert-verify: false
+    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 美国 Alabanza
-      - 美国+CloudFlare节点
-      - 澳大利亚+V2CROSS.COM
-      - 新西兰+V2CROSS.COM
-      - 新西兰+V2CROSS.COM 2
-      - 亚太地区+V2CROSS.COM
-      - 德国+阿里云
-      - 美国+CloudFlare节点 2
-      - 爱沙尼亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 日本+东京Amazon数据中心
-      - 塞舌尔+V2CROSS.COM
-      - 新加坡+Amazon数据中心
+      - 爱沙尼亚+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM
+      - 爱沙尼亚+V2CROSS.COM 2
+      - 美国+Xerox
+      - 香港+葵兴数据中心
+      - 美国+Xerox 2
+      - 美国+Muskingum+College
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 美国 Alabanza
-      - 美国+CloudFlare节点
-      - 澳大利亚+V2CROSS.COM
-      - 新西兰+V2CROSS.COM
-      - 新西兰+V2CROSS.COM 2
-      - 亚太地区+V2CROSS.COM
-      - 德国+阿里云
-      - 美国+CloudFlare节点 2
-      - 爱沙尼亚+V2CROSS.COM
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
       - 日本+东京Amazon数据中心
-      - 塞舌尔+V2CROSS.COM
-      - 新加坡+Amazon数据中心
-  - name: 🇦🇺 Australia
+      - 爱沙尼亚+V2CROSS.COM
+      - 亚太地区+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM
+      - 爱沙尼亚+V2CROSS.COM 2
+      - 美国+Xerox
+      - 香港+葵兴数据中心
+      - 美国+Xerox 2
+      - 美国+Muskingum+College
+  - name: 🇭🇰 Hong Kong
     type: url-test
     proxies:
-      - 澳大利亚+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇩🇪 Germany
-    type: url-test
-    proxies:
-      - 德国+阿里云
+      - 香港+葵兴数据中心
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -373,25 +342,23 @@ proxy-groups:
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
-      - 新西兰+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇸🇬 Singapore
+  - name: 🇪🇸 Spain
     type: url-test
     proxies:
-      - 新加坡+Amazon数据中心
+      - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国 Alabanza
-      - 美国+CloudFlare节点
-      - 美国+CloudFlare节点 2
-      - 美国+V2CROSS.COM
-      - 美国+V2CROSS.COM 2
+      - 美国+Xerox
+      - 美国+Xerox 2
+      - 美国+Muskingum+College
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -401,11 +368,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -415,11 +381,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -429,11 +394,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -444,11 +408,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -458,11 +421,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -471,11 +433,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -485,11 +446,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -499,11 +459,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -513,11 +472,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
+      - 🇭🇰 Hong Kong
       - 🇯🇵 Japan
       - 🇳🇿 New Zealand
-      - 🇸🇬 Singapore
+      - 🇪🇸 Spain
       - 🇺🇸 United States
       - DIRECT
       - REJECT
