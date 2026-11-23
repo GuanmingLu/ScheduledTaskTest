@@ -21,7 +21,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ai-!cn.mrs
     path: ./ruleset/category-ai-!cn.mrs
     interval: 86400
   youtube:
@@ -29,7 +29,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs
     path: ./ruleset/youtube.mrs
     interval: 86400
   google:
@@ -37,7 +37,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.mrs
     path: ./ruleset/google.mrs
     interval: 86400
   geolocation-cn:
@@ -45,7 +45,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-cn.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-cn.mrs
     path: ./ruleset/geolocation-cn.mrs
     interval: 86400
   cn:
@@ -53,7 +53,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.mrs
     path: ./ruleset/cn.mrs
     interval: 86400
   github:
@@ -61,7 +61,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs
     path: ./ruleset/github.mrs
     interval: 86400
   gitlab:
@@ -69,7 +69,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/gitlab.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/gitlab.mrs
     path: ./ruleset/gitlab.mrs
     interval: 86400
   geolocation-!cn:
@@ -77,7 +77,7 @@ rule-providers:
     format: mrs
     behavior: domain
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs
     path: ./ruleset/geolocation-!cn.mrs
     interval: 86400
   google-ip:
@@ -85,7 +85,7 @@ rule-providers:
     format: mrs
     behavior: ipcidr
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs
     path: ./ruleset/google-ip.mrs
     interval: 86400
   private-ip:
@@ -93,7 +93,7 @@ rule-providers:
     format: mrs
     behavior: ipcidr
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs
     path: ./ruleset/private-ip.mrs
     interval: 86400
   cn-ip:
@@ -101,7 +101,7 @@ rule-providers:
     format: mrs
     behavior: ipcidr
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs
     path: ./ruleset/cn-ip.mrs
     interval: 86400
   telegram-ip:
@@ -109,7 +109,7 @@ rule-providers:
     format: mrs
     behavior: ipcidr
     url: >-
-      https://gh-proxy.com/https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
+      https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
     path: ./ruleset/telegram-ip.mrs
     interval: 86400
 dns:
@@ -131,55 +131,84 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 德国+阿里云
-    type: ss
-    server: 47.254.167.157
-    port: 443
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-    udp: true
-  - name: 台湾省台北市+中华电信
+  - name: 美国+V2CROSS.COM
     type: vless
-    server: free.fugui.lol
-    port: 51283
-    uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
+    server: 168.113.253.178
+    port: 443
+    uuid: eb88bb1a-7bf0-0001-b9cd-4f97c89f0e9b
     tls: true
-    client-fingerprint: ios
-    servername: swdist.apple.com
+    client-fingerprint: chrome
+    servername: uzndiuvzvqqljdyhzs.fcloudservices.site
     network: tcp
-    reality-opts:
-      public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-      short-id: fa514b83
     tfo: false
     skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 台湾省台北市+中华电信 2
-    type: vless
-    server: free.fugui.lol
-    port: 19482
-    uuid: ead3595f-4020-4e76-a3ec-c248e1a2f2f7
-    tls: true
-    client-fingerprint: ios
-    servername: swdist.apple.com
-    network: tcp
-    reality-opts:
-      public-key: IjWYbHNrZb3UCQxsTJyekEOA3tHq42L6Jw3O8MmLYVQ
-      short-id: fa514b83
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 德国+阿里云 2
-    type: ss
-    server: 47.254.128.109
-    port: 443
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
     udp: true
   - name: 西班牙+V2CROSS.COM
     type: vless
+    server: 196.196.149.81
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    tls: true
+    client-fingerprint: firefox
+    servername: 7aa271t.es1.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+      short-id: 42426c882c5fcd41
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+Xerox
+    type: vless
+    server: 5d0319t.nl7.h1clayd.click
+    port: 443
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    tls: true
+    client-fingerprint: firefox
+    servername: 5d0319t.nl7.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+      short-id: 361d0dd59c70516f
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 爱尔兰+V2CROSS.COM
+    type: vless
+    server: 83.141.92.168
+    port: 443
+    uuid: a7595994-695d-484e-bfcb-e9fbb73cfa39
+    tls: true
+    client-fingerprint: chrome
+    servername: sladovna.russianpiwo.fun
+    network: tcp
+    reality-opts:
+      public-key: kpQWnVk3fEJXfPGFsMerUoPV_ZqUJUJFRnF1FvKyhRY
+      short-id: 7a7d19880a9ee786
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 西班牙+V2CROSS.COM 2
+    type: vless
     server: 196.196.149.80
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    tls: true
+    client-fingerprint: chrome
+    servername: 7aa271t.es1.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+      short-id: 42426c882c5fcd41
+    tfo: false
+    skip-cert-verify: true
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 西班牙+V2CROSS.COM 3
+    type: vless
+    server: 196.196.149.81
     port: 443
     uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
     tls: true
@@ -193,7 +222,113 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 台湾省台北市+中华电信 3
+  - name: 美国+纽约(Prudential)
+    type: vless
+    server: 48.102.173.125
+    port: 444
+    uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
+    tls: true
+    client-fingerprint: chrome
+    servername: neplay603.gangtype.com
+    network: ws
+    ws-opts:
+      path: /stream/updates/a66d7902
+      headers:
+        host: neplay603.gangtype.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 美国+纽约(Prudential) 2
+    type: vless
+    server: 48.102.173.24
+    port: 444
+    uuid: ef5a57c7-84d5-4f86-b99c-875a16da485f
+    tls: true
+    client-fingerprint: firefox
+    servername: neplay603.gangtype.com
+    network: ws
+    ws-opts:
+      path: /stream/updates/a66d7902
+      headers:
+        host: neplay603.gangtype.com
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 西班牙+V2CROSS.COM 4
+    type: vless
+    server: 196.196.149.80
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    tls: true
+    client-fingerprint: chrome
+    servername: 7aa271t.es1.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+      short-id: 42426c882c5fcd41
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 北美地区+V2CROSS.COM
+    type: hysteria2
+    server: 23.141.172.229
+    port: 50541
+    password: ePPsH1bMFD
+    sni: is1-ssl.mzstatic.com
+    skip-cert-verify: true
+    alpn:
+      - h3
+      - h2
+      - http/1.1
+  - name: 塞舌尔+V2CROSS.COM
+    type: vless
+    server: 196.199.122.2
+    port: 443
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+    tls: true
+    client-fingerprint: firefox
+    servername: 7aa271t.es1.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+      short-id: 42426c882c5fcd41
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+    flow: xtls-rprx-vision
+  - name: 美国+V2CROSS.COM 2
+    type: vless
+    server: 168.113.253.178
+    port: 443
+    uuid: d6d40100-9442-0001-b5b9-6d259318c421
+    tls: true
+    client-fingerprint: chrome
+    servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 新西兰+V2CROSS.COM
+    type: ss
+    server: 202.50.253.27
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    udp: true
+  - name: 美国+V2CROSS.COM 3
+    type: vless
+    server: 168.113.253.178
+    port: 443
+    uuid: 608172ed-68e4-0001-85dc-f92c25d0eb92
+    tls: true
+    client-fingerprint: chrome
+    servername: uzndiuvzvqqljdyhzs.fcloudservices.site
+    network: tcp
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 台湾省台北市+中华电信
     type: vless
     server: free.fugui.lol
     port: 51283
@@ -209,195 +344,69 @@ proxies:
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 爱沙尼亚+V2CROSS.COM
-    type: vless
-    server: 196.196.148.76
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    tls: true
-    client-fingerprint: firefox
-    servername: 8a2e72t.nl20.h1clayd.shop
-    network: tcp
-    reality-opts:
-      public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-      short-id: 8d0d0679f42ffd98
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 澳大利亚+V2CROSS.COM
-    type: vless
-    server: 8a2e72t.nl20.h1clayd.shop
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    tls: true
-    client-fingerprint: chrome
-    servername: 8a2e72t.nl20.h1clayd.shop
-    network: tcp
-    reality-opts:
-      public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-      short-id: 8d0d0679f42ffd98
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 英国+V2CROSS.COM
-    type: vless
-    server: 2.26.251.236
-    port: 443
-    uuid: c16e8cdb-65dd-4049-bc65-14c051b8a6c6
-    tls: true
-    client-fingerprint: chrome
-    servername: mental-deprivation.ru
-    network: tcp
-    reality-opts:
-      public-key: 1iVMMhJZgXHRY7tRlR-1kypF0YeaBcB7EjcfHRsYZX4
-      short-id: 4ff31b18d1bd8227
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 英国+伦敦南岸大学
-    type: vless
-    server: 136.148.208.221
-    port: 443
-    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-    tls: true
-    client-fingerprint: chrome
-    servername: 8a2e72t.nl20.h1clayd.shop
-    network: tcp
-    reality-opts:
-      public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-      short-id: 8d0d0679f42ffd98
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-    flow: xtls-rprx-vision
-  - name: 德国+V2CROSS.COM
-    type: vless
-    server: 217.69.174.175
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    tls: true
-    client-fingerprint: firefox
-    servername: 04535dt.us8.h1clayd.click
-    network: tcp
-    reality-opts:
-      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-      short-id: ba2a3dce62b99092
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 美国+Xerox
-    type: vless
-    server: 13.141.51.2
-    port: 443
-    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-    tls: true
-    client-fingerprint: firefox
-    servername: 04535dt.us8.h1clayd.click
-    network: tcp
-    reality-opts:
-      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-      short-id: ba2a3dce62b99092
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 日本+东京Amazon数据中心
-    type: trojan
-    server: sclass-c2.catcat321.com
-    port: 20051
-    password: d9064589-74af-432a-9390-5d8a9da281bf
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 英国+伦敦南岸大学 2
-    type: vless
-    server: 136.148.83.69
-    port: 443
-    uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-    tls: true
-    client-fingerprint: qq
-    servername: szqbx-ru-77dc.my-fade.cloud
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
 proxy-groups:
   - type: select
     name: 🚀 节点选择
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
   - name: ⚡ 自动选择
     type: url-test
     proxies:
-      - 德国+阿里云
-      - 台湾省台北市+中华电信
-      - 台湾省台北市+中华电信 2
-      - 德国+阿里云 2
+      - 美国+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 台湾省台北市+中华电信 3
-      - 爱沙尼亚+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 英国+伦敦南岸大学
-      - 德国+V2CROSS.COM
       - 美国+Xerox
-      - 日本+东京Amazon数据中心
-      - 英国+伦敦南岸大学 2
+      - 爱尔兰+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
+      - 西班牙+V2CROSS.COM 3
+      - 美国+纽约(Prudential)
+      - 美国+纽约(Prudential) 2
+      - 西班牙+V2CROSS.COM 4
+      - 北美地区+V2CROSS.COM
+      - 塞舌尔+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM
+      - 美国+V2CROSS.COM 3
+      - 台湾省台北市+中华电信
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
-      - 德国+阿里云
-      - 台湾省台北市+中华电信
-      - 台湾省台北市+中华电信 2
-      - 德国+阿里云 2
+      - 美国+V2CROSS.COM
       - 西班牙+V2CROSS.COM
-      - 台湾省台北市+中华电信 3
-      - 爱沙尼亚+V2CROSS.COM
-      - 澳大利亚+V2CROSS.COM
-      - 英国+V2CROSS.COM
-      - 英国+伦敦南岸大学
-      - 德国+V2CROSS.COM
       - 美国+Xerox
-      - 日本+东京Amazon数据中心
-      - 英国+伦敦南岸大学 2
-  - name: 🇦🇺 Australia
+      - 爱尔兰+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
+      - 西班牙+V2CROSS.COM 3
+      - 美国+纽约(Prudential)
+      - 美国+纽约(Prudential) 2
+      - 西班牙+V2CROSS.COM 4
+      - 北美地区+V2CROSS.COM
+      - 塞舌尔+V2CROSS.COM
+      - 美国+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM
+      - 美国+V2CROSS.COM 3
+      - 台湾省台北市+中华电信
+  - name: 🇮🇪 Ireland
     type: url-test
     proxies:
-      - 澳大利亚+V2CROSS.COM
+      - 爱尔兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇩🇪 Germany
+  - name: 🇳🇿 New Zealand
     type: url-test
     proxies:
-      - 德国+阿里云
-      - 德国+阿里云 2
-      - 德国+V2CROSS.COM
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇯🇵 Japan
-    type: url-test
-    proxies:
-      - 日本+东京Amazon数据中心
+      - 新西兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -405,6 +414,9 @@ proxy-groups:
     type: url-test
     proxies:
       - 西班牙+V2CROSS.COM
+      - 西班牙+V2CROSS.COM 2
+      - 西班牙+V2CROSS.COM 3
+      - 西班牙+V2CROSS.COM 4
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -412,24 +424,18 @@ proxy-groups:
     type: url-test
     proxies:
       - 台湾省台北市+中华电信
-      - 台湾省台北市+中华电信 2
-      - 台湾省台北市+中华电信 3
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇬🇧 United Kingdom
-    type: url-test
-    proxies:
-      - 英国+V2CROSS.COM
-      - 英国+伦敦南岸大学
-      - 英国+伦敦南岸大学 2
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
+      - 美国+V2CROSS.COM
       - 美国+Xerox
+      - 美国+纽约(Prudential)
+      - 美国+纽约(Prudential) 2
+      - 美国+V2CROSS.COM 2
+      - 美国+V2CROSS.COM 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -439,12 +445,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -454,12 +458,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -469,12 +471,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -485,12 +485,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -500,12 +498,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
   - type: select
@@ -514,12 +510,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -529,12 +523,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -544,12 +536,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
@@ -559,12 +549,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
-      - 🇦🇺 Australia
-      - 🇩🇪 Germany
-      - 🇯🇵 Japan
+      - 🇮🇪 Ireland
+      - 🇳🇿 New Zealand
       - 🇪🇸 Spain
       - 🇹🇼 Taiwan
-      - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
       - REJECT
