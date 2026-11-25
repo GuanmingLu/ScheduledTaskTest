@@ -131,62 +131,44 @@ dns:
       - https://dns.cloudflare.com/dns-query
       - https://dns.google/dns-query
 proxies:
-  - name: 新西兰+V2CROSS.COM
-    type: ss
-    server: 202.50.253.45
-    port: 19999
-    cipher: aes-256-gcm
-    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-    udp: true
-  - name: 美国+惠普HP
-    type: trojan
-    server: sclass-00.catcat321.com
-    port: 20103
-    password: d9064589-74af-432a-9390-5d8a9da281bf
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: false
-    udp: true
-  - name: 俄罗斯+V2CROSS.COM
+  - name: 美国+Xerox
     type: vless
-    server: 193.111.248.54
+    server: 13.141.36.63
     port: 443
-    uuid: a8e5585a-6020-4649-a364-c1ebf3a40548
+    uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
     tls: true
     client-fingerprint: firefox
-    servername: tagderdeutscheneinheit.de
+    servername: 4935e4t.de25.h1clayd.click
     network: tcp
     reality-opts:
-      public-key: 0KDql59THS-DXg30wMR0QGgFB6rXARDhr8WoWyfVA2M
-      short-id: 6f0091ebe3029ebb
+      public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+      short-id: 6976d670818644cc
     tfo: false
     skip-cert-verify: false
     udp: true
     flow: xtls-rprx-vision
-  - name: 美国+CloudFlare节点
+  - name: 法国+V2CROSS.COM
     type: vless
-    server: 104.17.145.43
+    server: 81.49.182.202
     port: 443
-    uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+    uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
     tls: true
     client-fingerprint: firefox
-    servername: estuary.gerqix.online
+    servername: accessfooter.cleanfoodshop.org
     network: ws
     ws-opts:
-      path: /api/de7/stream
+      path: /media/ws/
       headers:
-        host: estuary.gerqix.online
+        host: accessfooter.cleanfoodshop.org
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 德国+V2CROSS.COM
+  - name: 新西兰+V2CROSS.COM
     type: ss
-    server: 84.235.178.93
-    port: 45819
-    cipher: 2022-blake3-chacha20-poly1305
-    password: q0ITzwUdzlpmZiYujM5nG485R+PLTOyEaQmfaRBzbB0=
+    server: 202.50.253.72
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
   - name: 德国+阿里云
     type: ss
@@ -195,53 +177,73 @@ proxies:
     cipher: 2022-blake3-chacha20-poly1305
     password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
     udp: true
-  - name: 荷兰+V2CROSS.COM
-    type: trojan
-    server: bgsg1.hikigo.com
-    port: 443
-    password: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  - name: 美国+V2CROSS.COM
+    type: vless
+    server: 136.234.36.156
+    port: 48637
+    uuid: cae99415-10a6-4317-81bd-19a4586b5d76
     tls: true
-    sni: bgsg1.hikigo.com
+    client-fingerprint: firefox
+    servername: 6da588t.nl7.h1clayd.click
     network: tcp
+    reality-opts:
+      public-key: XFWI_MEMvP6tajJyho0y7JYe5AkDKtNf4b5Bpkwfg0k
+      short-id: 1125242fc281d82f
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 英国+伦敦南岸大学
+    flow: xtls-rprx-vision
+  - name: 西班牙+V2CROSS.COM
     type: vless
-    server: 136.148.83.69
+    server: 196.245.52.187
     port: 443
-    uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
+    uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+    tls: true
+    client-fingerprint: firefox
+    servername: 04535dt.us8.h1clayd.click
+    network: tcp
+    reality-opts:
+      public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+      short-id: ba2a3dce62b99092
+    tfo: false
+    skip-cert-verify: false
+    udp: true
+  - name: 北美地区+V2CROSS.COM
+    type: hysteria2
+    server: 23.141.172.229
+    port: 50541
+    password: ePPsH1bMFD
+    sni: is1-ssl.mzstatic.com
+    skip-cert-verify: true
+  - name: 英国+V2CROSS.COM
+    type: vless
+    server: 2.26.251.236
+    port: 443
+    uuid: c16e8cdb-65dd-4049-bc65-14c051b8a6c6
     tls: true
     client-fingerprint: chrome
-    servername: szqbx-ru-77dc.my-fade.cloud
+    servername: mental-deprivation.ru
     network: tcp
+    reality-opts:
+      public-key: 1iVMMhJZgXHRY7tRlR-1kypF0YeaBcB7EjcfHRsYZX4
+      short-id: 4ff31b18d1bd8227
     tfo: false
     skip-cert-verify: false
     udp: true
-  - name: 香港+阿里云
+    flow: xtls-rprx-vision
+  - name: 新西兰+V2CROSS.COM 2
     type: ss
-    server: 47.85.227.36
-    port: 443
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+    server: 202.50.253.18
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
-  - name: 美国+惠普HP 2
-    type: trojan
-    server: sclass-00.catcat321.com
-    port: 20123
-    password: d9064589-74af-432a-9390-5d8a9da281bf
-    tls: true
-    sni: hk.catxstar.com
-    network: tcp
-    tfo: false
-    skip-cert-verify: true
-    udp: true
-  - name: 香港+阿里云 2
+  - name: 新西兰+V2CROSS.COM 3
     type: ss
-    server: 47.85.238.210
-    port: 443
-    cipher: 2022-blake3-chacha20-poly1305
-    password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
+    server: 202.50.253.63
+    port: 19999
+    cipher: aes-256-gcm
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
     udp: true
 proxy-groups:
   - type: select
@@ -249,11 +251,10 @@ proxy-groups:
     proxies:
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -261,54 +262,43 @@ proxy-groups:
   - name: ⚡ 自动选择
     type: url-test
     proxies:
+      - 美国+Xerox
+      - 法国+V2CROSS.COM
       - 新西兰+V2CROSS.COM
-      - 美国+惠普HP
-      - 俄罗斯+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
       - 德国+阿里云
-      - 荷兰+V2CROSS.COM
-      - 英国+伦敦南岸大学
-      - 香港+阿里云
-      - 美国+惠普HP 2
-      - 香港+阿里云 2
+      - 美国+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🖐️ 手动切换
     type: select
     proxies:
+      - 美国+Xerox
+      - 法国+V2CROSS.COM
       - 新西兰+V2CROSS.COM
-      - 美国+惠普HP
-      - 俄罗斯+V2CROSS.COM
-      - 美国+CloudFlare节点
-      - 德国+V2CROSS.COM
       - 德国+阿里云
-      - 荷兰+V2CROSS.COM
-      - 英国+伦敦南岸大学
-      - 香港+阿里云
-      - 美国+惠普HP 2
-      - 香港+阿里云 2
+      - 美国+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
+      - 北美地区+V2CROSS.COM
+      - 英国+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM 3
+  - name: 🇫🇷 France
+    type: url-test
+    proxies:
+      - 法国+V2CROSS.COM
+    url: https://www.gstatic.com/generate_204
+    interval: 300
+    lazy: false
   - name: 🇩🇪 Germany
     type: url-test
     proxies:
-      - 德国+V2CROSS.COM
       - 德国+阿里云
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇭🇰 Hong Kong
-    type: url-test
-    proxies:
-      - 香港+阿里云
-      - 香港+阿里云 2
-    url: https://www.gstatic.com/generate_204
-    interval: 300
-    lazy: false
-  - name: 🇳🇱 Netherlands
-    type: url-test
-    proxies:
-      - 荷兰+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -316,29 +306,30 @@ proxy-groups:
     type: url-test
     proxies:
       - 新西兰+V2CROSS.COM
+      - 新西兰+V2CROSS.COM 2
+      - 新西兰+V2CROSS.COM 3
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
-  - name: 🇷🇺 Russia
+  - name: 🇪🇸 Spain
     type: url-test
     proxies:
-      - 俄罗斯+V2CROSS.COM
+      - 西班牙+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇬🇧 United Kingdom
     type: url-test
     proxies:
-      - 英国+伦敦南岸大学
+      - 英国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
   - name: 🇺🇸 United States
     type: url-test
     proxies:
-      - 美国+惠普HP
-      - 美国+CloudFlare节点
-      - 美国+惠普HP 2
+      - 美国+Xerox
+      - 美国+V2CROSS.COM
     url: https://www.gstatic.com/generate_204
     interval: 300
     lazy: false
@@ -348,11 +339,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -363,11 +353,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -378,11 +367,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -394,11 +382,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -409,11 +396,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - REJECT
@@ -423,11 +409,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -438,11 +423,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -453,11 +437,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
@@ -468,11 +451,10 @@ proxy-groups:
       - 🚀 节点选择
       - ⚡ 自动选择
       - 🖐️ 手动切换
+      - 🇫🇷 France
       - 🇩🇪 Germany
-      - 🇭🇰 Hong Kong
-      - 🇳🇱 Netherlands
       - 🇳🇿 New Zealand
-      - 🇷🇺 Russia
+      - 🇪🇸 Spain
       - 🇬🇧 United Kingdom
       - 🇺🇸 United States
       - DIRECT
