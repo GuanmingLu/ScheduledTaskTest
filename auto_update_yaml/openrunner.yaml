@@ -1,4 +1,4 @@
-# https://freenode.openrunner.net/uploads/20261124-clash.yaml
+# https://freenode.openrunner.net/uploads/20261125-clash.yaml
 allow-lan: true
 bind-address: '*'
 dns:
@@ -52,7 +52,7 @@ mode: Rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: '[et/uploads/20261124-]'
+  name: '[et/uploads/20261125-]'
   password: password
   port: 443
   server: 127.0.0.1
@@ -72,40 +72,6 @@ proxies:
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  network: ws
-  port: 443
-  reality-opts:
-    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
-    short-id: 640c807d
-  server: 139.162.20.241
-  servername: itunes.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
-  ws-opts:
-    path: /ws
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: EXPjsObdfDnKuRmw4-A9_G4k-WP2cUXuuvUo8It1sAo
-    short-id: 4d1244cd42a20e6c
-  server: 47.84.39.7
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a6fd460c-88bd-4425-bb56-2b73d29455cc
-- client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
   password: 2902c46c8493
   port: 443
@@ -113,14 +79,6 @@ proxies:
   skip-cert-verify: true
   sni: docs.microsoft.com
   type: anytls
-  udp: true
-- name: "\U0001F1EF\U0001F1F5 \u65E5\u672C"
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: nu2rb.supertoolify.com
-  skip-cert-verify: true
-  sni: nu2rb.supertoolify.com
-  type: trojan
   udp: true
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
@@ -162,53 +120,6 @@ proxies:
       Host: itunes.apple.com
     path: /ws
     v2ray-http-upgrade: false
-- auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  obfs: salamander
-  obfs-password: sj1awrdwnn5lbuno
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: bgsg2.hikigo.com
-  skip-cert-verify: true
-  sni: bgsg2.hikigo.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  network: ws
-  port: 443
-  reality-opts:
-    public-key: fG1u2AZj5pgSNWO3MBmkoY6K61xBwnuYX3_z1fSeR0o
-    short-id: 640c807d
-  server: 139.162.20.241
-  servername: itunes.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f0270f9-1abc-4c4f-960d-0a23e32f1eb8
-  ws-opts:
-    headers:
-      Host: itunes.apple.com
-    path: /ws
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
-  network: tcp
-  port: 11102
-  reality-opts:
-    public-key: oW6HMjniDmBJdjGKwhBAIS2zMS1VvHORubh9vdazqQ0
-    short-id: ed571d022f7bc3bf
-  server: 116.213.43.43
-  servername: www.apple.com
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 530d31fc-2690-49e4-bfc9-3f991e145008
 - client-fingerprint: chrome
   name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
   password: 0324fbc29561
@@ -218,67 +129,8 @@ proxies:
   sni: docs.microsoft.com
   type: anytls
   udp: true
-- name: "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: xvxn1hkzf.mateflora.com
-  skip-cert-verify: true
-  sni: xvxn1hkzf.mateflora.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  network: ws
-  port: 8443
-  server: 151.158.0.83
-  servername: senflarelink-node-6b9.pages.dev
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  ws-opts:
-    headers:
-      Host: senflarelink-node-6b9.pages.dev
-    path: /
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  network: ws
-  port: 8443
-  server: 206.237.18.145
-  servername: senflarelink-node-m3bfbn.pages.dev
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  ws-opts:
-    headers:
-      Host: senflarelink-node-m3bfbn.pages.dev
-    path: /
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  name: "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  network: ws
-  port: 8443
-  server: 154.40.61.186
-  servername: senflarelink-node-wj1gsa.pages.dev
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  ws-opts:
-    headers:
-      Host: senflarelink-node-wj1gsa.pages.dev
-    path: /
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
   password: 0324fbc29561
   port: 443
   server: 5641sdds.df6h451rh.xin
@@ -286,23 +138,6 @@ proxies:
   sni: images.ctfassets.net
   type: anytls
   udp: true
-- client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
-  network: ws
-  port: 8443
-  server: 43.159.41.66
-  servername: senflarelink-node-il65vh.pages.dev
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  ws-opts:
-    headers:
-      Host: senflarelink-node-il65vh.pages.dev
-    path: /
-    v2ray-http-upgrade: false
 - client-fingerprint: chrome
   name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
   network: ws
@@ -322,23 +157,6 @@ proxies:
     headers:
       Host: itunes.apple.com
     path: /ws
-    v2ray-http-upgrade: false
-- client-fingerprint: chrome
-  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
-  network: ws
-  port: 8443
-  server: 43.134.187.97
-  servername: senflarelink-node-2ott2x.pages.dev
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  ws-opts:
-    headers:
-      Host: senflarelink-node-2ott2x.pages.dev
-    path: /
     v2ray-http-upgrade: false
 - client-fingerprint: chrome
   name: "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
@@ -375,11 +193,11 @@ proxies:
     path: /
     v2ray-http-upgrade: false
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
+  name: "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
   network: ws
   port: 8443
-  server: 131.186.22.95
-  servername: senflarelink-node-il65vh.pages.dev
+  server: 185.206.171.66
+  servername: senflarelink-node-7uv.pages.dev
   skip-cert-verify: true
   tfo: false
   tls: true
@@ -388,11 +206,79 @@ proxies:
   uuid: b69cf773-da16-486e-afce-a45b94f998b3
   ws-opts:
     headers:
-      Host: senflarelink-node-il65vh.pages.dev
+      Host: senflarelink-node-7uv.pages.dev
     path: /
     v2ray-http-upgrade: false
 - client-fingerprint: chrome
-  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  name: "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  network: ws
+  port: 2087
+  server: 13.140.95.76
+  servername: senflarelink-node-6b9.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-6b9.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  network: ws
+  port: 8443
+  server: 179.255.132.42
+  servername: senflarelink-node-71i.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-71i.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  network: ws
+  port: 8443
+  server: 95.169.13.59
+  servername: senflarelink-node-m3bfbn.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-m3bfbn.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
+  network: ws
+  port: 8443
+  server: 179.255.137.204
+  servername: senflarelink-node-xfcyh2.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-xfcyh2.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
   network: ws
   port: 12101
   server: 14.44.19.57
@@ -408,64 +294,105 @@ proxies:
       Host: senflarelink-node-nwz76h.pages.dev
     path: /
     v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  network: ws
+  port: 8443
+  server: 49.13.31.189
+  servername: senflarelink-node-c43.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-c43.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  network: ws
+  port: 8443
+  server: 178.104.77.229
+  servername: senflarelink-node-m3bfbn.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-m3bfbn.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: "TG\u9891\u9053:@freenodedaily"
+  network: ws
+  port: 443
+  server: cloudflare.seeck.cn
+  servername: senflarelink-node-xfcyh2.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-xfcyh2.pages.dev
+    path: /
+    v2ray-http-upgrade: false
 proxy-groups:
 - name: "\U0001F680 \u8282\u70B9\u9009\u62E9"
   proxies:
-  - '[et/uploads/20261124-]'
+  - '[et/uploads/20261125-]'
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - DIRECT
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - interval: 300
   name: "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   proxies:
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   tolerance: 50
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -476,28 +403,23 @@ proxy-groups:
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - name: "\U0001F4F2 \u7535\u62A5\u4FE1\u606F"
   proxies:
@@ -505,28 +427,23 @@ proxy-groups:
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - name: "\u24C2\uFE0F \u5FAE\u8F6F\u670D\u52A1"
   proxies:
@@ -534,28 +451,23 @@ proxy-groups:
   - "\U0001F680 \u8282\u70B9\u9009\u62E9"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - name: "\U0001F34E \u82F9\u679C\u670D\u52A1"
   proxies:
@@ -563,28 +475,23 @@ proxy-groups:
   - "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - name: "\U0001F4E2 \u8C37\u6B4CFCM"
   proxies:
@@ -593,28 +500,23 @@ proxy-groups:
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 - name: "\U0001F3AF \u5168\u7403\u76F4\u8FDE"
   proxies:
@@ -639,28 +541,23 @@ proxy-groups:
   - "\u267B\uFE0F \u81EA\u52A8\u9009\u62E9"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u5229"
   - "\U0001F1EE\U0001F1F9 \u610F\u5927\u52292"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57615"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57612"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F2"
-  - "\U0001F1EF\U0001F1F5 \u65E5\u672C"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C3"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C2"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57611"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57613"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E"
   - "\U0001F1F9\U0001F1FC \u53F0\u6E7E2"
-  - "\U0001F1FB\U0001F1F3 \u8D8A\u5357"
   - "\U0001F1ED\U0001F1F0 \u9999\u6E2F3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F4"
-  - "\U0001F1F9\U0001F1FC \u53F0\u6E7E3"
-  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
   - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD"
-  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u57614"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C4"
   - "\U0001F1EF\U0001F1F5 \u65E5\u672C5"
+  - "\U0001F1ED\U0001F1F0 \u9999\u6E2F"
+  - "\U0001F1F8\U0001F1EC \u65B0\u52A0\u5761"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD2"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD3"
+  - "\U0001F1FA\U0001F1F8 \u7F8E\u56FD4"
   - "\U0001F1F0\U0001F1F7 \u97E9\u56FD"
-  - "\U0001F1F0\U0001F1F7 \u97E9\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD2"
+  - "\U0001F1E9\U0001F1EA \u5FB7\u56FD"
+  - "TG\u9891\u9053:@freenodedaily"
   type: select
 rules:
 - "DOMAIN-SUFFIX,acl4.ssr,\U0001F3AF \u5168\u7403\u76F4\u8FDE"
